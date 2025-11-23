@@ -1,0 +1,99 @@
+[Trace 07:36:26.245] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///root/file.md
+[Trace 07:36:26.246] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:26.248] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Trace 07:36:26.343] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Trace 07:36:26.530] DocumentSymbolProvider: provideDocumentSymbols — file:///root/file.md 1
+[Debug 07:36:26.530] LinkProvider: compute - file:///root/file.md
+[Debug 07:36:26.941] MdFoldingProvider: provideFoldingRanges — file:///root/file.md 1
+[Debug 07:36:26.942] TableOfContentsProvider: create - file:///root/file.md
+[Trace 07:36:36.578] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:36.579] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Debug 07:36:36.805] LinkProvider: compute - file:///root/file.md
+[Debug 07:36:37.220] MdFoldingProvider: provideFoldingRanges — file:///root/file.md 2
+[Debug 07:36:37.220] TableOfContentsProvider: create - file:///root/file.md
+[Trace 07:36:37.443] DocumentSymbolProvider: provideDocumentSymbols — file:///root/file.md 2
+[Trace 07:36:37.562] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:37.562] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Debug 07:36:37.809] LinkProvider: compute - file:///root/file.md
+[Debug 07:36:37.984] MdFoldingProvider: provideFoldingRanges — file:///root/file.md 3
+[Debug 07:36:37.984] TableOfContentsProvider: create - file:///root/file.md
+[Trace 07:36:38.030] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:38.030] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Debug 07:36:38.266] LinkProvider: compute - file:///root/file.md
+[Trace 07:36:38.442] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:38.442] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Trace 07:36:38.467] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///root/file.md
+[Debug 07:36:38.684] LinkProvider: compute - file:///root/file.md
+[Trace 07:36:38.725] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:38.725] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Trace 07:36:38.819] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///root/.openvscode-server/data/User/History/-aae36ad/RPGG.md
+[Debug 07:36:38.974] LinkProvider: compute - file:///root/file.md
+[Debug 07:36:39.151] MdFoldingProvider: provideFoldingRanges — file:///root/file.md 6
+[Debug 07:36:39.151] TableOfContentsProvider: create - file:///root/file.md
+[Trace 07:36:39.248] DocumentSymbolProvider: provideDocumentSymbols — file:///root/file.md 6
+[Trace 07:36:39.702] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:39.702] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Debug 07:36:39.945] LinkProvider: compute - file:///root/file.md
+[Debug 07:36:40.042] MdFoldingProvider: provideFoldingRanges — file:///root/file.md 7
+[Debug 07:36:40.042] TableOfContentsProvider: create - file:///root/file.md
+[Trace 07:36:40.109] DocumentSymbolProvider: provideDocumentSymbols — file:///root/file.md 7
+[Trace 07:36:40.200] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:40.200] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Trace 07:36:40.342] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:40.343] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Debug 07:36:40.581] LinkProvider: compute - file:///root/file.md
+[Debug 07:36:40.677] MdFoldingProvider: provideFoldingRanges — file:///root/file.md 9
+[Debug 07:36:40.677] TableOfContentsProvider: create - file:///root/file.md
+[Trace 07:36:40.677] DocumentSymbolProvider: provideDocumentSymbols — file:///root/file.md 9
+[Trace 07:36:41.574] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:41.574] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Debug 07:36:41.826] LinkProvider: compute - file:///root/file.md
+[Debug 07:36:41.860] MdFoldingProvider: provideFoldingRanges — file:///root/file.md 10
+[Debug 07:36:41.860] TableOfContentsProvider: create - file:///root/file.md
+[Trace 07:36:41.921] DocumentSymbolProvider: provideDocumentSymbols — file:///root/file.md 10
+[Trace 07:36:42.229] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///root/file.md
+[Trace 07:36:42.374] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:42.374] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Trace 07:36:42.588] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///root/.openvscode-server/data/User/History/-aae36ad/RPGG.md
+[Trace 07:36:42.598] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:42.599] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Debug 07:36:42.869] MdFoldingProvider: provideFoldingRanges — file:///root/file.md 12
+[Debug 07:36:42.869] TableOfContentsProvider: create - file:///root/file.md
+[Trace 07:36:42.902] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:42.903] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Debug 07:36:43.149] LinkProvider: compute - file:///root/file.md
+[Debug 07:36:43.179] MdFoldingProvider: provideFoldingRanges — file:///root/file.md 13
+[Debug 07:36:43.179] TableOfContentsProvider: create - file:///root/file.md
+[Trace 07:36:43.244] DocumentSymbolProvider: provideDocumentSymbols — file:///root/file.md 13
+[Trace 07:36:43.515] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:43.515] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Debug 07:36:43.754] LinkProvider: compute - file:///root/file.md
+[Debug 07:36:43.775] MdFoldingProvider: provideFoldingRanges — file:///root/file.md 14
+[Debug 07:36:43.775] TableOfContentsProvider: create - file:///root/file.md
+[Trace 07:36:43.809] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:43.810] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Debug 07:36:44.051] LinkProvider: compute - file:///root/file.md
+[Debug 07:36:44.064] MdFoldingProvider: provideFoldingRanges — file:///root/file.md 15
+[Debug 07:36:44.064] TableOfContentsProvider: create - file:///root/file.md
+[Trace 07:36:44.163] DocumentSymbolProvider: provideDocumentSymbols — file:///root/file.md 15
+[Trace 07:36:44.222] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:44.223] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Debug 07:36:44.463] LinkProvider: compute - file:///root/file.md
+[Debug 07:36:44.464] MdFoldingProvider: provideFoldingRanges — file:///root/file.md 16
+[Debug 07:36:44.465] TableOfContentsProvider: create - file:///root/file.md
+[Trace 07:36:44.560] DocumentSymbolProvider: provideDocumentSymbols — file:///root/file.md 16
+[Trace 07:36:44.891] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///root/file.md
+[Trace 07:36:44.892] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Debug 07:36:45.092] MdFoldingProvider: provideFoldingRanges — file:///root/file.md 17
+[Debug 07:36:45.092] TableOfContentsProvider: create - file:///root/file.md
+[Debug 07:36:45.140] LinkProvider: compute - file:///root/file.md
+[Trace 07:36:45.230] DocumentSymbolProvider: provideDocumentSymbols — file:///root/file.md 17
+[Trace 07:36:46.746] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///root/file.md
+[Trace 07:36:47.161] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///root/.openvscode-server/data/User/History/-aae36ad/RPGG.md
+[Trace 07:36:56.397] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Trace 07:36:58.102] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Debug 07:36:58.102] LinkProvider: compute - file:///root/file.md
+[Debug 07:36:58.258] MdFoldingProvider: provideFoldingRanges — file:///root/file.md 17
+[Debug 07:36:58.258] TableOfContentsProvider: create - file:///root/file.md
+[Trace 07:37:01.364] Server: connection.languages.diagnostics.on: file:///root/file.md
+[Trace 08:15:53.206] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///root/git-intro/README.md

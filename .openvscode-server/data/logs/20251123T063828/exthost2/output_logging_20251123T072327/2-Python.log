@@ -1,0 +1,7 @@
+LSP Notebooks experiment is disabled -- not using Pylance
+LSP Notebooks interactive window support is disabled -- not in LSP Notebooks experiment
+> conda info --json
+> /bin/python3 -I ./.openvscode-server/extensions/ms-python.python-2023.4.1-universal/pythonFiles/get_output_via_markers.py ./.openvscode-server/extensions/ms-python.python-2023.4.1-universal/pythonFiles/interpreterInfo.py
+> /usr/bin/python3 -I ./.openvscode-server/extensions/ms-python.python-2023.4.1-universal/pythonFiles/get_output_via_markers.py ./.openvscode-server/extensions/ms-python.python-2023.4.1-universal/pythonFiles/interpreterInfo.py
+Python interpreter path: /bin/python3
+Starting Jedi language server for root.
