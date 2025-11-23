@@ -1,0 +1,14 @@
+OpenVSCode Server (1.75.1, vscode-1-95.cod-me-central-1.hbtn.io, openvscode-server)
+Jupyter Extension Version: 2022.10.110.
+Python Extension Version: 2023.4.1.
+Workspace folder /root
+info 07:31:05.636: ZMQ install verified.
+info 07:31:09.343: LSP Notebooks experiment is disabled -- Pylance disabled or not installed
+info 07:31:09.557: Process Execution: > jupyter notebook --version
+> jupyter notebook --version
+info 07:31:09.639: Process Execution: > jupyter lab --version
+> jupyter lab --version
+info 07:31:12.316: Got empty env vars with python /bin/python3 in 1071ms
+info 07:31:12.316: Got env vars ourselves faster /bin/python3 with env var count 26 in 1072ms
+info 07:31:12.327: Process Execution: > /bin/python3 -m pip list
+> /bin/python3 -m pip list
