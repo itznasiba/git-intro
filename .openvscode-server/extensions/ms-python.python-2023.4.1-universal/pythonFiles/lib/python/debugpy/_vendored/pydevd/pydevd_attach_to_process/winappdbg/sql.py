@@ -319,7 +319,6 @@ def Transactional(fn, self, *argv, **argd):
     """
     return self._transactional(fn, *argv, **argd)
 
-#==============================================================================
 
 # Generates all possible memory access flags.
 def _gen_valid_access_flags():
@@ -723,7 +722,6 @@ class CrashDTO (BaseDTO):
                 crash.memoryMap = [dto.toMBI(getMemoryDump) for dto in memory]
         return crash
 
-#==============================================================================
 
 # TODO: add a method to modify already stored crash dumps.
 

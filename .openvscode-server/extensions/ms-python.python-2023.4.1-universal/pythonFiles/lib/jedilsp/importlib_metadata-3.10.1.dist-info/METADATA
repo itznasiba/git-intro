@@ -75,7 +75,6 @@ for details.
 
 
 Caveats
-=======
 
 This project primarily supports third-party packages installed by PyPA
 tools (or other conforming packages). It does not support:
@@ -84,7 +83,6 @@ tools (or other conforming packages). It does not support:
 - Packages installed without metadata.
 
 Project details
-===============
 
  * Project home: https://github.com/python/importlib_metadata
  * Report bugs at: https://github.com/python/importlib_metadata/issues

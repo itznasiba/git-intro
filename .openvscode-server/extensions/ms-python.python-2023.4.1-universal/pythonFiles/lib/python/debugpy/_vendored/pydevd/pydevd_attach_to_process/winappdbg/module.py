@@ -57,7 +57,6 @@ import os
 import warnings
 import traceback
 
-#==============================================================================
 
 class DebugSymbolsWarning (UserWarning):
     """
@@ -65,7 +64,6 @@ class DebugSymbolsWarning (UserWarning):
     isn't working properly.
     """
 
-#==============================================================================
 
 class Module (object):
     """
@@ -794,7 +792,6 @@ class Module (object):
             address = address + offset
         return address
 
-#==============================================================================
 
 # TODO
 # An alternative approach to the toolhelp32 snapshots: parsing the PEB and

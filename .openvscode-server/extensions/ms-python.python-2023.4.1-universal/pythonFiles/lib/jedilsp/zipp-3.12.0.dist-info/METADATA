@@ -61,7 +61,6 @@ A pathlib-compatible Zipfile object wrapper. Official backport of the standard l
 
 
 Compatibility
-=============
 
 New features are introduced in this third-party library and later merged
 into CPython. The following table indicates which versions of this library
@@ -88,7 +87,6 @@ Usage
 Use ``zipp.Path`` in place of ``zipfile.Path`` on any Python.
 
 For Enterprise
-==============
 
 Available as part of the Tidelift Subscription.
 
@@ -97,7 +95,6 @@ This project and the maintainers of thousands of other packages are working with
 `Learn more <https://tidelift.com/subscription/pkg/pypi-zipp?utm_source=pypi-zipp&utm_medium=referral&utm_campaign=github>`_.
 
 Security Contact
-================
 
 To report a security vulnerability, please use the
 `Tidelift security contact <https://tidelift.com/security>`_.

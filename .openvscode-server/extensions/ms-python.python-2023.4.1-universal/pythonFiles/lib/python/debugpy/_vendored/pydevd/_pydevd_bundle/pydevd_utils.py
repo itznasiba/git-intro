@@ -171,9 +171,7 @@ def dump_threads(stream=None, show_pydevd_threads=True):
     except:
         pass
 
-    stream.write('===============================================================================\n')
     stream.write('Threads running\n')
-    stream.write('================================= Thread Dump =================================\n')
     stream.flush()
 
     for thread_id, frame in _tid_to_frame_for_dump_threads().items():
@@ -200,7 +198,6 @@ def dump_threads(stream=None, show_pydevd_threads=True):
                 stream.write('\n')
         stream.flush()
 
-    stream.write('\n=============================== END Thread Dump ===============================')
     stream.flush()
 
 

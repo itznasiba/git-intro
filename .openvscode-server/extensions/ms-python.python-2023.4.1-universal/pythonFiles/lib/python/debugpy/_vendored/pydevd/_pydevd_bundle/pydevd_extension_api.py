@@ -14,9 +14,7 @@ def _with_metaclass(meta, *bases):
     return type.__new__(metaclass, 'temporary_class', (), {})
 
 
-# =======================================================================================================================
 # AbstractResolver
-# =======================================================================================================================
 class _AbstractResolver(_with_metaclass(abc.ABCMeta)):
     """
     This class exists only for documentation purposes to explain how to create a resolver.
@@ -55,9 +53,7 @@ class _AbstractProvider(_with_metaclass(abc.ABCMeta)):
     def can_provide(self, type_object, type_name):
         raise NotImplementedError
 
-# =======================================================================================================================
 # API CLASSES:
-# =======================================================================================================================
 
 
 class TypeResolveProvider(_AbstractResolver, _AbstractProvider):

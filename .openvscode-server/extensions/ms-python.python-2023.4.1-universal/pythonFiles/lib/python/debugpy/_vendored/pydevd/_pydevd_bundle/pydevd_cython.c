@@ -986,7 +986,6 @@ struct __pyx_obj_14_pydevd_bundle_13pydevd_cython_TopLevelThreadTracerNoBackFram
 struct __pyx_obj_14_pydevd_bundle_13pydevd_cython_ThreadTracer;
 
 /* "_pydevd_bundle/pydevd_cython.pxd":1
- * cdef class PyDBAdditionalThreadInfo:             # <<<<<<<<<<<<<<
  *     cdef public int pydev_state
  *     cdef public object pydev_step_stop # Actually, it's a frame or None
  */
@@ -1024,7 +1023,6 @@ struct __pyx_obj_14_pydevd_bundle_13pydevd_cython_PyDBAdditionalThreadInfo {
 /* "_pydevd_bundle/pydevd_cython.pyx":256
  * 
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- * cdef class _TryExceptContainerObj:             # <<<<<<<<<<<<<<
  *     cdef public list try_except_infos;
  *     def __init__(self):
  */
@@ -1035,9 +1033,7 @@ struct __pyx_obj_14_pydevd_bundle_13pydevd_cython__TryExceptContainerObj {
 
 
 /* "_pydevd_bundle/pydevd_cython.pyx":274
- * #=======================================================================================================================
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- * cdef class PyDBFrame:             # <<<<<<<<<<<<<<
  * # ELSE
  * # class PyDBFrame:
  */
@@ -1053,7 +1049,6 @@ struct __pyx_obj_14_pydevd_bundle_13pydevd_cython_PyDBFrame {
 /* "_pydevd_bundle/pydevd_cython.pyx":1448
  * 
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- * cdef class SafeCallWrapper:             # <<<<<<<<<<<<<<
  *     cdef method_object
  *     def __init__(self, method_object):
  */
@@ -1066,7 +1061,6 @@ struct __pyx_obj_14_pydevd_bundle_13pydevd_cython_SafeCallWrapper {
 /* "_pydevd_bundle/pydevd_cython.pyx":1604
  * 
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- * cdef class TopLevelThreadTracerOnlyUnhandledExceptions:             # <<<<<<<<<<<<<<
  *     cdef public tuple _args;
  *     def __init__(self, tuple args):
  */
@@ -1079,7 +1073,6 @@ struct __pyx_obj_14_pydevd_bundle_13pydevd_cython_TopLevelThreadTracerOnlyUnhand
 /* "_pydevd_bundle/pydevd_cython.pyx":1634
  * 
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- * cdef class TopLevelThreadTracerNoBackFrame:             # <<<<<<<<<<<<<<
  *     cdef public object _frame_trace_dispatch;
  *     cdef public tuple _args;
  */
@@ -1097,7 +1090,6 @@ struct __pyx_obj_14_pydevd_bundle_13pydevd_cython_TopLevelThreadTracerNoBackFram
 /* "_pydevd_bundle/pydevd_cython.pyx":1709
  * 
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- * cdef class ThreadTracer:             # <<<<<<<<<<<<<<
  *     cdef public tuple _args;
  *     def __init__(self, tuple args):
  */
@@ -1109,9 +1101,7 @@ struct __pyx_obj_14_pydevd_bundle_13pydevd_cython_ThreadTracer {
 
 
 /* "_pydevd_bundle/pydevd_cython.pyx":274
- * #=======================================================================================================================
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- * cdef class PyDBFrame:             # <<<<<<<<<<<<<<
  * # ELSE
  * # class PyDBFrame:
  */
@@ -2672,7 +2662,6 @@ static PyObject *__pyx_codeobj__46;
 /* "_pydevd_bundle/pydevd_cython.pyx":67
  *     # ENDIF
  * 
- *     def __init__(self):             # <<<<<<<<<<<<<<
  *         self.pydev_state = STATE_RUN  # STATE_RUN or STATE_SUSPEND
  *         self.pydev_step_stop = None
  */
@@ -2706,7 +2695,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":68
  * 
  *     def __init__(self):
- *         self.pydev_state = STATE_RUN  # STATE_RUN or STATE_SUSPEND             # <<<<<<<<<<<<<<
  *         self.pydev_step_stop = None
  * 
  */
@@ -2719,7 +2707,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":69
  *     def __init__(self):
  *         self.pydev_state = STATE_RUN  # STATE_RUN or STATE_SUSPEND
- *         self.pydev_step_stop = None             # <<<<<<<<<<<<<<
  * 
  *         # Note: we have `pydev_original_step_cmd` and `pydev_step_cmd` because the original is to
  */
@@ -2732,7 +2719,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":77
  *         # method the strategy is changed to a step in).
  * 
- *         self.pydev_original_step_cmd = -1  # Something as CMD_STEP_INTO, CMD_STEP_OVER, etc.             # <<<<<<<<<<<<<<
  *         self.pydev_step_cmd = -1  # Something as CMD_STEP_INTO, CMD_STEP_OVER, etc.
  * 
  */
@@ -2741,7 +2727,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":78
  * 
  *         self.pydev_original_step_cmd = -1  # Something as CMD_STEP_INTO, CMD_STEP_OVER, etc.
- *         self.pydev_step_cmd = -1  # Something as CMD_STEP_INTO, CMD_STEP_OVER, etc.             # <<<<<<<<<<<<<<
  * 
  *         self.pydev_notify_kill = False
  */
@@ -2750,7 +2735,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":80
  *         self.pydev_step_cmd = -1  # Something as CMD_STEP_INTO, CMD_STEP_OVER, etc.
  * 
- *         self.pydev_notify_kill = False             # <<<<<<<<<<<<<<
  *         self.pydev_django_resolve_frame = False
  *         self.pydev_call_from_jinja2 = None
  */
@@ -2759,7 +2743,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":81
  * 
  *         self.pydev_notify_kill = False
- *         self.pydev_django_resolve_frame = False             # <<<<<<<<<<<<<<
  *         self.pydev_call_from_jinja2 = None
  *         self.pydev_call_inside_jinja2 = None
  */
@@ -2768,7 +2751,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":82
  *         self.pydev_notify_kill = False
  *         self.pydev_django_resolve_frame = False
- *         self.pydev_call_from_jinja2 = None             # <<<<<<<<<<<<<<
  *         self.pydev_call_inside_jinja2 = None
  *         self.is_tracing = 0
  */
@@ -2781,7 +2763,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":83
  *         self.pydev_django_resolve_frame = False
  *         self.pydev_call_from_jinja2 = None
- *         self.pydev_call_inside_jinja2 = None             # <<<<<<<<<<<<<<
  *         self.is_tracing = 0
  *         self.conditional_breakpoint_exception = None
  */
@@ -2794,7 +2775,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":84
  *         self.pydev_call_from_jinja2 = None
  *         self.pydev_call_inside_jinja2 = None
- *         self.is_tracing = 0             # <<<<<<<<<<<<<<
  *         self.conditional_breakpoint_exception = None
  *         self.pydev_message = ''
  */
@@ -2803,7 +2783,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":85
  *         self.pydev_call_inside_jinja2 = None
  *         self.is_tracing = 0
- *         self.conditional_breakpoint_exception = None             # <<<<<<<<<<<<<<
  *         self.pydev_message = ''
  *         self.suspend_type = PYTHON_SUSPEND
  */
@@ -2816,7 +2795,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":86
  *         self.is_tracing = 0
  *         self.conditional_breakpoint_exception = None
- *         self.pydev_message = ''             # <<<<<<<<<<<<<<
  *         self.suspend_type = PYTHON_SUSPEND
  *         self.pydev_next_line = -1
  */
@@ -2829,7 +2807,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":87
  *         self.conditional_breakpoint_exception = None
  *         self.pydev_message = ''
- *         self.suspend_type = PYTHON_SUSPEND             # <<<<<<<<<<<<<<
  *         self.pydev_next_line = -1
  *         self.pydev_func_name = '.invalid.'  # Must match the type in cython
  */
@@ -2842,7 +2819,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":88
  *         self.pydev_message = ''
  *         self.suspend_type = PYTHON_SUSPEND
- *         self.pydev_next_line = -1             # <<<<<<<<<<<<<<
  *         self.pydev_func_name = '.invalid.'  # Must match the type in cython
  *         self.suspended_at_unhandled = False
  */
@@ -2851,7 +2827,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":89
  *         self.suspend_type = PYTHON_SUSPEND
  *         self.pydev_next_line = -1
- *         self.pydev_func_name = '.invalid.'  # Must match the type in cython             # <<<<<<<<<<<<<<
  *         self.suspended_at_unhandled = False
  *         self.trace_suspend_type = 'trace'  # 'trace' or 'frame_eval'
  */
@@ -2864,7 +2839,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":90
  *         self.pydev_next_line = -1
  *         self.pydev_func_name = '.invalid.'  # Must match the type in cython
- *         self.suspended_at_unhandled = False             # <<<<<<<<<<<<<<
  *         self.trace_suspend_type = 'trace'  # 'trace' or 'frame_eval'
  *         self.top_level_thread_tracer_no_back_frames = []
  */
@@ -2873,7 +2847,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":91
  *         self.pydev_func_name = '.invalid.'  # Must match the type in cython
  *         self.suspended_at_unhandled = False
- *         self.trace_suspend_type = 'trace'  # 'trace' or 'frame_eval'             # <<<<<<<<<<<<<<
  *         self.top_level_thread_tracer_no_back_frames = []
  *         self.top_level_thread_tracer_unhandled = None
  */
@@ -2886,7 +2859,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":92
  *         self.suspended_at_unhandled = False
  *         self.trace_suspend_type = 'trace'  # 'trace' or 'frame_eval'
- *         self.top_level_thread_tracer_no_back_frames = []             # <<<<<<<<<<<<<<
  *         self.top_level_thread_tracer_unhandled = None
  *         self.thread_tracer = None
  */
@@ -2901,7 +2873,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":93
  *         self.trace_suspend_type = 'trace'  # 'trace' or 'frame_eval'
  *         self.top_level_thread_tracer_no_back_frames = []
- *         self.top_level_thread_tracer_unhandled = None             # <<<<<<<<<<<<<<
  *         self.thread_tracer = None
  *         self.step_in_initial_location = None
  */
@@ -2914,7 +2885,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":94
  *         self.top_level_thread_tracer_no_back_frames = []
  *         self.top_level_thread_tracer_unhandled = None
- *         self.thread_tracer = None             # <<<<<<<<<<<<<<
  *         self.step_in_initial_location = None
  *         self.pydev_smart_parent_offset = -1
  */
@@ -2927,7 +2897,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":95
  *         self.top_level_thread_tracer_unhandled = None
  *         self.thread_tracer = None
- *         self.step_in_initial_location = None             # <<<<<<<<<<<<<<
  *         self.pydev_smart_parent_offset = -1
  *         self.pydev_smart_child_offset = -1
  */
@@ -2940,7 +2909,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":96
  *         self.thread_tracer = None
  *         self.step_in_initial_location = None
- *         self.pydev_smart_parent_offset = -1             # <<<<<<<<<<<<<<
  *         self.pydev_smart_child_offset = -1
  *         self.pydev_smart_step_into_variants = ()
  */
@@ -2949,7 +2917,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":97
  *         self.step_in_initial_location = None
  *         self.pydev_smart_parent_offset = -1
- *         self.pydev_smart_child_offset = -1             # <<<<<<<<<<<<<<
  *         self.pydev_smart_step_into_variants = ()
  *         self.target_id_to_smart_step_into_variant = {}
  */
@@ -2958,7 +2925,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":98
  *         self.pydev_smart_parent_offset = -1
  *         self.pydev_smart_child_offset = -1
- *         self.pydev_smart_step_into_variants = ()             # <<<<<<<<<<<<<<
  *         self.target_id_to_smart_step_into_variant = {}
  * 
  */
@@ -2971,7 +2937,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":99
  *         self.pydev_smart_child_offset = -1
  *         self.pydev_smart_step_into_variants = ()
- *         self.target_id_to_smart_step_into_variant = {}             # <<<<<<<<<<<<<<
  * 
  *         # Flag to indicate ipython use-case where each line will be executed as a call/line/return
  */
@@ -2986,7 +2951,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":111
  *         #
  *         # See: https://github.com/microsoft/debugpy/issues/869#issuecomment-1132141003
- *         self.pydev_use_scoped_step_frame = False             # <<<<<<<<<<<<<<
  * 
  *     def get_topmost_frame(self, thread):
  */
@@ -2995,7 +2959,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
   /* "_pydevd_bundle/pydevd_cython.pyx":67
  *     # ENDIF
  * 
- *     def __init__(self):             # <<<<<<<<<<<<<<
  *         self.pydev_state = STATE_RUN  # STATE_RUN or STATE_SUSPEND
  *         self.pydev_step_stop = None
  */
@@ -3015,7 +2978,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pyx":113
  *         self.pydev_use_scoped_step_frame = False
  * 
- *     def get_topmost_frame(self, thread):             # <<<<<<<<<<<<<<
  *         '''
  *         Gets the topmost frame for the given thread. Note that it may be None
  */
@@ -3057,7 +3019,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "_pydevd_bundle/pydevd_cython.pyx":120
  *         '''
  *         # sys._current_frames(): dictionary with thread id -> topmost frame
- *         current_frames = _current_frames()             # <<<<<<<<<<<<<<
  *         topmost_frame = current_frames.get(thread.ident)
  *         if topmost_frame is None:
  */
@@ -3084,7 +3045,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "_pydevd_bundle/pydevd_cython.pyx":121
  *         # sys._current_frames(): dictionary with thread id -> topmost frame
  *         current_frames = _current_frames()
- *         topmost_frame = current_frames.get(thread.ident)             # <<<<<<<<<<<<<<
  *         if topmost_frame is None:
  *             # Note: this is expected for dummy threads (so, getting the topmost frame should be
  */
@@ -3114,7 +3074,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "_pydevd_bundle/pydevd_cython.pyx":122
  *         current_frames = _current_frames()
  *         topmost_frame = current_frames.get(thread.ident)
- *         if topmost_frame is None:             # <<<<<<<<<<<<<<
  *             # Note: this is expected for dummy threads (so, getting the topmost frame should be
  *             # treated as optional).
  */
@@ -3125,7 +3084,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
     /* "_pydevd_bundle/pydevd_cython.pyx":125
  *             # Note: this is expected for dummy threads (so, getting the topmost frame should be
  *             # treated as optional).
- *             pydev_log.info(             # <<<<<<<<<<<<<<
  *                 'Unable to get topmost frame for thread: %s, thread.ident: %s, id(thread): %s\nCurrent frames: %s.\n'
  *                 'GEVENT_SUPPORT: %s',
  */
@@ -3138,7 +3096,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
     /* "_pydevd_bundle/pydevd_cython.pyx":129
  *                 'GEVENT_SUPPORT: %s',
  *                 thread,
- *                 thread.ident,             # <<<<<<<<<<<<<<
  *                 id(thread),
  *                 current_frames,
  */
@@ -3148,7 +3105,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
     /* "_pydevd_bundle/pydevd_cython.pyx":130
  *                 thread,
  *                 thread.ident,
- *                 id(thread),             # <<<<<<<<<<<<<<
  *                 current_frames,
  *                 SUPPORT_GEVENT,
  */
@@ -3158,7 +3114,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
     /* "_pydevd_bundle/pydevd_cython.pyx":132
  *                 id(thread),
  *                 current_frames,
- *                 SUPPORT_GEVENT,             # <<<<<<<<<<<<<<
  *             )
  * 
  */
@@ -3232,7 +3187,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
     /* "_pydevd_bundle/pydevd_cython.pyx":122
  *         current_frames = _current_frames()
  *         topmost_frame = current_frames.get(thread.ident)
- *         if topmost_frame is None:             # <<<<<<<<<<<<<<
  *             # Note: this is expected for dummy threads (so, getting the topmost frame should be
  *             # treated as optional).
  */
@@ -3241,7 +3195,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "_pydevd_bundle/pydevd_cython.pyx":135
  *             )
  * 
- *         return topmost_frame             # <<<<<<<<<<<<<<
  * 
  *     def __str__(self):
  */
@@ -3253,7 +3206,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "_pydevd_bundle/pydevd_cython.pyx":113
  *         self.pydev_use_scoped_step_frame = False
  * 
- *     def get_topmost_frame(self, thread):             # <<<<<<<<<<<<<<
  *         '''
  *         Gets the topmost frame for the given thread. Note that it may be None
  */
@@ -3280,7 +3232,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
 /* "_pydevd_bundle/pydevd_cython.pyx":137
  *         return topmost_frame
  * 
- *     def __str__(self):             # <<<<<<<<<<<<<<
  *         return 'State:%s Stop:%s Cmd: %s Kill:%s' % (
  *             self.pydev_state, self.pydev_step_stop, self.pydev_step_cmd, self.pydev_notify_kill)
  */
@@ -3313,7 +3264,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "_pydevd_bundle/pydevd_cython.pyx":138
  * 
  *     def __str__(self):
- *         return 'State:%s Stop:%s Cmd: %s Kill:%s' % (             # <<<<<<<<<<<<<<
  *             self.pydev_state, self.pydev_step_stop, self.pydev_step_cmd, self.pydev_notify_kill)
  * 
  */
@@ -3322,7 +3272,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "_pydevd_bundle/pydevd_cython.pyx":139
  *     def __str__(self):
  *         return 'State:%s Stop:%s Cmd: %s Kill:%s' % (
- *             self.pydev_state, self.pydev_step_stop, self.pydev_step_cmd, self.pydev_notify_kill)             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -3350,7 +3299,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "_pydevd_bundle/pydevd_cython.pyx":138
  * 
  *     def __str__(self):
- *         return 'State:%s Stop:%s Cmd: %s Kill:%s' % (             # <<<<<<<<<<<<<<
  *             self.pydev_state, self.pydev_step_stop, self.pydev_step_cmd, self.pydev_notify_kill)
  * 
  */
@@ -3364,7 +3312,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "_pydevd_bundle/pydevd_cython.pyx":137
  *         return topmost_frame
  * 
- *     def __str__(self):             # <<<<<<<<<<<<<<
  *         return 'State:%s Stop:%s Cmd: %s Kill:%s' % (
  *             self.pydev_state, self.pydev_step_stop, self.pydev_step_cmd, self.pydev_notify_kill)
  */
@@ -3385,7 +3332,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
 
 /* "_pydevd_bundle/pydevd_cython.pxd":2
  * cdef class PyDBAdditionalThreadInfo:
- *     cdef public int pydev_state             # <<<<<<<<<<<<<<
  *     cdef public object pydev_step_stop # Actually, it's a frame or None
  *     cdef public int pydev_original_step_cmd
  */
@@ -3467,7 +3413,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":3
  * cdef class PyDBAdditionalThreadInfo:
  *     cdef public int pydev_state
- *     cdef public object pydev_step_stop # Actually, it's a frame or None             # <<<<<<<<<<<<<<
  *     cdef public int pydev_original_step_cmd
  *     cdef public int pydev_step_cmd
  */
@@ -3562,7 +3507,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":4
  *     cdef public int pydev_state
  *     cdef public object pydev_step_stop # Actually, it's a frame or None
- *     cdef public int pydev_original_step_cmd             # <<<<<<<<<<<<<<
  *     cdef public int pydev_step_cmd
  *     cdef public bint pydev_notify_kill
  */
@@ -3644,7 +3588,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":5
  *     cdef public object pydev_step_stop # Actually, it's a frame or None
  *     cdef public int pydev_original_step_cmd
- *     cdef public int pydev_step_cmd             # <<<<<<<<<<<<<<
  *     cdef public bint pydev_notify_kill
  *     cdef public object pydev_smart_step_stop # Actually, it's a frame or None
  */
@@ -3726,7 +3669,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":6
  *     cdef public int pydev_original_step_cmd
  *     cdef public int pydev_step_cmd
- *     cdef public bint pydev_notify_kill             # <<<<<<<<<<<<<<
  *     cdef public object pydev_smart_step_stop # Actually, it's a frame or None
  *     cdef public bint pydev_django_resolve_frame
  */
@@ -3808,7 +3750,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":7
  *     cdef public int pydev_step_cmd
  *     cdef public bint pydev_notify_kill
- *     cdef public object pydev_smart_step_stop # Actually, it's a frame or None             # <<<<<<<<<<<<<<
  *     cdef public bint pydev_django_resolve_frame
  *     cdef public object pydev_call_from_jinja2
  */
@@ -3903,7 +3844,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":8
  *     cdef public bint pydev_notify_kill
  *     cdef public object pydev_smart_step_stop # Actually, it's a frame or None
- *     cdef public bint pydev_django_resolve_frame             # <<<<<<<<<<<<<<
  *     cdef public object pydev_call_from_jinja2
  *     cdef public object pydev_call_inside_jinja2
  */
@@ -3985,7 +3925,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":9
  *     cdef public object pydev_smart_step_stop # Actually, it's a frame or None
  *     cdef public bint pydev_django_resolve_frame
- *     cdef public object pydev_call_from_jinja2             # <<<<<<<<<<<<<<
  *     cdef public object pydev_call_inside_jinja2
  *     cdef public int is_tracing
  */
@@ -4080,7 +4019,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":10
  *     cdef public bint pydev_django_resolve_frame
  *     cdef public object pydev_call_from_jinja2
- *     cdef public object pydev_call_inside_jinja2             # <<<<<<<<<<<<<<
  *     cdef public int is_tracing
  *     cdef public tuple conditional_breakpoint_exception
  */
@@ -4175,7 +4113,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":11
  *     cdef public object pydev_call_from_jinja2
  *     cdef public object pydev_call_inside_jinja2
- *     cdef public int is_tracing             # <<<<<<<<<<<<<<
  *     cdef public tuple conditional_breakpoint_exception
  *     cdef public str pydev_message
  */
@@ -4257,7 +4194,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":12
  *     cdef public object pydev_call_inside_jinja2
  *     cdef public int is_tracing
- *     cdef public tuple conditional_breakpoint_exception             # <<<<<<<<<<<<<<
  *     cdef public str pydev_message
  *     cdef public int suspend_type
  */
@@ -4365,7 +4301,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":13
  *     cdef public int is_tracing
  *     cdef public tuple conditional_breakpoint_exception
- *     cdef public str pydev_message             # <<<<<<<<<<<<<<
  *     cdef public int suspend_type
  *     cdef public int pydev_next_line
  */
@@ -4473,7 +4408,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":14
  *     cdef public tuple conditional_breakpoint_exception
  *     cdef public str pydev_message
- *     cdef public int suspend_type             # <<<<<<<<<<<<<<
  *     cdef public int pydev_next_line
  *     cdef public str pydev_func_name
  */
@@ -4555,7 +4489,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":15
  *     cdef public str pydev_message
  *     cdef public int suspend_type
- *     cdef public int pydev_next_line             # <<<<<<<<<<<<<<
  *     cdef public str pydev_func_name
  *     cdef public bint suspended_at_unhandled
  */
@@ -4637,7 +4570,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":16
  *     cdef public int suspend_type
  *     cdef public int pydev_next_line
- *     cdef public str pydev_func_name             # <<<<<<<<<<<<<<
  *     cdef public bint suspended_at_unhandled
  *     cdef public str trace_suspend_type
  */
@@ -4745,7 +4677,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":17
  *     cdef public int pydev_next_line
  *     cdef public str pydev_func_name
- *     cdef public bint suspended_at_unhandled             # <<<<<<<<<<<<<<
  *     cdef public str trace_suspend_type
  *     cdef public object top_level_thread_tracer_no_back_frames
  */
@@ -4827,7 +4758,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":18
  *     cdef public str pydev_func_name
  *     cdef public bint suspended_at_unhandled
- *     cdef public str trace_suspend_type             # <<<<<<<<<<<<<<
  *     cdef public object top_level_thread_tracer_no_back_frames
  *     cdef public object top_level_thread_tracer_unhandled
  */
@@ -4935,7 +4865,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":19
  *     cdef public bint suspended_at_unhandled
  *     cdef public str trace_suspend_type
- *     cdef public object top_level_thread_tracer_no_back_frames             # <<<<<<<<<<<<<<
  *     cdef public object top_level_thread_tracer_unhandled
  *     cdef public object thread_tracer
  */
@@ -5030,7 +4959,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":20
  *     cdef public str trace_suspend_type
  *     cdef public object top_level_thread_tracer_no_back_frames
- *     cdef public object top_level_thread_tracer_unhandled             # <<<<<<<<<<<<<<
  *     cdef public object thread_tracer
  *     cdef public object step_in_initial_location
  */
@@ -5125,7 +5053,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":21
  *     cdef public object top_level_thread_tracer_no_back_frames
  *     cdef public object top_level_thread_tracer_unhandled
- *     cdef public object thread_tracer             # <<<<<<<<<<<<<<
  *     cdef public object step_in_initial_location
  *     cdef public int pydev_smart_parent_offset
  */
@@ -5220,7 +5147,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":22
  *     cdef public object top_level_thread_tracer_unhandled
  *     cdef public object thread_tracer
- *     cdef public object step_in_initial_location             # <<<<<<<<<<<<<<
  *     cdef public int pydev_smart_parent_offset
  *     cdef public int pydev_smart_child_offset
  */
@@ -5315,7 +5241,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":23
  *     cdef public object thread_tracer
  *     cdef public object step_in_initial_location
- *     cdef public int pydev_smart_parent_offset             # <<<<<<<<<<<<<<
  *     cdef public int pydev_smart_child_offset
  *     cdef public tuple pydev_smart_step_into_variants
  */
@@ -5397,7 +5322,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":24
  *     cdef public object step_in_initial_location
  *     cdef public int pydev_smart_parent_offset
- *     cdef public int pydev_smart_child_offset             # <<<<<<<<<<<<<<
  *     cdef public tuple pydev_smart_step_into_variants
  *     cdef public dict target_id_to_smart_step_into_variant
  */
@@ -5479,7 +5403,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":25
  *     cdef public int pydev_smart_parent_offset
  *     cdef public int pydev_smart_child_offset
- *     cdef public tuple pydev_smart_step_into_variants             # <<<<<<<<<<<<<<
  *     cdef public dict target_id_to_smart_step_into_variant
  *     cdef public bint pydev_use_scoped_step_frame
  */
@@ -5587,7 +5510,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":26
  *     cdef public int pydev_smart_child_offset
  *     cdef public tuple pydev_smart_step_into_variants
- *     cdef public dict target_id_to_smart_step_into_variant             # <<<<<<<<<<<<<<
  *     cdef public bint pydev_use_scoped_step_frame
  */
 
@@ -5694,7 +5616,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 /* "_pydevd_bundle/pydevd_cython.pxd":27
  *     cdef public tuple pydev_smart_step_into_variants
  *     cdef public dict target_id_to_smart_step_into_variant
- *     cdef public bint pydev_use_scoped_step_frame             # <<<<<<<<<<<<<<
  */
 
 /* Python wrapper */
@@ -5772,7 +5693,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThreadInfo_
 }
 
 /* "(tree fragment)":1
- * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     cdef tuple state
  *     cdef object _dict
  */
@@ -5820,7 +5740,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self.conditional_breakpoint_exception, self.is_tracing, self.pydev_call_from_jinja2, self.pydev_call_inside_jinja2, self.pydev_django_resolve_frame, self.pydev_func_name, self.pydev_message, self.pydev_next_line, self.pydev_notify_kill, self.pydev_original_step_cmd, self.pydev_smart_child_offset, self.pydev_smart_parent_offset, self.pydev_smart_step_into_variants, self.pydev_smart_step_stop, self.pydev_state, self.pydev_step_cmd, self.pydev_step_stop, self.pydev_use_scoped_step_frame, self.step_in_initial_location, self.suspend_type, self.suspended_at_unhandled, self.target_id_to_smart_step_into_variant, self.thread_tracer, self.top_level_thread_tracer_no_back_frames, self.top_level_thread_tracer_unhandled, self.trace_suspend_type)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
@@ -5934,7 +5853,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "(tree fragment)":6
  *     cdef bint use_setstate
  *     state = (self.conditional_breakpoint_exception, self.is_tracing, self.pydev_call_from_jinja2, self.pydev_call_inside_jinja2, self.pydev_django_resolve_frame, self.pydev_func_name, self.pydev_message, self.pydev_next_line, self.pydev_notify_kill, self.pydev_original_step_cmd, self.pydev_smart_child_offset, self.pydev_smart_parent_offset, self.pydev_smart_step_into_variants, self.pydev_smart_step_stop, self.pydev_state, self.pydev_step_cmd, self.pydev_step_stop, self.pydev_use_scoped_step_frame, self.step_in_initial_location, self.suspend_type, self.suspended_at_unhandled, self.target_id_to_smart_step_into_variant, self.thread_tracer, self.top_level_thread_tracer_no_back_frames, self.top_level_thread_tracer_unhandled, self.trace_suspend_type)
- *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
  */
@@ -5946,7 +5864,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "(tree fragment)":7
  *     state = (self.conditional_breakpoint_exception, self.is_tracing, self.pydev_call_from_jinja2, self.pydev_call_inside_jinja2, self.pydev_django_resolve_frame, self.pydev_func_name, self.pydev_message, self.pydev_next_line, self.pydev_notify_kill, self.pydev_original_step_cmd, self.pydev_smart_child_offset, self.pydev_smart_parent_offset, self.pydev_smart_step_into_variants, self.pydev_smart_step_stop, self.pydev_state, self.pydev_step_cmd, self.pydev_step_stop, self.pydev_use_scoped_step_frame, self.step_in_initial_location, self.suspend_type, self.suspended_at_unhandled, self.target_id_to_smart_step_into_variant, self.thread_tracer, self.top_level_thread_tracer_no_back_frames, self.top_level_thread_tracer_unhandled, self.trace_suspend_type)
  *     _dict = getattr(self, '__dict__', None)
- *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
  *         use_setstate = True
  */
@@ -5957,7 +5874,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
     /* "(tree fragment)":8
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
- *         state += (_dict,)             # <<<<<<<<<<<<<<
  *         use_setstate = True
  *     else:
  */
@@ -5975,7 +5891,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
     /* "(tree fragment)":9
  *     if _dict is not None:
  *         state += (_dict,)
- *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
  *         use_setstate = self.conditional_breakpoint_exception is not None or self.pydev_call_from_jinja2 is not None or self.pydev_call_inside_jinja2 is not None or self.pydev_func_name is not None or self.pydev_message is not None or self.pydev_smart_step_into_variants is not None or self.pydev_smart_step_stop is not None or self.pydev_step_stop is not None or self.step_in_initial_location is not None or self.target_id_to_smart_step_into_variant is not None or self.thread_tracer is not None or self.top_level_thread_tracer_no_back_frames is not None or self.top_level_thread_tracer_unhandled is not None or self.trace_suspend_type is not None
  */
@@ -5984,7 +5899,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
     /* "(tree fragment)":7
  *     state = (self.conditional_breakpoint_exception, self.is_tracing, self.pydev_call_from_jinja2, self.pydev_call_inside_jinja2, self.pydev_django_resolve_frame, self.pydev_func_name, self.pydev_message, self.pydev_next_line, self.pydev_notify_kill, self.pydev_original_step_cmd, self.pydev_smart_child_offset, self.pydev_smart_parent_offset, self.pydev_smart_step_into_variants, self.pydev_smart_step_stop, self.pydev_state, self.pydev_step_cmd, self.pydev_step_stop, self.pydev_use_scoped_step_frame, self.step_in_initial_location, self.suspend_type, self.suspended_at_unhandled, self.target_id_to_smart_step_into_variant, self.thread_tracer, self.top_level_thread_tracer_no_back_frames, self.top_level_thread_tracer_unhandled, self.trace_suspend_type)
  *     _dict = getattr(self, '__dict__', None)
- *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
  *         use_setstate = True
  */
@@ -5994,7 +5908,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self.conditional_breakpoint_exception is not None or self.pydev_call_from_jinja2 is not None or self.pydev_call_inside_jinja2 is not None or self.pydev_func_name is not None or self.pydev_message is not None or self.pydev_smart_step_into_variants is not None or self.pydev_smart_step_stop is not None or self.pydev_step_stop is not None or self.step_in_initial_location is not None or self.target_id_to_smart_step_into_variant is not None or self.thread_tracer is not None or self.top_level_thread_tracer_no_back_frames is not None or self.top_level_thread_tracer_unhandled is not None or self.trace_suspend_type is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
  *         return __pyx_unpickle_PyDBAdditionalThreadInfo, (type(self), 0x75b3b02, None), state
  */
@@ -6101,7 +6014,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "(tree fragment)":12
  *     else:
  *         use_setstate = self.conditional_breakpoint_exception is not None or self.pydev_call_from_jinja2 is not None or self.pydev_call_inside_jinja2 is not None or self.pydev_func_name is not None or self.pydev_message is not None or self.pydev_smart_step_into_variants is not None or self.pydev_smart_step_stop is not None or self.pydev_step_stop is not None or self.step_in_initial_location is not None or self.target_id_to_smart_step_into_variant is not None or self.thread_tracer is not None or self.top_level_thread_tracer_no_back_frames is not None or self.top_level_thread_tracer_unhandled is not None or self.trace_suspend_type is not None
- *     if use_setstate:             # <<<<<<<<<<<<<<
  *         return __pyx_unpickle_PyDBAdditionalThreadInfo, (type(self), 0x75b3b02, None), state
  *     else:
  */
@@ -6111,7 +6023,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
     /* "(tree fragment)":13
  *         use_setstate = self.conditional_breakpoint_exception is not None or self.pydev_call_from_jinja2 is not None or self.pydev_call_inside_jinja2 is not None or self.pydev_func_name is not None or self.pydev_message is not None or self.pydev_smart_step_into_variants is not None or self.pydev_smart_step_stop is not None or self.pydev_step_stop is not None or self.step_in_initial_location is not None or self.target_id_to_smart_step_into_variant is not None or self.thread_tracer is not None or self.top_level_thread_tracer_no_back_frames is not None or self.top_level_thread_tracer_unhandled is not None or self.trace_suspend_type is not None
  *     if use_setstate:
- *         return __pyx_unpickle_PyDBAdditionalThreadInfo, (type(self), 0x75b3b02, None), state             # <<<<<<<<<<<<<<
  *     else:
  *         return __pyx_unpickle_PyDBAdditionalThreadInfo, (type(self), 0x75b3b02, state)
  */
@@ -6147,7 +6058,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
     /* "(tree fragment)":12
  *     else:
  *         use_setstate = self.conditional_breakpoint_exception is not None or self.pydev_call_from_jinja2 is not None or self.pydev_call_inside_jinja2 is not None or self.pydev_func_name is not None or self.pydev_message is not None or self.pydev_smart_step_into_variants is not None or self.pydev_smart_step_stop is not None or self.pydev_step_stop is not None or self.step_in_initial_location is not None or self.target_id_to_smart_step_into_variant is not None or self.thread_tracer is not None or self.top_level_thread_tracer_no_back_frames is not None or self.top_level_thread_tracer_unhandled is not None or self.trace_suspend_type is not None
- *     if use_setstate:             # <<<<<<<<<<<<<<
  *         return __pyx_unpickle_PyDBAdditionalThreadInfo, (type(self), 0x75b3b02, None), state
  *     else:
  */
@@ -6156,7 +6066,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "(tree fragment)":15
  *         return __pyx_unpickle_PyDBAdditionalThreadInfo, (type(self), 0x75b3b02, None), state
  *     else:
- *         return __pyx_unpickle_PyDBAdditionalThreadInfo, (type(self), 0x75b3b02, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(self, __pyx_state)
  */
@@ -6189,7 +6098,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   }
 
   /* "(tree fragment)":1
- * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     cdef tuple state
  *     cdef object _dict
  */
@@ -6222,7 +6130,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
 /* "(tree fragment)":16
  *     else:
  *         return __pyx_unpickle_PyDBAdditionalThreadInfo, (type(self), 0x75b3b02, state)
- * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(self, __pyx_state)
  */
 
@@ -6251,7 +6158,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "(tree fragment)":17
  *         return __pyx_unpickle_PyDBAdditionalThreadInfo, (type(self), 0x75b3b02, state)
  * def __setstate_cython__(self, __pyx_state):
- *     __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
   if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_v___pyx_state)->tp_name), 0))) __PYX_ERR(2, 17, __pyx_L1_error)
   __pyx_t_1 = __pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_PyDBAdditionalThreadInfo__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 17, __pyx_L1_error)
@@ -6261,7 +6167,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
   /* "(tree fragment)":16
  *     else:
  *         return __pyx_unpickle_PyDBAdditionalThreadInfo, (type(self), 0x75b3b02, state)
- * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(self, __pyx_state)
  */
 
@@ -6281,7 +6186,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24PyDBAdditionalThrea
 /* "_pydevd_bundle/pydevd_cython.pyx":145
  * 
  * 
- * def set_additional_thread_info(thread):             # <<<<<<<<<<<<<<
  *     try:
  *         additional_info = thread.additional_info
  */
@@ -6329,7 +6233,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
   /* "_pydevd_bundle/pydevd_cython.pyx":146
  * 
  * def set_additional_thread_info(thread):
- *     try:             # <<<<<<<<<<<<<<
  *         additional_info = thread.additional_info
  *         if additional_info is None:
  */
@@ -6345,7 +6248,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
       /* "_pydevd_bundle/pydevd_cython.pyx":147
  * def set_additional_thread_info(thread):
  *     try:
- *         additional_info = thread.additional_info             # <<<<<<<<<<<<<<
  *         if additional_info is None:
  *             raise AttributeError()
  */
@@ -6357,7 +6259,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
       /* "_pydevd_bundle/pydevd_cython.pyx":148
  *     try:
  *         additional_info = thread.additional_info
- *         if additional_info is None:             # <<<<<<<<<<<<<<
  *             raise AttributeError()
  *     except:
  */
@@ -6368,7 +6269,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
         /* "_pydevd_bundle/pydevd_cython.pyx":149
  *         additional_info = thread.additional_info
  *         if additional_info is None:
- *             raise AttributeError()             # <<<<<<<<<<<<<<
  *     except:
  *         with _set_additional_thread_info_lock:
  */
@@ -6381,7 +6281,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
         /* "_pydevd_bundle/pydevd_cython.pyx":148
  *     try:
  *         additional_info = thread.additional_info
- *         if additional_info is None:             # <<<<<<<<<<<<<<
  *             raise AttributeError()
  *     except:
  */
@@ -6390,7 +6289,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
       /* "_pydevd_bundle/pydevd_cython.pyx":146
  * 
  * def set_additional_thread_info(thread):
- *     try:             # <<<<<<<<<<<<<<
  *         additional_info = thread.additional_info
  *         if additional_info is None:
  */
@@ -6405,7 +6303,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
     /* "_pydevd_bundle/pydevd_cython.pyx":150
  *         if additional_info is None:
  *             raise AttributeError()
- *     except:             # <<<<<<<<<<<<<<
  *         with _set_additional_thread_info_lock:
  *             # If it's not there, set it within a lock to avoid any racing
  */
@@ -6419,7 +6316,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
       /* "_pydevd_bundle/pydevd_cython.pyx":151
  *             raise AttributeError()
  *     except:
- *         with _set_additional_thread_info_lock:             # <<<<<<<<<<<<<<
  *             # If it's not there, set it within a lock to avoid any racing
  *             # conditions.
  */
@@ -6460,7 +6356,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
               /* "_pydevd_bundle/pydevd_cython.pyx":154
  *             # If it's not there, set it within a lock to avoid any racing
  *             # conditions.
- *             additional_info = getattr(thread, 'additional_info', None)             # <<<<<<<<<<<<<<
  *             if additional_info is None:
  *                 additional_info = PyDBAdditionalThreadInfo()
  */
@@ -6472,7 +6367,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
               /* "_pydevd_bundle/pydevd_cython.pyx":155
  *             # conditions.
  *             additional_info = getattr(thread, 'additional_info', None)
- *             if additional_info is None:             # <<<<<<<<<<<<<<
  *                 additional_info = PyDBAdditionalThreadInfo()
  *             thread.additional_info = additional_info
  */
@@ -6483,7 +6377,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
                 /* "_pydevd_bundle/pydevd_cython.pyx":156
  *             additional_info = getattr(thread, 'additional_info', None)
  *             if additional_info is None:
- *                 additional_info = PyDBAdditionalThreadInfo()             # <<<<<<<<<<<<<<
  *             thread.additional_info = additional_info
  * 
  */
@@ -6495,7 +6388,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
                 /* "_pydevd_bundle/pydevd_cython.pyx":155
  *             # conditions.
  *             additional_info = getattr(thread, 'additional_info', None)
- *             if additional_info is None:             # <<<<<<<<<<<<<<
  *                 additional_info = PyDBAdditionalThreadInfo()
  *             thread.additional_info = additional_info
  */
@@ -6504,7 +6396,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
               /* "_pydevd_bundle/pydevd_cython.pyx":157
  *             if additional_info is None:
  *                 additional_info = PyDBAdditionalThreadInfo()
- *             thread.additional_info = additional_info             # <<<<<<<<<<<<<<
  * 
  *     return additional_info
  */
@@ -6513,7 +6404,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
               /* "_pydevd_bundle/pydevd_cython.pyx":151
  *             raise AttributeError()
  *     except:
- *         with _set_additional_thread_info_lock:             # <<<<<<<<<<<<<<
  *             # If it's not there, set it within a lock to avoid any racing
  *             # conditions.
  */
@@ -6600,7 +6490,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
     /* "_pydevd_bundle/pydevd_cython.pyx":146
  * 
  * def set_additional_thread_info(thread):
- *     try:             # <<<<<<<<<<<<<<
  *         additional_info = thread.additional_info
  *         if additional_info is None:
  */
@@ -6620,7 +6509,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
   /* "_pydevd_bundle/pydevd_cython.pyx":159
  *             thread.additional_info = additional_info
  * 
- *     return additional_info             # <<<<<<<<<<<<<<
  * import linecache
  * import os.path
  */
@@ -6633,7 +6521,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
   /* "_pydevd_bundle/pydevd_cython.pyx":145
  * 
  * 
- * def set_additional_thread_info(thread):             # <<<<<<<<<<<<<<
  *     try:
  *         additional_info = thread.additional_info
  */
@@ -6659,7 +6546,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_set_additional_thread
 /* "_pydevd_bundle/pydevd_cython.pyx":177
  * except ImportError:
  * 
- *     def get_smart_step_into_variant_from_frame_offset(*args, **kwargs):             # <<<<<<<<<<<<<<
  *         return None
  * 
  */
@@ -6693,7 +6579,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_2get_smart_step_into_
   /* "_pydevd_bundle/pydevd_cython.pyx":178
  * 
  *     def get_smart_step_into_variant_from_frame_offset(*args, **kwargs):
- *         return None             # <<<<<<<<<<<<<<
  * 
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  */
@@ -6704,7 +6589,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_2get_smart_step_into_
   /* "_pydevd_bundle/pydevd_cython.pyx":177
  * except ImportError:
  * 
- *     def get_smart_step_into_variant_from_frame_offset(*args, **kwargs):             # <<<<<<<<<<<<<<
  *         return None
  * 
  */
@@ -6719,7 +6603,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_2get_smart_step_into_
 /* "_pydevd_bundle/pydevd_cython.pyx":213
  * 
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- * cdef is_unhandled_exception(container_obj, py_db, frame, int last_raise_line, set raise_lines):             # <<<<<<<<<<<<<<
  * # ELSE
  * # def is_unhandled_exception(container_obj, py_db, frame, last_raise_line, raise_lines):
  */
@@ -6749,7 +6632,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
   /* "_pydevd_bundle/pydevd_cython.pyx":217
  * # def is_unhandled_exception(container_obj, py_db, frame, last_raise_line, raise_lines):
  * # ENDIF
- *     if frame.f_lineno in raise_lines:             # <<<<<<<<<<<<<<
  *         return True
  * 
  */
@@ -6767,7 +6649,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
     /* "_pydevd_bundle/pydevd_cython.pyx":218
  * # ENDIF
  *     if frame.f_lineno in raise_lines:
- *         return True             # <<<<<<<<<<<<<<
  * 
  *     else:
  */
@@ -6779,7 +6660,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
     /* "_pydevd_bundle/pydevd_cython.pyx":217
  * # def is_unhandled_exception(container_obj, py_db, frame, last_raise_line, raise_lines):
  * # ENDIF
- *     if frame.f_lineno in raise_lines:             # <<<<<<<<<<<<<<
  *         return True
  * 
  */
@@ -6788,7 +6668,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
   /* "_pydevd_bundle/pydevd_cython.pyx":221
  * 
  *     else:
- *         try_except_infos = container_obj.try_except_infos             # <<<<<<<<<<<<<<
  *         if try_except_infos is None:
  *             container_obj.try_except_infos = try_except_infos = py_db.collect_try_except_info(frame.f_code)
  */
@@ -6801,7 +6680,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
     /* "_pydevd_bundle/pydevd_cython.pyx":222
  *     else:
  *         try_except_infos = container_obj.try_except_infos
- *         if try_except_infos is None:             # <<<<<<<<<<<<<<
  *             container_obj.try_except_infos = try_except_infos = py_db.collect_try_except_info(frame.f_code)
  * 
  */
@@ -6812,7 +6690,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
       /* "_pydevd_bundle/pydevd_cython.pyx":223
  *         try_except_infos = container_obj.try_except_infos
  *         if try_except_infos is None:
- *             container_obj.try_except_infos = try_except_infos = py_db.collect_try_except_info(frame.f_code)             # <<<<<<<<<<<<<<
  * 
  *         if not try_except_infos:
  */
@@ -6844,7 +6721,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
       /* "_pydevd_bundle/pydevd_cython.pyx":222
  *     else:
  *         try_except_infos = container_obj.try_except_infos
- *         if try_except_infos is None:             # <<<<<<<<<<<<<<
  *             container_obj.try_except_infos = try_except_infos = py_db.collect_try_except_info(frame.f_code)
  * 
  */
@@ -6853,7 +6729,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
     /* "_pydevd_bundle/pydevd_cython.pyx":225
  *             container_obj.try_except_infos = try_except_infos = py_db.collect_try_except_info(frame.f_code)
  * 
- *         if not try_except_infos:             # <<<<<<<<<<<<<<
  *             # Consider the last exception as unhandled because there's no try..except in it.
  *             return True
  */
@@ -6864,7 +6739,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
       /* "_pydevd_bundle/pydevd_cython.pyx":227
  *         if not try_except_infos:
  *             # Consider the last exception as unhandled because there's no try..except in it.
- *             return True             # <<<<<<<<<<<<<<
  *         else:
  *             # Now, consider only the try..except for the raise
  */
@@ -6876,7 +6750,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
       /* "_pydevd_bundle/pydevd_cython.pyx":225
  *             container_obj.try_except_infos = try_except_infos = py_db.collect_try_except_info(frame.f_code)
  * 
- *         if not try_except_infos:             # <<<<<<<<<<<<<<
  *             # Consider the last exception as unhandled because there's no try..except in it.
  *             return True
  */
@@ -6885,7 +6758,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
     /* "_pydevd_bundle/pydevd_cython.pyx":230
  *         else:
  *             # Now, consider only the try..except for the raise
- *             valid_try_except_infos = []             # <<<<<<<<<<<<<<
  *             for try_except_info in try_except_infos:
  *                 if try_except_info.is_line_in_try_block(last_raise_line):
  */
@@ -6898,7 +6770,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
       /* "_pydevd_bundle/pydevd_cython.pyx":231
  *             # Now, consider only the try..except for the raise
  *             valid_try_except_infos = []
- *             for try_except_info in try_except_infos:             # <<<<<<<<<<<<<<
  *                 if try_except_info.is_line_in_try_block(last_raise_line):
  *                     valid_try_except_infos.append(try_except_info)
  */
@@ -6947,7 +6818,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
         /* "_pydevd_bundle/pydevd_cython.pyx":232
  *             valid_try_except_infos = []
  *             for try_except_info in try_except_infos:
- *                 if try_except_info.is_line_in_try_block(last_raise_line):             # <<<<<<<<<<<<<<
  *                     valid_try_except_infos.append(try_except_info)
  * 
  */
@@ -6978,7 +6848,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
           /* "_pydevd_bundle/pydevd_cython.pyx":233
  *             for try_except_info in try_except_infos:
  *                 if try_except_info.is_line_in_try_block(last_raise_line):
- *                     valid_try_except_infos.append(try_except_info)             # <<<<<<<<<<<<<<
  * 
  *             if not valid_try_except_infos:
  */
@@ -6987,7 +6856,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
           /* "_pydevd_bundle/pydevd_cython.pyx":232
  *             valid_try_except_infos = []
  *             for try_except_info in try_except_infos:
- *                 if try_except_info.is_line_in_try_block(last_raise_line):             # <<<<<<<<<<<<<<
  *                     valid_try_except_infos.append(try_except_info)
  * 
  */
@@ -6996,7 +6864,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
         /* "_pydevd_bundle/pydevd_cython.pyx":231
  *             # Now, consider only the try..except for the raise
  *             valid_try_except_infos = []
- *             for try_except_info in try_except_infos:             # <<<<<<<<<<<<<<
  *                 if try_except_info.is_line_in_try_block(last_raise_line):
  *                     valid_try_except_infos.append(try_except_info)
  */
@@ -7006,7 +6873,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
       /* "_pydevd_bundle/pydevd_cython.pyx":235
  *                     valid_try_except_infos.append(try_except_info)
  * 
- *             if not valid_try_except_infos:             # <<<<<<<<<<<<<<
  *                 return True
  * 
  */
@@ -7017,7 +6883,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
         /* "_pydevd_bundle/pydevd_cython.pyx":236
  * 
  *             if not valid_try_except_infos:
- *                 return True             # <<<<<<<<<<<<<<
  * 
  *             else:
  */
@@ -7029,7 +6894,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
         /* "_pydevd_bundle/pydevd_cython.pyx":235
  *                     valid_try_except_infos.append(try_except_info)
  * 
- *             if not valid_try_except_infos:             # <<<<<<<<<<<<<<
  *                 return True
  * 
  */
@@ -7038,7 +6902,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
       /* "_pydevd_bundle/pydevd_cython.pyx":243
  *                 # where one try..except is inside the other with only a raise
  *                 # and it's gotten in the except line.
- *                 for try_except_info in try_except_infos:             # <<<<<<<<<<<<<<
  *                     if try_except_info.is_line_in_except_block(frame.f_lineno):
  *                         if (
  */
@@ -7088,7 +6951,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
           /* "_pydevd_bundle/pydevd_cython.pyx":244
  *                 # and it's gotten in the except line.
  *                 for try_except_info in try_except_infos:
- *                     if try_except_info.is_line_in_except_block(frame.f_lineno):             # <<<<<<<<<<<<<<
  *                         if (
  *                                 frame.f_lineno == try_except_info.except_line or
  */
@@ -7119,7 +6981,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
             /* "_pydevd_bundle/pydevd_cython.pyx":246
  *                     if try_except_info.is_line_in_except_block(frame.f_lineno):
  *                         if (
- *                                 frame.f_lineno == try_except_info.except_line or             # <<<<<<<<<<<<<<
  *                                 frame.f_lineno in try_except_info.raise_lines_in_except
  *                             ):
  */
@@ -7141,7 +7002,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
             /* "_pydevd_bundle/pydevd_cython.pyx":247
  *                         if (
  *                                 frame.f_lineno == try_except_info.except_line or
- *                                 frame.f_lineno in try_except_info.raise_lines_in_except             # <<<<<<<<<<<<<<
  *                             ):
  *                             # In a raise inside a try..except block or some except which doesn't
  */
@@ -7159,7 +7019,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
             /* "_pydevd_bundle/pydevd_cython.pyx":245
  *                 for try_except_info in try_except_infos:
  *                     if try_except_info.is_line_in_except_block(frame.f_lineno):
- *                         if (             # <<<<<<<<<<<<<<
  *                                 frame.f_lineno == try_except_info.except_line or
  *                                 frame.f_lineno in try_except_info.raise_lines_in_except
  */
@@ -7168,7 +7027,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
               /* "_pydevd_bundle/pydevd_cython.pyx":251
  *                             # In a raise inside a try..except block or some except which doesn't
  *                             # match the raised exception.
- *                             return True             # <<<<<<<<<<<<<<
  *     return False
  * 
  */
@@ -7181,7 +7039,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
               /* "_pydevd_bundle/pydevd_cython.pyx":245
  *                 for try_except_info in try_except_infos:
  *                     if try_except_info.is_line_in_except_block(frame.f_lineno):
- *                         if (             # <<<<<<<<<<<<<<
  *                                 frame.f_lineno == try_except_info.except_line or
  *                                 frame.f_lineno in try_except_info.raise_lines_in_except
  */
@@ -7190,7 +7047,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
             /* "_pydevd_bundle/pydevd_cython.pyx":244
  *                 # and it's gotten in the except line.
  *                 for try_except_info in try_except_infos:
- *                     if try_except_info.is_line_in_except_block(frame.f_lineno):             # <<<<<<<<<<<<<<
  *                         if (
  *                                 frame.f_lineno == try_except_info.except_line or
  */
@@ -7199,7 +7055,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
           /* "_pydevd_bundle/pydevd_cython.pyx":243
  *                 # where one try..except is inside the other with only a raise
  *                 # and it's gotten in the except line.
- *                 for try_except_info in try_except_infos:             # <<<<<<<<<<<<<<
  *                     if try_except_info.is_line_in_except_block(frame.f_lineno):
  *                         if (
  */
@@ -7212,7 +7067,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
   /* "_pydevd_bundle/pydevd_cython.pyx":252
  *                             # match the raised exception.
  *                             return True
- *     return False             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -7224,7 +7078,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
   /* "_pydevd_bundle/pydevd_cython.pyx":213
  * 
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- * cdef is_unhandled_exception(container_obj, py_db, frame, int last_raise_line, set raise_lines):             # <<<<<<<<<<<<<<
  * # ELSE
  * # def is_unhandled_exception(container_obj, py_db, frame, last_raise_line, raise_lines):
  */
@@ -7250,7 +7103,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_is_unhandled_exception
 /* "_pydevd_bundle/pydevd_cython.pyx":258
  * cdef class _TryExceptContainerObj:
  *     cdef public list try_except_infos;
- *     def __init__(self):             # <<<<<<<<<<<<<<
  *         self.try_except_infos = None
  * # ELSE
  */
@@ -7279,7 +7131,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainerObj___
   /* "_pydevd_bundle/pydevd_cython.pyx":259
  *     cdef public list try_except_infos;
  *     def __init__(self):
- *         self.try_except_infos = None             # <<<<<<<<<<<<<<
  * # ELSE
  * # class _TryExceptContainerObj(object):
  */
@@ -7292,7 +7143,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainerObj___
   /* "_pydevd_bundle/pydevd_cython.pyx":258
  * cdef class _TryExceptContainerObj:
  *     cdef public list try_except_infos;
- *     def __init__(self):             # <<<<<<<<<<<<<<
  *         self.try_except_infos = None
  * # ELSE
  */
@@ -7306,7 +7156,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainerObj___
 /* "_pydevd_bundle/pydevd_cython.pyx":257
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  * cdef class _TryExceptContainerObj:
- *     cdef public list try_except_infos;             # <<<<<<<<<<<<<<
  *     def __init__(self):
  *         self.try_except_infos = None
  */
@@ -7412,7 +7261,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainerObj_16
 }
 
 /* "(tree fragment)":1
- * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     cdef tuple state
  *     cdef object _dict
  */
@@ -7449,7 +7297,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainer
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self.try_except_infos,)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
@@ -7464,7 +7311,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainer
   /* "(tree fragment)":6
  *     cdef bint use_setstate
  *     state = (self.try_except_infos,)
- *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
  */
@@ -7476,7 +7322,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainer
   /* "(tree fragment)":7
  *     state = (self.try_except_infos,)
  *     _dict = getattr(self, '__dict__', None)
- *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
  *         use_setstate = True
  */
@@ -7487,7 +7332,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainer
     /* "(tree fragment)":8
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
- *         state += (_dict,)             # <<<<<<<<<<<<<<
  *         use_setstate = True
  *     else:
  */
@@ -7505,7 +7349,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainer
     /* "(tree fragment)":9
  *     if _dict is not None:
  *         state += (_dict,)
- *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
  *         use_setstate = self.try_except_infos is not None
  */
@@ -7514,7 +7357,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainer
     /* "(tree fragment)":7
  *     state = (self.try_except_infos,)
  *     _dict = getattr(self, '__dict__', None)
- *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
  *         use_setstate = True
  */
@@ -7524,7 +7366,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainer
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self.try_except_infos is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
  *         return __pyx_unpickle__TryExceptContainerObj, (type(self), 0xc8b6eb1, None), state
  */
@@ -7537,7 +7378,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainer
   /* "(tree fragment)":12
  *     else:
  *         use_setstate = self.try_except_infos is not None
- *     if use_setstate:             # <<<<<<<<<<<<<<
  *         return __pyx_unpickle__TryExceptContainerObj, (type(self), 0xc8b6eb1, None), state
  *     else:
  */
@@ -7547,7 +7387,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainer
     /* "(tree fragment)":13
  *         use_setstate = self.try_except_infos is not None
  *     if use_setstate:
- *         return __pyx_unpickle__TryExceptContainerObj, (type(self), 0xc8b6eb1, None), state             # <<<<<<<<<<<<<<
  *     else:
  *         return __pyx_unpickle__TryExceptContainerObj, (type(self), 0xc8b6eb1, state)
  */
@@ -7583,7 +7422,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainer
     /* "(tree fragment)":12
  *     else:
  *         use_setstate = self.try_except_infos is not None
- *     if use_setstate:             # <<<<<<<<<<<<<<
  *         return __pyx_unpickle__TryExceptContainerObj, (type(self), 0xc8b6eb1, None), state
  *     else:
  */
@@ -7592,7 +7430,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainer
   /* "(tree fragment)":15
  *         return __pyx_unpickle__TryExceptContainerObj, (type(self), 0xc8b6eb1, None), state
  *     else:
- *         return __pyx_unpickle__TryExceptContainerObj, (type(self), 0xc8b6eb1, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle__TryExceptContainerObj__set_state(self, __pyx_state)
  */
@@ -7625,7 +7462,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainer
   }
 
   /* "(tree fragment)":1
- * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     cdef tuple state
  *     cdef object _dict
  */
@@ -7648,7 +7484,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainer
 /* "(tree fragment)":16
  *     else:
  *         return __pyx_unpickle__TryExceptContainerObj, (type(self), 0xc8b6eb1, state)
- * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle__TryExceptContainerObj__set_state(self, __pyx_state)
  */
 
@@ -7677,7 +7512,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainer
   /* "(tree fragment)":17
  *         return __pyx_unpickle__TryExceptContainerObj, (type(self), 0xc8b6eb1, state)
  * def __setstate_cython__(self, __pyx_state):
- *     __pyx_unpickle__TryExceptContainerObj__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
   if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_v___pyx_state)->tp_name), 0))) __PYX_ERR(2, 17, __pyx_L1_error)
   __pyx_t_1 = __pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle__TryExceptContainerObj__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 17, __pyx_L1_error)
@@ -7687,7 +7521,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainer
   /* "(tree fragment)":16
  *     else:
  *         return __pyx_unpickle__TryExceptContainerObj, (type(self), 0xc8b6eb1, state)
- * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle__TryExceptContainerObj__set_state(self, __pyx_state)
  */
 
@@ -7707,7 +7540,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22_TryExceptContainer
 /* "_pydevd_bundle/pydevd_cython.pyx":294
  *     cdef int should_skip
  *     cdef object exc_info
- *     def __init__(self, tuple args):             # <<<<<<<<<<<<<<
  *         self._args = args # In the cython version we don't need to pass the frame
  *         self.should_skip = -1  # On cythonized version, put in instance.
  */
@@ -7778,7 +7610,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame___init__(struct 
   /* "_pydevd_bundle/pydevd_cython.pyx":295
  *     cdef object exc_info
  *     def __init__(self, tuple args):
- *         self._args = args # In the cython version we don't need to pass the frame             # <<<<<<<<<<<<<<
  *         self.should_skip = -1  # On cythonized version, put in instance.
  *         self.exc_info = ()
  */
@@ -7791,7 +7622,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame___init__(struct 
   /* "_pydevd_bundle/pydevd_cython.pyx":296
  *     def __init__(self, tuple args):
  *         self._args = args # In the cython version we don't need to pass the frame
- *         self.should_skip = -1  # On cythonized version, put in instance.             # <<<<<<<<<<<<<<
  *         self.exc_info = ()
  *     # ELSE
  */
@@ -7800,7 +7630,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame___init__(struct 
   /* "_pydevd_bundle/pydevd_cython.pyx":297
  *         self._args = args # In the cython version we don't need to pass the frame
  *         self.should_skip = -1  # On cythonized version, put in instance.
- *         self.exc_info = ()             # <<<<<<<<<<<<<<
  *     # ELSE
  * #     should_skip = -1  # Default value in class (put in instance on set).
  */
@@ -7813,7 +7642,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame___init__(struct 
   /* "_pydevd_bundle/pydevd_cython.pyx":294
  *     cdef int should_skip
  *     cdef object exc_info
- *     def __init__(self, tuple args):             # <<<<<<<<<<<<<<
  *         self._args = args # In the cython version we don't need to pass the frame
  *         self.should_skip = -1  # On cythonized version, put in instance.
  */
@@ -7827,7 +7655,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame___init__(struct 
 /* "_pydevd_bundle/pydevd_cython.pyx":308
  *     # ENDIF
  * 
- *     def set_suspend(self, *args, **kwargs):             # <<<<<<<<<<<<<<
  *         self._args[0].set_suspend(*args, **kwargs)
  * 
  */
@@ -7868,7 +7695,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_2set_suspe
   /* "_pydevd_bundle/pydevd_cython.pyx":309
  * 
  *     def set_suspend(self, *args, **kwargs):
- *         self._args[0].set_suspend(*args, **kwargs)             # <<<<<<<<<<<<<<
  * 
  *     def do_wait_suspend(self, *args, **kwargs):
  */
@@ -7892,7 +7718,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_2set_suspe
   /* "_pydevd_bundle/pydevd_cython.pyx":308
  *     # ENDIF
  * 
- *     def set_suspend(self, *args, **kwargs):             # <<<<<<<<<<<<<<
  *         self._args[0].set_suspend(*args, **kwargs)
  * 
  */
@@ -7915,7 +7740,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_2set_suspe
 /* "_pydevd_bundle/pydevd_cython.pyx":311
  *         self._args[0].set_suspend(*args, **kwargs)
  * 
- *     def do_wait_suspend(self, *args, **kwargs):             # <<<<<<<<<<<<<<
  *         self._args[0].do_wait_suspend(*args, **kwargs)
  * 
  */
@@ -7956,7 +7780,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_4do_wait_s
   /* "_pydevd_bundle/pydevd_cython.pyx":312
  * 
  *     def do_wait_suspend(self, *args, **kwargs):
- *         self._args[0].do_wait_suspend(*args, **kwargs)             # <<<<<<<<<<<<<<
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  */
@@ -7980,7 +7803,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_4do_wait_s
   /* "_pydevd_bundle/pydevd_cython.pyx":311
  *         self._args[0].set_suspend(*args, **kwargs)
  * 
- *     def do_wait_suspend(self, *args, **kwargs):             # <<<<<<<<<<<<<<
  *         self._args[0].do_wait_suspend(*args, **kwargs)
  * 
  */
@@ -8003,7 +7825,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_4do_wait_s
 /* "_pydevd_bundle/pydevd_cython.pyx":315
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     def trace_exception(self, frame, str event, arg):             # <<<<<<<<<<<<<<
  *         cdef bint should_stop;
  *         cdef tuple exc_info;
  */
@@ -8115,7 +7936,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
   /* "_pydevd_bundle/pydevd_cython.pyx":321
  * #     def trace_exception(self, frame, event, arg):
  *     # ENDIF
- *         if event == 'exception':             # <<<<<<<<<<<<<<
  *             should_stop, frame = self._should_stop_on_exception(frame, event, arg)
  * 
  */
@@ -8126,7 +7946,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
     /* "_pydevd_bundle/pydevd_cython.pyx":322
  *     # ENDIF
  *         if event == 'exception':
- *             should_stop, frame = self._should_stop_on_exception(frame, event, arg)             # <<<<<<<<<<<<<<
  * 
  *             if should_stop:
  */
@@ -8187,7 +8006,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
     /* "_pydevd_bundle/pydevd_cython.pyx":324
  *             should_stop, frame = self._should_stop_on_exception(frame, event, arg)
  * 
- *             if should_stop:             # <<<<<<<<<<<<<<
  *                 if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):
  *                     return self.trace_dispatch
  */
@@ -8197,7 +8015,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":325
  * 
  *             if should_stop:
- *                 if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):             # <<<<<<<<<<<<<<
  *                     return self.trace_dispatch
  * 
  */
@@ -8214,7 +8031,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":326
  *             if should_stop:
  *                 if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):
- *                     return self.trace_dispatch             # <<<<<<<<<<<<<<
  * 
  *         elif event == 'return':
  */
@@ -8228,7 +8044,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":325
  * 
  *             if should_stop:
- *                 if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):             # <<<<<<<<<<<<<<
  *                     return self.trace_dispatch
  * 
  */
@@ -8237,7 +8052,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":324
  *             should_stop, frame = self._should_stop_on_exception(frame, event, arg)
  * 
- *             if should_stop:             # <<<<<<<<<<<<<<
  *                 if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):
  *                     return self.trace_dispatch
  */
@@ -8246,7 +8060,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
     /* "_pydevd_bundle/pydevd_cython.pyx":321
  * #     def trace_exception(self, frame, event, arg):
  *     # ENDIF
- *         if event == 'exception':             # <<<<<<<<<<<<<<
  *             should_stop, frame = self._should_stop_on_exception(frame, event, arg)
  * 
  */
@@ -8256,7 +8069,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
   /* "_pydevd_bundle/pydevd_cython.pyx":328
  *                     return self.trace_dispatch
  * 
- *         elif event == 'return':             # <<<<<<<<<<<<<<
  *             exc_info = self.exc_info
  *             if exc_info and arg is None:
  */
@@ -8267,7 +8079,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
     /* "_pydevd_bundle/pydevd_cython.pyx":329
  * 
  *         elif event == 'return':
- *             exc_info = self.exc_info             # <<<<<<<<<<<<<<
  *             if exc_info and arg is None:
  *                 frame_skips_cache, frame_cache_key = self._args[4], self._args[5]
  */
@@ -8280,7 +8091,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
     /* "_pydevd_bundle/pydevd_cython.pyx":330
  *         elif event == 'return':
  *             exc_info = self.exc_info
- *             if exc_info and arg is None:             # <<<<<<<<<<<<<<
  *                 frame_skips_cache, frame_cache_key = self._args[4], self._args[5]
  *                 custom_key = (frame_cache_key, 'try_exc_info')
  */
@@ -8299,7 +8109,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":331
  *             exc_info = self.exc_info
  *             if exc_info and arg is None:
- *                 frame_skips_cache, frame_cache_key = self._args[4], self._args[5]             # <<<<<<<<<<<<<<
  *                 custom_key = (frame_cache_key, 'try_exc_info')
  *                 container_obj = frame_skips_cache.get(custom_key)
  */
@@ -8323,7 +8132,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":332
  *             if exc_info and arg is None:
  *                 frame_skips_cache, frame_cache_key = self._args[4], self._args[5]
- *                 custom_key = (frame_cache_key, 'try_exc_info')             # <<<<<<<<<<<<<<
  *                 container_obj = frame_skips_cache.get(custom_key)
  *                 if container_obj is None:
  */
@@ -8341,7 +8149,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":333
  *                 frame_skips_cache, frame_cache_key = self._args[4], self._args[5]
  *                 custom_key = (frame_cache_key, 'try_exc_info')
- *                 container_obj = frame_skips_cache.get(custom_key)             # <<<<<<<<<<<<<<
  *                 if container_obj is None:
  *                     container_obj = frame_skips_cache[custom_key] = _TryExceptContainerObj()
  */
@@ -8368,7 +8175,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":334
  *                 custom_key = (frame_cache_key, 'try_exc_info')
  *                 container_obj = frame_skips_cache.get(custom_key)
- *                 if container_obj is None:             # <<<<<<<<<<<<<<
  *                     container_obj = frame_skips_cache[custom_key] = _TryExceptContainerObj()
  *                 if is_unhandled_exception(container_obj, self._args[0], frame, exc_info[1], exc_info[2]) and \
  */
@@ -8379,7 +8185,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":335
  *                 container_obj = frame_skips_cache.get(custom_key)
  *                 if container_obj is None:
- *                     container_obj = frame_skips_cache[custom_key] = _TryExceptContainerObj()             # <<<<<<<<<<<<<<
  *                 if is_unhandled_exception(container_obj, self._args[0], frame, exc_info[1], exc_info[2]) and \
  *                         self.handle_user_exception(frame):
  */
@@ -8393,7 +8198,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":334
  *                 custom_key = (frame_cache_key, 'try_exc_info')
  *                 container_obj = frame_skips_cache.get(custom_key)
- *                 if container_obj is None:             # <<<<<<<<<<<<<<
  *                     container_obj = frame_skips_cache[custom_key] = _TryExceptContainerObj()
  *                 if is_unhandled_exception(container_obj, self._args[0], frame, exc_info[1], exc_info[2]) and \
  */
@@ -8402,7 +8206,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":336
  *                 if container_obj is None:
  *                     container_obj = frame_skips_cache[custom_key] = _TryExceptContainerObj()
- *                 if is_unhandled_exception(container_obj, self._args[0], frame, exc_info[1], exc_info[2]) and \             # <<<<<<<<<<<<<<
  *                         self.handle_user_exception(frame):
  *                     return self.trace_dispatch
  */
@@ -8442,7 +8245,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":337
  *                     container_obj = frame_skips_cache[custom_key] = _TryExceptContainerObj()
  *                 if is_unhandled_exception(container_obj, self._args[0], frame, exc_info[1], exc_info[2]) and \
- *                         self.handle_user_exception(frame):             # <<<<<<<<<<<<<<
  *                     return self.trace_dispatch
  * 
  */
@@ -8471,7 +8273,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":336
  *                 if container_obj is None:
  *                     container_obj = frame_skips_cache[custom_key] = _TryExceptContainerObj()
- *                 if is_unhandled_exception(container_obj, self._args[0], frame, exc_info[1], exc_info[2]) and \             # <<<<<<<<<<<<<<
  *                         self.handle_user_exception(frame):
  *                     return self.trace_dispatch
  */
@@ -8480,7 +8281,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":338
  *                 if is_unhandled_exception(container_obj, self._args[0], frame, exc_info[1], exc_info[2]) and \
  *                         self.handle_user_exception(frame):
- *                     return self.trace_dispatch             # <<<<<<<<<<<<<<
  * 
  *         return self.trace_exception
  */
@@ -8494,7 +8294,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":336
  *                 if container_obj is None:
  *                     container_obj = frame_skips_cache[custom_key] = _TryExceptContainerObj()
- *                 if is_unhandled_exception(container_obj, self._args[0], frame, exc_info[1], exc_info[2]) and \             # <<<<<<<<<<<<<<
  *                         self.handle_user_exception(frame):
  *                     return self.trace_dispatch
  */
@@ -8503,7 +8302,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":330
  *         elif event == 'return':
  *             exc_info = self.exc_info
- *             if exc_info and arg is None:             # <<<<<<<<<<<<<<
  *                 frame_skips_cache, frame_cache_key = self._args[4], self._args[5]
  *                 custom_key = (frame_cache_key, 'try_exc_info')
  */
@@ -8512,7 +8310,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
     /* "_pydevd_bundle/pydevd_cython.pyx":328
  *                     return self.trace_dispatch
  * 
- *         elif event == 'return':             # <<<<<<<<<<<<<<
  *             exc_info = self.exc_info
  *             if exc_info and arg is None:
  */
@@ -8522,7 +8319,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
   /* "_pydevd_bundle/pydevd_cython.pyx":340
  *                     return self.trace_dispatch
  * 
- *         return self.trace_exception             # <<<<<<<<<<<<<<
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  */
@@ -8536,7 +8332,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
   /* "_pydevd_bundle/pydevd_cython.pyx":315
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     def trace_exception(self, frame, str event, arg):             # <<<<<<<<<<<<<<
  *         cdef bint should_stop;
  *         cdef tuple exc_info;
  */
@@ -8564,7 +8359,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_6trace_exc
 /* "_pydevd_bundle/pydevd_cython.pyx":343
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     cdef _should_stop_on_exception(self, frame, str event, arg):             # <<<<<<<<<<<<<<
  *         cdef PyDBAdditionalThreadInfo info;
  *         cdef bint should_stop;
  */
@@ -8614,7 +8408,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
   /* "_pydevd_bundle/pydevd_cython.pyx":353
  * 
  *         # main_debugger, _filename, info, _thread = self._args
- *         main_debugger = self._args[0]             # <<<<<<<<<<<<<<
  *         info = self._args[2]
  *         should_stop = False
  */
@@ -8630,7 +8423,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
   /* "_pydevd_bundle/pydevd_cython.pyx":354
  *         # main_debugger, _filename, info, _thread = self._args
  *         main_debugger = self._args[0]
- *         info = self._args[2]             # <<<<<<<<<<<<<<
  *         should_stop = False
  * 
  */
@@ -8647,7 +8439,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
   /* "_pydevd_bundle/pydevd_cython.pyx":355
  *         main_debugger = self._args[0]
  *         info = self._args[2]
- *         should_stop = False             # <<<<<<<<<<<<<<
  * 
  *         # 2 = 2
  */
@@ -8656,7 +8447,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
   /* "_pydevd_bundle/pydevd_cython.pyx":358
  * 
  *         # 2 = 2
- *         if info.pydev_state != 2:  # and breakpoint is not None:             # <<<<<<<<<<<<<<
  *             exception, value, trace = arg
  * 
  */
@@ -8666,7 +8456,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
     /* "_pydevd_bundle/pydevd_cython.pyx":359
  *         # 2 = 2
  *         if info.pydev_state != 2:  # and breakpoint is not None:
- *             exception, value, trace = arg             # <<<<<<<<<<<<<<
  * 
  *             if trace is not None and hasattr(trace, 'tb_next'):
  */
@@ -8731,7 +8520,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
     /* "_pydevd_bundle/pydevd_cython.pyx":361
  *             exception, value, trace = arg
  * 
- *             if trace is not None and hasattr(trace, 'tb_next'):             # <<<<<<<<<<<<<<
  *                 # on jython trace is None on the first event and it may not have a tb_next.
  * 
  */
@@ -8751,7 +8539,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
       /* "_pydevd_bundle/pydevd_cython.pyx":364
  *                 # on jython trace is None on the first event and it may not have a tb_next.
  * 
- *                 should_stop = False             # <<<<<<<<<<<<<<
  *                 exception_breakpoint = None
  *                 try:
  */
@@ -8760,7 +8547,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
       /* "_pydevd_bundle/pydevd_cython.pyx":365
  * 
  *                 should_stop = False
- *                 exception_breakpoint = None             # <<<<<<<<<<<<<<
  *                 try:
  *                     if main_debugger.plugin is not None:
  */
@@ -8770,7 +8556,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
       /* "_pydevd_bundle/pydevd_cython.pyx":366
  *                 should_stop = False
  *                 exception_breakpoint = None
- *                 try:             # <<<<<<<<<<<<<<
  *                     if main_debugger.plugin is not None:
  *                         result = main_debugger.plugin.exception_break(main_debugger, self, frame, self._args, arg)
  */
@@ -8786,7 +8571,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
           /* "_pydevd_bundle/pydevd_cython.pyx":367
  *                 exception_breakpoint = None
  *                 try:
- *                     if main_debugger.plugin is not None:             # <<<<<<<<<<<<<<
  *                         result = main_debugger.plugin.exception_break(main_debugger, self, frame, self._args, arg)
  *                         if result:
  */
@@ -8800,7 +8584,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
             /* "_pydevd_bundle/pydevd_cython.pyx":368
  *                 try:
  *                     if main_debugger.plugin is not None:
- *                         result = main_debugger.plugin.exception_break(main_debugger, self, frame, self._args, arg)             # <<<<<<<<<<<<<<
  *                         if result:
  *                             should_stop, frame = result
  */
@@ -8869,7 +8652,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
             /* "_pydevd_bundle/pydevd_cython.pyx":369
  *                     if main_debugger.plugin is not None:
  *                         result = main_debugger.plugin.exception_break(main_debugger, self, frame, self._args, arg)
- *                         if result:             # <<<<<<<<<<<<<<
  *                             should_stop, frame = result
  *                 except:
  */
@@ -8879,7 +8661,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":370
  *                         result = main_debugger.plugin.exception_break(main_debugger, self, frame, self._args, arg)
  *                         if result:
- *                             should_stop, frame = result             # <<<<<<<<<<<<<<
  *                 except:
  *                     pydev_log.exception()
  */
@@ -8936,7 +8717,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":369
  *                     if main_debugger.plugin is not None:
  *                         result = main_debugger.plugin.exception_break(main_debugger, self, frame, self._args, arg)
- *                         if result:             # <<<<<<<<<<<<<<
  *                             should_stop, frame = result
  *                 except:
  */
@@ -8945,7 +8725,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
             /* "_pydevd_bundle/pydevd_cython.pyx":367
  *                 exception_breakpoint = None
  *                 try:
- *                     if main_debugger.plugin is not None:             # <<<<<<<<<<<<<<
  *                         result = main_debugger.plugin.exception_break(main_debugger, self, frame, self._args, arg)
  *                         if result:
  */
@@ -8954,7 +8733,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
           /* "_pydevd_bundle/pydevd_cython.pyx":366
  *                 should_stop = False
  *                 exception_breakpoint = None
- *                 try:             # <<<<<<<<<<<<<<
  *                     if main_debugger.plugin is not None:
  *                         result = main_debugger.plugin.exception_break(main_debugger, self, frame, self._args, arg)
  */
@@ -8972,7 +8750,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
         /* "_pydevd_bundle/pydevd_cython.pyx":371
  *                         if result:
  *                             should_stop, frame = result
- *                 except:             # <<<<<<<<<<<<<<
  *                     pydev_log.exception()
  * 
  */
@@ -8986,7 +8763,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
           /* "_pydevd_bundle/pydevd_cython.pyx":372
  *                             should_stop, frame = result
  *                 except:
- *                     pydev_log.exception()             # <<<<<<<<<<<<<<
  * 
  *                 if not should_stop:
  */
@@ -9021,7 +8797,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
         /* "_pydevd_bundle/pydevd_cython.pyx":366
  *                 should_stop = False
  *                 exception_breakpoint = None
- *                 try:             # <<<<<<<<<<<<<<
  *                     if main_debugger.plugin is not None:
  *                         result = main_debugger.plugin.exception_break(main_debugger, self, frame, self._args, arg)
  */
@@ -9041,7 +8816,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
       /* "_pydevd_bundle/pydevd_cython.pyx":374
  *                     pydev_log.exception()
  * 
- *                 if not should_stop:             # <<<<<<<<<<<<<<
  *                     # Apply checks that don't need the exception breakpoint (where we shouldn't ever stop).
  *                     if exception == SystemExit and main_debugger.ignore_system_exit_code(value):
  */
@@ -9051,7 +8825,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
         /* "_pydevd_bundle/pydevd_cython.pyx":376
  *                 if not should_stop:
  *                     # Apply checks that don't need the exception breakpoint (where we shouldn't ever stop).
- *                     if exception == SystemExit and main_debugger.ignore_system_exit_code(value):             # <<<<<<<<<<<<<<
  *                         pass
  * 
  */
@@ -9091,7 +8864,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
         /* "_pydevd_bundle/pydevd_cython.pyx":379
  *                         pass
  * 
- *                     elif exception in (GeneratorExit, StopIteration, StopAsyncIteration):             # <<<<<<<<<<<<<<
  *                         # These exceptions are control-flow related (they work as a generator
  *                         # pause), so, we shouldn't stop on them.
  */
@@ -9130,7 +8902,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
         /* "_pydevd_bundle/pydevd_cython.pyx":384
  *                         pass
  * 
- *                     elif ignore_exception_trace(trace):             # <<<<<<<<<<<<<<
  *                         pass
  * 
  */
@@ -9160,7 +8931,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
         /* "_pydevd_bundle/pydevd_cython.pyx":388
  * 
  *                     else:
- *                         was_just_raised = trace.tb_next is None             # <<<<<<<<<<<<<<
  * 
  *                         # It was not handled by any plugin, lets check exception breakpoints.
  */
@@ -9174,7 +8944,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
           /* "_pydevd_bundle/pydevd_cython.pyx":391
  * 
  *                         # It was not handled by any plugin, lets check exception breakpoints.
- *                         check_excs = []             # <<<<<<<<<<<<<<
  * 
  *                         # Note: check user unhandled before regular exceptions.
  */
@@ -9186,7 +8955,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
           /* "_pydevd_bundle/pydevd_cython.pyx":394
  * 
  *                         # Note: check user unhandled before regular exceptions.
- *                         exc_break_user = main_debugger.get_exception_breakpoint(             # <<<<<<<<<<<<<<
  *                             exception, main_debugger.break_on_user_uncaught_exceptions)
  *                         if exc_break_user is not None:
  */
@@ -9196,7 +8964,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
           /* "_pydevd_bundle/pydevd_cython.pyx":395
  *                         # Note: check user unhandled before regular exceptions.
  *                         exc_break_user = main_debugger.get_exception_breakpoint(
- *                             exception, main_debugger.break_on_user_uncaught_exceptions)             # <<<<<<<<<<<<<<
  *                         if exc_break_user is not None:
  *                             check_excs.append((exc_break_user, True))
  */
@@ -9255,7 +9022,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
           /* "_pydevd_bundle/pydevd_cython.pyx":396
  *                         exc_break_user = main_debugger.get_exception_breakpoint(
  *                             exception, main_debugger.break_on_user_uncaught_exceptions)
- *                         if exc_break_user is not None:             # <<<<<<<<<<<<<<
  *                             check_excs.append((exc_break_user, True))
  * 
  */
@@ -9266,7 +9032,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
             /* "_pydevd_bundle/pydevd_cython.pyx":397
  *                             exception, main_debugger.break_on_user_uncaught_exceptions)
  *                         if exc_break_user is not None:
- *                             check_excs.append((exc_break_user, True))             # <<<<<<<<<<<<<<
  * 
  *                         exc_break_caught = main_debugger.get_exception_breakpoint(
  */
@@ -9284,7 +9049,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
             /* "_pydevd_bundle/pydevd_cython.pyx":396
  *                         exc_break_user = main_debugger.get_exception_breakpoint(
  *                             exception, main_debugger.break_on_user_uncaught_exceptions)
- *                         if exc_break_user is not None:             # <<<<<<<<<<<<<<
  *                             check_excs.append((exc_break_user, True))
  * 
  */
@@ -9293,7 +9057,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
           /* "_pydevd_bundle/pydevd_cython.pyx":399
  *                             check_excs.append((exc_break_user, True))
  * 
- *                         exc_break_caught = main_debugger.get_exception_breakpoint(             # <<<<<<<<<<<<<<
  *                             exception, main_debugger.break_on_caught_exceptions)
  *                         if exc_break_caught is not None:
  */
@@ -9303,7 +9066,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
           /* "_pydevd_bundle/pydevd_cython.pyx":400
  * 
  *                         exc_break_caught = main_debugger.get_exception_breakpoint(
- *                             exception, main_debugger.break_on_caught_exceptions)             # <<<<<<<<<<<<<<
  *                         if exc_break_caught is not None:
  *                             check_excs.append((exc_break_caught, False))
  */
@@ -9362,7 +9124,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
           /* "_pydevd_bundle/pydevd_cython.pyx":401
  *                         exc_break_caught = main_debugger.get_exception_breakpoint(
  *                             exception, main_debugger.break_on_caught_exceptions)
- *                         if exc_break_caught is not None:             # <<<<<<<<<<<<<<
  *                             check_excs.append((exc_break_caught, False))
  * 
  */
@@ -9373,7 +9134,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
             /* "_pydevd_bundle/pydevd_cython.pyx":402
  *                             exception, main_debugger.break_on_caught_exceptions)
  *                         if exc_break_caught is not None:
- *                             check_excs.append((exc_break_caught, False))             # <<<<<<<<<<<<<<
  * 
  *                         for exc_break, is_user_uncaught in check_excs:
  */
@@ -9391,7 +9151,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
             /* "_pydevd_bundle/pydevd_cython.pyx":401
  *                         exc_break_caught = main_debugger.get_exception_breakpoint(
  *                             exception, main_debugger.break_on_caught_exceptions)
- *                         if exc_break_caught is not None:             # <<<<<<<<<<<<<<
  *                             check_excs.append((exc_break_caught, False))
  * 
  */
@@ -9400,7 +9159,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
           /* "_pydevd_bundle/pydevd_cython.pyx":404
  *                             check_excs.append((exc_break_caught, False))
  * 
- *                         for exc_break, is_user_uncaught in check_excs:             # <<<<<<<<<<<<<<
  *                             # Initially mark that it should stop and then go into exclusions.
  *                             should_stop = True
  */
@@ -9467,7 +9225,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
             /* "_pydevd_bundle/pydevd_cython.pyx":406
  *                         for exc_break, is_user_uncaught in check_excs:
  *                             # Initially mark that it should stop and then go into exclusions.
- *                             should_stop = True             # <<<<<<<<<<<<<<
  * 
  *                             if main_debugger.exclude_exception_by_filter(exc_break, trace):
  */
@@ -9476,7 +9233,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
             /* "_pydevd_bundle/pydevd_cython.pyx":408
  *                             should_stop = True
  * 
- *                             if main_debugger.exclude_exception_by_filter(exc_break, trace):             # <<<<<<<<<<<<<<
  *                                 pydev_log.debug("Ignore exception %s in library %s -- (%s)" % (exception, frame.f_code.co_filename, frame.f_code.co_name))
  *                                 should_stop = False
  */
@@ -9534,7 +9290,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":409
  * 
  *                             if main_debugger.exclude_exception_by_filter(exc_break, trace):
- *                                 pydev_log.debug("Ignore exception %s in library %s -- (%s)" % (exception, frame.f_code.co_filename, frame.f_code.co_name))             # <<<<<<<<<<<<<<
  *                                 should_stop = False
  * 
  */
@@ -9588,7 +9343,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":410
  *                             if main_debugger.exclude_exception_by_filter(exc_break, trace):
  *                                 pydev_log.debug("Ignore exception %s in library %s -- (%s)" % (exception, frame.f_code.co_filename, frame.f_code.co_name))
- *                                 should_stop = False             # <<<<<<<<<<<<<<
  * 
  *                             elif exc_break.condition is not None and \
  */
@@ -9597,7 +9351,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":408
  *                             should_stop = True
  * 
- *                             if main_debugger.exclude_exception_by_filter(exc_break, trace):             # <<<<<<<<<<<<<<
  *                                 pydev_log.debug("Ignore exception %s in library %s -- (%s)" % (exception, frame.f_code.co_filename, frame.f_code.co_name))
  *                                 should_stop = False
  */
@@ -9607,7 +9360,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
             /* "_pydevd_bundle/pydevd_cython.pyx":412
  *                                 should_stop = False
  * 
- *                             elif exc_break.condition is not None and \             # <<<<<<<<<<<<<<
  *                                     not main_debugger.handle_breakpoint_condition(info, exc_break, frame):
  *                                 should_stop = False
  */
@@ -9625,7 +9377,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
             /* "_pydevd_bundle/pydevd_cython.pyx":413
  * 
  *                             elif exc_break.condition is not None and \
- *                                     not main_debugger.handle_breakpoint_condition(info, exc_break, frame):             # <<<<<<<<<<<<<<
  *                                 should_stop = False
  * 
  */
@@ -9688,7 +9439,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
             /* "_pydevd_bundle/pydevd_cython.pyx":412
  *                                 should_stop = False
  * 
- *                             elif exc_break.condition is not None and \             # <<<<<<<<<<<<<<
  *                                     not main_debugger.handle_breakpoint_condition(info, exc_break, frame):
  *                                 should_stop = False
  */
@@ -9697,7 +9447,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":414
  *                             elif exc_break.condition is not None and \
  *                                     not main_debugger.handle_breakpoint_condition(info, exc_break, frame):
- *                                 should_stop = False             # <<<<<<<<<<<<<<
  * 
  *                             elif is_user_uncaught:
  */
@@ -9706,7 +9455,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":412
  *                                 should_stop = False
  * 
- *                             elif exc_break.condition is not None and \             # <<<<<<<<<<<<<<
  *                                     not main_debugger.handle_breakpoint_condition(info, exc_break, frame):
  *                                 should_stop = False
  */
@@ -9716,7 +9464,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
             /* "_pydevd_bundle/pydevd_cython.pyx":416
  *                                 should_stop = False
  * 
- *                             elif is_user_uncaught:             # <<<<<<<<<<<<<<
  *                                 # Note: we don't stop here, we just collect the exc_info to use later on...
  *                                 should_stop = False
  */
@@ -9726,7 +9473,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":418
  *                             elif is_user_uncaught:
  *                                 # Note: we don't stop here, we just collect the exc_info to use later on...
- *                                 should_stop = False             # <<<<<<<<<<<<<<
  *                                 if not main_debugger.apply_files_filter(frame, frame.f_code.co_filename, True) \
  *                                         and (frame.f_back is None or main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, True)):
  */
@@ -9735,7 +9481,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":419
  *                                 # Note: we don't stop here, we just collect the exc_info to use later on...
  *                                 should_stop = False
- *                                 if not main_debugger.apply_files_filter(frame, frame.f_code.co_filename, True) \             # <<<<<<<<<<<<<<
  *                                         and (frame.f_back is None or main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, True)):
  *                                     # User uncaught means that we're currently in user code but the code
  */
@@ -9808,7 +9553,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":420
  *                                 should_stop = False
  *                                 if not main_debugger.apply_files_filter(frame, frame.f_code.co_filename, True) \
- *                                         and (frame.f_back is None or main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, True)):             # <<<<<<<<<<<<<<
  *                                     # User uncaught means that we're currently in user code but the code
  *                                     # up the stack is library code.
  */
@@ -9894,7 +9638,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":419
  *                                 # Note: we don't stop here, we just collect the exc_info to use later on...
  *                                 should_stop = False
- *                                 if not main_debugger.apply_files_filter(frame, frame.f_code.co_filename, True) \             # <<<<<<<<<<<<<<
  *                                         and (frame.f_back is None or main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, True)):
  *                                     # User uncaught means that we're currently in user code but the code
  */
@@ -9903,7 +9646,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                 /* "_pydevd_bundle/pydevd_cython.pyx":423
  *                                     # User uncaught means that we're currently in user code but the code
  *                                     # up the stack is library code.
- *                                     exc_info = self.exc_info             # <<<<<<<<<<<<<<
  *                                     if not exc_info:
  *                                         exc_info = (arg, frame.f_lineno, set([frame.f_lineno]))
  */
@@ -9915,7 +9657,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                 /* "_pydevd_bundle/pydevd_cython.pyx":424
  *                                     # up the stack is library code.
  *                                     exc_info = self.exc_info
- *                                     if not exc_info:             # <<<<<<<<<<<<<<
  *                                         exc_info = (arg, frame.f_lineno, set([frame.f_lineno]))
  *                                     else:
  */
@@ -9926,7 +9667,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                   /* "_pydevd_bundle/pydevd_cython.pyx":425
  *                                     exc_info = self.exc_info
  *                                     if not exc_info:
- *                                         exc_info = (arg, frame.f_lineno, set([frame.f_lineno]))             # <<<<<<<<<<<<<<
  *                                     else:
  *                                         lines = exc_info[2]
  */
@@ -9955,7 +9695,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                   /* "_pydevd_bundle/pydevd_cython.pyx":424
  *                                     # up the stack is library code.
  *                                     exc_info = self.exc_info
- *                                     if not exc_info:             # <<<<<<<<<<<<<<
  *                                         exc_info = (arg, frame.f_lineno, set([frame.f_lineno]))
  *                                     else:
  */
@@ -9965,7 +9704,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                 /* "_pydevd_bundle/pydevd_cython.pyx":427
  *                                         exc_info = (arg, frame.f_lineno, set([frame.f_lineno]))
  *                                     else:
- *                                         lines = exc_info[2]             # <<<<<<<<<<<<<<
  *                                         lines.add(frame.f_lineno)
  *                                         exc_info = (arg, frame.f_lineno, lines)
  */
@@ -9978,7 +9716,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                   /* "_pydevd_bundle/pydevd_cython.pyx":428
  *                                     else:
  *                                         lines = exc_info[2]
- *                                         lines.add(frame.f_lineno)             # <<<<<<<<<<<<<<
  *                                         exc_info = (arg, frame.f_lineno, lines)
  *                                     self.exc_info = exc_info
  */
@@ -10007,7 +9744,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                   /* "_pydevd_bundle/pydevd_cython.pyx":429
  *                                         lines = exc_info[2]
  *                                         lines.add(frame.f_lineno)
- *                                         exc_info = (arg, frame.f_lineno, lines)             # <<<<<<<<<<<<<<
  *                                     self.exc_info = exc_info
  *                             else:
  */
@@ -10032,7 +9768,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                 /* "_pydevd_bundle/pydevd_cython.pyx":430
  *                                         lines.add(frame.f_lineno)
  *                                         exc_info = (arg, frame.f_lineno, lines)
- *                                     self.exc_info = exc_info             # <<<<<<<<<<<<<<
  *                             else:
  *                                 # I.e.: these are only checked if we're not dealing with user uncaught exceptions.
  */
@@ -10045,7 +9780,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                 /* "_pydevd_bundle/pydevd_cython.pyx":419
  *                                 # Note: we don't stop here, we just collect the exc_info to use later on...
  *                                 should_stop = False
- *                                 if not main_debugger.apply_files_filter(frame, frame.f_code.co_filename, True) \             # <<<<<<<<<<<<<<
  *                                         and (frame.f_back is None or main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, True)):
  *                                     # User uncaught means that we're currently in user code but the code
  */
@@ -10054,7 +9788,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":416
  *                                 should_stop = False
  * 
- *                             elif is_user_uncaught:             # <<<<<<<<<<<<<<
  *                                 # Note: we don't stop here, we just collect the exc_info to use later on...
  *                                 should_stop = False
  */
@@ -10064,7 +9797,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
             /* "_pydevd_bundle/pydevd_cython.pyx":433
  *                             else:
  *                                 # I.e.: these are only checked if we're not dealing with user uncaught exceptions.
- *                                 if exc_break.notify_on_first_raise_only and main_debugger.skip_on_exceptions_thrown_in_same_context \             # <<<<<<<<<<<<<<
  *                                         and not was_just_raised and not just_raised(trace.tb_next):
  *                                     # In this case we never stop if it was just raised, so, to know if it was the first we
  */
@@ -10082,7 +9814,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":434
  *                                 # I.e.: these are only checked if we're not dealing with user uncaught exceptions.
  *                                 if exc_break.notify_on_first_raise_only and main_debugger.skip_on_exceptions_thrown_in_same_context \
- *                                         and not was_just_raised and not just_raised(trace.tb_next):             # <<<<<<<<<<<<<<
  *                                     # In this case we never stop if it was just raised, so, to know if it was the first we
  *                                     # need to check if we're in the 2nd method.
  */
@@ -10092,7 +9823,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":433
  *                             else:
  *                                 # I.e.: these are only checked if we're not dealing with user uncaught exceptions.
- *                                 if exc_break.notify_on_first_raise_only and main_debugger.skip_on_exceptions_thrown_in_same_context \             # <<<<<<<<<<<<<<
  *                                         and not was_just_raised and not just_raised(trace.tb_next):
  *                                     # In this case we never stop if it was just raised, so, to know if it was the first we
  */
@@ -10107,7 +9837,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":434
  *                                 # I.e.: these are only checked if we're not dealing with user uncaught exceptions.
  *                                 if exc_break.notify_on_first_raise_only and main_debugger.skip_on_exceptions_thrown_in_same_context \
- *                                         and not was_just_raised and not just_raised(trace.tb_next):             # <<<<<<<<<<<<<<
  *                                     # In this case we never stop if it was just raised, so, to know if it was the first we
  *                                     # need to check if we're in the 2nd method.
  */
@@ -10146,7 +9875,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":433
  *                             else:
  *                                 # I.e.: these are only checked if we're not dealing with user uncaught exceptions.
- *                                 if exc_break.notify_on_first_raise_only and main_debugger.skip_on_exceptions_thrown_in_same_context \             # <<<<<<<<<<<<<<
  *                                         and not was_just_raised and not just_raised(trace.tb_next):
  *                                     # In this case we never stop if it was just raised, so, to know if it was the first we
  */
@@ -10155,7 +9883,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                 /* "_pydevd_bundle/pydevd_cython.pyx":437
  *                                     # In this case we never stop if it was just raised, so, to know if it was the first we
  *                                     # need to check if we're in the 2nd method.
- *                                     should_stop = False  # I.e.: we stop only when we're at the caller of a method that throws an exception             # <<<<<<<<<<<<<<
  * 
  *                                 elif exc_break.notify_on_first_raise_only and not main_debugger.skip_on_exceptions_thrown_in_same_context \
  */
@@ -10164,7 +9891,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                 /* "_pydevd_bundle/pydevd_cython.pyx":433
  *                             else:
  *                                 # I.e.: these are only checked if we're not dealing with user uncaught exceptions.
- *                                 if exc_break.notify_on_first_raise_only and main_debugger.skip_on_exceptions_thrown_in_same_context \             # <<<<<<<<<<<<<<
  *                                         and not was_just_raised and not just_raised(trace.tb_next):
  *                                     # In this case we never stop if it was just raised, so, to know if it was the first we
  */
@@ -10174,7 +9900,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":439
  *                                     should_stop = False  # I.e.: we stop only when we're at the caller of a method that throws an exception
  * 
- *                                 elif exc_break.notify_on_first_raise_only and not main_debugger.skip_on_exceptions_thrown_in_same_context \             # <<<<<<<<<<<<<<
  *                                         and not was_just_raised:
  *                                     should_stop = False  # I.e.: we stop only when it was just raised
  */
@@ -10191,7 +9916,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":440
  * 
  *                                 elif exc_break.notify_on_first_raise_only and not main_debugger.skip_on_exceptions_thrown_in_same_context \
- *                                         and not was_just_raised:             # <<<<<<<<<<<<<<
  *                                     should_stop = False  # I.e.: we stop only when it was just raised
  * 
  */
@@ -10201,7 +9925,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":439
  *                                     should_stop = False  # I.e.: we stop only when we're at the caller of a method that throws an exception
  * 
- *                                 elif exc_break.notify_on_first_raise_only and not main_debugger.skip_on_exceptions_thrown_in_same_context \             # <<<<<<<<<<<<<<
  *                                         and not was_just_raised:
  *                                     should_stop = False  # I.e.: we stop only when it was just raised
  */
@@ -10217,7 +9940,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":440
  * 
  *                                 elif exc_break.notify_on_first_raise_only and not main_debugger.skip_on_exceptions_thrown_in_same_context \
- *                                         and not was_just_raised:             # <<<<<<<<<<<<<<
  *                                     should_stop = False  # I.e.: we stop only when it was just raised
  * 
  */
@@ -10228,7 +9950,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":439
  *                                     should_stop = False  # I.e.: we stop only when we're at the caller of a method that throws an exception
  * 
- *                                 elif exc_break.notify_on_first_raise_only and not main_debugger.skip_on_exceptions_thrown_in_same_context \             # <<<<<<<<<<<<<<
  *                                         and not was_just_raised:
  *                                     should_stop = False  # I.e.: we stop only when it was just raised
  */
@@ -10237,7 +9958,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                 /* "_pydevd_bundle/pydevd_cython.pyx":441
  *                                 elif exc_break.notify_on_first_raise_only and not main_debugger.skip_on_exceptions_thrown_in_same_context \
  *                                         and not was_just_raised:
- *                                     should_stop = False  # I.e.: we stop only when it was just raised             # <<<<<<<<<<<<<<
  * 
  *                                 elif was_just_raised and main_debugger.skip_on_exceptions_thrown_in_same_context:
  */
@@ -10246,7 +9966,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                 /* "_pydevd_bundle/pydevd_cython.pyx":439
  *                                     should_stop = False  # I.e.: we stop only when we're at the caller of a method that throws an exception
  * 
- *                                 elif exc_break.notify_on_first_raise_only and not main_debugger.skip_on_exceptions_thrown_in_same_context \             # <<<<<<<<<<<<<<
  *                                         and not was_just_raised:
  *                                     should_stop = False  # I.e.: we stop only when it was just raised
  */
@@ -10256,7 +9975,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":443
  *                                     should_stop = False  # I.e.: we stop only when it was just raised
  * 
- *                                 elif was_just_raised and main_debugger.skip_on_exceptions_thrown_in_same_context:             # <<<<<<<<<<<<<<
  *                                     # Option: Don't break if an exception is caught in the same function from which it is thrown
  *                                     should_stop = False
  */
@@ -10277,7 +9995,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                 /* "_pydevd_bundle/pydevd_cython.pyx":445
  *                                 elif was_just_raised and main_debugger.skip_on_exceptions_thrown_in_same_context:
  *                                     # Option: Don't break if an exception is caught in the same function from which it is thrown
- *                                     should_stop = False             # <<<<<<<<<<<<<<
  * 
  *                             if should_stop:
  */
@@ -10286,7 +10003,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                 /* "_pydevd_bundle/pydevd_cython.pyx":443
  *                                     should_stop = False  # I.e.: we stop only when it was just raised
  * 
- *                                 elif was_just_raised and main_debugger.skip_on_exceptions_thrown_in_same_context:             # <<<<<<<<<<<<<<
  *                                     # Option: Don't break if an exception is caught in the same function from which it is thrown
  *                                     should_stop = False
  */
@@ -10298,7 +10014,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
             /* "_pydevd_bundle/pydevd_cython.pyx":447
  *                                     should_stop = False
  * 
- *                             if should_stop:             # <<<<<<<<<<<<<<
  *                                 exception_breakpoint = exc_break
  *                                 try:
  */
@@ -10308,7 +10023,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":448
  * 
  *                             if should_stop:
- *                                 exception_breakpoint = exc_break             # <<<<<<<<<<<<<<
  *                                 try:
  *                                     info.pydev_message = exc_break.qname
  */
@@ -10318,7 +10032,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":449
  *                             if should_stop:
  *                                 exception_breakpoint = exc_break
- *                                 try:             # <<<<<<<<<<<<<<
  *                                     info.pydev_message = exc_break.qname
  *                                 except:
  */
@@ -10334,7 +10047,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                   /* "_pydevd_bundle/pydevd_cython.pyx":450
  *                                 exception_breakpoint = exc_break
  *                                 try:
- *                                     info.pydev_message = exc_break.qname             # <<<<<<<<<<<<<<
  *                                 except:
  *                                     info.pydev_message = exc_break.qname.encode('utf-8')
  */
@@ -10350,7 +10062,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                   /* "_pydevd_bundle/pydevd_cython.pyx":449
  *                             if should_stop:
  *                                 exception_breakpoint = exc_break
- *                                 try:             # <<<<<<<<<<<<<<
  *                                     info.pydev_message = exc_break.qname
  *                                 except:
  */
@@ -10370,7 +10081,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                 /* "_pydevd_bundle/pydevd_cython.pyx":451
  *                                 try:
  *                                     info.pydev_message = exc_break.qname
- *                                 except:             # <<<<<<<<<<<<<<
  *                                     info.pydev_message = exc_break.qname.encode('utf-8')
  *                                 break
  */
@@ -10384,7 +10094,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                   /* "_pydevd_bundle/pydevd_cython.pyx":452
  *                                     info.pydev_message = exc_break.qname
  *                                 except:
- *                                     info.pydev_message = exc_break.qname.encode('utf-8')             # <<<<<<<<<<<<<<
  *                                 break
  * 
  */
@@ -10424,7 +10133,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
                 /* "_pydevd_bundle/pydevd_cython.pyx":449
  *                             if should_stop:
  *                                 exception_breakpoint = exc_break
- *                                 try:             # <<<<<<<<<<<<<<
  *                                     info.pydev_message = exc_break.qname
  *                                 except:
  */
@@ -10444,7 +10152,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":453
  *                                 except:
  *                                     info.pydev_message = exc_break.qname.encode('utf-8')
- *                                 break             # <<<<<<<<<<<<<<
  * 
  *                 if should_stop:
  */
@@ -10453,7 +10160,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
               /* "_pydevd_bundle/pydevd_cython.pyx":447
  *                                     should_stop = False
  * 
- *                             if should_stop:             # <<<<<<<<<<<<<<
  *                                 exception_breakpoint = exc_break
  *                                 try:
  */
@@ -10462,7 +10168,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
             /* "_pydevd_bundle/pydevd_cython.pyx":404
  *                             check_excs.append((exc_break_caught, False))
  * 
- *                         for exc_break, is_user_uncaught in check_excs:             # <<<<<<<<<<<<<<
  *                             # Initially mark that it should stop and then go into exclusions.
  *                             should_stop = True
  */
@@ -10475,7 +10180,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
         /* "_pydevd_bundle/pydevd_cython.pyx":374
  *                     pydev_log.exception()
  * 
- *                 if not should_stop:             # <<<<<<<<<<<<<<
  *                     # Apply checks that don't need the exception breakpoint (where we shouldn't ever stop).
  *                     if exception == SystemExit and main_debugger.ignore_system_exit_code(value):
  */
@@ -10484,7 +10188,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
       /* "_pydevd_bundle/pydevd_cython.pyx":455
  *                                 break
  * 
- *                 if should_stop:             # <<<<<<<<<<<<<<
  *                     # Always add exception to frame (must remove later after we proceed).
  *                     add_exception_to_frame(frame, (exception, value, trace))
  */
@@ -10494,7 +10197,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
         /* "_pydevd_bundle/pydevd_cython.pyx":457
  *                 if should_stop:
  *                     # Always add exception to frame (must remove later after we proceed).
- *                     add_exception_to_frame(frame, (exception, value, trace))             # <<<<<<<<<<<<<<
  * 
  *                     if exception_breakpoint is not None and exception_breakpoint.expression is not None:
  */
@@ -10563,7 +10265,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
         /* "_pydevd_bundle/pydevd_cython.pyx":459
  *                     add_exception_to_frame(frame, (exception, value, trace))
  * 
- *                     if exception_breakpoint is not None and exception_breakpoint.expression is not None:             # <<<<<<<<<<<<<<
  *                         main_debugger.handle_breakpoint_expression(exception_breakpoint, info, frame)
  * 
  */
@@ -10586,7 +10287,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
           /* "_pydevd_bundle/pydevd_cython.pyx":460
  * 
  *                     if exception_breakpoint is not None and exception_breakpoint.expression is not None:
- *                         main_debugger.handle_breakpoint_expression(exception_breakpoint, info, frame)             # <<<<<<<<<<<<<<
  * 
  *         return should_stop, frame
  */
@@ -10645,7 +10345,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
           /* "_pydevd_bundle/pydevd_cython.pyx":459
  *                     add_exception_to_frame(frame, (exception, value, trace))
  * 
- *                     if exception_breakpoint is not None and exception_breakpoint.expression is not None:             # <<<<<<<<<<<<<<
  *                         main_debugger.handle_breakpoint_expression(exception_breakpoint, info, frame)
  * 
  */
@@ -10654,7 +10353,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
         /* "_pydevd_bundle/pydevd_cython.pyx":455
  *                                 break
  * 
- *                 if should_stop:             # <<<<<<<<<<<<<<
  *                     # Always add exception to frame (must remove later after we proceed).
  *                     add_exception_to_frame(frame, (exception, value, trace))
  */
@@ -10663,7 +10361,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
       /* "_pydevd_bundle/pydevd_cython.pyx":361
  *             exception, value, trace = arg
  * 
- *             if trace is not None and hasattr(trace, 'tb_next'):             # <<<<<<<<<<<<<<
  *                 # on jython trace is None on the first event and it may not have a tb_next.
  * 
  */
@@ -10672,7 +10369,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
     /* "_pydevd_bundle/pydevd_cython.pyx":358
  * 
  *         # 2 = 2
- *         if info.pydev_state != 2:  # and breakpoint is not None:             # <<<<<<<<<<<<<<
  *             exception, value, trace = arg
  * 
  */
@@ -10681,7 +10377,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
   /* "_pydevd_bundle/pydevd_cython.pyx":462
  *                         main_debugger.handle_breakpoint_expression(exception_breakpoint, info, frame)
  * 
- *         return should_stop, frame             # <<<<<<<<<<<<<<
  * 
  *     def handle_user_exception(self, frame):
  */
@@ -10703,7 +10398,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
   /* "_pydevd_bundle/pydevd_cython.pyx":343
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     cdef _should_stop_on_exception(self, frame, str event, arg):             # <<<<<<<<<<<<<<
  *         cdef PyDBAdditionalThreadInfo info;
  *         cdef bint should_stop;
  */
@@ -10743,7 +10437,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__should_sto
 /* "_pydevd_bundle/pydevd_cython.pyx":464
  *         return should_stop, frame
  * 
- *     def handle_user_exception(self, frame):             # <<<<<<<<<<<<<<
  *         exc_info = self.exc_info
  *         if exc_info:
  */
@@ -10777,7 +10470,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_8handle_us
   /* "_pydevd_bundle/pydevd_cython.pyx":465
  * 
  *     def handle_user_exception(self, frame):
- *         exc_info = self.exc_info             # <<<<<<<<<<<<<<
  *         if exc_info:
  *             return self._handle_exception(frame, 'exception', exc_info[0], EXCEPTION_TYPE_USER_UNHANDLED)
  */
@@ -10789,7 +10481,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_8handle_us
   /* "_pydevd_bundle/pydevd_cython.pyx":466
  *     def handle_user_exception(self, frame):
  *         exc_info = self.exc_info
- *         if exc_info:             # <<<<<<<<<<<<<<
  *             return self._handle_exception(frame, 'exception', exc_info[0], EXCEPTION_TYPE_USER_UNHANDLED)
  *         return False
  */
@@ -10799,7 +10490,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_8handle_us
     /* "_pydevd_bundle/pydevd_cython.pyx":467
  *         exc_info = self.exc_info
  *         if exc_info:
- *             return self._handle_exception(frame, 'exception', exc_info[0], EXCEPTION_TYPE_USER_UNHANDLED)             # <<<<<<<<<<<<<<
  *         return False
  * 
  */
@@ -10820,7 +10510,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_8handle_us
     /* "_pydevd_bundle/pydevd_cython.pyx":466
  *     def handle_user_exception(self, frame):
  *         exc_info = self.exc_info
- *         if exc_info:             # <<<<<<<<<<<<<<
  *             return self._handle_exception(frame, 'exception', exc_info[0], EXCEPTION_TYPE_USER_UNHANDLED)
  *         return False
  */
@@ -10829,7 +10518,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_8handle_us
   /* "_pydevd_bundle/pydevd_cython.pyx":468
  *         if exc_info:
  *             return self._handle_exception(frame, 'exception', exc_info[0], EXCEPTION_TYPE_USER_UNHANDLED)
- *         return False             # <<<<<<<<<<<<<<
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  */
@@ -10841,7 +10529,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_8handle_us
   /* "_pydevd_bundle/pydevd_cython.pyx":464
  *         return should_stop, frame
  * 
- *     def handle_user_exception(self, frame):             # <<<<<<<<<<<<<<
  *         exc_info = self.exc_info
  *         if exc_info:
  */
@@ -10863,7 +10550,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_8handle_us
 /* "_pydevd_bundle/pydevd_cython.pyx":471
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     cdef _handle_exception(self, frame, str event, arg, str exception_type):             # <<<<<<<<<<<<<<
  *         cdef bint stopped;
  *         cdef tuple abs_real_path_and_base;
  */
@@ -10925,7 +10611,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
   /* "_pydevd_bundle/pydevd_cython.pyx":485
  * #     def _handle_exception(self, frame, event, arg, exception_type):
  *     # ENDIF
- *         stopped = False             # <<<<<<<<<<<<<<
  *         try:
  *             # print('_handle_exception', frame.f_lineno, frame.f_code.co_name)
  */
@@ -10934,7 +10619,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
   /* "_pydevd_bundle/pydevd_cython.pyx":486
  *     # ENDIF
  *         stopped = False
- *         try:             # <<<<<<<<<<<<<<
  *             # print('_handle_exception', frame.f_lineno, frame.f_code.co_name)
  * 
  */
@@ -10943,7 +10627,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
     /* "_pydevd_bundle/pydevd_cython.pyx":490
  * 
  *             # We have 3 things in arg: exception type, description, traceback object
- *             trace_obj = arg[2]             # <<<<<<<<<<<<<<
  *             main_debugger = self._args[0]
  * 
  */
@@ -10955,7 +10638,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
     /* "_pydevd_bundle/pydevd_cython.pyx":491
  *             # We have 3 things in arg: exception type, description, traceback object
  *             trace_obj = arg[2]
- *             main_debugger = self._args[0]             # <<<<<<<<<<<<<<
  * 
  *             initial_trace_obj = trace_obj
  */
@@ -10971,7 +10653,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
     /* "_pydevd_bundle/pydevd_cython.pyx":493
  *             main_debugger = self._args[0]
  * 
- *             initial_trace_obj = trace_obj             # <<<<<<<<<<<<<<
  *             if trace_obj.tb_next is None and trace_obj.tb_frame is frame:
  *                 # I.e.: tb_next should be only None in the context it was thrown (trace_obj.tb_frame is frame is just a double check).
  */
@@ -10981,7 +10662,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
     /* "_pydevd_bundle/pydevd_cython.pyx":494
  * 
  *             initial_trace_obj = trace_obj
- *             if trace_obj.tb_next is None and trace_obj.tb_frame is frame:             # <<<<<<<<<<<<<<
  *                 # I.e.: tb_next should be only None in the context it was thrown (trace_obj.tb_frame is frame is just a double check).
  *                 pass
  */
@@ -11009,7 +10689,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
     /* "_pydevd_bundle/pydevd_cython.pyx":499
  *             else:
  *                 # Get the trace_obj from where the exception was raised...
- *                 while trace_obj.tb_next is not None:             # <<<<<<<<<<<<<<
  *                     trace_obj = trace_obj.tb_next
  * 
  */
@@ -11025,7 +10704,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":500
  *                 # Get the trace_obj from where the exception was raised...
  *                 while trace_obj.tb_next is not None:
- *                     trace_obj = trace_obj.tb_next             # <<<<<<<<<<<<<<
  * 
  *             if main_debugger.ignore_exceptions_thrown_in_lines_with_ignore_exception:
  */
@@ -11040,7 +10718,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
     /* "_pydevd_bundle/pydevd_cython.pyx":502
  *                     trace_obj = trace_obj.tb_next
  * 
- *             if main_debugger.ignore_exceptions_thrown_in_lines_with_ignore_exception:             # <<<<<<<<<<<<<<
  *                 for check_trace_obj in (initial_trace_obj, trace_obj):
  *                     abs_real_path_and_base = get_abs_path_real_path_and_base_from_frame(check_trace_obj.tb_frame)
  */
@@ -11053,7 +10730,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":503
  * 
  *             if main_debugger.ignore_exceptions_thrown_in_lines_with_ignore_exception:
- *                 for check_trace_obj in (initial_trace_obj, trace_obj):             # <<<<<<<<<<<<<<
  *                     abs_real_path_and_base = get_abs_path_real_path_and_base_from_frame(check_trace_obj.tb_frame)
  *                     absolute_filename = abs_real_path_and_base[0]
  */
@@ -11081,7 +10757,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":504
  *             if main_debugger.ignore_exceptions_thrown_in_lines_with_ignore_exception:
  *                 for check_trace_obj in (initial_trace_obj, trace_obj):
- *                     abs_real_path_and_base = get_abs_path_real_path_and_base_from_frame(check_trace_obj.tb_frame)             # <<<<<<<<<<<<<<
  *                     absolute_filename = abs_real_path_and_base[0]
  *                     canonical_normalized_filename = abs_real_path_and_base[1]
  */
@@ -11112,7 +10787,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":505
  *                 for check_trace_obj in (initial_trace_obj, trace_obj):
  *                     abs_real_path_and_base = get_abs_path_real_path_and_base_from_frame(check_trace_obj.tb_frame)
- *                     absolute_filename = abs_real_path_and_base[0]             # <<<<<<<<<<<<<<
  *                     canonical_normalized_filename = abs_real_path_and_base[1]
  * 
  */
@@ -11129,7 +10803,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":506
  *                     abs_real_path_and_base = get_abs_path_real_path_and_base_from_frame(check_trace_obj.tb_frame)
  *                     absolute_filename = abs_real_path_and_base[0]
- *                     canonical_normalized_filename = abs_real_path_and_base[1]             # <<<<<<<<<<<<<<
  * 
  *                     filename_to_lines_where_exceptions_are_ignored = self.filename_to_lines_where_exceptions_are_ignored
  */
@@ -11146,7 +10819,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":508
  *                     canonical_normalized_filename = abs_real_path_and_base[1]
  * 
- *                     filename_to_lines_where_exceptions_are_ignored = self.filename_to_lines_where_exceptions_are_ignored             # <<<<<<<<<<<<<<
  * 
  *                     lines_ignored = filename_to_lines_where_exceptions_are_ignored.get(canonical_normalized_filename)
  */
@@ -11159,7 +10831,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":510
  *                     filename_to_lines_where_exceptions_are_ignored = self.filename_to_lines_where_exceptions_are_ignored
  * 
- *                     lines_ignored = filename_to_lines_where_exceptions_are_ignored.get(canonical_normalized_filename)             # <<<<<<<<<<<<<<
  *                     if lines_ignored is None:
  *                         lines_ignored = filename_to_lines_where_exceptions_are_ignored[canonical_normalized_filename] = {}
  */
@@ -11176,7 +10847,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":511
  * 
  *                     lines_ignored = filename_to_lines_where_exceptions_are_ignored.get(canonical_normalized_filename)
- *                     if lines_ignored is None:             # <<<<<<<<<<<<<<
  *                         lines_ignored = filename_to_lines_where_exceptions_are_ignored[canonical_normalized_filename] = {}
  * 
  */
@@ -11187,7 +10857,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":512
  *                     lines_ignored = filename_to_lines_where_exceptions_are_ignored.get(canonical_normalized_filename)
  *                     if lines_ignored is None:
- *                         lines_ignored = filename_to_lines_where_exceptions_are_ignored[canonical_normalized_filename] = {}             # <<<<<<<<<<<<<<
  * 
  *                     try:
  */
@@ -11205,7 +10874,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":511
  * 
  *                     lines_ignored = filename_to_lines_where_exceptions_are_ignored.get(canonical_normalized_filename)
- *                     if lines_ignored is None:             # <<<<<<<<<<<<<<
  *                         lines_ignored = filename_to_lines_where_exceptions_are_ignored[canonical_normalized_filename] = {}
  * 
  */
@@ -11214,7 +10882,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":514
  *                         lines_ignored = filename_to_lines_where_exceptions_are_ignored[canonical_normalized_filename] = {}
  * 
- *                     try:             # <<<<<<<<<<<<<<
  *                         curr_stat = os.stat(absolute_filename)
  *                         curr_stat = (curr_stat.st_size, curr_stat.st_mtime)
  */
@@ -11230,7 +10897,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
             /* "_pydevd_bundle/pydevd_cython.pyx":515
  * 
  *                     try:
- *                         curr_stat = os.stat(absolute_filename)             # <<<<<<<<<<<<<<
  *                         curr_stat = (curr_stat.st_size, curr_stat.st_mtime)
  *                     except:
  */
@@ -11260,7 +10926,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
             /* "_pydevd_bundle/pydevd_cython.pyx":516
  *                     try:
  *                         curr_stat = os.stat(absolute_filename)
- *                         curr_stat = (curr_stat.st_size, curr_stat.st_mtime)             # <<<<<<<<<<<<<<
  *                     except:
  *                         curr_stat = None
  */
@@ -11282,7 +10947,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
             /* "_pydevd_bundle/pydevd_cython.pyx":514
  *                         lines_ignored = filename_to_lines_where_exceptions_are_ignored[canonical_normalized_filename] = {}
  * 
- *                     try:             # <<<<<<<<<<<<<<
  *                         curr_stat = os.stat(absolute_filename)
  *                         curr_stat = (curr_stat.st_size, curr_stat.st_mtime)
  */
@@ -11300,7 +10964,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":517
  *                         curr_stat = os.stat(absolute_filename)
  *                         curr_stat = (curr_stat.st_size, curr_stat.st_mtime)
- *                     except:             # <<<<<<<<<<<<<<
  *                         curr_stat = None
  * 
  */
@@ -11314,7 +10977,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
             /* "_pydevd_bundle/pydevd_cython.pyx":518
  *                         curr_stat = (curr_stat.st_size, curr_stat.st_mtime)
  *                     except:
- *                         curr_stat = None             # <<<<<<<<<<<<<<
  * 
  *                     last_stat = self.filename_to_stat_info.get(absolute_filename)
  */
@@ -11330,7 +10992,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":514
  *                         lines_ignored = filename_to_lines_where_exceptions_are_ignored[canonical_normalized_filename] = {}
  * 
- *                     try:             # <<<<<<<<<<<<<<
  *                         curr_stat = os.stat(absolute_filename)
  *                         curr_stat = (curr_stat.st_size, curr_stat.st_mtime)
  */
@@ -11350,7 +11011,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":520
  *                         curr_stat = None
  * 
- *                     last_stat = self.filename_to_stat_info.get(absolute_filename)             # <<<<<<<<<<<<<<
  *                     if last_stat != curr_stat:
  *                         self.filename_to_stat_info[absolute_filename] = curr_stat
  */
@@ -11380,7 +11040,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":521
  * 
  *                     last_stat = self.filename_to_stat_info.get(absolute_filename)
- *                     if last_stat != curr_stat:             # <<<<<<<<<<<<<<
  *                         self.filename_to_stat_info[absolute_filename] = curr_stat
  *                         lines_ignored.clear()
  */
@@ -11392,7 +11051,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":522
  *                     last_stat = self.filename_to_stat_info.get(absolute_filename)
  *                     if last_stat != curr_stat:
- *                         self.filename_to_stat_info[absolute_filename] = curr_stat             # <<<<<<<<<<<<<<
  *                         lines_ignored.clear()
  *                         try:
  */
@@ -11404,7 +11062,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":523
  *                     if last_stat != curr_stat:
  *                         self.filename_to_stat_info[absolute_filename] = curr_stat
- *                         lines_ignored.clear()             # <<<<<<<<<<<<<<
  *                         try:
  *                             linecache.checkcache(absolute_filename)
  */
@@ -11417,7 +11074,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":524
  *                         self.filename_to_stat_info[absolute_filename] = curr_stat
  *                         lines_ignored.clear()
- *                         try:             # <<<<<<<<<<<<<<
  *                             linecache.checkcache(absolute_filename)
  *                         except:
  */
@@ -11433,7 +11089,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
               /* "_pydevd_bundle/pydevd_cython.pyx":525
  *                         lines_ignored.clear()
  *                         try:
- *                             linecache.checkcache(absolute_filename)             # <<<<<<<<<<<<<<
  *                         except:
  *                             pydev_log.exception('Error in linecache.checkcache(%r)', absolute_filename)
  */
@@ -11462,7 +11117,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
               /* "_pydevd_bundle/pydevd_cython.pyx":524
  *                         self.filename_to_stat_info[absolute_filename] = curr_stat
  *                         lines_ignored.clear()
- *                         try:             # <<<<<<<<<<<<<<
  *                             linecache.checkcache(absolute_filename)
  *                         except:
  */
@@ -11480,7 +11134,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
             /* "_pydevd_bundle/pydevd_cython.pyx":526
  *                         try:
  *                             linecache.checkcache(absolute_filename)
- *                         except:             # <<<<<<<<<<<<<<
  *                             pydev_log.exception('Error in linecache.checkcache(%r)', absolute_filename)
  * 
  */
@@ -11494,7 +11147,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
               /* "_pydevd_bundle/pydevd_cython.pyx":527
  *                             linecache.checkcache(absolute_filename)
  *                         except:
- *                             pydev_log.exception('Error in linecache.checkcache(%r)', absolute_filename)             # <<<<<<<<<<<<<<
  * 
  *                     from_user_input = main_debugger.filename_to_lines_where_exceptions_are_ignored.get(canonical_normalized_filename)
  */
@@ -11559,7 +11211,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
             /* "_pydevd_bundle/pydevd_cython.pyx":524
  *                         self.filename_to_stat_info[absolute_filename] = curr_stat
  *                         lines_ignored.clear()
- *                         try:             # <<<<<<<<<<<<<<
  *                             linecache.checkcache(absolute_filename)
  *                         except:
  */
@@ -11579,7 +11230,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":521
  * 
  *                     last_stat = self.filename_to_stat_info.get(absolute_filename)
- *                     if last_stat != curr_stat:             # <<<<<<<<<<<<<<
  *                         self.filename_to_stat_info[absolute_filename] = curr_stat
  *                         lines_ignored.clear()
  */
@@ -11588,7 +11238,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":529
  *                             pydev_log.exception('Error in linecache.checkcache(%r)', absolute_filename)
  * 
- *                     from_user_input = main_debugger.filename_to_lines_where_exceptions_are_ignored.get(canonical_normalized_filename)             # <<<<<<<<<<<<<<
  *                     if from_user_input:
  *                         merged = {}
  */
@@ -11618,7 +11267,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":530
  * 
  *                     from_user_input = main_debugger.filename_to_lines_where_exceptions_are_ignored.get(canonical_normalized_filename)
- *                     if from_user_input:             # <<<<<<<<<<<<<<
  *                         merged = {}
  *                         merged.update(lines_ignored)
  */
@@ -11628,7 +11276,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":531
  *                     from_user_input = main_debugger.filename_to_lines_where_exceptions_are_ignored.get(canonical_normalized_filename)
  *                     if from_user_input:
- *                         merged = {}             # <<<<<<<<<<<<<<
  *                         merged.update(lines_ignored)
  *                         # Override what we have with the related entries that the user entered
  */
@@ -11640,7 +11287,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":532
  *                     if from_user_input:
  *                         merged = {}
- *                         merged.update(lines_ignored)             # <<<<<<<<<<<<<<
  *                         # Override what we have with the related entries that the user entered
  *                         merged.update(from_user_input)
  */
@@ -11651,7 +11297,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":534
  *                         merged.update(lines_ignored)
  *                         # Override what we have with the related entries that the user entered
- *                         merged.update(from_user_input)             # <<<<<<<<<<<<<<
  *                     else:
  *                         merged = lines_ignored
  */
@@ -11662,7 +11307,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":530
  * 
  *                     from_user_input = main_debugger.filename_to_lines_where_exceptions_are_ignored.get(canonical_normalized_filename)
- *                     if from_user_input:             # <<<<<<<<<<<<<<
  *                         merged = {}
  *                         merged.update(lines_ignored)
  */
@@ -11672,7 +11316,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":536
  *                         merged.update(from_user_input)
  *                     else:
- *                         merged = lines_ignored             # <<<<<<<<<<<<<<
  * 
  *                     exc_lineno = check_trace_obj.tb_lineno
  */
@@ -11685,7 +11328,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":538
  *                         merged = lines_ignored
  * 
- *                     exc_lineno = check_trace_obj.tb_lineno             # <<<<<<<<<<<<<<
  * 
  *                     # print ('lines ignored', lines_ignored)
  */
@@ -11697,7 +11339,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":544
  *                     # print ('merged', merged, 'curr', exc_lineno)
  * 
- *                     if exc_lineno not in merged:  # Note: check on merged but update lines_ignored.             # <<<<<<<<<<<<<<
  *                         try:
  *                             line = linecache.getline(absolute_filename, exc_lineno, check_trace_obj.tb_frame.f_globals)
  */
@@ -11712,7 +11353,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":545
  * 
  *                     if exc_lineno not in merged:  # Note: check on merged but update lines_ignored.
- *                         try:             # <<<<<<<<<<<<<<
  *                             line = linecache.getline(absolute_filename, exc_lineno, check_trace_obj.tb_frame.f_globals)
  *                         except:
  */
@@ -11728,7 +11368,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
               /* "_pydevd_bundle/pydevd_cython.pyx":546
  *                     if exc_lineno not in merged:  # Note: check on merged but update lines_ignored.
  *                         try:
- *                             line = linecache.getline(absolute_filename, exc_lineno, check_trace_obj.tb_frame.f_globals)             # <<<<<<<<<<<<<<
  *                         except:
  *                             pydev_log.exception('Error in linecache.getline(%r, %s, f_globals)', absolute_filename, exc_lineno)
  */
@@ -11798,7 +11437,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
               /* "_pydevd_bundle/pydevd_cython.pyx":545
  * 
  *                     if exc_lineno not in merged:  # Note: check on merged but update lines_ignored.
- *                         try:             # <<<<<<<<<<<<<<
  *                             line = linecache.getline(absolute_filename, exc_lineno, check_trace_obj.tb_frame.f_globals)
  *                         except:
  */
@@ -11819,7 +11457,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
             /* "_pydevd_bundle/pydevd_cython.pyx":547
  *                         try:
  *                             line = linecache.getline(absolute_filename, exc_lineno, check_trace_obj.tb_frame.f_globals)
- *                         except:             # <<<<<<<<<<<<<<
  *                             pydev_log.exception('Error in linecache.getline(%r, %s, f_globals)', absolute_filename, exc_lineno)
  *                             line = ''
  */
@@ -11833,7 +11470,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
               /* "_pydevd_bundle/pydevd_cython.pyx":548
  *                             line = linecache.getline(absolute_filename, exc_lineno, check_trace_obj.tb_frame.f_globals)
  *                         except:
- *                             pydev_log.exception('Error in linecache.getline(%r, %s, f_globals)', absolute_filename, exc_lineno)             # <<<<<<<<<<<<<<
  *                             line = ''
  * 
  */
@@ -11895,7 +11531,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
               /* "_pydevd_bundle/pydevd_cython.pyx":549
  *                         except:
  *                             pydev_log.exception('Error in linecache.getline(%r, %s, f_globals)', absolute_filename, exc_lineno)
- *                             line = ''             # <<<<<<<<<<<<<<
  * 
  *                         if IGNORE_EXCEPTION_TAG.match(line) is not None:
  */
@@ -11911,7 +11546,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
             /* "_pydevd_bundle/pydevd_cython.pyx":545
  * 
  *                     if exc_lineno not in merged:  # Note: check on merged but update lines_ignored.
- *                         try:             # <<<<<<<<<<<<<<
  *                             line = linecache.getline(absolute_filename, exc_lineno, check_trace_obj.tb_frame.f_globals)
  *                         except:
  */
@@ -11931,7 +11565,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":551
  *                             line = ''
  * 
- *                         if IGNORE_EXCEPTION_TAG.match(line) is not None:             # <<<<<<<<<<<<<<
  *                             lines_ignored[exc_lineno] = 1
  *                             return False
  */
@@ -11963,7 +11596,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
             /* "_pydevd_bundle/pydevd_cython.pyx":552
  * 
  *                         if IGNORE_EXCEPTION_TAG.match(line) is not None:
- *                             lines_ignored[exc_lineno] = 1             # <<<<<<<<<<<<<<
  *                             return False
  *                         else:
  */
@@ -11976,7 +11608,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
             /* "_pydevd_bundle/pydevd_cython.pyx":553
  *                         if IGNORE_EXCEPTION_TAG.match(line) is not None:
  *                             lines_ignored[exc_lineno] = 1
- *                             return False             # <<<<<<<<<<<<<<
  *                         else:
  *                             # Put in the cache saying not to ignore
  */
@@ -11989,7 +11620,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
             /* "_pydevd_bundle/pydevd_cython.pyx":551
  *                             line = ''
  * 
- *                         if IGNORE_EXCEPTION_TAG.match(line) is not None:             # <<<<<<<<<<<<<<
  *                             lines_ignored[exc_lineno] = 1
  *                             return False
  */
@@ -11998,7 +11628,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":556
  *                         else:
  *                             # Put in the cache saying not to ignore
- *                             lines_ignored[exc_lineno] = 0             # <<<<<<<<<<<<<<
  *                     else:
  *                         # Ok, dict has it already cached, so, let's check it...
  */
@@ -12013,7 +11642,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":544
  *                     # print ('merged', merged, 'curr', exc_lineno)
  * 
- *                     if exc_lineno not in merged:  # Note: check on merged but update lines_ignored.             # <<<<<<<<<<<<<<
  *                         try:
  *                             line = linecache.getline(absolute_filename, exc_lineno, check_trace_obj.tb_frame.f_globals)
  */
@@ -12023,7 +11651,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":559
  *                     else:
  *                         # Ok, dict has it already cached, so, let's check it...
- *                         if merged.get(exc_lineno, 0):             # <<<<<<<<<<<<<<
  *                             return False
  * 
  */
@@ -12041,7 +11668,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
             /* "_pydevd_bundle/pydevd_cython.pyx":560
  *                         # Ok, dict has it already cached, so, let's check it...
  *                         if merged.get(exc_lineno, 0):
- *                             return False             # <<<<<<<<<<<<<<
  * 
  *             thread = self._args[3]
  */
@@ -12054,7 +11680,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
             /* "_pydevd_bundle/pydevd_cython.pyx":559
  *                     else:
  *                         # Ok, dict has it already cached, so, let's check it...
- *                         if merged.get(exc_lineno, 0):             # <<<<<<<<<<<<<<
  *                             return False
  * 
  */
@@ -12065,7 +11690,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":503
  * 
  *             if main_debugger.ignore_exceptions_thrown_in_lines_with_ignore_exception:
- *                 for check_trace_obj in (initial_trace_obj, trace_obj):             # <<<<<<<<<<<<<<
  *                     abs_real_path_and_base = get_abs_path_real_path_and_base_from_frame(check_trace_obj.tb_frame)
  *                     absolute_filename = abs_real_path_and_base[0]
  */
@@ -12075,7 +11699,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":502
  *                     trace_obj = trace_obj.tb_next
  * 
- *             if main_debugger.ignore_exceptions_thrown_in_lines_with_ignore_exception:             # <<<<<<<<<<<<<<
  *                 for check_trace_obj in (initial_trace_obj, trace_obj):
  *                     abs_real_path_and_base = get_abs_path_real_path_and_base_from_frame(check_trace_obj.tb_frame)
  */
@@ -12084,7 +11707,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
     /* "_pydevd_bundle/pydevd_cython.pyx":562
  *                             return False
  * 
- *             thread = self._args[3]             # <<<<<<<<<<<<<<
  * 
  *             try:
  */
@@ -12100,7 +11722,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
     /* "_pydevd_bundle/pydevd_cython.pyx":564
  *             thread = self._args[3]
  * 
- *             try:             # <<<<<<<<<<<<<<
  *                 frame_id_to_frame = {}
  *                 frame_id_to_frame[id(frame)] = frame
  */
@@ -12116,7 +11737,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":565
  * 
  *             try:
- *                 frame_id_to_frame = {}             # <<<<<<<<<<<<<<
  *                 frame_id_to_frame[id(frame)] = frame
  *                 f = trace_obj.tb_frame
  */
@@ -12128,7 +11748,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":566
  *             try:
  *                 frame_id_to_frame = {}
- *                 frame_id_to_frame[id(frame)] = frame             # <<<<<<<<<<<<<<
  *                 f = trace_obj.tb_frame
  *                 while f is not None:
  */
@@ -12140,7 +11759,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":567
  *                 frame_id_to_frame = {}
  *                 frame_id_to_frame[id(frame)] = frame
- *                 f = trace_obj.tb_frame             # <<<<<<<<<<<<<<
  *                 while f is not None:
  *                     frame_id_to_frame[id(f)] = f
  */
@@ -12152,7 +11770,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":568
  *                 frame_id_to_frame[id(frame)] = frame
  *                 f = trace_obj.tb_frame
- *                 while f is not None:             # <<<<<<<<<<<<<<
  *                     frame_id_to_frame[id(f)] = f
  *                     f = f.f_back
  */
@@ -12164,7 +11781,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":569
  *                 f = trace_obj.tb_frame
  *                 while f is not None:
- *                     frame_id_to_frame[id(f)] = f             # <<<<<<<<<<<<<<
  *                     f = f.f_back
  *                 f = None
  */
@@ -12176,7 +11792,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":570
  *                 while f is not None:
  *                     frame_id_to_frame[id(f)] = f
- *                     f = f.f_back             # <<<<<<<<<<<<<<
  *                 f = None
  * 
  */
@@ -12189,7 +11804,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":571
  *                     frame_id_to_frame[id(f)] = f
  *                     f = f.f_back
- *                 f = None             # <<<<<<<<<<<<<<
  * 
  *                 stopped = True
  */
@@ -12199,7 +11813,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":573
  *                 f = None
  * 
- *                 stopped = True             # <<<<<<<<<<<<<<
  *                 main_debugger.send_caught_exception_stack(thread, arg, id(frame))
  *                 try:
  */
@@ -12208,7 +11821,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":574
  * 
  *                 stopped = True
- *                 main_debugger.send_caught_exception_stack(thread, arg, id(frame))             # <<<<<<<<<<<<<<
  *                 try:
  *                     self.set_suspend(thread, 137)
  */
@@ -12271,7 +11883,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":575
  *                 stopped = True
  *                 main_debugger.send_caught_exception_stack(thread, arg, id(frame))
- *                 try:             # <<<<<<<<<<<<<<
  *                     self.set_suspend(thread, 137)
  *                     self.do_wait_suspend(thread, frame, event, arg, exception_type=exception_type)
  */
@@ -12280,7 +11891,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":576
  *                 main_debugger.send_caught_exception_stack(thread, arg, id(frame))
  *                 try:
- *                     self.set_suspend(thread, 137)             # <<<<<<<<<<<<<<
  *                     self.do_wait_suspend(thread, frame, event, arg, exception_type=exception_type)
  *                 finally:
  */
@@ -12336,7 +11946,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
           /* "_pydevd_bundle/pydevd_cython.pyx":577
  *                 try:
  *                     self.set_suspend(thread, 137)
- *                     self.do_wait_suspend(thread, frame, event, arg, exception_type=exception_type)             # <<<<<<<<<<<<<<
  *                 finally:
  *                     main_debugger.send_caught_exception_stack_proceeded(thread)
  */
@@ -12370,7 +11979,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":579
  *                     self.do_wait_suspend(thread, frame, event, arg, exception_type=exception_type)
  *                 finally:
- *                     main_debugger.send_caught_exception_stack_proceeded(thread)             # <<<<<<<<<<<<<<
  *             except:
  *                 pydev_log.exception()
  */
@@ -12470,7 +12078,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":564
  *             thread = self._args[3]
  * 
- *             try:             # <<<<<<<<<<<<<<
  *                 frame_id_to_frame = {}
  *                 frame_id_to_frame[id(frame)] = frame
  */
@@ -12492,7 +12099,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":580
  *                 finally:
  *                     main_debugger.send_caught_exception_stack_proceeded(thread)
- *             except:             # <<<<<<<<<<<<<<
  *                 pydev_log.exception()
  * 
  */
@@ -12506,7 +12112,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":581
  *                     main_debugger.send_caught_exception_stack_proceeded(thread)
  *             except:
- *                 pydev_log.exception()             # <<<<<<<<<<<<<<
  * 
  *             main_debugger.set_trace_for_frame_and_parents(frame)
  */
@@ -12541,7 +12146,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":564
  *             thread = self._args[3]
  * 
- *             try:             # <<<<<<<<<<<<<<
  *                 frame_id_to_frame = {}
  *                 frame_id_to_frame[id(frame)] = frame
  */
@@ -12561,7 +12165,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
     /* "_pydevd_bundle/pydevd_cython.pyx":583
  *                 pydev_log.exception()
  * 
- *             main_debugger.set_trace_for_frame_and_parents(frame)             # <<<<<<<<<<<<<<
  *         finally:
  *             # Make sure the user cannot see the '__exception__' we added after we leave the suspend state.
  */
@@ -12588,7 +12191,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
   /* "_pydevd_bundle/pydevd_cython.pyx":586
  *         finally:
  *             # Make sure the user cannot see the '__exception__' we added after we leave the suspend state.
- *             remove_exception_from_frame(frame)             # <<<<<<<<<<<<<<
  *             # Clear some local variables...
  *             frame = None
  */
@@ -12616,7 +12218,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":588
  *             remove_exception_from_frame(frame)
  *             # Clear some local variables...
- *             frame = None             # <<<<<<<<<<<<<<
  *             trace_obj = None
  *             initial_trace_obj = None
  */
@@ -12626,7 +12227,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":589
  *             # Clear some local variables...
  *             frame = None
- *             trace_obj = None             # <<<<<<<<<<<<<<
  *             initial_trace_obj = None
  *             check_trace_obj = None
  */
@@ -12636,7 +12236,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":590
  *             frame = None
  *             trace_obj = None
- *             initial_trace_obj = None             # <<<<<<<<<<<<<<
  *             check_trace_obj = None
  *             f = None
  */
@@ -12646,7 +12245,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":591
  *             trace_obj = None
  *             initial_trace_obj = None
- *             check_trace_obj = None             # <<<<<<<<<<<<<<
  *             f = None
  *             frame_id_to_frame = None
  */
@@ -12656,7 +12254,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":592
  *             initial_trace_obj = None
  *             check_trace_obj = None
- *             f = None             # <<<<<<<<<<<<<<
  *             frame_id_to_frame = None
  *             main_debugger = None
  */
@@ -12666,7 +12263,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":593
  *             check_trace_obj = None
  *             f = None
- *             frame_id_to_frame = None             # <<<<<<<<<<<<<<
  *             main_debugger = None
  *             thread = None
  */
@@ -12676,7 +12272,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":594
  *             f = None
  *             frame_id_to_frame = None
- *             main_debugger = None             # <<<<<<<<<<<<<<
  *             thread = None
  * 
  */
@@ -12686,7 +12281,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":595
  *             frame_id_to_frame = None
  *             main_debugger = None
- *             thread = None             # <<<<<<<<<<<<<<
  * 
  *         return stopped
  */
@@ -12721,7 +12315,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":586
  *         finally:
  *             # Make sure the user cannot see the '__exception__' we added after we leave the suspend state.
- *             remove_exception_from_frame(frame)             # <<<<<<<<<<<<<<
  *             # Clear some local variables...
  *             frame = None
  */
@@ -12747,7 +12340,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":588
  *             remove_exception_from_frame(frame)
  *             # Clear some local variables...
- *             frame = None             # <<<<<<<<<<<<<<
  *             trace_obj = None
  *             initial_trace_obj = None
  */
@@ -12757,7 +12349,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":589
  *             # Clear some local variables...
  *             frame = None
- *             trace_obj = None             # <<<<<<<<<<<<<<
  *             initial_trace_obj = None
  *             check_trace_obj = None
  */
@@ -12767,7 +12358,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":590
  *             frame = None
  *             trace_obj = None
- *             initial_trace_obj = None             # <<<<<<<<<<<<<<
  *             check_trace_obj = None
  *             f = None
  */
@@ -12777,7 +12367,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":591
  *             trace_obj = None
  *             initial_trace_obj = None
- *             check_trace_obj = None             # <<<<<<<<<<<<<<
  *             f = None
  *             frame_id_to_frame = None
  */
@@ -12787,7 +12376,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":592
  *             initial_trace_obj = None
  *             check_trace_obj = None
- *             f = None             # <<<<<<<<<<<<<<
  *             frame_id_to_frame = None
  *             main_debugger = None
  */
@@ -12797,7 +12385,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":593
  *             check_trace_obj = None
  *             f = None
- *             frame_id_to_frame = None             # <<<<<<<<<<<<<<
  *             main_debugger = None
  *             thread = None
  */
@@ -12807,7 +12394,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":594
  *             f = None
  *             frame_id_to_frame = None
- *             main_debugger = None             # <<<<<<<<<<<<<<
  *             thread = None
  * 
  */
@@ -12817,7 +12403,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
         /* "_pydevd_bundle/pydevd_cython.pyx":595
  *             frame_id_to_frame = None
  *             main_debugger = None
- *             thread = None             # <<<<<<<<<<<<<<
  * 
  *         return stopped
  */
@@ -12857,7 +12442,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":586
  *         finally:
  *             # Make sure the user cannot see the '__exception__' we added after we leave the suspend state.
- *             remove_exception_from_frame(frame)             # <<<<<<<<<<<<<<
  *             # Clear some local variables...
  *             frame = None
  */
@@ -12883,7 +12467,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":588
  *             remove_exception_from_frame(frame)
  *             # Clear some local variables...
- *             frame = None             # <<<<<<<<<<<<<<
  *             trace_obj = None
  *             initial_trace_obj = None
  */
@@ -12893,7 +12476,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":589
  *             # Clear some local variables...
  *             frame = None
- *             trace_obj = None             # <<<<<<<<<<<<<<
  *             initial_trace_obj = None
  *             check_trace_obj = None
  */
@@ -12903,7 +12485,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":590
  *             frame = None
  *             trace_obj = None
- *             initial_trace_obj = None             # <<<<<<<<<<<<<<
  *             check_trace_obj = None
  *             f = None
  */
@@ -12913,7 +12494,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":591
  *             trace_obj = None
  *             initial_trace_obj = None
- *             check_trace_obj = None             # <<<<<<<<<<<<<<
  *             f = None
  *             frame_id_to_frame = None
  */
@@ -12923,7 +12503,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":592
  *             initial_trace_obj = None
  *             check_trace_obj = None
- *             f = None             # <<<<<<<<<<<<<<
  *             frame_id_to_frame = None
  *             main_debugger = None
  */
@@ -12933,7 +12512,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":593
  *             check_trace_obj = None
  *             f = None
- *             frame_id_to_frame = None             # <<<<<<<<<<<<<<
  *             main_debugger = None
  *             thread = None
  */
@@ -12943,7 +12521,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":594
  *             f = None
  *             frame_id_to_frame = None
- *             main_debugger = None             # <<<<<<<<<<<<<<
  *             thread = None
  * 
  */
@@ -12953,7 +12530,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
       /* "_pydevd_bundle/pydevd_cython.pyx":595
  *             frame_id_to_frame = None
  *             main_debugger = None
- *             thread = None             # <<<<<<<<<<<<<<
  * 
  *         return stopped
  */
@@ -12969,7 +12545,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
   /* "_pydevd_bundle/pydevd_cython.pyx":597
  *             thread = None
  * 
- *         return stopped             # <<<<<<<<<<<<<<
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  */
@@ -12983,7 +12558,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
   /* "_pydevd_bundle/pydevd_cython.pyx":471
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     cdef _handle_exception(self, frame, str event, arg, str exception_type):             # <<<<<<<<<<<<<<
  *         cdef bint stopped;
  *         cdef tuple abs_real_path_and_base;
  */
@@ -13028,7 +12602,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__handle_exc
 /* "_pydevd_bundle/pydevd_cython.pyx":600
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     cdef get_func_name(self, frame):             # <<<<<<<<<<<<<<
  *         cdef str func_name
  *     # ELSE
  */
@@ -13059,7 +12632,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_get_func_na
   /* "_pydevd_bundle/pydevd_cython.pyx":605
  * #     def get_func_name(self, frame):
  *     # ENDIF
- *         code_obj = frame.f_code             # <<<<<<<<<<<<<<
  *         func_name = code_obj.co_name
  *         try:
  */
@@ -13071,7 +12643,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_get_func_na
   /* "_pydevd_bundle/pydevd_cython.pyx":606
  *     # ENDIF
  *         code_obj = frame.f_code
- *         func_name = code_obj.co_name             # <<<<<<<<<<<<<<
  *         try:
  *             cls_name = get_clsname_for_code(code_obj, frame)
  */
@@ -13084,7 +12655,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_get_func_na
   /* "_pydevd_bundle/pydevd_cython.pyx":607
  *         code_obj = frame.f_code
  *         func_name = code_obj.co_name
- *         try:             # <<<<<<<<<<<<<<
  *             cls_name = get_clsname_for_code(code_obj, frame)
  *             if cls_name is not None:
  */
@@ -13100,7 +12670,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_get_func_na
       /* "_pydevd_bundle/pydevd_cython.pyx":608
  *         func_name = code_obj.co_name
  *         try:
- *             cls_name = get_clsname_for_code(code_obj, frame)             # <<<<<<<<<<<<<<
  *             if cls_name is not None:
  *                 return "%s.%s" % (cls_name, func_name)
  */
@@ -13157,7 +12726,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_get_func_na
       /* "_pydevd_bundle/pydevd_cython.pyx":609
  *         try:
  *             cls_name = get_clsname_for_code(code_obj, frame)
- *             if cls_name is not None:             # <<<<<<<<<<<<<<
  *                 return "%s.%s" % (cls_name, func_name)
  *             else:
  */
@@ -13168,7 +12736,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_get_func_na
         /* "_pydevd_bundle/pydevd_cython.pyx":610
  *             cls_name = get_clsname_for_code(code_obj, frame)
  *             if cls_name is not None:
- *                 return "%s.%s" % (cls_name, func_name)             # <<<<<<<<<<<<<<
  *             else:
  *                 return func_name
  */
@@ -13191,7 +12758,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_get_func_na
         /* "_pydevd_bundle/pydevd_cython.pyx":609
  *         try:
  *             cls_name = get_clsname_for_code(code_obj, frame)
- *             if cls_name is not None:             # <<<<<<<<<<<<<<
  *                 return "%s.%s" % (cls_name, func_name)
  *             else:
  */
@@ -13200,7 +12766,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_get_func_na
       /* "_pydevd_bundle/pydevd_cython.pyx":612
  *                 return "%s.%s" % (cls_name, func_name)
  *             else:
- *                 return func_name             # <<<<<<<<<<<<<<
  *         except:
  *             pydev_log.exception()
  */
@@ -13214,7 +12779,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_get_func_na
       /* "_pydevd_bundle/pydevd_cython.pyx":607
  *         code_obj = frame.f_code
  *         func_name = code_obj.co_name
- *         try:             # <<<<<<<<<<<<<<
  *             cls_name = get_clsname_for_code(code_obj, frame)
  *             if cls_name is not None:
  */
@@ -13228,7 +12792,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_get_func_na
     /* "_pydevd_bundle/pydevd_cython.pyx":613
  *             else:
  *                 return func_name
- *         except:             # <<<<<<<<<<<<<<
  *             pydev_log.exception()
  *             return func_name
  */
@@ -13242,7 +12805,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_get_func_na
       /* "_pydevd_bundle/pydevd_cython.pyx":614
  *                 return func_name
  *         except:
- *             pydev_log.exception()             # <<<<<<<<<<<<<<
  *             return func_name
  * 
  */
@@ -13271,7 +12833,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_get_func_na
       /* "_pydevd_bundle/pydevd_cython.pyx":615
  *         except:
  *             pydev_log.exception()
- *             return func_name             # <<<<<<<<<<<<<<
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  */
@@ -13288,7 +12849,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_get_func_na
     /* "_pydevd_bundle/pydevd_cython.pyx":607
  *         code_obj = frame.f_code
  *         func_name = code_obj.co_name
- *         try:             # <<<<<<<<<<<<<<
  *             cls_name = get_clsname_for_code(code_obj, frame)
  *             if cls_name is not None:
  */
@@ -13314,7 +12874,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_get_func_na
   /* "_pydevd_bundle/pydevd_cython.pyx":600
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     cdef get_func_name(self, frame):             # <<<<<<<<<<<<<<
  *         cdef str func_name
  *     # ELSE
  */
@@ -13341,7 +12900,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_get_func_na
 /* "_pydevd_bundle/pydevd_cython.pyx":618
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     cdef _show_return_values(self, frame, arg):             # <<<<<<<<<<<<<<
  *     # ELSE
  * #     def _show_return_values(self, frame, arg):
  */
@@ -13377,7 +12935,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
   /* "_pydevd_bundle/pydevd_cython.pyx":622
  * #     def _show_return_values(self, frame, arg):
  *     # ENDIF
- *         try:             # <<<<<<<<<<<<<<
  *             try:
  *                 f_locals_back = getattr(frame.f_back, "f_locals", None)
  */
@@ -13386,7 +12943,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
     /* "_pydevd_bundle/pydevd_cython.pyx":623
  *     # ENDIF
  *         try:
- *             try:             # <<<<<<<<<<<<<<
  *                 f_locals_back = getattr(frame.f_back, "f_locals", None)
  *                 if f_locals_back is not None:
  */
@@ -13402,7 +12958,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
         /* "_pydevd_bundle/pydevd_cython.pyx":624
  *         try:
  *             try:
- *                 f_locals_back = getattr(frame.f_back, "f_locals", None)             # <<<<<<<<<<<<<<
  *                 if f_locals_back is not None:
  *                     return_values_dict = f_locals_back.get(RETURN_VALUES_DICT, None)
  */
@@ -13417,7 +12972,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
         /* "_pydevd_bundle/pydevd_cython.pyx":625
  *             try:
  *                 f_locals_back = getattr(frame.f_back, "f_locals", None)
- *                 if f_locals_back is not None:             # <<<<<<<<<<<<<<
  *                     return_values_dict = f_locals_back.get(RETURN_VALUES_DICT, None)
  *                     if return_values_dict is None:
  */
@@ -13428,7 +12982,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
           /* "_pydevd_bundle/pydevd_cython.pyx":626
  *                 f_locals_back = getattr(frame.f_back, "f_locals", None)
  *                 if f_locals_back is not None:
- *                     return_values_dict = f_locals_back.get(RETURN_VALUES_DICT, None)             # <<<<<<<<<<<<<<
  *                     if return_values_dict is None:
  *                         return_values_dict = {}
  */
@@ -13489,7 +13042,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
           /* "_pydevd_bundle/pydevd_cython.pyx":627
  *                 if f_locals_back is not None:
  *                     return_values_dict = f_locals_back.get(RETURN_VALUES_DICT, None)
- *                     if return_values_dict is None:             # <<<<<<<<<<<<<<
  *                         return_values_dict = {}
  *                         f_locals_back[RETURN_VALUES_DICT] = return_values_dict
  */
@@ -13500,7 +13052,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
             /* "_pydevd_bundle/pydevd_cython.pyx":628
  *                     return_values_dict = f_locals_back.get(RETURN_VALUES_DICT, None)
  *                     if return_values_dict is None:
- *                         return_values_dict = {}             # <<<<<<<<<<<<<<
  *                         f_locals_back[RETURN_VALUES_DICT] = return_values_dict
  *                     name = self.get_func_name(frame)
  */
@@ -13512,7 +13063,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
             /* "_pydevd_bundle/pydevd_cython.pyx":629
  *                     if return_values_dict is None:
  *                         return_values_dict = {}
- *                         f_locals_back[RETURN_VALUES_DICT] = return_values_dict             # <<<<<<<<<<<<<<
  *                     name = self.get_func_name(frame)
  *                     return_values_dict[name] = arg
  */
@@ -13524,7 +13074,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
             /* "_pydevd_bundle/pydevd_cython.pyx":627
  *                 if f_locals_back is not None:
  *                     return_values_dict = f_locals_back.get(RETURN_VALUES_DICT, None)
- *                     if return_values_dict is None:             # <<<<<<<<<<<<<<
  *                         return_values_dict = {}
  *                         f_locals_back[RETURN_VALUES_DICT] = return_values_dict
  */
@@ -13533,7 +13082,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
           /* "_pydevd_bundle/pydevd_cython.pyx":630
  *                         return_values_dict = {}
  *                         f_locals_back[RETURN_VALUES_DICT] = return_values_dict
- *                     name = self.get_func_name(frame)             # <<<<<<<<<<<<<<
  *                     return_values_dict[name] = arg
  *             except:
  */
@@ -13545,7 +13093,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
           /* "_pydevd_bundle/pydevd_cython.pyx":631
  *                         f_locals_back[RETURN_VALUES_DICT] = return_values_dict
  *                     name = self.get_func_name(frame)
- *                     return_values_dict[name] = arg             # <<<<<<<<<<<<<<
  *             except:
  *                 pydev_log.exception()
  */
@@ -13554,7 +13101,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
           /* "_pydevd_bundle/pydevd_cython.pyx":625
  *             try:
  *                 f_locals_back = getattr(frame.f_back, "f_locals", None)
- *                 if f_locals_back is not None:             # <<<<<<<<<<<<<<
  *                     return_values_dict = f_locals_back.get(RETURN_VALUES_DICT, None)
  *                     if return_values_dict is None:
  */
@@ -13563,7 +13109,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
         /* "_pydevd_bundle/pydevd_cython.pyx":623
  *     # ENDIF
  *         try:
- *             try:             # <<<<<<<<<<<<<<
  *                 f_locals_back = getattr(frame.f_back, "f_locals", None)
  *                 if f_locals_back is not None:
  */
@@ -13582,7 +13127,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
       /* "_pydevd_bundle/pydevd_cython.pyx":632
  *                     name = self.get_func_name(frame)
  *                     return_values_dict[name] = arg
- *             except:             # <<<<<<<<<<<<<<
  *                 pydev_log.exception()
  *         finally:
  */
@@ -13596,7 +13140,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
         /* "_pydevd_bundle/pydevd_cython.pyx":633
  *                     return_values_dict[name] = arg
  *             except:
- *                 pydev_log.exception()             # <<<<<<<<<<<<<<
  *         finally:
  *             f_locals_back = None
  */
@@ -13631,7 +13174,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
       /* "_pydevd_bundle/pydevd_cython.pyx":623
  *     # ENDIF
  *         try:
- *             try:             # <<<<<<<<<<<<<<
  *                 f_locals_back = getattr(frame.f_back, "f_locals", None)
  *                 if f_locals_back is not None:
  */
@@ -13652,7 +13194,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
   /* "_pydevd_bundle/pydevd_cython.pyx":635
  *                 pydev_log.exception()
  *         finally:
- *             f_locals_back = None             # <<<<<<<<<<<<<<
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  */
@@ -13706,7 +13247,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
   /* "_pydevd_bundle/pydevd_cython.pyx":618
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     cdef _show_return_values(self, frame, arg):             # <<<<<<<<<<<<<<
  *     # ELSE
  * #     def _show_return_values(self, frame, arg):
  */
@@ -13735,7 +13275,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__show_retur
 /* "_pydevd_bundle/pydevd_cython.pyx":638
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     cdef _remove_return_values(self, main_debugger, frame):             # <<<<<<<<<<<<<<
  *     # ELSE
  * #     def _remove_return_values(self, main_debugger, frame):
  */
@@ -13769,7 +13308,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__remove_ret
   /* "_pydevd_bundle/pydevd_cython.pyx":642
  * #     def _remove_return_values(self, main_debugger, frame):
  *     # ENDIF
- *         try:             # <<<<<<<<<<<<<<
  *             try:
  *                 # Showing return values was turned off, we should remove them from locals dict.
  */
@@ -13778,7 +13316,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__remove_ret
     /* "_pydevd_bundle/pydevd_cython.pyx":643
  *     # ENDIF
  *         try:
- *             try:             # <<<<<<<<<<<<<<
  *                 # Showing return values was turned off, we should remove them from locals dict.
  *                 # The values can be in the current frame or in the back one
  */
@@ -13794,7 +13331,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__remove_ret
         /* "_pydevd_bundle/pydevd_cython.pyx":646
  *                 # Showing return values was turned off, we should remove them from locals dict.
  *                 # The values can be in the current frame or in the back one
- *                 frame.f_locals.pop(RETURN_VALUES_DICT, None)             # <<<<<<<<<<<<<<
  * 
  *                 f_locals_back = getattr(frame.f_back, "f_locals", None)
  */
@@ -13857,7 +13393,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__remove_ret
         /* "_pydevd_bundle/pydevd_cython.pyx":648
  *                 frame.f_locals.pop(RETURN_VALUES_DICT, None)
  * 
- *                 f_locals_back = getattr(frame.f_back, "f_locals", None)             # <<<<<<<<<<<<<<
  *                 if f_locals_back is not None:
  *                     f_locals_back.pop(RETURN_VALUES_DICT, None)
  */
@@ -13872,7 +13407,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__remove_ret
         /* "_pydevd_bundle/pydevd_cython.pyx":649
  * 
  *                 f_locals_back = getattr(frame.f_back, "f_locals", None)
- *                 if f_locals_back is not None:             # <<<<<<<<<<<<<<
  *                     f_locals_back.pop(RETURN_VALUES_DICT, None)
  *             except:
  */
@@ -13883,7 +13417,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__remove_ret
           /* "_pydevd_bundle/pydevd_cython.pyx":650
  *                 f_locals_back = getattr(frame.f_back, "f_locals", None)
  *                 if f_locals_back is not None:
- *                     f_locals_back.pop(RETURN_VALUES_DICT, None)             # <<<<<<<<<<<<<<
  *             except:
  *                 pydev_log.exception()
  */
@@ -13943,7 +13476,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__remove_ret
           /* "_pydevd_bundle/pydevd_cython.pyx":649
  * 
  *                 f_locals_back = getattr(frame.f_back, "f_locals", None)
- *                 if f_locals_back is not None:             # <<<<<<<<<<<<<<
  *                     f_locals_back.pop(RETURN_VALUES_DICT, None)
  *             except:
  */
@@ -13952,7 +13484,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__remove_ret
         /* "_pydevd_bundle/pydevd_cython.pyx":643
  *     # ENDIF
  *         try:
- *             try:             # <<<<<<<<<<<<<<
  *                 # Showing return values was turned off, we should remove them from locals dict.
  *                 # The values can be in the current frame or in the back one
  */
@@ -13971,7 +13502,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__remove_ret
       /* "_pydevd_bundle/pydevd_cython.pyx":651
  *                 if f_locals_back is not None:
  *                     f_locals_back.pop(RETURN_VALUES_DICT, None)
- *             except:             # <<<<<<<<<<<<<<
  *                 pydev_log.exception()
  *         finally:
  */
@@ -13985,7 +13515,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__remove_ret
         /* "_pydevd_bundle/pydevd_cython.pyx":652
  *                     f_locals_back.pop(RETURN_VALUES_DICT, None)
  *             except:
- *                 pydev_log.exception()             # <<<<<<<<<<<<<<
  *         finally:
  *             f_locals_back = None
  */
@@ -14020,7 +13549,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__remove_ret
       /* "_pydevd_bundle/pydevd_cython.pyx":643
  *     # ENDIF
  *         try:
- *             try:             # <<<<<<<<<<<<<<
  *                 # Showing return values was turned off, we should remove them from locals dict.
  *                 # The values can be in the current frame or in the back one
  */
@@ -14041,7 +13569,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__remove_ret
   /* "_pydevd_bundle/pydevd_cython.pyx":654
  *                 pydev_log.exception()
  *         finally:
- *             f_locals_back = None             # <<<<<<<<<<<<<<
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  */
@@ -14095,7 +13622,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__remove_ret
   /* "_pydevd_bundle/pydevd_cython.pyx":638
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     cdef _remove_return_values(self, main_debugger, frame):             # <<<<<<<<<<<<<<
  *     # ELSE
  * #     def _remove_return_values(self, main_debugger, frame):
  */
@@ -14122,7 +13648,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__remove_ret
 /* "_pydevd_bundle/pydevd_cython.pyx":657
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     cdef _get_unfiltered_back_frame(self, main_debugger, frame):             # <<<<<<<<<<<<<<
  *     # ELSE
  * #     def _get_unfiltered_back_frame(self, main_debugger, frame):
  */
@@ -14147,7 +13672,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__get_unfilt
   /* "_pydevd_bundle/pydevd_cython.pyx":661
  * #     def _get_unfiltered_back_frame(self, main_debugger, frame):
  *     # ENDIF
- *         f = frame.f_back             # <<<<<<<<<<<<<<
  *         while f is not None:
  *             if not main_debugger.is_files_filter_enabled:
  */
@@ -14159,7 +13683,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__get_unfilt
   /* "_pydevd_bundle/pydevd_cython.pyx":662
  *     # ENDIF
  *         f = frame.f_back
- *         while f is not None:             # <<<<<<<<<<<<<<
  *             if not main_debugger.is_files_filter_enabled:
  *                 return f
  */
@@ -14171,7 +13694,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__get_unfilt
     /* "_pydevd_bundle/pydevd_cython.pyx":663
  *         f = frame.f_back
  *         while f is not None:
- *             if not main_debugger.is_files_filter_enabled:             # <<<<<<<<<<<<<<
  *                 return f
  * 
  */
@@ -14185,7 +13707,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__get_unfilt
       /* "_pydevd_bundle/pydevd_cython.pyx":664
  *         while f is not None:
  *             if not main_debugger.is_files_filter_enabled:
- *                 return f             # <<<<<<<<<<<<<<
  * 
  *             else:
  */
@@ -14197,7 +13718,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__get_unfilt
       /* "_pydevd_bundle/pydevd_cython.pyx":663
  *         f = frame.f_back
  *         while f is not None:
- *             if not main_debugger.is_files_filter_enabled:             # <<<<<<<<<<<<<<
  *                 return f
  * 
  */
@@ -14206,7 +13726,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__get_unfilt
     /* "_pydevd_bundle/pydevd_cython.pyx":667
  * 
  *             else:
- *                 if main_debugger.apply_files_filter(f, f.f_code.co_filename, False):             # <<<<<<<<<<<<<<
  *                     f = f.f_back
  * 
  */
@@ -14275,7 +13794,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__get_unfilt
         /* "_pydevd_bundle/pydevd_cython.pyx":668
  *             else:
  *                 if main_debugger.apply_files_filter(f, f.f_code.co_filename, False):
- *                     f = f.f_back             # <<<<<<<<<<<<<<
  * 
  *                 else:
  */
@@ -14287,7 +13805,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__get_unfilt
         /* "_pydevd_bundle/pydevd_cython.pyx":667
  * 
  *             else:
- *                 if main_debugger.apply_files_filter(f, f.f_code.co_filename, False):             # <<<<<<<<<<<<<<
  *                     f = f.f_back
  * 
  */
@@ -14297,7 +13814,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__get_unfilt
       /* "_pydevd_bundle/pydevd_cython.pyx":671
  * 
  *                 else:
- *                     return f             # <<<<<<<<<<<<<<
  * 
  *         return f
  */
@@ -14314,7 +13830,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__get_unfilt
   /* "_pydevd_bundle/pydevd_cython.pyx":673
  *                     return f
  * 
- *         return f             # <<<<<<<<<<<<<<
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  */
@@ -14326,7 +13841,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__get_unfilt
   /* "_pydevd_bundle/pydevd_cython.pyx":657
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     cdef _get_unfiltered_back_frame(self, main_debugger, frame):             # <<<<<<<<<<<<<<
  *     # ELSE
  * #     def _get_unfiltered_back_frame(self, main_debugger, frame):
  */
@@ -14350,7 +13864,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__get_unfilt
 /* "_pydevd_bundle/pydevd_cython.pyx":676
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     cdef _is_same_frame(self, target_frame, current_frame):             # <<<<<<<<<<<<<<
  *         cdef PyDBAdditionalThreadInfo info;
  *     # ELSE
  */
@@ -14374,7 +13887,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
   /* "_pydevd_bundle/pydevd_cython.pyx":681
  * #     def _is_same_frame(self, target_frame, current_frame):
  *     # ENDIF
- *         if target_frame is current_frame:             # <<<<<<<<<<<<<<
  *             return True
  * 
  */
@@ -14385,7 +13897,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
     /* "_pydevd_bundle/pydevd_cython.pyx":682
  *     # ENDIF
  *         if target_frame is current_frame:
- *             return True             # <<<<<<<<<<<<<<
  * 
  *         info = self._args[2]
  */
@@ -14397,7 +13908,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
     /* "_pydevd_bundle/pydevd_cython.pyx":681
  * #     def _is_same_frame(self, target_frame, current_frame):
  *     # ENDIF
- *         if target_frame is current_frame:             # <<<<<<<<<<<<<<
  *             return True
  * 
  */
@@ -14406,7 +13916,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
   /* "_pydevd_bundle/pydevd_cython.pyx":684
  *             return True
  * 
- *         info = self._args[2]             # <<<<<<<<<<<<<<
  *         if info.pydev_use_scoped_step_frame:
  *             # If using scoped step we don't check the target, we just need to check
  */
@@ -14423,7 +13932,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
   /* "_pydevd_bundle/pydevd_cython.pyx":685
  * 
  *         info = self._args[2]
- *         if info.pydev_use_scoped_step_frame:             # <<<<<<<<<<<<<<
  *             # If using scoped step we don't check the target, we just need to check
  *             # if the current matches the same heuristic where the target was defined.
  */
@@ -14433,7 +13941,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
     /* "_pydevd_bundle/pydevd_cython.pyx":688
  *             # If using scoped step we don't check the target, we just need to check
  *             # if the current matches the same heuristic where the target was defined.
- *             if target_frame is not None and current_frame is not None:             # <<<<<<<<<<<<<<
  *                 if target_frame.f_code.co_filename == current_frame.f_code.co_filename:
  *                     # The co_name may be different (it may include the line number), but
  */
@@ -14453,7 +13960,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
       /* "_pydevd_bundle/pydevd_cython.pyx":689
  *             # if the current matches the same heuristic where the target was defined.
  *             if target_frame is not None and current_frame is not None:
- *                 if target_frame.f_code.co_filename == current_frame.f_code.co_filename:             # <<<<<<<<<<<<<<
  *                     # The co_name may be different (it may include the line number), but
  *                     # the filename must still be the same.
  */
@@ -14477,7 +13983,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
         /* "_pydevd_bundle/pydevd_cython.pyx":692
  *                     # The co_name may be different (it may include the line number), but
  *                     # the filename must still be the same.
- *                     f = current_frame.f_back             # <<<<<<<<<<<<<<
  *                     if f is not None and f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[1]:
  *                         f = f.f_back
  */
@@ -14489,7 +13994,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
         /* "_pydevd_bundle/pydevd_cython.pyx":693
  *                     # the filename must still be the same.
  *                     f = current_frame.f_back
- *                     if f is not None and f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[1]:             # <<<<<<<<<<<<<<
  *                         f = f.f_back
  *                         if f is not None and f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[2]:
  */
@@ -14522,7 +14026,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
           /* "_pydevd_bundle/pydevd_cython.pyx":694
  *                     f = current_frame.f_back
  *                     if f is not None and f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[1]:
- *                         f = f.f_back             # <<<<<<<<<<<<<<
  *                         if f is not None and f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[2]:
  *                             return True
  */
@@ -14534,7 +14037,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
           /* "_pydevd_bundle/pydevd_cython.pyx":695
  *                     if f is not None and f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[1]:
  *                         f = f.f_back
- *                         if f is not None and f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[2]:             # <<<<<<<<<<<<<<
  *                             return True
  * 
  */
@@ -14567,7 +14069,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
             /* "_pydevd_bundle/pydevd_cython.pyx":696
  *                         f = f.f_back
  *                         if f is not None and f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[2]:
- *                             return True             # <<<<<<<<<<<<<<
  * 
  *         return False
  */
@@ -14579,7 +14080,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
             /* "_pydevd_bundle/pydevd_cython.pyx":695
  *                     if f is not None and f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[1]:
  *                         f = f.f_back
- *                         if f is not None and f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[2]:             # <<<<<<<<<<<<<<
  *                             return True
  * 
  */
@@ -14588,7 +14088,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
           /* "_pydevd_bundle/pydevd_cython.pyx":693
  *                     # the filename must still be the same.
  *                     f = current_frame.f_back
- *                     if f is not None and f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[1]:             # <<<<<<<<<<<<<<
  *                         f = f.f_back
  *                         if f is not None and f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[2]:
  */
@@ -14597,7 +14096,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
         /* "_pydevd_bundle/pydevd_cython.pyx":689
  *             # if the current matches the same heuristic where the target was defined.
  *             if target_frame is not None and current_frame is not None:
- *                 if target_frame.f_code.co_filename == current_frame.f_code.co_filename:             # <<<<<<<<<<<<<<
  *                     # The co_name may be different (it may include the line number), but
  *                     # the filename must still be the same.
  */
@@ -14606,7 +14104,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
       /* "_pydevd_bundle/pydevd_cython.pyx":688
  *             # If using scoped step we don't check the target, we just need to check
  *             # if the current matches the same heuristic where the target was defined.
- *             if target_frame is not None and current_frame is not None:             # <<<<<<<<<<<<<<
  *                 if target_frame.f_code.co_filename == current_frame.f_code.co_filename:
  *                     # The co_name may be different (it may include the line number), but
  */
@@ -14615,7 +14112,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
     /* "_pydevd_bundle/pydevd_cython.pyx":685
  * 
  *         info = self._args[2]
- *         if info.pydev_use_scoped_step_frame:             # <<<<<<<<<<<<<<
  *             # If using scoped step we don't check the target, we just need to check
  *             # if the current matches the same heuristic where the target was defined.
  */
@@ -14624,7 +14120,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
   /* "_pydevd_bundle/pydevd_cython.pyx":698
  *                             return True
  * 
- *         return False             # <<<<<<<<<<<<<<
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  */
@@ -14636,7 +14131,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
   /* "_pydevd_bundle/pydevd_cython.pyx":676
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     cdef _is_same_frame(self, target_frame, current_frame):             # <<<<<<<<<<<<<<
  *         cdef PyDBAdditionalThreadInfo info;
  *     # ELSE
  */
@@ -14659,7 +14153,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame__is_same_fr
 /* "_pydevd_bundle/pydevd_cython.pyx":701
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     cpdef trace_dispatch(self, frame, str event, arg):             # <<<<<<<<<<<<<<
  *         cdef tuple abs_path_canonical_path_and_base;
  *         cdef bint is_exception_event;
  */
@@ -14845,7 +14338,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
   /* "_pydevd_bundle/pydevd_cython.pyx":741
  *         # generation be better split among what each part does).
  * 
- *         try:             # <<<<<<<<<<<<<<
  *             # DEBUG = '_debugger_case_generator.py' in frame.f_code.co_filename
  *             main_debugger, abs_path_canonical_path_and_base, info, thread, frame_skips_cache, frame_cache_key = self._args
  */
@@ -14854,7 +14346,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":743
  *         try:
  *             # DEBUG = '_debugger_case_generator.py' in frame.f_code.co_filename
- *             main_debugger, abs_path_canonical_path_and_base, info, thread, frame_skips_cache, frame_cache_key = self._args             # <<<<<<<<<<<<<<
  *             # if DEBUG: print('frame trace_dispatch %s %s %s %s %s %s, stop: %s' % (frame.f_lineno, frame.f_code.co_name, frame.f_code.co_filename, event, constant_to_str(info.pydev_step_cmd), arg, info.pydev_step_stop))
  *             info.is_tracing += 1
  */
@@ -14915,7 +14406,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":745
  *             main_debugger, abs_path_canonical_path_and_base, info, thread, frame_skips_cache, frame_cache_key = self._args
  *             # if DEBUG: print('frame trace_dispatch %s %s %s %s %s %s, stop: %s' % (frame.f_lineno, frame.f_code.co_name, frame.f_code.co_filename, event, constant_to_str(info.pydev_step_cmd), arg, info.pydev_step_stop))
- *             info.is_tracing += 1             # <<<<<<<<<<<<<<
  * 
  *             # TODO: This shouldn't be needed. The fact that frame.f_lineno
  */
@@ -14924,7 +14414,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":750
  *             # is None seems like a bug in Python 3.11.
  *             # Reported in: https://github.com/python/cpython/issues/94485
- *             line = frame.f_lineno or 0  # Workaround or case where frame.f_lineno is None             # <<<<<<<<<<<<<<
  *             line_cache_key = (frame_cache_key, line)
  * 
  */
@@ -14946,7 +14435,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":751
  *             # Reported in: https://github.com/python/cpython/issues/94485
  *             line = frame.f_lineno or 0  # Workaround or case where frame.f_lineno is None
- *             line_cache_key = (frame_cache_key, line)             # <<<<<<<<<<<<<<
  * 
  *             if main_debugger.pydb_disposed:
  */
@@ -14966,7 +14454,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":753
  *             line_cache_key = (frame_cache_key, line)
  * 
- *             if main_debugger.pydb_disposed:             # <<<<<<<<<<<<<<
  *                 return None if event == 'call' else NO_FTRACE
  * 
  */
@@ -14979,7 +14466,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":754
  * 
  *             if main_debugger.pydb_disposed:
- *                 return None if event == 'call' else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *             plugin_manager = main_debugger.plugin
  */
@@ -15001,7 +14487,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":753
  *             line_cache_key = (frame_cache_key, line)
  * 
- *             if main_debugger.pydb_disposed:             # <<<<<<<<<<<<<<
  *                 return None if event == 'call' else NO_FTRACE
  * 
  */
@@ -15010,7 +14495,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":756
  *                 return None if event == 'call' else NO_FTRACE
  * 
- *             plugin_manager = main_debugger.plugin             # <<<<<<<<<<<<<<
  *             has_exception_breakpoints = (
  *                 main_debugger.break_on_caught_exceptions
  */
@@ -15022,7 +14506,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":758
  *             plugin_manager = main_debugger.plugin
  *             has_exception_breakpoints = (
- *                 main_debugger.break_on_caught_exceptions             # <<<<<<<<<<<<<<
  *                 or main_debugger.break_on_user_uncaught_exceptions
  *                 or main_debugger.has_plugin_exception_breaks)
  */
@@ -15039,7 +14522,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":759
  *             has_exception_breakpoints = (
  *                 main_debugger.break_on_caught_exceptions
- *                 or main_debugger.break_on_user_uncaught_exceptions             # <<<<<<<<<<<<<<
  *                 or main_debugger.has_plugin_exception_breaks)
  * 
  */
@@ -15056,7 +14538,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":760
  *                 main_debugger.break_on_caught_exceptions
  *                 or main_debugger.break_on_user_uncaught_exceptions
- *                 or main_debugger.has_plugin_exception_breaks)             # <<<<<<<<<<<<<<
  * 
  *             stop_frame = info.pydev_step_stop
  */
@@ -15071,7 +14552,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":762
  *                 or main_debugger.has_plugin_exception_breaks)
  * 
- *             stop_frame = info.pydev_step_stop             # <<<<<<<<<<<<<<
  *             step_cmd = info.pydev_step_cmd
  *             function_breakpoint_on_call_event = None
  */
@@ -15083,7 +14563,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":763
  * 
  *             stop_frame = info.pydev_step_stop
- *             step_cmd = info.pydev_step_cmd             # <<<<<<<<<<<<<<
  *             function_breakpoint_on_call_event = None
  * 
  */
@@ -15093,7 +14572,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":764
  *             stop_frame = info.pydev_step_stop
  *             step_cmd = info.pydev_step_cmd
- *             function_breakpoint_on_call_event = None             # <<<<<<<<<<<<<<
  * 
  *             if frame.f_code.co_flags & 0xa0:  # 0xa0 ==  CO_GENERATOR = 0x20 | CO_COROUTINE = 0x80
  */
@@ -15103,7 +14581,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":766
  *             function_breakpoint_on_call_event = None
  * 
- *             if frame.f_code.co_flags & 0xa0:  # 0xa0 ==  CO_GENERATOR = 0x20 | CO_COROUTINE = 0x80             # <<<<<<<<<<<<<<
  *                 # Dealing with coroutines and generators:
  *                 # When in a coroutine we change the perceived event to the debugger because
  */
@@ -15122,7 +14599,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":770
  *                 # When in a coroutine we change the perceived event to the debugger because
  *                 # a call, StopIteration exception and return are usually just pausing/unpausing it.
- *                 if event == 'line':             # <<<<<<<<<<<<<<
  *                     is_line = True
  *                     is_call = False
  */
@@ -15133,7 +14609,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":771
  *                 # a call, StopIteration exception and return are usually just pausing/unpausing it.
  *                 if event == 'line':
- *                     is_line = True             # <<<<<<<<<<<<<<
  *                     is_call = False
  *                     is_return = False
  */
@@ -15142,7 +14617,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":772
  *                 if event == 'line':
  *                     is_line = True
- *                     is_call = False             # <<<<<<<<<<<<<<
  *                     is_return = False
  *                     is_exception_event = False
  */
@@ -15151,7 +14625,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":773
  *                     is_line = True
  *                     is_call = False
- *                     is_return = False             # <<<<<<<<<<<<<<
  *                     is_exception_event = False
  * 
  */
@@ -15160,7 +14633,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":774
  *                     is_call = False
  *                     is_return = False
- *                     is_exception_event = False             # <<<<<<<<<<<<<<
  * 
  *                 elif event == 'return':
  */
@@ -15169,7 +14641,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":770
  *                 # When in a coroutine we change the perceived event to the debugger because
  *                 # a call, StopIteration exception and return are usually just pausing/unpausing it.
- *                 if event == 'line':             # <<<<<<<<<<<<<<
  *                     is_line = True
  *                     is_call = False
  */
@@ -15179,7 +14650,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":776
  *                     is_exception_event = False
  * 
- *                 elif event == 'return':             # <<<<<<<<<<<<<<
  *                     is_line = False
  *                     is_call = False
  */
@@ -15190,7 +14660,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":777
  * 
  *                 elif event == 'return':
- *                     is_line = False             # <<<<<<<<<<<<<<
  *                     is_call = False
  *                     is_return = True
  */
@@ -15199,7 +14668,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":778
  *                 elif event == 'return':
  *                     is_line = False
- *                     is_call = False             # <<<<<<<<<<<<<<
  *                     is_return = True
  *                     is_exception_event = False
  */
@@ -15208,7 +14676,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":779
  *                     is_line = False
  *                     is_call = False
- *                     is_return = True             # <<<<<<<<<<<<<<
  *                     is_exception_event = False
  * 
  */
@@ -15217,7 +14684,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":780
  *                     is_call = False
  *                     is_return = True
- *                     is_exception_event = False             # <<<<<<<<<<<<<<
  * 
  *                     returns_cache_key = (frame_cache_key, 'returns')
  */
@@ -15226,7 +14692,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":782
  *                     is_exception_event = False
  * 
- *                     returns_cache_key = (frame_cache_key, 'returns')             # <<<<<<<<<<<<<<
  *                     return_lines = frame_skips_cache.get(returns_cache_key)
  *                     if return_lines is None:
  */
@@ -15244,7 +14709,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":783
  * 
  *                     returns_cache_key = (frame_cache_key, 'returns')
- *                     return_lines = frame_skips_cache.get(returns_cache_key)             # <<<<<<<<<<<<<<
  *                     if return_lines is None:
  *                         # Note: we're collecting the return lines by inspecting the bytecode as
  */
@@ -15260,7 +14724,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":784
  *                     returns_cache_key = (frame_cache_key, 'returns')
  *                     return_lines = frame_skips_cache.get(returns_cache_key)
- *                     if return_lines is None:             # <<<<<<<<<<<<<<
  *                         # Note: we're collecting the return lines by inspecting the bytecode as
  *                         # there are multiple returns and multiple stop iterations when awaiting and
  */
@@ -15271,7 +14734,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":789
  *                         # it doesn't give any clear indication when a coroutine or generator is
  *                         # finishing or just pausing.
- *                         return_lines = set()             # <<<<<<<<<<<<<<
  *                         for x in main_debugger.collect_return_info(frame.f_code):
  *                             # Note: cython does not support closures in cpdefs (so we can't use
  */
@@ -15283,7 +14745,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":790
  *                         # finishing or just pausing.
  *                         return_lines = set()
- *                         for x in main_debugger.collect_return_info(frame.f_code):             # <<<<<<<<<<<<<<
  *                             # Note: cython does not support closures in cpdefs (so we can't use
  *                             # a list comprehension).
  */
@@ -15353,7 +14814,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":793
  *                             # Note: cython does not support closures in cpdefs (so we can't use
  *                             # a list comprehension).
- *                             return_lines.add(x.return_line)             # <<<<<<<<<<<<<<
  * 
  *                         frame_skips_cache[returns_cache_key] = return_lines
  */
@@ -15382,7 +14842,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":790
  *                         # finishing or just pausing.
  *                         return_lines = set()
- *                         for x in main_debugger.collect_return_info(frame.f_code):             # <<<<<<<<<<<<<<
  *                             # Note: cython does not support closures in cpdefs (so we can't use
  *                             # a list comprehension).
  */
@@ -15392,7 +14851,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":795
  *                             return_lines.add(x.return_line)
  * 
- *                         frame_skips_cache[returns_cache_key] = return_lines             # <<<<<<<<<<<<<<
  * 
  *                     if line not in return_lines:
  */
@@ -15405,7 +14863,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":784
  *                     returns_cache_key = (frame_cache_key, 'returns')
  *                     return_lines = frame_skips_cache.get(returns_cache_key)
- *                     if return_lines is None:             # <<<<<<<<<<<<<<
  *                         # Note: we're collecting the return lines by inspecting the bytecode as
  *                         # there are multiple returns and multiple stop iterations when awaiting and
  */
@@ -15414,7 +14871,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":797
  *                         frame_skips_cache[returns_cache_key] = return_lines
  * 
- *                     if line not in return_lines:             # <<<<<<<<<<<<<<
  *                         # Not really a return (coroutine/generator paused).
  *                         return self.trace_dispatch
  */
@@ -15428,7 +14884,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":799
  *                     if line not in return_lines:
  *                         # Not really a return (coroutine/generator paused).
- *                         return self.trace_dispatch             # <<<<<<<<<<<<<<
  *                     else:
  *                         if self.exc_info:
  */
@@ -15442,7 +14897,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":797
  *                         frame_skips_cache[returns_cache_key] = return_lines
  * 
- *                     if line not in return_lines:             # <<<<<<<<<<<<<<
  *                         # Not really a return (coroutine/generator paused).
  *                         return self.trace_dispatch
  */
@@ -15451,7 +14905,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":801
  *                         return self.trace_dispatch
  *                     else:
- *                         if self.exc_info:             # <<<<<<<<<<<<<<
  *                             self.handle_user_exception(frame)
  *                             return self.trace_dispatch
  */
@@ -15462,7 +14915,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":802
  *                     else:
  *                         if self.exc_info:
- *                             self.handle_user_exception(frame)             # <<<<<<<<<<<<<<
  *                             return self.trace_dispatch
  * 
  */
@@ -15488,7 +14940,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":803
  *                         if self.exc_info:
  *                             self.handle_user_exception(frame)
- *                             return self.trace_dispatch             # <<<<<<<<<<<<<<
  * 
  *                         # Tricky handling: usually when we're on a frame which is about to exit
  */
@@ -15502,7 +14953,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":801
  *                         return self.trace_dispatch
  *                     else:
- *                         if self.exc_info:             # <<<<<<<<<<<<<<
  *                             self.handle_user_exception(frame)
  *                             return self.trace_dispatch
  */
@@ -15511,7 +14961,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":821
  *                         # as the return shouldn't mean that we've actually completed executing a
  *                         # frame in this case).
- *                         if stop_frame is frame and not info.pydev_use_scoped_step_frame:             # <<<<<<<<<<<<<<
  *                             if step_cmd in (108, 159, 107, 144):
  *                                 f = self._get_unfiltered_back_frame(main_debugger, frame)
  */
@@ -15530,7 +14979,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":822
  *                         # frame in this case).
  *                         if stop_frame is frame and not info.pydev_use_scoped_step_frame:
- *                             if step_cmd in (108, 159, 107, 144):             # <<<<<<<<<<<<<<
  *                                 f = self._get_unfiltered_back_frame(main_debugger, frame)
  *                                 if f is not None:
  */
@@ -15543,7 +14991,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":823
  *                         if stop_frame is frame and not info.pydev_use_scoped_step_frame:
  *                             if step_cmd in (108, 159, 107, 144):
- *                                 f = self._get_unfiltered_back_frame(main_debugger, frame)             # <<<<<<<<<<<<<<
  *                                 if f is not None:
  *                                     info.pydev_step_cmd = 206
  */
@@ -15555,7 +15002,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":824
  *                             if step_cmd in (108, 159, 107, 144):
  *                                 f = self._get_unfiltered_back_frame(main_debugger, frame)
- *                                 if f is not None:             # <<<<<<<<<<<<<<
  *                                     info.pydev_step_cmd = 206
  *                                     info.pydev_step_stop = f
  */
@@ -15566,7 +15012,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":825
  *                                 f = self._get_unfiltered_back_frame(main_debugger, frame)
  *                                 if f is not None:
- *                                     info.pydev_step_cmd = 206             # <<<<<<<<<<<<<<
  *                                     info.pydev_step_stop = f
  *                                 else:
  */
@@ -15575,7 +15020,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":826
  *                                 if f is not None:
  *                                     info.pydev_step_cmd = 206
- *                                     info.pydev_step_stop = f             # <<<<<<<<<<<<<<
  *                                 else:
  *                                     if step_cmd == 108:
  */
@@ -15588,7 +15032,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":824
  *                             if step_cmd in (108, 159, 107, 144):
  *                                 f = self._get_unfiltered_back_frame(main_debugger, frame)
- *                                 if f is not None:             # <<<<<<<<<<<<<<
  *                                     info.pydev_step_cmd = 206
  *                                     info.pydev_step_stop = f
  */
@@ -15598,7 +15041,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":828
  *                                     info.pydev_step_stop = f
  *                                 else:
- *                                     if step_cmd == 108:             # <<<<<<<<<<<<<<
  *                                         info.pydev_step_cmd = 107
  *                                         info.pydev_step_stop = None
  */
@@ -15607,7 +15049,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":832
  *                                         info.pydev_step_stop = None
  * 
- *                                     elif step_cmd == 159:             # <<<<<<<<<<<<<<
  *                                         info.pydev_step_cmd = 144
  *                                         info.pydev_step_stop = None
  */
@@ -15617,7 +15058,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":829
  *                                 else:
  *                                     if step_cmd == 108:
- *                                         info.pydev_step_cmd = 107             # <<<<<<<<<<<<<<
  *                                         info.pydev_step_stop = None
  * 
  */
@@ -15626,7 +15066,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":830
  *                                     if step_cmd == 108:
  *                                         info.pydev_step_cmd = 107
- *                                         info.pydev_step_stop = None             # <<<<<<<<<<<<<<
  * 
  *                                     elif step_cmd == 159:
  */
@@ -15639,7 +15078,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":828
  *                                     info.pydev_step_stop = f
  *                                 else:
- *                                     if step_cmd == 108:             # <<<<<<<<<<<<<<
  *                                         info.pydev_step_cmd = 107
  *                                         info.pydev_step_stop = None
  */
@@ -15649,7 +15087,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":833
  * 
  *                                     elif step_cmd == 159:
- *                                         info.pydev_step_cmd = 144             # <<<<<<<<<<<<<<
  *                                         info.pydev_step_stop = None
  * 
  */
@@ -15658,7 +15095,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":834
  *                                     elif step_cmd == 159:
  *                                         info.pydev_step_cmd = 144
- *                                         info.pydev_step_stop = None             # <<<<<<<<<<<<<<
  * 
  *                             elif step_cmd == 206:
  */
@@ -15671,7 +15107,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":832
  *                                         info.pydev_step_stop = None
  * 
- *                                     elif step_cmd == 159:             # <<<<<<<<<<<<<<
  *                                         info.pydev_step_cmd = 144
  *                                         info.pydev_step_stop = None
  */
@@ -15684,7 +15119,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":822
  *                         # frame in this case).
  *                         if stop_frame is frame and not info.pydev_use_scoped_step_frame:
- *                             if step_cmd in (108, 159, 107, 144):             # <<<<<<<<<<<<<<
  *                                 f = self._get_unfiltered_back_frame(main_debugger, frame)
  *                                 if f is not None:
  */
@@ -15694,7 +15128,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":838
  *                             elif step_cmd == 206:
  *                                 # We're exiting this one, so, mark the new coroutine context.
- *                                 f = self._get_unfiltered_back_frame(main_debugger, frame)             # <<<<<<<<<<<<<<
  *                                 if f is not None:
  *                                     info.pydev_step_stop = f
  */
@@ -15706,7 +15139,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":839
  *                                 # We're exiting this one, so, mark the new coroutine context.
  *                                 f = self._get_unfiltered_back_frame(main_debugger, frame)
- *                                 if f is not None:             # <<<<<<<<<<<<<<
  *                                     info.pydev_step_stop = f
  *                                 else:
  */
@@ -15717,7 +15149,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":840
  *                                 f = self._get_unfiltered_back_frame(main_debugger, frame)
  *                                 if f is not None:
- *                                     info.pydev_step_stop = f             # <<<<<<<<<<<<<<
  *                                 else:
  *                                     info.pydev_step_cmd = 107
  */
@@ -15730,7 +15161,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":839
  *                                 # We're exiting this one, so, mark the new coroutine context.
  *                                 f = self._get_unfiltered_back_frame(main_debugger, frame)
- *                                 if f is not None:             # <<<<<<<<<<<<<<
  *                                     info.pydev_step_stop = f
  *                                 else:
  */
@@ -15740,7 +15170,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":842
  *                                     info.pydev_step_stop = f
  *                                 else:
- *                                     info.pydev_step_cmd = 107             # <<<<<<<<<<<<<<
  *                                     info.pydev_step_stop = None
  * 
  */
@@ -15750,7 +15179,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":843
  *                                 else:
  *                                     info.pydev_step_cmd = 107
- *                                     info.pydev_step_stop = None             # <<<<<<<<<<<<<<
  * 
  *                 elif event == 'exception':
  */
@@ -15765,7 +15193,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":836
  *                                         info.pydev_step_stop = None
  * 
- *                             elif step_cmd == 206:             # <<<<<<<<<<<<<<
  *                                 # We're exiting this one, so, mark the new coroutine context.
  *                                 f = self._get_unfiltered_back_frame(main_debugger, frame)
  */
@@ -15776,7 +15203,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":821
  *                         # as the return shouldn't mean that we've actually completed executing a
  *                         # frame in this case).
- *                         if stop_frame is frame and not info.pydev_use_scoped_step_frame:             # <<<<<<<<<<<<<<
  *                             if step_cmd in (108, 159, 107, 144):
  *                                 f = self._get_unfiltered_back_frame(main_debugger, frame)
  */
@@ -15786,7 +15212,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":776
  *                     is_exception_event = False
  * 
- *                 elif event == 'return':             # <<<<<<<<<<<<<<
  *                     is_line = False
  *                     is_call = False
  */
@@ -15796,7 +15221,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":845
  *                                     info.pydev_step_stop = None
  * 
- *                 elif event == 'exception':             # <<<<<<<<<<<<<<
  *                     breakpoints_for_file = None
  *                     if has_exception_breakpoints:
  */
@@ -15807,7 +15231,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":846
  * 
  *                 elif event == 'exception':
- *                     breakpoints_for_file = None             # <<<<<<<<<<<<<<
  *                     if has_exception_breakpoints:
  *                         should_stop, frame = self._should_stop_on_exception(frame, event, arg)
  */
@@ -15817,7 +15240,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":847
  *                 elif event == 'exception':
  *                     breakpoints_for_file = None
- *                     if has_exception_breakpoints:             # <<<<<<<<<<<<<<
  *                         should_stop, frame = self._should_stop_on_exception(frame, event, arg)
  *                         if should_stop:
  */
@@ -15827,7 +15249,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":848
  *                     breakpoints_for_file = None
  *                     if has_exception_breakpoints:
- *                         should_stop, frame = self._should_stop_on_exception(frame, event, arg)             # <<<<<<<<<<<<<<
  *                         if should_stop:
  *                             if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):
  */
@@ -15888,7 +15309,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":849
  *                     if has_exception_breakpoints:
  *                         should_stop, frame = self._should_stop_on_exception(frame, event, arg)
- *                         if should_stop:             # <<<<<<<<<<<<<<
  *                             if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):
  *                                 return self.trace_dispatch
  */
@@ -15898,7 +15318,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":850
  *                         should_stop, frame = self._should_stop_on_exception(frame, event, arg)
  *                         if should_stop:
- *                             if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):             # <<<<<<<<<<<<<<
  *                                 return self.trace_dispatch
  * 
  */
@@ -15915,7 +15334,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":851
  *                         if should_stop:
  *                             if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):
- *                                 return self.trace_dispatch             # <<<<<<<<<<<<<<
  * 
  *                     return self.trace_dispatch
  */
@@ -15929,7 +15347,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":850
  *                         should_stop, frame = self._should_stop_on_exception(frame, event, arg)
  *                         if should_stop:
- *                             if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):             # <<<<<<<<<<<<<<
  *                                 return self.trace_dispatch
  * 
  */
@@ -15938,7 +15355,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":849
  *                     if has_exception_breakpoints:
  *                         should_stop, frame = self._should_stop_on_exception(frame, event, arg)
- *                         if should_stop:             # <<<<<<<<<<<<<<
  *                             if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):
  *                                 return self.trace_dispatch
  */
@@ -15947,7 +15363,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":847
  *                 elif event == 'exception':
  *                     breakpoints_for_file = None
- *                     if has_exception_breakpoints:             # <<<<<<<<<<<<<<
  *                         should_stop, frame = self._should_stop_on_exception(frame, event, arg)
  *                         if should_stop:
  */
@@ -15956,7 +15371,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":853
  *                                 return self.trace_dispatch
  * 
- *                     return self.trace_dispatch             # <<<<<<<<<<<<<<
  *                 else:
  *                     # event == 'call' or event == 'c_XXX'
  */
@@ -15970,7 +15384,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":845
  *                                     info.pydev_step_stop = None
  * 
- *                 elif event == 'exception':             # <<<<<<<<<<<<<<
  *                     breakpoints_for_file = None
  *                     if has_exception_breakpoints:
  */
@@ -15979,7 +15392,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":856
  *                 else:
  *                     # event == 'call' or event == 'c_XXX'
- *                     return self.trace_dispatch             # <<<<<<<<<<<<<<
  * 
  *             else:  # Not coroutine nor generator
  */
@@ -15996,7 +15408,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":766
  *             function_breakpoint_on_call_event = None
  * 
- *             if frame.f_code.co_flags & 0xa0:  # 0xa0 ==  CO_GENERATOR = 0x20 | CO_COROUTINE = 0x80             # <<<<<<<<<<<<<<
  *                 # Dealing with coroutines and generators:
  *                 # When in a coroutine we change the perceived event to the debugger because
  */
@@ -16006,7 +15417,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":859
  * 
  *             else:  # Not coroutine nor generator
- *                 if event == 'line':             # <<<<<<<<<<<<<<
  *                     is_line = True
  *                     is_call = False
  */
@@ -16018,7 +15428,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":860
  *             else:  # Not coroutine nor generator
  *                 if event == 'line':
- *                     is_line = True             # <<<<<<<<<<<<<<
  *                     is_call = False
  *                     is_return = False
  */
@@ -16027,7 +15436,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":861
  *                 if event == 'line':
  *                     is_line = True
- *                     is_call = False             # <<<<<<<<<<<<<<
  *                     is_return = False
  *                     is_exception_event = False
  */
@@ -16036,7 +15444,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":862
  *                     is_line = True
  *                     is_call = False
- *                     is_return = False             # <<<<<<<<<<<<<<
  *                     is_exception_event = False
  * 
  */
@@ -16045,7 +15452,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":863
  *                     is_call = False
  *                     is_return = False
- *                     is_exception_event = False             # <<<<<<<<<<<<<<
  * 
  *                 elif event == 'return':
  */
@@ -16054,7 +15460,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":859
  * 
  *             else:  # Not coroutine nor generator
- *                 if event == 'line':             # <<<<<<<<<<<<<<
  *                     is_line = True
  *                     is_call = False
  */
@@ -16064,7 +15469,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":865
  *                     is_exception_event = False
  * 
- *                 elif event == 'return':             # <<<<<<<<<<<<<<
  *                     is_line = False
  *                     is_return = True
  */
@@ -16075,7 +15479,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":866
  * 
  *                 elif event == 'return':
- *                     is_line = False             # <<<<<<<<<<<<<<
  *                     is_return = True
  *                     is_call = False
  */
@@ -16084,7 +15487,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":867
  *                 elif event == 'return':
  *                     is_line = False
- *                     is_return = True             # <<<<<<<<<<<<<<
  *                     is_call = False
  *                     is_exception_event = False
  */
@@ -16093,7 +15495,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":868
  *                     is_line = False
  *                     is_return = True
- *                     is_call = False             # <<<<<<<<<<<<<<
  *                     is_exception_event = False
  * 
  */
@@ -16102,7 +15503,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":869
  *                     is_return = True
  *                     is_call = False
- *                     is_exception_event = False             # <<<<<<<<<<<<<<
  * 
  *                     # If we are in single step mode and something causes us to exit the current frame, we need to make sure we break
  */
@@ -16111,7 +15511,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":878
  *                     # @DontTrace comment.
  *                     if (
- *                             stop_frame is frame and             # <<<<<<<<<<<<<<
  *                             not info.pydev_use_scoped_step_frame and is_return and
  *                             step_cmd in (108, 109, 159, 160, 128)
  */
@@ -16126,7 +15525,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":879
  *                     if (
  *                             stop_frame is frame and
- *                             not info.pydev_use_scoped_step_frame and is_return and             # <<<<<<<<<<<<<<
  *                             step_cmd in (108, 109, 159, 160, 128)
  *                         ):
  */
@@ -16146,7 +15544,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":880
  *                             stop_frame is frame and
  *                             not info.pydev_use_scoped_step_frame and is_return and
- *                             step_cmd in (108, 109, 159, 160, 128)             # <<<<<<<<<<<<<<
  *                         ):
  * 
  */
@@ -16169,7 +15566,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":877
  *                     # Note: this is especially troublesome when we're skipping code with the
  *                     # @DontTrace comment.
- *                     if (             # <<<<<<<<<<<<<<
  *                             stop_frame is frame and
  *                             not info.pydev_use_scoped_step_frame and is_return and
  */
@@ -16178,7 +15574,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":883
  *                         ):
  * 
- *                         if step_cmd in (108, 109, 128):             # <<<<<<<<<<<<<<
  *                             info.pydev_step_cmd = 107
  *                         else:
  */
@@ -16190,7 +15585,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":884
  * 
  *                         if step_cmd in (108, 109, 128):
- *                             info.pydev_step_cmd = 107             # <<<<<<<<<<<<<<
  *                         else:
  *                             info.pydev_step_cmd = 144
  */
@@ -16199,7 +15593,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":883
  *                         ):
  * 
- *                         if step_cmd in (108, 109, 128):             # <<<<<<<<<<<<<<
  *                             info.pydev_step_cmd = 107
  *                         else:
  */
@@ -16209,7 +15602,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":886
  *                             info.pydev_step_cmd = 107
  *                         else:
- *                             info.pydev_step_cmd = 144             # <<<<<<<<<<<<<<
  *                         info.pydev_step_stop = None
  * 
  */
@@ -16220,7 +15612,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":887
  *                         else:
  *                             info.pydev_step_cmd = 144
- *                         info.pydev_step_stop = None             # <<<<<<<<<<<<<<
  * 
  *                     if self.exc_info:
  */
@@ -16233,7 +15624,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":877
  *                     # Note: this is especially troublesome when we're skipping code with the
  *                     # @DontTrace comment.
- *                     if (             # <<<<<<<<<<<<<<
  *                             stop_frame is frame and
  *                             not info.pydev_use_scoped_step_frame and is_return and
  */
@@ -16242,7 +15632,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":889
  *                         info.pydev_step_stop = None
  * 
- *                     if self.exc_info:             # <<<<<<<<<<<<<<
  *                         if self.handle_user_exception(frame):
  *                             return self.trace_dispatch
  */
@@ -16252,7 +15641,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":890
  * 
  *                     if self.exc_info:
- *                         if self.handle_user_exception(frame):             # <<<<<<<<<<<<<<
  *                             return self.trace_dispatch
  * 
  */
@@ -16280,7 +15668,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":891
  *                     if self.exc_info:
  *                         if self.handle_user_exception(frame):
- *                             return self.trace_dispatch             # <<<<<<<<<<<<<<
  * 
  *                 elif event == 'call':
  */
@@ -16294,7 +15681,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":890
  * 
  *                     if self.exc_info:
- *                         if self.handle_user_exception(frame):             # <<<<<<<<<<<<<<
  *                             return self.trace_dispatch
  * 
  */
@@ -16303,7 +15689,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":889
  *                         info.pydev_step_stop = None
  * 
- *                     if self.exc_info:             # <<<<<<<<<<<<<<
  *                         if self.handle_user_exception(frame):
  *                             return self.trace_dispatch
  */
@@ -16312,7 +15697,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":865
  *                     is_exception_event = False
  * 
- *                 elif event == 'return':             # <<<<<<<<<<<<<<
  *                     is_line = False
  *                     is_return = True
  */
@@ -16322,7 +15706,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":893
  *                             return self.trace_dispatch
  * 
- *                 elif event == 'call':             # <<<<<<<<<<<<<<
  *                     is_line = False
  *                     is_call = True
  */
@@ -16333,7 +15716,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":894
  * 
  *                 elif event == 'call':
- *                     is_line = False             # <<<<<<<<<<<<<<
  *                     is_call = True
  *                     is_return = False
  */
@@ -16342,7 +15724,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":895
  *                 elif event == 'call':
  *                     is_line = False
- *                     is_call = True             # <<<<<<<<<<<<<<
  *                     is_return = False
  *                     is_exception_event = False
  */
@@ -16351,7 +15732,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":896
  *                     is_line = False
  *                     is_call = True
- *                     is_return = False             # <<<<<<<<<<<<<<
  *                     is_exception_event = False
  *                     if frame.f_code.co_firstlineno == frame.f_lineno:  # Check line to deal with async/await.
  */
@@ -16360,7 +15740,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":897
  *                     is_call = True
  *                     is_return = False
- *                     is_exception_event = False             # <<<<<<<<<<<<<<
  *                     if frame.f_code.co_firstlineno == frame.f_lineno:  # Check line to deal with async/await.
  *                         function_breakpoint_on_call_event = main_debugger.function_breakpoint_name_to_breakpoint.get(frame.f_code.co_name)
  */
@@ -16369,7 +15748,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":898
  *                     is_return = False
  *                     is_exception_event = False
- *                     if frame.f_code.co_firstlineno == frame.f_lineno:  # Check line to deal with async/await.             # <<<<<<<<<<<<<<
  *                         function_breakpoint_on_call_event = main_debugger.function_breakpoint_name_to_breakpoint.get(frame.f_code.co_name)
  * 
  */
@@ -16390,7 +15768,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":899
  *                     is_exception_event = False
  *                     if frame.f_code.co_firstlineno == frame.f_lineno:  # Check line to deal with async/await.
- *                         function_breakpoint_on_call_event = main_debugger.function_breakpoint_name_to_breakpoint.get(frame.f_code.co_name)             # <<<<<<<<<<<<<<
  * 
  *                 elif event == 'exception':
  */
@@ -16426,7 +15803,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":898
  *                     is_return = False
  *                     is_exception_event = False
- *                     if frame.f_code.co_firstlineno == frame.f_lineno:  # Check line to deal with async/await.             # <<<<<<<<<<<<<<
  *                         function_breakpoint_on_call_event = main_debugger.function_breakpoint_name_to_breakpoint.get(frame.f_code.co_name)
  * 
  */
@@ -16435,7 +15811,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":893
  *                             return self.trace_dispatch
  * 
- *                 elif event == 'call':             # <<<<<<<<<<<<<<
  *                     is_line = False
  *                     is_call = True
  */
@@ -16445,7 +15820,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":901
  *                         function_breakpoint_on_call_event = main_debugger.function_breakpoint_name_to_breakpoint.get(frame.f_code.co_name)
  * 
- *                 elif event == 'exception':             # <<<<<<<<<<<<<<
  *                     is_exception_event = True
  *                     breakpoints_for_file = None
  */
@@ -16456,7 +15830,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":902
  * 
  *                 elif event == 'exception':
- *                     is_exception_event = True             # <<<<<<<<<<<<<<
  *                     breakpoints_for_file = None
  *                     if has_exception_breakpoints:
  */
@@ -16465,7 +15838,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":903
  *                 elif event == 'exception':
  *                     is_exception_event = True
- *                     breakpoints_for_file = None             # <<<<<<<<<<<<<<
  *                     if has_exception_breakpoints:
  *                         should_stop, frame = self._should_stop_on_exception(frame, event, arg)
  */
@@ -16475,7 +15847,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":904
  *                     is_exception_event = True
  *                     breakpoints_for_file = None
- *                     if has_exception_breakpoints:             # <<<<<<<<<<<<<<
  *                         should_stop, frame = self._should_stop_on_exception(frame, event, arg)
  *                         if should_stop:
  */
@@ -16485,7 +15856,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":905
  *                     breakpoints_for_file = None
  *                     if has_exception_breakpoints:
- *                         should_stop, frame = self._should_stop_on_exception(frame, event, arg)             # <<<<<<<<<<<<<<
  *                         if should_stop:
  *                             if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):
  */
@@ -16546,7 +15916,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":906
  *                     if has_exception_breakpoints:
  *                         should_stop, frame = self._should_stop_on_exception(frame, event, arg)
- *                         if should_stop:             # <<<<<<<<<<<<<<
  *                             if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):
  *                                 return self.trace_dispatch
  */
@@ -16556,7 +15925,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":907
  *                         should_stop, frame = self._should_stop_on_exception(frame, event, arg)
  *                         if should_stop:
- *                             if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):             # <<<<<<<<<<<<<<
  *                                 return self.trace_dispatch
  *                     is_line = False
  */
@@ -16573,7 +15941,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":908
  *                         if should_stop:
  *                             if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):
- *                                 return self.trace_dispatch             # <<<<<<<<<<<<<<
  *                     is_line = False
  *                     is_return = False
  */
@@ -16587,7 +15954,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":907
  *                         should_stop, frame = self._should_stop_on_exception(frame, event, arg)
  *                         if should_stop:
- *                             if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):             # <<<<<<<<<<<<<<
  *                                 return self.trace_dispatch
  *                     is_line = False
  */
@@ -16596,7 +15962,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":906
  *                     if has_exception_breakpoints:
  *                         should_stop, frame = self._should_stop_on_exception(frame, event, arg)
- *                         if should_stop:             # <<<<<<<<<<<<<<
  *                             if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):
  *                                 return self.trace_dispatch
  */
@@ -16605,7 +15970,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":904
  *                     is_exception_event = True
  *                     breakpoints_for_file = None
- *                     if has_exception_breakpoints:             # <<<<<<<<<<<<<<
  *                         should_stop, frame = self._should_stop_on_exception(frame, event, arg)
  *                         if should_stop:
  */
@@ -16614,7 +15978,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":909
  *                             if self._handle_exception(frame, event, arg, EXCEPTION_TYPE_HANDLED):
  *                                 return self.trace_dispatch
- *                     is_line = False             # <<<<<<<<<<<<<<
  *                     is_return = False
  *                     is_call = False
  */
@@ -16623,7 +15986,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":910
  *                                 return self.trace_dispatch
  *                     is_line = False
- *                     is_return = False             # <<<<<<<<<<<<<<
  *                     is_call = False
  * 
  */
@@ -16632,7 +15994,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":911
  *                     is_line = False
  *                     is_return = False
- *                     is_call = False             # <<<<<<<<<<<<<<
  * 
  *                 else:
  */
@@ -16641,7 +16002,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":901
  *                         function_breakpoint_on_call_event = main_debugger.function_breakpoint_name_to_breakpoint.get(frame.f_code.co_name)
  * 
- *                 elif event == 'exception':             # <<<<<<<<<<<<<<
  *                     is_exception_event = True
  *                     breakpoints_for_file = None
  */
@@ -16651,7 +16011,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":915
  *                 else:
  *                     # Unexpected: just keep the same trace func (i.e.: event == 'c_XXX').
- *                     return self.trace_dispatch             # <<<<<<<<<<<<<<
  * 
  *             if not is_exception_event:
  */
@@ -16670,7 +16029,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":917
  *                     return self.trace_dispatch
  * 
- *             if not is_exception_event:             # <<<<<<<<<<<<<<
  *                 breakpoints_for_file = main_debugger.breakpoints.get(abs_path_canonical_path_and_base[1])
  * 
  */
@@ -16680,7 +16038,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":918
  * 
  *             if not is_exception_event:
- *                 breakpoints_for_file = main_debugger.breakpoints.get(abs_path_canonical_path_and_base[1])             # <<<<<<<<<<<<<<
  * 
  *                 can_skip = False
  */
@@ -16718,7 +16075,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":920
  *                 breakpoints_for_file = main_debugger.breakpoints.get(abs_path_canonical_path_and_base[1])
  * 
- *                 can_skip = False             # <<<<<<<<<<<<<<
  * 
  *                 if info.pydev_state == 1:  # 1 = 1
  */
@@ -16727,7 +16083,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":922
  *                 can_skip = False
  * 
- *                 if info.pydev_state == 1:  # 1 = 1             # <<<<<<<<<<<<<<
  *                     # we can skip if:
  *                     # - we have no stop marked
  */
@@ -16737,7 +16092,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":927
  *                     # - we should make a step return/step over and we're not in the current frame
  *                     # - we're stepping into a coroutine context and we're not in that context
- *                     if step_cmd == -1:             # <<<<<<<<<<<<<<
  *                         can_skip = True
  * 
  */
@@ -16747,7 +16101,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":928
  *                     # - we're stepping into a coroutine context and we're not in that context
  *                     if step_cmd == -1:
- *                         can_skip = True             # <<<<<<<<<<<<<<
  * 
  *                     elif step_cmd in (108, 109, 159, 160) and not self._is_same_frame(stop_frame, frame):
  */
@@ -16756,7 +16109,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":927
  *                     # - we should make a step return/step over and we're not in the current frame
  *                     # - we're stepping into a coroutine context and we're not in that context
- *                     if step_cmd == -1:             # <<<<<<<<<<<<<<
  *                         can_skip = True
  * 
  */
@@ -16766,7 +16118,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":930
  *                         can_skip = True
  * 
- *                     elif step_cmd in (108, 109, 159, 160) and not self._is_same_frame(stop_frame, frame):             # <<<<<<<<<<<<<<
  *                         can_skip = True
  * 
  */
@@ -16799,7 +16150,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":931
  * 
  *                     elif step_cmd in (108, 109, 159, 160) and not self._is_same_frame(stop_frame, frame):
- *                         can_skip = True             # <<<<<<<<<<<<<<
  * 
  *                     elif step_cmd == 128 and (
  */
@@ -16808,7 +16158,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":930
  *                         can_skip = True
  * 
- *                     elif step_cmd in (108, 109, 159, 160) and not self._is_same_frame(stop_frame, frame):             # <<<<<<<<<<<<<<
  *                         can_skip = True
  * 
  */
@@ -16818,7 +16167,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":933
  *                         can_skip = True
  * 
- *                     elif step_cmd == 128 and (             # <<<<<<<<<<<<<<
  *                             stop_frame is not None and
  *                             stop_frame is not frame and
  */
@@ -16832,7 +16180,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":934
  * 
  *                     elif step_cmd == 128 and (
- *                             stop_frame is not None and             # <<<<<<<<<<<<<<
  *                             stop_frame is not frame and
  *                             stop_frame is not frame.f_back and
  */
@@ -16847,7 +16194,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":935
  *                     elif step_cmd == 128 and (
  *                             stop_frame is not None and
- *                             stop_frame is not frame and             # <<<<<<<<<<<<<<
  *                             stop_frame is not frame.f_back and
  *                             (frame.f_back is None or stop_frame is not frame.f_back.f_back)):
  */
@@ -16862,7 +16208,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":936
  *                             stop_frame is not None and
  *                             stop_frame is not frame and
- *                             stop_frame is not frame.f_back and             # <<<<<<<<<<<<<<
  *                             (frame.f_back is None or stop_frame is not frame.f_back.f_back)):
  *                         can_skip = True
  */
@@ -16880,7 +16225,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":937
  *                             stop_frame is not frame and
  *                             stop_frame is not frame.f_back and
- *                             (frame.f_back is None or stop_frame is not frame.f_back.f_back)):             # <<<<<<<<<<<<<<
  *                         can_skip = True
  * 
  */
@@ -16908,7 +16252,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":933
  *                         can_skip = True
  * 
- *                     elif step_cmd == 128 and (             # <<<<<<<<<<<<<<
  *                             stop_frame is not None and
  *                             stop_frame is not frame and
  */
@@ -16917,7 +16260,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":938
  *                             stop_frame is not frame.f_back and
  *                             (frame.f_back is None or stop_frame is not frame.f_back.f_back)):
- *                         can_skip = True             # <<<<<<<<<<<<<<
  * 
  *                     elif step_cmd == 144:
  */
@@ -16926,7 +16268,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":933
  *                         can_skip = True
  * 
- *                     elif step_cmd == 128 and (             # <<<<<<<<<<<<<<
  *                             stop_frame is not None and
  *                             stop_frame is not frame and
  */
@@ -16936,7 +16277,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":940
  *                         can_skip = True
  * 
- *                     elif step_cmd == 144:             # <<<<<<<<<<<<<<
  *                         if (
  *                             main_debugger.apply_files_filter(frame, frame.f_code.co_filename, True)
  */
@@ -16946,7 +16286,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":942
  *                     elif step_cmd == 144:
  *                         if (
- *                             main_debugger.apply_files_filter(frame, frame.f_code.co_filename, True)             # <<<<<<<<<<<<<<
  *                             and (frame.f_back is None or main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, True))
  *                             ):
  */
@@ -17018,7 +16357,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":943
  *                         if (
  *                             main_debugger.apply_files_filter(frame, frame.f_code.co_filename, True)
- *                             and (frame.f_back is None or main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, True))             # <<<<<<<<<<<<<<
  *                             ):
  *                                 can_skip = True
  */
@@ -17104,7 +16442,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":941
  * 
  *                     elif step_cmd == 144:
- *                         if (             # <<<<<<<<<<<<<<
  *                             main_debugger.apply_files_filter(frame, frame.f_code.co_filename, True)
  *                             and (frame.f_back is None or main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, True))
  */
@@ -17113,7 +16450,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":945
  *                             and (frame.f_back is None or main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, True))
  *                             ):
- *                                 can_skip = True             # <<<<<<<<<<<<<<
  * 
  *                     elif step_cmd == 206:
  */
@@ -17122,7 +16458,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":941
  * 
  *                     elif step_cmd == 144:
- *                         if (             # <<<<<<<<<<<<<<
  *                             main_debugger.apply_files_filter(frame, frame.f_code.co_filename, True)
  *                             and (frame.f_back is None or main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, True))
  */
@@ -17131,7 +16466,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":940
  *                         can_skip = True
  * 
- *                     elif step_cmd == 144:             # <<<<<<<<<<<<<<
  *                         if (
  *                             main_debugger.apply_files_filter(frame, frame.f_code.co_filename, True)
  */
@@ -17141,7 +16475,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":947
  *                                 can_skip = True
  * 
- *                     elif step_cmd == 206:             # <<<<<<<<<<<<<<
  *                         f = frame
  *                         while f is not None:
  */
@@ -17151,7 +16484,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":948
  * 
  *                     elif step_cmd == 206:
- *                         f = frame             # <<<<<<<<<<<<<<
  *                         while f is not None:
  *                             if self._is_same_frame(stop_frame, f):
  */
@@ -17161,7 +16493,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":949
  *                     elif step_cmd == 206:
  *                         f = frame
- *                         while f is not None:             # <<<<<<<<<<<<<<
  *                             if self._is_same_frame(stop_frame, f):
  *                                 break
  */
@@ -17173,7 +16504,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":950
  *                         f = frame
  *                         while f is not None:
- *                             if self._is_same_frame(stop_frame, f):             # <<<<<<<<<<<<<<
  *                                 break
  *                             f = f.f_back
  */
@@ -17186,7 +16516,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":951
  *                         while f is not None:
  *                             if self._is_same_frame(stop_frame, f):
- *                                 break             # <<<<<<<<<<<<<<
  *                             f = f.f_back
  *                         else:
  */
@@ -17195,7 +16524,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":950
  *                         f = frame
  *                         while f is not None:
- *                             if self._is_same_frame(stop_frame, f):             # <<<<<<<<<<<<<<
  *                                 break
  *                             f = f.f_back
  */
@@ -17204,7 +16532,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":952
  *                             if self._is_same_frame(stop_frame, f):
  *                                 break
- *                             f = f.f_back             # <<<<<<<<<<<<<<
  *                         else:
  *                             can_skip = True
  */
@@ -17217,7 +16544,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":954
  *                             f = f.f_back
  *                         else:
- *                             can_skip = True             # <<<<<<<<<<<<<<
  * 
  *                     if can_skip:
  */
@@ -17229,7 +16555,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":947
  *                                 can_skip = True
  * 
- *                     elif step_cmd == 206:             # <<<<<<<<<<<<<<
  *                         f = frame
  *                         while f is not None:
  */
@@ -17239,7 +16564,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":956
  *                             can_skip = True
  * 
- *                     if can_skip:             # <<<<<<<<<<<<<<
  *                         if plugin_manager is not None and (
  *                                 main_debugger.has_plugin_line_breaks or main_debugger.has_plugin_exception_breaks):
  */
@@ -17249,7 +16573,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":957
  * 
  *                     if can_skip:
- *                         if plugin_manager is not None and (             # <<<<<<<<<<<<<<
  *                                 main_debugger.has_plugin_line_breaks or main_debugger.has_plugin_exception_breaks):
  *                             can_skip = plugin_manager.can_skip(main_debugger, frame)
  */
@@ -17264,7 +16587,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":958
  *                     if can_skip:
  *                         if plugin_manager is not None and (
- *                                 main_debugger.has_plugin_line_breaks or main_debugger.has_plugin_exception_breaks):             # <<<<<<<<<<<<<<
  *                             can_skip = plugin_manager.can_skip(main_debugger, frame)
  * 
  */
@@ -17287,7 +16609,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":957
  * 
  *                     if can_skip:
- *                         if plugin_manager is not None and (             # <<<<<<<<<<<<<<
  *                                 main_debugger.has_plugin_line_breaks or main_debugger.has_plugin_exception_breaks):
  *                             can_skip = plugin_manager.can_skip(main_debugger, frame)
  */
@@ -17296,7 +16617,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":959
  *                         if plugin_manager is not None and (
  *                                 main_debugger.has_plugin_line_breaks or main_debugger.has_plugin_exception_breaks):
- *                             can_skip = plugin_manager.can_skip(main_debugger, frame)             # <<<<<<<<<<<<<<
  * 
  *                         if can_skip and main_debugger.show_return_values and info.pydev_step_cmd in (108, 159) and self._is_same_frame(stop_frame, frame.f_back):
  */
@@ -17354,7 +16674,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":957
  * 
  *                     if can_skip:
- *                         if plugin_manager is not None and (             # <<<<<<<<<<<<<<
  *                                 main_debugger.has_plugin_line_breaks or main_debugger.has_plugin_exception_breaks):
  *                             can_skip = plugin_manager.can_skip(main_debugger, frame)
  */
@@ -17363,7 +16682,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":961
  *                             can_skip = plugin_manager.can_skip(main_debugger, frame)
  * 
- *                         if can_skip and main_debugger.show_return_values and info.pydev_step_cmd in (108, 159) and self._is_same_frame(stop_frame, frame.f_back):             # <<<<<<<<<<<<<<
  *                             # trace function for showing return values after step over
  *                             can_skip = False
  */
@@ -17411,7 +16729,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":963
  *                         if can_skip and main_debugger.show_return_values and info.pydev_step_cmd in (108, 159) and self._is_same_frame(stop_frame, frame.f_back):
  *                             # trace function for showing return values after step over
- *                             can_skip = False             # <<<<<<<<<<<<<<
  * 
  *                 # Let's check to see if we are in a function that has a breakpoint. If we don't have a breakpoint,
  */
@@ -17420,7 +16737,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":961
  *                             can_skip = plugin_manager.can_skip(main_debugger, frame)
  * 
- *                         if can_skip and main_debugger.show_return_values and info.pydev_step_cmd in (108, 159) and self._is_same_frame(stop_frame, frame.f_back):             # <<<<<<<<<<<<<<
  *                             # trace function for showing return values after step over
  *                             can_skip = False
  */
@@ -17429,7 +16745,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":956
  *                             can_skip = True
  * 
- *                     if can_skip:             # <<<<<<<<<<<<<<
  *                         if plugin_manager is not None and (
  *                                 main_debugger.has_plugin_line_breaks or main_debugger.has_plugin_exception_breaks):
  */
@@ -17438,7 +16753,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":922
  *                 can_skip = False
  * 
- *                 if info.pydev_state == 1:  # 1 = 1             # <<<<<<<<<<<<<<
  *                     # we can skip if:
  *                     # - we have no stop marked
  */
@@ -17447,7 +16761,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":970
  *                 # so, that's why the additional checks are there.
  * 
- *                 if function_breakpoint_on_call_event:             # <<<<<<<<<<<<<<
  *                     pass  # Do nothing here (just keep on going as we can't skip it).
  * 
  */
@@ -17459,7 +16772,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":973
  *                     pass  # Do nothing here (just keep on going as we can't skip it).
  * 
- *                 elif not breakpoints_for_file:             # <<<<<<<<<<<<<<
  *                     if can_skip:
  *                         if has_exception_breakpoints:
  */
@@ -17470,7 +16782,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":974
  * 
  *                 elif not breakpoints_for_file:
- *                     if can_skip:             # <<<<<<<<<<<<<<
  *                         if has_exception_breakpoints:
  *                             return self.trace_exception
  */
@@ -17480,7 +16791,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":975
  *                 elif not breakpoints_for_file:
  *                     if can_skip:
- *                         if has_exception_breakpoints:             # <<<<<<<<<<<<<<
  *                             return self.trace_exception
  *                         else:
  */
@@ -17490,7 +16800,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":976
  *                     if can_skip:
  *                         if has_exception_breakpoints:
- *                             return self.trace_exception             # <<<<<<<<<<<<<<
  *                         else:
  *                             return None if is_call else NO_FTRACE
  */
@@ -17504,7 +16813,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":975
  *                 elif not breakpoints_for_file:
  *                     if can_skip:
- *                         if has_exception_breakpoints:             # <<<<<<<<<<<<<<
  *                             return self.trace_exception
  *                         else:
  */
@@ -17513,7 +16821,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":978
  *                             return self.trace_exception
  *                         else:
- *                             return None if is_call else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *                 else:
  */
@@ -17536,7 +16843,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":974
  * 
  *                 elif not breakpoints_for_file:
- *                     if can_skip:             # <<<<<<<<<<<<<<
  *                         if has_exception_breakpoints:
  *                             return self.trace_exception
  */
@@ -17545,7 +16851,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":973
  *                     pass  # Do nothing here (just keep on going as we can't skip it).
  * 
- *                 elif not breakpoints_for_file:             # <<<<<<<<<<<<<<
  *                     if can_skip:
  *                         if has_exception_breakpoints:
  */
@@ -17555,7 +16860,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":982
  *                 else:
  *                     # When cached, 0 means we don't have a breakpoint and 1 means we have.
- *                     if can_skip:             # <<<<<<<<<<<<<<
  *                         breakpoints_in_line_cache = frame_skips_cache.get(line_cache_key, -1)
  *                         if breakpoints_in_line_cache == 0:
  */
@@ -17566,7 +16870,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":983
  *                     # When cached, 0 means we don't have a breakpoint and 1 means we have.
  *                     if can_skip:
- *                         breakpoints_in_line_cache = frame_skips_cache.get(line_cache_key, -1)             # <<<<<<<<<<<<<<
  *                         if breakpoints_in_line_cache == 0:
  *                             return self.trace_dispatch
  */
@@ -17583,7 +16886,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":984
  *                     if can_skip:
  *                         breakpoints_in_line_cache = frame_skips_cache.get(line_cache_key, -1)
- *                         if breakpoints_in_line_cache == 0:             # <<<<<<<<<<<<<<
  *                             return self.trace_dispatch
  * 
  */
@@ -17593,7 +16895,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":985
  *                         breakpoints_in_line_cache = frame_skips_cache.get(line_cache_key, -1)
  *                         if breakpoints_in_line_cache == 0:
- *                             return self.trace_dispatch             # <<<<<<<<<<<<<<
  * 
  *                     breakpoints_in_frame_cache = frame_skips_cache.get(frame_cache_key, -1)
  */
@@ -17607,7 +16908,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":984
  *                     if can_skip:
  *                         breakpoints_in_line_cache = frame_skips_cache.get(line_cache_key, -1)
- *                         if breakpoints_in_line_cache == 0:             # <<<<<<<<<<<<<<
  *                             return self.trace_dispatch
  * 
  */
@@ -17616,7 +16916,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":982
  *                 else:
  *                     # When cached, 0 means we don't have a breakpoint and 1 means we have.
- *                     if can_skip:             # <<<<<<<<<<<<<<
  *                         breakpoints_in_line_cache = frame_skips_cache.get(line_cache_key, -1)
  *                         if breakpoints_in_line_cache == 0:
  */
@@ -17625,7 +16924,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":987
  *                             return self.trace_dispatch
  * 
- *                     breakpoints_in_frame_cache = frame_skips_cache.get(frame_cache_key, -1)             # <<<<<<<<<<<<<<
  *                     if breakpoints_in_frame_cache != -1:
  *                         # Gotten from cache.
  */
@@ -17642,7 +16940,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":988
  * 
  *                     breakpoints_in_frame_cache = frame_skips_cache.get(frame_cache_key, -1)
- *                     if breakpoints_in_frame_cache != -1:             # <<<<<<<<<<<<<<
  *                         # Gotten from cache.
  *                         has_breakpoint_in_frame = breakpoints_in_frame_cache == 1
  */
@@ -17652,7 +16949,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":990
  *                     if breakpoints_in_frame_cache != -1:
  *                         # Gotten from cache.
- *                         has_breakpoint_in_frame = breakpoints_in_frame_cache == 1             # <<<<<<<<<<<<<<
  * 
  *                     else:
  */
@@ -17661,7 +16957,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":988
  * 
  *                     breakpoints_in_frame_cache = frame_skips_cache.get(frame_cache_key, -1)
- *                     if breakpoints_in_frame_cache != -1:             # <<<<<<<<<<<<<<
  *                         # Gotten from cache.
  *                         has_breakpoint_in_frame = breakpoints_in_frame_cache == 1
  */
@@ -17671,7 +16966,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":993
  * 
  *                     else:
- *                         has_breakpoint_in_frame = False             # <<<<<<<<<<<<<<
  * 
  *                         try:
  */
@@ -17681,7 +16975,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":995
  *                         has_breakpoint_in_frame = False
  * 
- *                         try:             # <<<<<<<<<<<<<<
  *                             func_lines = set()
  *                             for offset_and_lineno in dis.findlinestarts(frame.f_code):
  */
@@ -17697,7 +16990,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":996
  * 
  *                         try:
- *                             func_lines = set()             # <<<<<<<<<<<<<<
  *                             for offset_and_lineno in dis.findlinestarts(frame.f_code):
  *                                 func_lines.add(offset_and_lineno[1])
  */
@@ -17709,7 +17001,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":997
  *                         try:
  *                             func_lines = set()
- *                             for offset_and_lineno in dis.findlinestarts(frame.f_code):             # <<<<<<<<<<<<<<
  *                                 func_lines.add(offset_and_lineno[1])
  *                         except:
  */
@@ -17782,7 +17073,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":998
  *                             func_lines = set()
  *                             for offset_and_lineno in dis.findlinestarts(frame.f_code):
- *                                 func_lines.add(offset_and_lineno[1])             # <<<<<<<<<<<<<<
  *                         except:
  *                             # This is a fallback for implementations where we can't get the function
  */
@@ -17794,7 +17084,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":997
  *                         try:
  *                             func_lines = set()
- *                             for offset_and_lineno in dis.findlinestarts(frame.f_code):             # <<<<<<<<<<<<<<
  *                                 func_lines.add(offset_and_lineno[1])
  *                         except:
  */
@@ -17804,7 +17093,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":995
  *                         has_breakpoint_in_frame = False
  * 
- *                         try:             # <<<<<<<<<<<<<<
  *                             func_lines = set()
  *                             for offset_and_lineno in dis.findlinestarts(frame.f_code):
  */
@@ -17813,7 +17101,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1018
  *                                     break
  *                         else:
- *                             for bp_line in breakpoints_for_file:  # iterate on keys             # <<<<<<<<<<<<<<
  *                                 if bp_line in func_lines:
  *                                     has_breakpoint_in_frame = True
  */
@@ -17840,7 +17127,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1019
  *                         else:
  *                             for bp_line in breakpoints_for_file:  # iterate on keys
- *                                 if bp_line in func_lines:             # <<<<<<<<<<<<<<
  *                                     has_breakpoint_in_frame = True
  *                                     break
  */
@@ -17854,7 +17140,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1020
  *                             for bp_line in breakpoints_for_file:  # iterate on keys
  *                                 if bp_line in func_lines:
- *                                     has_breakpoint_in_frame = True             # <<<<<<<<<<<<<<
  *                                     break
  * 
  */
@@ -17863,7 +17148,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1021
  *                                 if bp_line in func_lines:
  *                                     has_breakpoint_in_frame = True
- *                                     break             # <<<<<<<<<<<<<<
  * 
  *                         # Cache the value (1 or 0 or -1 for default because of cython).
  */
@@ -17872,7 +17156,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1019
  *                         else:
  *                             for bp_line in breakpoints_for_file:  # iterate on keys
- *                                 if bp_line in func_lines:             # <<<<<<<<<<<<<<
  *                                     has_breakpoint_in_frame = True
  *                                     break
  */
@@ -17897,7 +17180,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":999
  *                             for offset_and_lineno in dis.findlinestarts(frame.f_code):
  *                                 func_lines.add(offset_and_lineno[1])
- *                         except:             # <<<<<<<<<<<<<<
  *                             # This is a fallback for implementations where we can't get the function
  *                             # lines -- i.e.: jython (in this case clients need to provide the function
  */
@@ -17911,7 +17193,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1006
  * 
  *                             # Checks the breakpoint to see if there is a context match in some function.
- *                             curr_func_name = frame.f_code.co_name             # <<<<<<<<<<<<<<
  * 
  *                             # global context is set with an empty name
  */
@@ -17927,7 +17208,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1009
  * 
  *                             # global context is set with an empty name
- *                             if curr_func_name in ('?', '<module>', '<lambda>'):             # <<<<<<<<<<<<<<
  *                                 curr_func_name = ''
  * 
  */
@@ -17958,7 +17238,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1010
  *                             # global context is set with an empty name
  *                             if curr_func_name in ('?', '<module>', '<lambda>'):
- *                                 curr_func_name = ''             # <<<<<<<<<<<<<<
  * 
  *                             for bp in breakpoints_for_file.values():
  */
@@ -17968,7 +17247,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1009
  * 
  *                             # global context is set with an empty name
- *                             if curr_func_name in ('?', '<module>', '<lambda>'):             # <<<<<<<<<<<<<<
  *                                 curr_func_name = ''
  * 
  */
@@ -17977,7 +17255,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1012
  *                                 curr_func_name = ''
  * 
- *                             for bp in breakpoints_for_file.values():             # <<<<<<<<<<<<<<
  *                                 # will match either global or some function
  *                                 if bp.func_name in ('None', curr_func_name):
  */
@@ -18033,7 +17310,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1014
  *                             for bp in breakpoints_for_file.values():
  *                                 # will match either global or some function
- *                                 if bp.func_name in ('None', curr_func_name):             # <<<<<<<<<<<<<<
  *                                     has_breakpoint_in_frame = True
  *                                     break
  */
@@ -18055,7 +17331,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1015
  *                                 # will match either global or some function
  *                                 if bp.func_name in ('None', curr_func_name):
- *                                     has_breakpoint_in_frame = True             # <<<<<<<<<<<<<<
  *                                     break
  *                         else:
  */
@@ -18064,7 +17339,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1016
  *                                 if bp.func_name in ('None', curr_func_name):
  *                                     has_breakpoint_in_frame = True
- *                                     break             # <<<<<<<<<<<<<<
  *                         else:
  *                             for bp_line in breakpoints_for_file:  # iterate on keys
  */
@@ -18073,7 +17347,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1014
  *                             for bp in breakpoints_for_file.values():
  *                                 # will match either global or some function
- *                                 if bp.func_name in ('None', curr_func_name):             # <<<<<<<<<<<<<<
  *                                     has_breakpoint_in_frame = True
  *                                     break
  */
@@ -18082,7 +17355,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1012
  *                                 curr_func_name = ''
  * 
- *                             for bp in breakpoints_for_file.values():             # <<<<<<<<<<<<<<
  *                                 # will match either global or some function
  *                                 if bp.func_name in ('None', curr_func_name):
  */
@@ -18099,7 +17371,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":995
  *                         has_breakpoint_in_frame = False
  * 
- *                         try:             # <<<<<<<<<<<<<<
  *                             func_lines = set()
  *                             for offset_and_lineno in dis.findlinestarts(frame.f_code):
  */
@@ -18119,7 +17390,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1024
  * 
  *                         # Cache the value (1 or 0 or -1 for default because of cython).
- *                         if has_breakpoint_in_frame:             # <<<<<<<<<<<<<<
  *                             frame_skips_cache[frame_cache_key] = 1
  *                         else:
  */
@@ -18129,7 +17399,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1025
  *                         # Cache the value (1 or 0 or -1 for default because of cython).
  *                         if has_breakpoint_in_frame:
- *                             frame_skips_cache[frame_cache_key] = 1             # <<<<<<<<<<<<<<
  *                         else:
  *                             frame_skips_cache[frame_cache_key] = 0
  */
@@ -18142,7 +17411,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1024
  * 
  *                         # Cache the value (1 or 0 or -1 for default because of cython).
- *                         if has_breakpoint_in_frame:             # <<<<<<<<<<<<<<
  *                             frame_skips_cache[frame_cache_key] = 1
  *                         else:
  */
@@ -18152,7 +17420,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1027
  *                             frame_skips_cache[frame_cache_key] = 1
  *                         else:
- *                             frame_skips_cache[frame_cache_key] = 0             # <<<<<<<<<<<<<<
  * 
  *                     if can_skip and not has_breakpoint_in_frame:
  */
@@ -18170,7 +17437,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1029
  *                             frame_skips_cache[frame_cache_key] = 0
  * 
- *                     if can_skip and not has_breakpoint_in_frame:             # <<<<<<<<<<<<<<
  *                         if has_exception_breakpoints:
  *                             return self.trace_exception
  */
@@ -18188,7 +17454,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1030
  * 
  *                     if can_skip and not has_breakpoint_in_frame:
- *                         if has_exception_breakpoints:             # <<<<<<<<<<<<<<
  *                             return self.trace_exception
  *                         else:
  */
@@ -18198,7 +17463,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1031
  *                     if can_skip and not has_breakpoint_in_frame:
  *                         if has_exception_breakpoints:
- *                             return self.trace_exception             # <<<<<<<<<<<<<<
  *                         else:
  *                             return None if is_call else NO_FTRACE
  */
@@ -18212,7 +17476,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1030
  * 
  *                     if can_skip and not has_breakpoint_in_frame:
- *                         if has_exception_breakpoints:             # <<<<<<<<<<<<<<
  *                             return self.trace_exception
  *                         else:
  */
@@ -18221,7 +17484,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1033
  *                             return self.trace_exception
  *                         else:
- *                             return None if is_call else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *             # We may have hit a breakpoint or we are already in step mode. Either way, let's check what we should do in this frame
  */
@@ -18244,7 +17506,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1029
  *                             frame_skips_cache[frame_cache_key] = 0
  * 
- *                     if can_skip and not has_breakpoint_in_frame:             # <<<<<<<<<<<<<<
  *                         if has_exception_breakpoints:
  *                             return self.trace_exception
  */
@@ -18255,7 +17516,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":917
  *                     return self.trace_dispatch
  * 
- *             if not is_exception_event:             # <<<<<<<<<<<<<<
  *                 breakpoints_for_file = main_debugger.breakpoints.get(abs_path_canonical_path_and_base[1])
  * 
  */
@@ -18264,7 +17524,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":1038
  *             # if DEBUG: print('NOT skipped: %s %s %s %s' % (frame.f_lineno, frame.f_code.co_name, event, frame.__class__.__name__))
  * 
- *             try:             # <<<<<<<<<<<<<<
  *                 stop_on_plugin_breakpoint = False
  *                 # return is not taken into account for breakpoint hit because we'd have a double-hit in this case
  */
@@ -18280,7 +17539,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1039
  * 
  *             try:
- *                 stop_on_plugin_breakpoint = False             # <<<<<<<<<<<<<<
  *                 # return is not taken into account for breakpoint hit because we'd have a double-hit in this case
  *                 # (one for the line and the other for the return).
  */
@@ -18289,7 +17547,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1043
  *                 # (one for the line and the other for the return).
  * 
- *                 stop_info = {}             # <<<<<<<<<<<<<<
  *                 breakpoint = None
  *                 stop = False
  */
@@ -18301,7 +17558,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1044
  * 
  *                 stop_info = {}
- *                 breakpoint = None             # <<<<<<<<<<<<<<
  *                 stop = False
  *                 stop_reason = 111
  */
@@ -18311,7 +17567,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1045
  *                 stop_info = {}
  *                 breakpoint = None
- *                 stop = False             # <<<<<<<<<<<<<<
  *                 stop_reason = 111
  *                 bp_type = None
  */
@@ -18320,7 +17575,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1046
  *                 breakpoint = None
  *                 stop = False
- *                 stop_reason = 111             # <<<<<<<<<<<<<<
  *                 bp_type = None
  * 
  */
@@ -18330,7 +17584,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1047
  *                 stop = False
  *                 stop_reason = 111
- *                 bp_type = None             # <<<<<<<<<<<<<<
  * 
  *                 if function_breakpoint_on_call_event:
  */
@@ -18340,7 +17593,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1049
  *                 bp_type = None
  * 
- *                 if function_breakpoint_on_call_event:             # <<<<<<<<<<<<<<
  *                     breakpoint = function_breakpoint_on_call_event
  *                     stop = True
  */
@@ -18350,7 +17602,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1050
  * 
  *                 if function_breakpoint_on_call_event:
- *                     breakpoint = function_breakpoint_on_call_event             # <<<<<<<<<<<<<<
  *                     stop = True
  *                     new_frame = frame
  */
@@ -18360,7 +17611,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1051
  *                 if function_breakpoint_on_call_event:
  *                     breakpoint = function_breakpoint_on_call_event
- *                     stop = True             # <<<<<<<<<<<<<<
  *                     new_frame = frame
  *                     stop_reason = CMD_SET_FUNCTION_BREAK
  */
@@ -18369,7 +17619,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1052
  *                     breakpoint = function_breakpoint_on_call_event
  *                     stop = True
- *                     new_frame = frame             # <<<<<<<<<<<<<<
  *                     stop_reason = CMD_SET_FUNCTION_BREAK
  * 
  */
@@ -18379,7 +17628,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1053
  *                     stop = True
  *                     new_frame = frame
- *                     stop_reason = CMD_SET_FUNCTION_BREAK             # <<<<<<<<<<<<<<
  * 
  *                 elif is_line and info.pydev_state != 2 and breakpoints_for_file is not None and line in breakpoints_for_file:
  */
@@ -18391,7 +17639,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1049
  *                 bp_type = None
  * 
- *                 if function_breakpoint_on_call_event:             # <<<<<<<<<<<<<<
  *                     breakpoint = function_breakpoint_on_call_event
  *                     stop = True
  */
@@ -18401,7 +17648,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1055
  *                     stop_reason = CMD_SET_FUNCTION_BREAK
  * 
- *                 elif is_line and info.pydev_state != 2 and breakpoints_for_file is not None and line in breakpoints_for_file:             # <<<<<<<<<<<<<<
  *                     breakpoint = breakpoints_for_file[line]
  *                     new_frame = frame
  */
@@ -18442,7 +17688,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1056
  * 
  *                 elif is_line and info.pydev_state != 2 and breakpoints_for_file is not None and line in breakpoints_for_file:
- *                     breakpoint = breakpoints_for_file[line]             # <<<<<<<<<<<<<<
  *                     new_frame = frame
  *                     stop = True
  */
@@ -18462,7 +17707,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1057
  *                 elif is_line and info.pydev_state != 2 and breakpoints_for_file is not None and line in breakpoints_for_file:
  *                     breakpoint = breakpoints_for_file[line]
- *                     new_frame = frame             # <<<<<<<<<<<<<<
  *                     stop = True
  * 
  */
@@ -18472,7 +17716,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1058
  *                     breakpoint = breakpoints_for_file[line]
  *                     new_frame = frame
- *                     stop = True             # <<<<<<<<<<<<<<
  * 
  *                 elif plugin_manager is not None and main_debugger.has_plugin_line_breaks:
  */
@@ -18481,7 +17724,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1055
  *                     stop_reason = CMD_SET_FUNCTION_BREAK
  * 
- *                 elif is_line and info.pydev_state != 2 and breakpoints_for_file is not None and line in breakpoints_for_file:             # <<<<<<<<<<<<<<
  *                     breakpoint = breakpoints_for_file[line]
  *                     new_frame = frame
  */
@@ -18491,7 +17733,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1060
  *                     stop = True
  * 
- *                 elif plugin_manager is not None and main_debugger.has_plugin_line_breaks:             # <<<<<<<<<<<<<<
  *                     result = plugin_manager.get_breakpoint(main_debugger, self, frame, event, self._args)
  *                     if result:
  */
@@ -18513,7 +17754,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1061
  * 
  *                 elif plugin_manager is not None and main_debugger.has_plugin_line_breaks:
- *                     result = plugin_manager.get_breakpoint(main_debugger, self, frame, event, self._args)             # <<<<<<<<<<<<<<
  *                     if result:
  *                         stop_on_plugin_breakpoint, breakpoint, new_frame, bp_type = result
  */
@@ -18579,7 +17819,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1062
  *                 elif plugin_manager is not None and main_debugger.has_plugin_line_breaks:
  *                     result = plugin_manager.get_breakpoint(main_debugger, self, frame, event, self._args)
- *                     if result:             # <<<<<<<<<<<<<<
  *                         stop_on_plugin_breakpoint, breakpoint, new_frame, bp_type = result
  * 
  */
@@ -18589,7 +17828,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1063
  *                     result = plugin_manager.get_breakpoint(main_debugger, self, frame, event, self._args)
  *                     if result:
- *                         stop_on_plugin_breakpoint, breakpoint, new_frame, bp_type = result             # <<<<<<<<<<<<<<
  * 
  *                 if breakpoint:
  */
@@ -18663,7 +17901,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1062
  *                 elif plugin_manager is not None and main_debugger.has_plugin_line_breaks:
  *                     result = plugin_manager.get_breakpoint(main_debugger, self, frame, event, self._args)
- *                     if result:             # <<<<<<<<<<<<<<
  *                         stop_on_plugin_breakpoint, breakpoint, new_frame, bp_type = result
  * 
  */
@@ -18672,7 +17909,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1060
  *                     stop = True
  * 
- *                 elif plugin_manager is not None and main_debugger.has_plugin_line_breaks:             # <<<<<<<<<<<<<<
  *                     result = plugin_manager.get_breakpoint(main_debugger, self, frame, event, self._args)
  *                     if result:
  */
@@ -18682,7 +17918,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1065
  *                         stop_on_plugin_breakpoint, breakpoint, new_frame, bp_type = result
  * 
- *                 if breakpoint:             # <<<<<<<<<<<<<<
  *                     # ok, hit breakpoint, now, we have to discover if it is a conditional breakpoint
  *                     # lets do the conditional stuff here
  */
@@ -18692,7 +17927,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1068
  *                     # ok, hit breakpoint, now, we have to discover if it is a conditional breakpoint
  *                     # lets do the conditional stuff here
- *                     if breakpoint.expression is not None:             # <<<<<<<<<<<<<<
  *                         main_debugger.handle_breakpoint_expression(breakpoint, info, new_frame)
  * 
  */
@@ -18706,7 +17940,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1069
  *                     # lets do the conditional stuff here
  *                     if breakpoint.expression is not None:
- *                         main_debugger.handle_breakpoint_expression(breakpoint, info, new_frame)             # <<<<<<<<<<<<<<
  * 
  *                     if stop or stop_on_plugin_breakpoint:
  */
@@ -18766,7 +17999,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1068
  *                     # ok, hit breakpoint, now, we have to discover if it is a conditional breakpoint
  *                     # lets do the conditional stuff here
- *                     if breakpoint.expression is not None:             # <<<<<<<<<<<<<<
  *                         main_debugger.handle_breakpoint_expression(breakpoint, info, new_frame)
  * 
  */
@@ -18775,7 +18007,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1071
  *                         main_debugger.handle_breakpoint_expression(breakpoint, info, new_frame)
  * 
- *                     if stop or stop_on_plugin_breakpoint:             # <<<<<<<<<<<<<<
  *                         eval_result = False
  *                         if breakpoint.has_condition:
  */
@@ -18793,7 +18024,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1072
  * 
  *                     if stop or stop_on_plugin_breakpoint:
- *                         eval_result = False             # <<<<<<<<<<<<<<
  *                         if breakpoint.has_condition:
  *                             eval_result = main_debugger.handle_breakpoint_condition(info, breakpoint, new_frame)
  */
@@ -18803,7 +18033,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1073
  *                     if stop or stop_on_plugin_breakpoint:
  *                         eval_result = False
- *                         if breakpoint.has_condition:             # <<<<<<<<<<<<<<
  *                             eval_result = main_debugger.handle_breakpoint_condition(info, breakpoint, new_frame)
  *                             if not eval_result:
  */
@@ -18816,7 +18045,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1074
  *                         eval_result = False
  *                         if breakpoint.has_condition:
- *                             eval_result = main_debugger.handle_breakpoint_condition(info, breakpoint, new_frame)             # <<<<<<<<<<<<<<
  *                             if not eval_result:
  *                                 stop = False
  */
@@ -18877,7 +18105,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1075
  *                         if breakpoint.has_condition:
  *                             eval_result = main_debugger.handle_breakpoint_condition(info, breakpoint, new_frame)
- *                             if not eval_result:             # <<<<<<<<<<<<<<
  *                                 stop = False
  *                                 stop_on_plugin_breakpoint = False
  */
@@ -18888,7 +18115,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1076
  *                             eval_result = main_debugger.handle_breakpoint_condition(info, breakpoint, new_frame)
  *                             if not eval_result:
- *                                 stop = False             # <<<<<<<<<<<<<<
  *                                 stop_on_plugin_breakpoint = False
  * 
  */
@@ -18897,7 +18123,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1077
  *                             if not eval_result:
  *                                 stop = False
- *                                 stop_on_plugin_breakpoint = False             # <<<<<<<<<<<<<<
  * 
  *                     if is_call and (frame.f_code.co_name in ('<lambda>', '<module>') or (line == 1 and frame.f_code.co_name.startswith('<cell'))):
  */
@@ -18906,7 +18131,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1075
  *                         if breakpoint.has_condition:
  *                             eval_result = main_debugger.handle_breakpoint_condition(info, breakpoint, new_frame)
- *                             if not eval_result:             # <<<<<<<<<<<<<<
  *                                 stop = False
  *                                 stop_on_plugin_breakpoint = False
  */
@@ -18915,7 +18139,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1073
  *                     if stop or stop_on_plugin_breakpoint:
  *                         eval_result = False
- *                         if breakpoint.has_condition:             # <<<<<<<<<<<<<<
  *                             eval_result = main_debugger.handle_breakpoint_condition(info, breakpoint, new_frame)
  *                             if not eval_result:
  */
@@ -18924,7 +18147,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1071
  *                         main_debugger.handle_breakpoint_expression(breakpoint, info, new_frame)
  * 
- *                     if stop or stop_on_plugin_breakpoint:             # <<<<<<<<<<<<<<
  *                         eval_result = False
  *                         if breakpoint.has_condition:
  */
@@ -18933,7 +18155,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1079
  *                                 stop_on_plugin_breakpoint = False
  * 
- *                     if is_call and (frame.f_code.co_name in ('<lambda>', '<module>') or (line == 1 and frame.f_code.co_name.startswith('<cell'))):             # <<<<<<<<<<<<<<
  *                         # If we find a call for a module, it means that the module is being imported/executed for the
  *                         # first time. In this case we have to ignore this hit as it may later duplicated by a
  */
@@ -19002,7 +18223,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1091
  *                         # module, so it's the same case as <module>.
  * 
- *                         return self.trace_dispatch             # <<<<<<<<<<<<<<
  * 
  *                     # Handle logpoint (on a logpoint we should never stop).
  */
@@ -19016,7 +18236,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1079
  *                                 stop_on_plugin_breakpoint = False
  * 
- *                     if is_call and (frame.f_code.co_name in ('<lambda>', '<module>') or (line == 1 and frame.f_code.co_name.startswith('<cell'))):             # <<<<<<<<<<<<<<
  *                         # If we find a call for a module, it means that the module is being imported/executed for the
  *                         # first time. In this case we have to ignore this hit as it may later duplicated by a
  */
@@ -19025,7 +18244,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1094
  * 
  *                     # Handle logpoint (on a logpoint we should never stop).
- *                     if (stop or stop_on_plugin_breakpoint) and breakpoint.is_logpoint:             # <<<<<<<<<<<<<<
  *                         stop = False
  *                         stop_on_plugin_breakpoint = False
  */
@@ -19052,7 +18270,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1095
  *                     # Handle logpoint (on a logpoint we should never stop).
  *                     if (stop or stop_on_plugin_breakpoint) and breakpoint.is_logpoint:
- *                         stop = False             # <<<<<<<<<<<<<<
  *                         stop_on_plugin_breakpoint = False
  * 
  */
@@ -19061,7 +18278,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1096
  *                     if (stop or stop_on_plugin_breakpoint) and breakpoint.is_logpoint:
  *                         stop = False
- *                         stop_on_plugin_breakpoint = False             # <<<<<<<<<<<<<<
  * 
  *                         if info.pydev_message is not None and len(info.pydev_message) > 0:
  */
@@ -19070,7 +18286,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1098
  *                         stop_on_plugin_breakpoint = False
  * 
- *                         if info.pydev_message is not None and len(info.pydev_message) > 0:             # <<<<<<<<<<<<<<
  *                             cmd = main_debugger.cmd_factory.make_io_message(info.pydev_message + os.linesep, '1')
  *                             main_debugger.writer.add_command(cmd)
  */
@@ -19093,7 +18308,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1099
  * 
  *                         if info.pydev_message is not None and len(info.pydev_message) > 0:
- *                             cmd = main_debugger.cmd_factory.make_io_message(info.pydev_message + os.linesep, '1')             # <<<<<<<<<<<<<<
  *                             main_debugger.writer.add_command(cmd)
  * 
  */
@@ -19163,7 +18377,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1100
  *                         if info.pydev_message is not None and len(info.pydev_message) > 0:
  *                             cmd = main_debugger.cmd_factory.make_io_message(info.pydev_message + os.linesep, '1')
- *                             main_debugger.writer.add_command(cmd)             # <<<<<<<<<<<<<<
  * 
  *                 if main_debugger.show_return_values:
  */
@@ -19192,7 +18405,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1098
  *                         stop_on_plugin_breakpoint = False
  * 
- *                         if info.pydev_message is not None and len(info.pydev_message) > 0:             # <<<<<<<<<<<<<<
  *                             cmd = main_debugger.cmd_factory.make_io_message(info.pydev_message + os.linesep, '1')
  *                             main_debugger.writer.add_command(cmd)
  */
@@ -19201,7 +18413,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1094
  * 
  *                     # Handle logpoint (on a logpoint we should never stop).
- *                     if (stop or stop_on_plugin_breakpoint) and breakpoint.is_logpoint:             # <<<<<<<<<<<<<<
  *                         stop = False
  *                         stop_on_plugin_breakpoint = False
  */
@@ -19210,7 +18421,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1065
  *                         stop_on_plugin_breakpoint, breakpoint, new_frame, bp_type = result
  * 
- *                 if breakpoint:             # <<<<<<<<<<<<<<
  *                     # ok, hit breakpoint, now, we have to discover if it is a conditional breakpoint
  *                     # lets do the conditional stuff here
  */
@@ -19219,7 +18429,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1102
  *                             main_debugger.writer.add_command(cmd)
  * 
- *                 if main_debugger.show_return_values:             # <<<<<<<<<<<<<<
  *                     if is_return and (
  *                             (info.pydev_step_cmd in (108, 159, 128) and (self._is_same_frame(stop_frame, frame.f_back))) or
  */
@@ -19232,7 +18441,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1103
  * 
  *                 if main_debugger.show_return_values:
- *                     if is_return and (             # <<<<<<<<<<<<<<
  *                             (info.pydev_step_cmd in (108, 159, 128) and (self._is_same_frame(stop_frame, frame.f_back))) or
  *                             (info.pydev_step_cmd in (109, 160) and (self._is_same_frame(stop_frame, frame))) or
  */
@@ -19246,7 +18454,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1104
  *                 if main_debugger.show_return_values:
  *                     if is_return and (
- *                             (info.pydev_step_cmd in (108, 159, 128) and (self._is_same_frame(stop_frame, frame.f_back))) or             # <<<<<<<<<<<<<<
  *                             (info.pydev_step_cmd in (109, 160) and (self._is_same_frame(stop_frame, frame))) or
  *                             (info.pydev_step_cmd in (107, 206)) or
  */
@@ -19282,7 +18489,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1105
  *                     if is_return and (
  *                             (info.pydev_step_cmd in (108, 159, 128) and (self._is_same_frame(stop_frame, frame.f_back))) or
- *                             (info.pydev_step_cmd in (109, 160) and (self._is_same_frame(stop_frame, frame))) or             # <<<<<<<<<<<<<<
  *                             (info.pydev_step_cmd in (107, 206)) or
  *                             (
  */
@@ -19314,7 +18520,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1106
  *                             (info.pydev_step_cmd in (108, 159, 128) and (self._is_same_frame(stop_frame, frame.f_back))) or
  *                             (info.pydev_step_cmd in (109, 160) and (self._is_same_frame(stop_frame, frame))) or
- *                             (info.pydev_step_cmd in (107, 206)) or             # <<<<<<<<<<<<<<
  *                             (
  *                                 info.pydev_step_cmd == 144
  */
@@ -19337,7 +18542,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1108
  *                             (info.pydev_step_cmd in (107, 206)) or
  *                             (
- *                                 info.pydev_step_cmd == 144             # <<<<<<<<<<<<<<
  *                                 and frame.f_back is not None
  *                                 and not main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, True)
  */
@@ -19351,7 +18555,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1109
  *                             (
  *                                 info.pydev_step_cmd == 144
- *                                 and frame.f_back is not None             # <<<<<<<<<<<<<<
  *                                 and not main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, True)
  *                             )
  */
@@ -19369,7 +18572,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1110
  *                                 info.pydev_step_cmd == 144
  *                                 and frame.f_back is not None
- *                                 and not main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, True)             # <<<<<<<<<<<<<<
  *                             )
  *                         ):
  */
@@ -19446,7 +18648,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1103
  * 
  *                 if main_debugger.show_return_values:
- *                     if is_return and (             # <<<<<<<<<<<<<<
  *                             (info.pydev_step_cmd in (108, 159, 128) and (self._is_same_frame(stop_frame, frame.f_back))) or
  *                             (info.pydev_step_cmd in (109, 160) and (self._is_same_frame(stop_frame, frame))) or
  */
@@ -19455,7 +18656,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1113
  *                             )
  *                         ):
- *                         self._show_return_values(frame, arg)             # <<<<<<<<<<<<<<
  * 
  *                 elif main_debugger.remove_return_values_flag:
  */
@@ -19466,7 +18666,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1103
  * 
  *                 if main_debugger.show_return_values:
- *                     if is_return and (             # <<<<<<<<<<<<<<
  *                             (info.pydev_step_cmd in (108, 159, 128) and (self._is_same_frame(stop_frame, frame.f_back))) or
  *                             (info.pydev_step_cmd in (109, 160) and (self._is_same_frame(stop_frame, frame))) or
  */
@@ -19475,7 +18674,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1102
  *                             main_debugger.writer.add_command(cmd)
  * 
- *                 if main_debugger.show_return_values:             # <<<<<<<<<<<<<<
  *                     if is_return and (
  *                             (info.pydev_step_cmd in (108, 159, 128) and (self._is_same_frame(stop_frame, frame.f_back))) or
  */
@@ -19485,7 +18683,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1115
  *                         self._show_return_values(frame, arg)
  * 
- *                 elif main_debugger.remove_return_values_flag:             # <<<<<<<<<<<<<<
  *                     try:
  *                         self._remove_return_values(main_debugger, frame)
  */
@@ -19498,7 +18695,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1116
  * 
  *                 elif main_debugger.remove_return_values_flag:
- *                     try:             # <<<<<<<<<<<<<<
  *                         self._remove_return_values(main_debugger, frame)
  *                     finally:
  */
@@ -19507,7 +18703,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1117
  *                 elif main_debugger.remove_return_values_flag:
  *                     try:
- *                         self._remove_return_values(main_debugger, frame)             # <<<<<<<<<<<<<<
  *                     finally:
  *                         main_debugger.remove_return_values_flag = False
  */
@@ -19519,7 +18714,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1119
  *                         self._remove_return_values(main_debugger, frame)
  *                     finally:
- *                         main_debugger.remove_return_values_flag = False             # <<<<<<<<<<<<<<
  * 
  *                 if stop:
  */
@@ -19585,7 +18779,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1115
  *                         self._show_return_values(frame, arg)
  * 
- *                 elif main_debugger.remove_return_values_flag:             # <<<<<<<<<<<<<<
  *                     try:
  *                         self._remove_return_values(main_debugger, frame)
  */
@@ -19595,7 +18788,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1121
  *                         main_debugger.remove_return_values_flag = False
  * 
- *                 if stop:             # <<<<<<<<<<<<<<
  *                     self.set_suspend(
  *                         thread,
  */
@@ -19605,7 +18797,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1122
  * 
  *                 if stop:
- *                     self.set_suspend(             # <<<<<<<<<<<<<<
  *                         thread,
  *                         stop_reason,
  */
@@ -19615,7 +18806,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1124
  *                     self.set_suspend(
  *                         thread,
- *                         stop_reason,             # <<<<<<<<<<<<<<
  *                         suspend_other_threads=breakpoint and breakpoint.suspend_policy == "ALL",
  *                     )
  */
@@ -19631,7 +18821,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1125
  *                         thread,
  *                         stop_reason,
- *                         suspend_other_threads=breakpoint and breakpoint.suspend_policy == "ALL",             # <<<<<<<<<<<<<<
  *                     )
  * 
  */
@@ -19658,7 +18847,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1122
  * 
  *                 if stop:
- *                     self.set_suspend(             # <<<<<<<<<<<<<<
  *                         thread,
  *                         stop_reason,
  */
@@ -19672,7 +18860,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1121
  *                         main_debugger.remove_return_values_flag = False
  * 
- *                 if stop:             # <<<<<<<<<<<<<<
  *                     self.set_suspend(
  *                         thread,
  */
@@ -19682,7 +18869,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1128
  *                     )
  * 
- *                 elif stop_on_plugin_breakpoint and plugin_manager is not None:             # <<<<<<<<<<<<<<
  *                     result = plugin_manager.suspend(main_debugger, thread, frame, bp_type)
  *                     if result:
  */
@@ -19701,7 +18887,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1129
  * 
  *                 elif stop_on_plugin_breakpoint and plugin_manager is not None:
- *                     result = plugin_manager.suspend(main_debugger, thread, frame, bp_type)             # <<<<<<<<<<<<<<
  *                     if result:
  *                         frame = result
  */
@@ -19764,7 +18949,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1130
  *                 elif stop_on_plugin_breakpoint and plugin_manager is not None:
  *                     result = plugin_manager.suspend(main_debugger, thread, frame, bp_type)
- *                     if result:             # <<<<<<<<<<<<<<
  *                         frame = result
  * 
  */
@@ -19774,7 +18958,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1131
  *                     result = plugin_manager.suspend(main_debugger, thread, frame, bp_type)
  *                     if result:
- *                         frame = result             # <<<<<<<<<<<<<<
  * 
  *                 # if thread has a suspend flag, we suspend with a busy wait
  */
@@ -19784,7 +18967,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1130
  *                 elif stop_on_plugin_breakpoint and plugin_manager is not None:
  *                     result = plugin_manager.suspend(main_debugger, thread, frame, bp_type)
- *                     if result:             # <<<<<<<<<<<<<<
  *                         frame = result
  * 
  */
@@ -19793,7 +18975,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1128
  *                     )
  * 
- *                 elif stop_on_plugin_breakpoint and plugin_manager is not None:             # <<<<<<<<<<<<<<
  *                     result = plugin_manager.suspend(main_debugger, thread, frame, bp_type)
  *                     if result:
  */
@@ -19803,7 +18984,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1134
  * 
  *                 # if thread has a suspend flag, we suspend with a busy wait
- *                 if info.pydev_state == 2:             # <<<<<<<<<<<<<<
  *                     self.do_wait_suspend(thread, frame, event, arg)
  *                     return self.trace_dispatch
  */
@@ -19813,7 +18993,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1135
  *                 # if thread has a suspend flag, we suspend with a busy wait
  *                 if info.pydev_state == 2:
- *                     self.do_wait_suspend(thread, frame, event, arg)             # <<<<<<<<<<<<<<
  *                     return self.trace_dispatch
  *                 else:
  */
@@ -19875,7 +19054,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1136
  *                 if info.pydev_state == 2:
  *                     self.do_wait_suspend(thread, frame, event, arg)
- *                     return self.trace_dispatch             # <<<<<<<<<<<<<<
  *                 else:
  *                     if not breakpoint and is_line:
  */
@@ -19889,7 +19067,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1134
  * 
  *                 # if thread has a suspend flag, we suspend with a busy wait
- *                 if info.pydev_state == 2:             # <<<<<<<<<<<<<<
  *                     self.do_wait_suspend(thread, frame, event, arg)
  *                     return self.trace_dispatch
  */
@@ -19898,7 +19075,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1138
  *                     return self.trace_dispatch
  *                 else:
- *                     if not breakpoint and is_line:             # <<<<<<<<<<<<<<
  *                         # No stop from anyone and no breakpoint found in line (cache that).
  *                         frame_skips_cache[line_cache_key] = 0
  */
@@ -19918,7 +19094,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1140
  *                     if not breakpoint and is_line:
  *                         # No stop from anyone and no breakpoint found in line (cache that).
- *                         frame_skips_cache[line_cache_key] = 0             # <<<<<<<<<<<<<<
  * 
  *             except:
  */
@@ -19931,7 +19106,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1138
  *                     return self.trace_dispatch
  *                 else:
- *                     if not breakpoint and is_line:             # <<<<<<<<<<<<<<
  *                         # No stop from anyone and no breakpoint found in line (cache that).
  *                         frame_skips_cache[line_cache_key] = 0
  */
@@ -19941,7 +19115,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1038
  *             # if DEBUG: print('NOT skipped: %s %s %s %s' % (frame.f_lineno, frame.f_code.co_name, event, frame.__class__.__name__))
  * 
- *             try:             # <<<<<<<<<<<<<<
  *                 stop_on_plugin_breakpoint = False
  *                 # return is not taken into account for breakpoint hit because we'd have a double-hit in this case
  */
@@ -19963,7 +19136,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":1142
  *                         frame_skips_cache[line_cache_key] = 0
  * 
- *             except:             # <<<<<<<<<<<<<<
  *                 # Unfortunately Python itself stops the tracing when it originates from
  *                 # the tracing function, so, we can't do much about it (just let the user know).
  */
@@ -19977,7 +19149,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1145
  *                 # Unfortunately Python itself stops the tracing when it originates from
  *                 # the tracing function, so, we can't do much about it (just let the user know).
- *                 exc = sys.exc_info()[0]             # <<<<<<<<<<<<<<
  *                 cmd = main_debugger.cmd_factory.make_console_message(
  *                     '%s raised from within the callback set in sys.settrace.\nDebugging will be disabled for this thread (%s).\n' % (exc, thread,))
  */
@@ -20010,7 +19181,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1146
  *                 # the tracing function, so, we can't do much about it (just let the user know).
  *                 exc = sys.exc_info()[0]
- *                 cmd = main_debugger.cmd_factory.make_console_message(             # <<<<<<<<<<<<<<
  *                     '%s raised from within the callback set in sys.settrace.\nDebugging will be disabled for this thread (%s).\n' % (exc, thread,))
  *                 main_debugger.writer.add_command(cmd)
  */
@@ -20023,7 +19193,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1147
  *                 exc = sys.exc_info()[0]
  *                 cmd = main_debugger.cmd_factory.make_console_message(
- *                     '%s raised from within the callback set in sys.settrace.\nDebugging will be disabled for this thread (%s).\n' % (exc, thread,))             # <<<<<<<<<<<<<<
  *                 main_debugger.writer.add_command(cmd)
  *                 if not issubclass(exc, (KeyboardInterrupt, SystemExit)):
  */
@@ -20060,7 +19229,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1148
  *                 cmd = main_debugger.cmd_factory.make_console_message(
  *                     '%s raised from within the callback set in sys.settrace.\nDebugging will be disabled for this thread (%s).\n' % (exc, thread,))
- *                 main_debugger.writer.add_command(cmd)             # <<<<<<<<<<<<<<
  *                 if not issubclass(exc, (KeyboardInterrupt, SystemExit)):
  *                     pydev_log.exception()
  */
@@ -20089,7 +19257,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1149
  *                     '%s raised from within the callback set in sys.settrace.\nDebugging will be disabled for this thread (%s).\n' % (exc, thread,))
  *                 main_debugger.writer.add_command(cmd)
- *                 if not issubclass(exc, (KeyboardInterrupt, SystemExit)):             # <<<<<<<<<<<<<<
  *                     pydev_log.exception()
  * 
  */
@@ -20100,7 +19267,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1150
  *                 main_debugger.writer.add_command(cmd)
  *                 if not issubclass(exc, (KeyboardInterrupt, SystemExit)):
- *                     pydev_log.exception()             # <<<<<<<<<<<<<<
  * 
  *                 raise
  */
@@ -20129,7 +19295,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1149
  *                     '%s raised from within the callback set in sys.settrace.\nDebugging will be disabled for this thread (%s).\n' % (exc, thread,))
  *                 main_debugger.writer.add_command(cmd)
- *                 if not issubclass(exc, (KeyboardInterrupt, SystemExit)):             # <<<<<<<<<<<<<<
  *                     pydev_log.exception()
  * 
  */
@@ -20138,7 +19303,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1152
  *                     pydev_log.exception()
  * 
- *                 raise             # <<<<<<<<<<<<<<
  * 
  *             # step handling. We stop when we hit the right frame
  */
@@ -20154,7 +19318,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":1038
  *             # if DEBUG: print('NOT skipped: %s %s %s %s' % (frame.f_lineno, frame.f_code.co_name, event, frame.__class__.__name__))
  * 
- *             try:             # <<<<<<<<<<<<<<
  *                 stop_on_plugin_breakpoint = False
  *                 # return is not taken into account for breakpoint hit because we'd have a double-hit in this case
  */
@@ -20175,7 +19338,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
     /* "_pydevd_bundle/pydevd_cython.pyx":1155
  * 
  *             # step handling. We stop when we hit the right frame
- *             try:             # <<<<<<<<<<<<<<
  *                 should_skip = 0
  *                 if pydevd_dont_trace.should_trace_hook is not None:
  */
@@ -20191,7 +19353,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1156
  *             # step handling. We stop when we hit the right frame
  *             try:
- *                 should_skip = 0             # <<<<<<<<<<<<<<
  *                 if pydevd_dont_trace.should_trace_hook is not None:
  *                     if self.should_skip == -1:
  */
@@ -20200,7 +19361,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1157
  *             try:
  *                 should_skip = 0
- *                 if pydevd_dont_trace.should_trace_hook is not None:             # <<<<<<<<<<<<<<
  *                     if self.should_skip == -1:
  *                         # I.e.: cache the result on self.should_skip (no need to evaluate the same frame multiple times).
  */
@@ -20217,7 +19377,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1158
  *                 should_skip = 0
  *                 if pydevd_dont_trace.should_trace_hook is not None:
- *                     if self.should_skip == -1:             # <<<<<<<<<<<<<<
  *                         # I.e.: cache the result on self.should_skip (no need to evaluate the same frame multiple times).
  *                         # Note that on a code reload, we won't re-evaluate this because in practice, the frame.f_code
  */
@@ -20227,7 +19386,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1162
  *                         # Note that on a code reload, we won't re-evaluate this because in practice, the frame.f_code
  *                         # Which will be handled by this frame is read-only, so, we can cache it safely.
- *                         if not pydevd_dont_trace.should_trace_hook(frame, abs_path_canonical_path_and_base[0]):             # <<<<<<<<<<<<<<
  *                             # -1, 0, 1 to be Cython-friendly
  *                             should_skip = self.should_skip = 1
  */
@@ -20297,7 +19455,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1164
  *                         if not pydevd_dont_trace.should_trace_hook(frame, abs_path_canonical_path_and_base[0]):
  *                             # -1, 0, 1 to be Cython-friendly
- *                             should_skip = self.should_skip = 1             # <<<<<<<<<<<<<<
  *                         else:
  *                             should_skip = self.should_skip = 0
  */
@@ -20307,7 +19464,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1162
  *                         # Note that on a code reload, we won't re-evaluate this because in practice, the frame.f_code
  *                         # Which will be handled by this frame is read-only, so, we can cache it safely.
- *                         if not pydevd_dont_trace.should_trace_hook(frame, abs_path_canonical_path_and_base[0]):             # <<<<<<<<<<<<<<
  *                             # -1, 0, 1 to be Cython-friendly
  *                             should_skip = self.should_skip = 1
  */
@@ -20317,7 +19473,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1166
  *                             should_skip = self.should_skip = 1
  *                         else:
- *                             should_skip = self.should_skip = 0             # <<<<<<<<<<<<<<
  *                     else:
  *                         should_skip = self.should_skip
  */
@@ -20330,7 +19485,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1158
  *                 should_skip = 0
  *                 if pydevd_dont_trace.should_trace_hook is not None:
- *                     if self.should_skip == -1:             # <<<<<<<<<<<<<<
  *                         # I.e.: cache the result on self.should_skip (no need to evaluate the same frame multiple times).
  *                         # Note that on a code reload, we won't re-evaluate this because in practice, the frame.f_code
  */
@@ -20340,7 +19494,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1168
  *                             should_skip = self.should_skip = 0
  *                     else:
- *                         should_skip = self.should_skip             # <<<<<<<<<<<<<<
  * 
  *                 plugin_stop = False
  */
@@ -20353,7 +19506,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1157
  *             try:
  *                 should_skip = 0
- *                 if pydevd_dont_trace.should_trace_hook is not None:             # <<<<<<<<<<<<<<
  *                     if self.should_skip == -1:
  *                         # I.e.: cache the result on self.should_skip (no need to evaluate the same frame multiple times).
  */
@@ -20362,7 +19514,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1170
  *                         should_skip = self.should_skip
  * 
- *                 plugin_stop = False             # <<<<<<<<<<<<<<
  *                 if should_skip:
  *                     stop = False
  */
@@ -20372,7 +19523,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1171
  * 
  *                 plugin_stop = False
- *                 if should_skip:             # <<<<<<<<<<<<<<
  *                     stop = False
  * 
  */
@@ -20382,7 +19532,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1172
  *                 plugin_stop = False
  *                 if should_skip:
- *                     stop = False             # <<<<<<<<<<<<<<
  * 
  *                 elif step_cmd in (107, 144, 206):
  */
@@ -20391,7 +19540,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1171
  * 
  *                 plugin_stop = False
- *                 if should_skip:             # <<<<<<<<<<<<<<
  *                     stop = False
  * 
  */
@@ -20401,7 +19549,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1174
  *                     stop = False
  * 
- *                 elif step_cmd in (107, 144, 206):             # <<<<<<<<<<<<<<
  *                     force_check_project_scope = step_cmd == 144
  *                     if is_line:
  */
@@ -20421,7 +19568,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1175
  * 
  *                 elif step_cmd in (107, 144, 206):
- *                     force_check_project_scope = step_cmd == 144             # <<<<<<<<<<<<<<
  *                     if is_line:
  *                         if not info.pydev_use_scoped_step_frame:
  */
@@ -20433,7 +19579,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1176
  *                 elif step_cmd in (107, 144, 206):
  *                     force_check_project_scope = step_cmd == 144
- *                     if is_line:             # <<<<<<<<<<<<<<
  *                         if not info.pydev_use_scoped_step_frame:
  *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:
  */
@@ -20443,7 +19588,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1177
  *                     force_check_project_scope = step_cmd == 144
  *                     if is_line:
- *                         if not info.pydev_use_scoped_step_frame:             # <<<<<<<<<<<<<<
  *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:
  *                                 stop = not main_debugger.apply_files_filter(frame, frame.f_code.co_filename, force_check_project_scope)
  */
@@ -20453,7 +19597,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1178
  *                     if is_line:
  *                         if not info.pydev_use_scoped_step_frame:
- *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:             # <<<<<<<<<<<<<<
  *                                 stop = not main_debugger.apply_files_filter(frame, frame.f_code.co_filename, force_check_project_scope)
  *                             else:
  */
@@ -20474,7 +19617,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1179
  *                         if not info.pydev_use_scoped_step_frame:
  *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:
- *                                 stop = not main_debugger.apply_files_filter(frame, frame.f_code.co_filename, force_check_project_scope)             # <<<<<<<<<<<<<<
  *                             else:
  *                                 stop = True
  */
@@ -20542,7 +19684,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1178
  *                     if is_line:
  *                         if not info.pydev_use_scoped_step_frame:
- *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:             # <<<<<<<<<<<<<<
  *                                 stop = not main_debugger.apply_files_filter(frame, frame.f_code.co_filename, force_check_project_scope)
  *                             else:
  */
@@ -20552,7 +19693,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1181
  *                                 stop = not main_debugger.apply_files_filter(frame, frame.f_code.co_filename, force_check_project_scope)
  *                             else:
- *                                 stop = True             # <<<<<<<<<<<<<<
  *                         else:
  *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:
  */
@@ -20564,7 +19704,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1177
  *                     force_check_project_scope = step_cmd == 144
  *                     if is_line:
- *                         if not info.pydev_use_scoped_step_frame:             # <<<<<<<<<<<<<<
  *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:
  *                                 stop = not main_debugger.apply_files_filter(frame, frame.f_code.co_filename, force_check_project_scope)
  */
@@ -20574,7 +19713,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1183
  *                                 stop = True
  *                         else:
- *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:             # <<<<<<<<<<<<<<
  *                                 # Make sure we check the filtering inside ipython calls too...
  *                                 if not not main_debugger.apply_files_filter(frame, frame.f_code.co_filename, force_check_project_scope):
  */
@@ -20596,7 +19734,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1185
  *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:
  *                                 # Make sure we check the filtering inside ipython calls too...
- *                                 if not not main_debugger.apply_files_filter(frame, frame.f_code.co_filename, force_check_project_scope):             # <<<<<<<<<<<<<<
  *                                     return None if is_call else NO_FTRACE
  * 
  */
@@ -20665,7 +19802,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1186
  *                                 # Make sure we check the filtering inside ipython calls too...
  *                                 if not not main_debugger.apply_files_filter(frame, frame.f_code.co_filename, force_check_project_scope):
- *                                     return None if is_call else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *                             # We can only stop inside the ipython call.
  */
@@ -20686,7 +19822,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1185
  *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:
  *                                 # Make sure we check the filtering inside ipython calls too...
- *                                 if not not main_debugger.apply_files_filter(frame, frame.f_code.co_filename, force_check_project_scope):             # <<<<<<<<<<<<<<
  *                                     return None if is_call else NO_FTRACE
  * 
  */
@@ -20695,7 +19830,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1183
  *                                 stop = True
  *                         else:
- *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:             # <<<<<<<<<<<<<<
  *                                 # Make sure we check the filtering inside ipython calls too...
  *                                 if not not main_debugger.apply_files_filter(frame, frame.f_code.co_filename, force_check_project_scope):
  */
@@ -20704,7 +19838,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1189
  * 
  *                             # We can only stop inside the ipython call.
- *                             filename = frame.f_code.co_filename             # <<<<<<<<<<<<<<
  *                             if filename.endswith('.pyc'):
  *                                 filename = filename[:-1]
  */
@@ -20719,7 +19852,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1190
  *                             # We can only stop inside the ipython call.
  *                             filename = frame.f_code.co_filename
- *                             if filename.endswith('.pyc'):             # <<<<<<<<<<<<<<
  *                                 filename = filename[:-1]
  * 
  */
@@ -20747,7 +19879,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1191
  *                             filename = frame.f_code.co_filename
  *                             if filename.endswith('.pyc'):
- *                                 filename = filename[:-1]             # <<<<<<<<<<<<<<
  * 
  *                             if not filename.endswith(PYDEVD_IPYTHON_CONTEXT[0]):
  */
@@ -20759,7 +19890,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1190
  *                             # We can only stop inside the ipython call.
  *                             filename = frame.f_code.co_filename
- *                             if filename.endswith('.pyc'):             # <<<<<<<<<<<<<<
  *                                 filename = filename[:-1]
  * 
  */
@@ -20768,7 +19898,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1193
  *                                 filename = filename[:-1]
  * 
- *                             if not filename.endswith(PYDEVD_IPYTHON_CONTEXT[0]):             # <<<<<<<<<<<<<<
  *                                 f = frame.f_back
  *                                 while f is not None:
  */
@@ -20803,7 +19932,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1194
  * 
  *                             if not filename.endswith(PYDEVD_IPYTHON_CONTEXT[0]):
- *                                 f = frame.f_back             # <<<<<<<<<<<<<<
  *                                 while f is not None:
  *                                     if f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[1]:
  */
@@ -20815,7 +19943,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1195
  *                             if not filename.endswith(PYDEVD_IPYTHON_CONTEXT[0]):
  *                                 f = frame.f_back
- *                                 while f is not None:             # <<<<<<<<<<<<<<
  *                                     if f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[1]:
  *                                         f2 = f.f_back
  */
@@ -20827,7 +19954,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1196
  *                                 f = frame.f_back
  *                                 while f is not None:
- *                                     if f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[1]:             # <<<<<<<<<<<<<<
  *                                         f2 = f.f_back
  *                                         if f2 is not None and f2.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[2]:
  */
@@ -20851,7 +19977,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                     /* "_pydevd_bundle/pydevd_cython.pyx":1197
  *                                 while f is not None:
  *                                     if f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[1]:
- *                                         f2 = f.f_back             # <<<<<<<<<<<<<<
  *                                         if f2 is not None and f2.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[2]:
  *                                             pydev_log.debug('Stop inside ipython call')
  */
@@ -20863,7 +19988,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                     /* "_pydevd_bundle/pydevd_cython.pyx":1198
  *                                     if f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[1]:
  *                                         f2 = f.f_back
- *                                         if f2 is not None and f2.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[2]:             # <<<<<<<<<<<<<<
  *                                             pydev_log.debug('Stop inside ipython call')
  *                                             stop = True
  */
@@ -20896,7 +20020,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                       /* "_pydevd_bundle/pydevd_cython.pyx":1199
  *                                         f2 = f.f_back
  *                                         if f2 is not None and f2.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[2]:
- *                                             pydev_log.debug('Stop inside ipython call')             # <<<<<<<<<<<<<<
  *                                             stop = True
  *                                             break
  */
@@ -20925,7 +20048,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                       /* "_pydevd_bundle/pydevd_cython.pyx":1200
  *                                         if f2 is not None and f2.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[2]:
  *                                             pydev_log.debug('Stop inside ipython call')
- *                                             stop = True             # <<<<<<<<<<<<<<
  *                                             break
  *                                     f = f.f_back
  */
@@ -20934,7 +20056,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                       /* "_pydevd_bundle/pydevd_cython.pyx":1201
  *                                             pydev_log.debug('Stop inside ipython call')
  *                                             stop = True
- *                                             break             # <<<<<<<<<<<<<<
  *                                     f = f.f_back
  * 
  */
@@ -20943,7 +20064,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                       /* "_pydevd_bundle/pydevd_cython.pyx":1198
  *                                     if f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[1]:
  *                                         f2 = f.f_back
- *                                         if f2 is not None and f2.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[2]:             # <<<<<<<<<<<<<<
  *                                             pydev_log.debug('Stop inside ipython call')
  *                                             stop = True
  */
@@ -20952,7 +20072,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                     /* "_pydevd_bundle/pydevd_cython.pyx":1196
  *                                 f = frame.f_back
  *                                 while f is not None:
- *                                     if f.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[1]:             # <<<<<<<<<<<<<<
  *                                         f2 = f.f_back
  *                                         if f2 is not None and f2.f_code.co_name == PYDEVD_IPYTHON_CONTEXT[2]:
  */
@@ -20961,7 +20080,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1202
  *                                             stop = True
  *                                             break
- *                                     f = f.f_back             # <<<<<<<<<<<<<<
  * 
  *                                 del f
  */
@@ -20975,7 +20093,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1204
  *                                     f = f.f_back
  * 
- *                                 del f             # <<<<<<<<<<<<<<
  * 
  *                             if not stop:
  */
@@ -20985,7 +20102,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1193
  *                                 filename = filename[:-1]
  * 
- *                             if not filename.endswith(PYDEVD_IPYTHON_CONTEXT[0]):             # <<<<<<<<<<<<<<
  *                                 f = frame.f_back
  *                                 while f is not None:
  */
@@ -20994,7 +20110,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1206
  *                                 del f
  * 
- *                             if not stop:             # <<<<<<<<<<<<<<
  *                                 # In scoped mode if step in didn't work in this context it won't work
  *                                 # afterwards anyways.
  */
@@ -21004,7 +20119,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1209
  *                                 # In scoped mode if step in didn't work in this context it won't work
  *                                 # afterwards anyways.
- *                                 return None if is_call else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *                     elif is_return and frame.f_back is not None and not info.pydev_use_scoped_step_frame:
  */
@@ -21025,7 +20139,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1206
  *                                 del f
  * 
- *                             if not stop:             # <<<<<<<<<<<<<<
  *                                 # In scoped mode if step in didn't work in this context it won't work
  *                                 # afterwards anyways.
  */
@@ -21036,7 +20149,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1176
  *                 elif step_cmd in (107, 144, 206):
  *                     force_check_project_scope = step_cmd == 144
- *                     if is_line:             # <<<<<<<<<<<<<<
  *                         if not info.pydev_use_scoped_step_frame:
  *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:
  */
@@ -21046,7 +20158,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1211
  *                                 return None if is_call else NO_FTRACE
  * 
- *                     elif is_return and frame.f_back is not None and not info.pydev_use_scoped_step_frame:             # <<<<<<<<<<<<<<
  *                         if main_debugger.get_file_type(frame.f_back) == main_debugger.PYDEV_FILE:
  *                             stop = False
  */
@@ -21074,7 +20185,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1212
  * 
  *                     elif is_return and frame.f_back is not None and not info.pydev_use_scoped_step_frame:
- *                         if main_debugger.get_file_type(frame.f_back) == main_debugger.PYDEV_FILE:             # <<<<<<<<<<<<<<
  *                             stop = False
  *                         else:
  */
@@ -21110,7 +20220,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1213
  *                     elif is_return and frame.f_back is not None and not info.pydev_use_scoped_step_frame:
  *                         if main_debugger.get_file_type(frame.f_back) == main_debugger.PYDEV_FILE:
- *                             stop = False             # <<<<<<<<<<<<<<
  *                         else:
  *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:
  */
@@ -21119,7 +20228,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1212
  * 
  *                     elif is_return and frame.f_back is not None and not info.pydev_use_scoped_step_frame:
- *                         if main_debugger.get_file_type(frame.f_back) == main_debugger.PYDEV_FILE:             # <<<<<<<<<<<<<<
  *                             stop = False
  *                         else:
  */
@@ -21129,7 +20237,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1215
  *                             stop = False
  *                         else:
- *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:             # <<<<<<<<<<<<<<
  *                                 stop = not main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, force_check_project_scope)
  *                                 if stop:
  */
@@ -21151,7 +20258,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1216
  *                         else:
  *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:
- *                                 stop = not main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, force_check_project_scope)             # <<<<<<<<<<<<<<
  *                                 if stop:
  *                                     # Prevent stopping in a return to the same location we were initially
  */
@@ -21226,7 +20332,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1217
  *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:
  *                                 stop = not main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, force_check_project_scope)
- *                                 if stop:             # <<<<<<<<<<<<<<
  *                                     # Prevent stopping in a return to the same location we were initially
  *                                     # (i.e.: double-stop at the same place due to some filtering).
  */
@@ -21236,7 +20341,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1220
  *                                     # Prevent stopping in a return to the same location we were initially
  *                                     # (i.e.: double-stop at the same place due to some filtering).
- *                                     if info.step_in_initial_location == (frame.f_back, frame.f_back.f_lineno):             # <<<<<<<<<<<<<<
  *                                         stop = False
  *                             else:
  */
@@ -21264,7 +20368,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                     /* "_pydevd_bundle/pydevd_cython.pyx":1221
  *                                     # (i.e.: double-stop at the same place due to some filtering).
  *                                     if info.step_in_initial_location == (frame.f_back, frame.f_back.f_lineno):
- *                                         stop = False             # <<<<<<<<<<<<<<
  *                             else:
  *                                 stop = True
  */
@@ -21273,7 +20376,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                     /* "_pydevd_bundle/pydevd_cython.pyx":1220
  *                                     # Prevent stopping in a return to the same location we were initially
  *                                     # (i.e.: double-stop at the same place due to some filtering).
- *                                     if info.step_in_initial_location == (frame.f_back, frame.f_back.f_lineno):             # <<<<<<<<<<<<<<
  *                                         stop = False
  *                             else:
  */
@@ -21282,7 +20384,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1217
  *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:
  *                                 stop = not main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, force_check_project_scope)
- *                                 if stop:             # <<<<<<<<<<<<<<
  *                                     # Prevent stopping in a return to the same location we were initially
  *                                     # (i.e.: double-stop at the same place due to some filtering).
  */
@@ -21291,7 +20392,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1215
  *                             stop = False
  *                         else:
- *                             if force_check_project_scope or main_debugger.is_files_filter_enabled:             # <<<<<<<<<<<<<<
  *                                 stop = not main_debugger.apply_files_filter(frame.f_back, frame.f_back.f_code.co_filename, force_check_project_scope)
  *                                 if stop:
  */
@@ -21301,7 +20401,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1223
  *                                         stop = False
  *                             else:
- *                                 stop = True             # <<<<<<<<<<<<<<
  *                     else:
  *                         stop = False
  */
@@ -21315,7 +20414,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1211
  *                                 return None if is_call else NO_FTRACE
  * 
- *                     elif is_return and frame.f_back is not None and not info.pydev_use_scoped_step_frame:             # <<<<<<<<<<<<<<
  *                         if main_debugger.get_file_type(frame.f_back) == main_debugger.PYDEV_FILE:
  *                             stop = False
  */
@@ -21325,7 +20423,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1225
  *                                 stop = True
  *                     else:
- *                         stop = False             # <<<<<<<<<<<<<<
  * 
  *                     if stop:
  */
@@ -21337,7 +20434,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1227
  *                         stop = False
  * 
- *                     if stop:             # <<<<<<<<<<<<<<
  *                         if step_cmd == 206:
  *                             # i.e.: Check if we're stepping into the proper context.
  */
@@ -21347,7 +20443,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1228
  * 
  *                     if stop:
- *                         if step_cmd == 206:             # <<<<<<<<<<<<<<
  *                             # i.e.: Check if we're stepping into the proper context.
  *                             f = frame
  */
@@ -21357,7 +20452,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1230
  *                         if step_cmd == 206:
  *                             # i.e.: Check if we're stepping into the proper context.
- *                             f = frame             # <<<<<<<<<<<<<<
  *                             while f is not None:
  *                                 if self._is_same_frame(stop_frame, f):
  */
@@ -21367,7 +20461,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1231
  *                             # i.e.: Check if we're stepping into the proper context.
  *                             f = frame
- *                             while f is not None:             # <<<<<<<<<<<<<<
  *                                 if self._is_same_frame(stop_frame, f):
  *                                     break
  */
@@ -21379,7 +20472,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1232
  *                             f = frame
  *                             while f is not None:
- *                                 if self._is_same_frame(stop_frame, f):             # <<<<<<<<<<<<<<
  *                                     break
  *                                 f = f.f_back
  */
@@ -21392,7 +20484,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1233
  *                             while f is not None:
  *                                 if self._is_same_frame(stop_frame, f):
- *                                     break             # <<<<<<<<<<<<<<
  *                                 f = f.f_back
  *                             else:
  */
@@ -21401,7 +20492,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1232
  *                             f = frame
  *                             while f is not None:
- *                                 if self._is_same_frame(stop_frame, f):             # <<<<<<<<<<<<<<
  *                                     break
  *                                 f = f.f_back
  */
@@ -21410,7 +20500,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1234
  *                                 if self._is_same_frame(stop_frame, f):
  *                                     break
- *                                 f = f.f_back             # <<<<<<<<<<<<<<
  *                             else:
  *                                 stop = False
  */
@@ -21423,7 +20512,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1236
  *                                 f = f.f_back
  *                             else:
- *                                 stop = False             # <<<<<<<<<<<<<<
  * 
  *                     if plugin_manager is not None:
  */
@@ -21435,7 +20523,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1228
  * 
  *                     if stop:
- *                         if step_cmd == 206:             # <<<<<<<<<<<<<<
  *                             # i.e.: Check if we're stepping into the proper context.
  *                             f = frame
  */
@@ -21444,7 +20531,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1227
  *                         stop = False
  * 
- *                     if stop:             # <<<<<<<<<<<<<<
  *                         if step_cmd == 206:
  *                             # i.e.: Check if we're stepping into the proper context.
  */
@@ -21453,7 +20539,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1238
  *                                 stop = False
  * 
- *                     if plugin_manager is not None:             # <<<<<<<<<<<<<<
  *                         result = plugin_manager.cmd_step_into(main_debugger, frame, event, self._args, stop_info, stop)
  *                         if result:
  */
@@ -21464,7 +20549,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1239
  * 
  *                     if plugin_manager is not None:
- *                         result = plugin_manager.cmd_step_into(main_debugger, frame, event, self._args, stop_info, stop)             # <<<<<<<<<<<<<<
  *                         if result:
  *                             stop, plugin_stop = result
  */
@@ -21537,7 +20621,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1240
  *                     if plugin_manager is not None:
  *                         result = plugin_manager.cmd_step_into(main_debugger, frame, event, self._args, stop_info, stop)
- *                         if result:             # <<<<<<<<<<<<<<
  *                             stop, plugin_stop = result
  * 
  */
@@ -21547,7 +20630,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1241
  *                         result = plugin_manager.cmd_step_into(main_debugger, frame, event, self._args, stop_info, stop)
  *                         if result:
- *                             stop, plugin_stop = result             # <<<<<<<<<<<<<<
  * 
  *                 elif step_cmd in (108, 159):
  */
@@ -21604,7 +20686,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1240
  *                     if plugin_manager is not None:
  *                         result = plugin_manager.cmd_step_into(main_debugger, frame, event, self._args, stop_info, stop)
- *                         if result:             # <<<<<<<<<<<<<<
  *                             stop, plugin_stop = result
  * 
  */
@@ -21613,7 +20694,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1238
  *                                 stop = False
  * 
- *                     if plugin_manager is not None:             # <<<<<<<<<<<<<<
  *                         result = plugin_manager.cmd_step_into(main_debugger, frame, event, self._args, stop_info, stop)
  *                         if result:
  */
@@ -21622,7 +20702,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1174
  *                     stop = False
  * 
- *                 elif step_cmd in (107, 144, 206):             # <<<<<<<<<<<<<<
  *                     force_check_project_scope = step_cmd == 144
  *                     if is_line:
  */
@@ -21632,7 +20711,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1243
  *                             stop, plugin_stop = result
  * 
- *                 elif step_cmd in (108, 159):             # <<<<<<<<<<<<<<
  *                     # Note: when dealing with a step over my code it's the same as a step over (the
  *                     # difference is that when we return from a frame in one we go to regular step
  */
@@ -21651,7 +20729,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1247
  *                     # difference is that when we return from a frame in one we go to regular step
  *                     # into and in the other we go to a step into my code).
- *                     stop = self._is_same_frame(stop_frame, frame) and is_line             # <<<<<<<<<<<<<<
  *                     # Note: don't stop on a return for step over, only for line events
  *                     # i.e.: don't stop in: (stop_frame is frame.f_back and is_return) as we'd stop twice in that line.
  */
@@ -21672,7 +20749,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1251
  *                     # i.e.: don't stop in: (stop_frame is frame.f_back and is_return) as we'd stop twice in that line.
  * 
- *                     if plugin_manager is not None:             # <<<<<<<<<<<<<<
  *                         result = plugin_manager.cmd_step_over(main_debugger, frame, event, self._args, stop_info, stop)
  *                         if result:
  */
@@ -21683,7 +20759,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1252
  * 
  *                     if plugin_manager is not None:
- *                         result = plugin_manager.cmd_step_over(main_debugger, frame, event, self._args, stop_info, stop)             # <<<<<<<<<<<<<<
  *                         if result:
  *                             stop, plugin_stop = result
  */
@@ -21756,7 +20831,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1253
  *                     if plugin_manager is not None:
  *                         result = plugin_manager.cmd_step_over(main_debugger, frame, event, self._args, stop_info, stop)
- *                         if result:             # <<<<<<<<<<<<<<
  *                             stop, plugin_stop = result
  * 
  */
@@ -21766,7 +20840,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1254
  *                         result = plugin_manager.cmd_step_over(main_debugger, frame, event, self._args, stop_info, stop)
  *                         if result:
- *                             stop, plugin_stop = result             # <<<<<<<<<<<<<<
  * 
  *                 elif step_cmd == 128:
  */
@@ -21823,7 +20896,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1253
  *                     if plugin_manager is not None:
  *                         result = plugin_manager.cmd_step_over(main_debugger, frame, event, self._args, stop_info, stop)
- *                         if result:             # <<<<<<<<<<<<<<
  *                             stop, plugin_stop = result
  * 
  */
@@ -21832,7 +20904,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1251
  *                     # i.e.: don't stop in: (stop_frame is frame.f_back and is_return) as we'd stop twice in that line.
  * 
- *                     if plugin_manager is not None:             # <<<<<<<<<<<<<<
  *                         result = plugin_manager.cmd_step_over(main_debugger, frame, event, self._args, stop_info, stop)
  *                         if result:
  */
@@ -21841,7 +20912,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1243
  *                             stop, plugin_stop = result
  * 
- *                 elif step_cmd in (108, 159):             # <<<<<<<<<<<<<<
  *                     # Note: when dealing with a step over my code it's the same as a step over (the
  *                     # difference is that when we return from a frame in one we go to regular step
  */
@@ -21851,7 +20921,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1256
  *                             stop, plugin_stop = result
  * 
- *                 elif step_cmd == 128:             # <<<<<<<<<<<<<<
  *                     stop = False
  *                     back = frame.f_back
  */
@@ -21861,7 +20930,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1257
  * 
  *                 elif step_cmd == 128:
- *                     stop = False             # <<<<<<<<<<<<<<
  *                     back = frame.f_back
  *                     if self._is_same_frame(stop_frame, frame) and is_return:
  */
@@ -21870,7 +20938,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1258
  *                 elif step_cmd == 128:
  *                     stop = False
- *                     back = frame.f_back             # <<<<<<<<<<<<<<
  *                     if self._is_same_frame(stop_frame, frame) and is_return:
  *                         # We're exiting the smart step into initial frame (so, we probably didn't find our target).
  */
@@ -21882,7 +20949,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1259
  *                     stop = False
  *                     back = frame.f_back
- *                     if self._is_same_frame(stop_frame, frame) and is_return:             # <<<<<<<<<<<<<<
  *                         # We're exiting the smart step into initial frame (so, we probably didn't find our target).
  *                         stop = True
  */
@@ -21903,7 +20969,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1261
  *                     if self._is_same_frame(stop_frame, frame) and is_return:
  *                         # We're exiting the smart step into initial frame (so, we probably didn't find our target).
- *                         stop = True             # <<<<<<<<<<<<<<
  * 
  *                     elif self._is_same_frame(stop_frame, back) and is_line:
  */
@@ -21912,7 +20977,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1259
  *                     stop = False
  *                     back = frame.f_back
- *                     if self._is_same_frame(stop_frame, frame) and is_return:             # <<<<<<<<<<<<<<
  *                         # We're exiting the smart step into initial frame (so, we probably didn't find our target).
  *                         stop = True
  */
@@ -21922,7 +20986,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1263
  *                         stop = True
  * 
- *                     elif self._is_same_frame(stop_frame, back) and is_line:             # <<<<<<<<<<<<<<
  *                         if info.pydev_smart_child_offset != -1:
  *                             # i.e.: in this case, we're not interested in the pause in the parent, rather
  */
@@ -21943,7 +21006,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1264
  * 
  *                     elif self._is_same_frame(stop_frame, back) and is_line:
- *                         if info.pydev_smart_child_offset != -1:             # <<<<<<<<<<<<<<
  *                             # i.e.: in this case, we're not interested in the pause in the parent, rather
  *                             # we're interested in the pause in the child (when the parent is at the proper place).
  */
@@ -21953,7 +21015,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1267
  *                             # i.e.: in this case, we're not interested in the pause in the parent, rather
  *                             # we're interested in the pause in the child (when the parent is at the proper place).
- *                             stop = False             # <<<<<<<<<<<<<<
  * 
  *                         else:
  */
@@ -21962,7 +21023,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1264
  * 
  *                     elif self._is_same_frame(stop_frame, back) and is_line:
- *                         if info.pydev_smart_child_offset != -1:             # <<<<<<<<<<<<<<
  *                             # i.e.: in this case, we're not interested in the pause in the parent, rather
  *                             # we're interested in the pause in the child (when the parent is at the proper place).
  */
@@ -21972,7 +21032,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1270
  * 
  *                         else:
- *                             pydev_smart_parent_offset = info.pydev_smart_parent_offset             # <<<<<<<<<<<<<<
  * 
  *                             pydev_smart_step_into_variants = info.pydev_smart_step_into_variants
  */
@@ -21983,7 +21042,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1272
  *                             pydev_smart_parent_offset = info.pydev_smart_parent_offset
  * 
- *                             pydev_smart_step_into_variants = info.pydev_smart_step_into_variants             # <<<<<<<<<<<<<<
  *                             if pydev_smart_parent_offset >= 0 and pydev_smart_step_into_variants:
  *                                 # Preferred mode (when the smart step into variants are available
  */
@@ -21995,7 +21053,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1273
  * 
  *                             pydev_smart_step_into_variants = info.pydev_smart_step_into_variants
- *                             if pydev_smart_parent_offset >= 0 and pydev_smart_step_into_variants:             # <<<<<<<<<<<<<<
  *                                 # Preferred mode (when the smart step into variants are available
  *                                 # and the offset is set).
  */
@@ -22013,7 +21070,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1276
  *                                 # Preferred mode (when the smart step into variants are available
  *                                 # and the offset is set).
- *                                 stop = get_smart_step_into_variant_from_frame_offset(back.f_lasti, pydev_smart_step_into_variants) is \             # <<<<<<<<<<<<<<
  *                                        get_smart_step_into_variant_from_frame_offset(pydev_smart_parent_offset, pydev_smart_step_into_variants)
  * 
  */
@@ -22072,7 +21128,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1277
  *                                 # and the offset is set).
  *                                 stop = get_smart_step_into_variant_from_frame_offset(back.f_lasti, pydev_smart_step_into_variants) is \
- *                                        get_smart_step_into_variant_from_frame_offset(pydev_smart_parent_offset, pydev_smart_step_into_variants)             # <<<<<<<<<<<<<<
  * 
  *                             else:
  */
@@ -22135,7 +21190,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1273
  * 
  *                             pydev_smart_step_into_variants = info.pydev_smart_step_into_variants
- *                             if pydev_smart_parent_offset >= 0 and pydev_smart_step_into_variants:             # <<<<<<<<<<<<<<
  *                                 # Preferred mode (when the smart step into variants are available
  *                                 # and the offset is set).
  */
@@ -22145,7 +21199,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1281
  *                             else:
  *                                 # Only the name/line is available, so, check that.
- *                                 curr_func_name = frame.f_code.co_name             # <<<<<<<<<<<<<<
  * 
  *                                 # global context is set with an empty name
  */
@@ -22162,7 +21215,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1284
  * 
  *                                 # global context is set with an empty name
- *                                 if curr_func_name in ('?', '<module>') or curr_func_name is None:             # <<<<<<<<<<<<<<
  *                                     curr_func_name = ''
  *                                 if curr_func_name == info.pydev_func_name and stop_frame.f_lineno == info.pydev_next_line:
  */
@@ -22195,7 +21247,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1285
  *                                 # global context is set with an empty name
  *                                 if curr_func_name in ('?', '<module>') or curr_func_name is None:
- *                                     curr_func_name = ''             # <<<<<<<<<<<<<<
  *                                 if curr_func_name == info.pydev_func_name and stop_frame.f_lineno == info.pydev_next_line:
  *                                     stop = True
  */
@@ -22205,7 +21256,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1284
  * 
  *                                 # global context is set with an empty name
- *                                 if curr_func_name in ('?', '<module>') or curr_func_name is None:             # <<<<<<<<<<<<<<
  *                                     curr_func_name = ''
  *                                 if curr_func_name == info.pydev_func_name and stop_frame.f_lineno == info.pydev_next_line:
  */
@@ -22214,7 +21264,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1286
  *                                 if curr_func_name in ('?', '<module>') or curr_func_name is None:
  *                                     curr_func_name = ''
- *                                 if curr_func_name == info.pydev_func_name and stop_frame.f_lineno == info.pydev_next_line:             # <<<<<<<<<<<<<<
  *                                     stop = True
  * 
  */
@@ -22241,7 +21290,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1287
  *                                     curr_func_name = ''
  *                                 if curr_func_name == info.pydev_func_name and stop_frame.f_lineno == info.pydev_next_line:
- *                                     stop = True             # <<<<<<<<<<<<<<
  * 
  *                         if not stop:
  */
@@ -22250,7 +21298,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1286
  *                                 if curr_func_name in ('?', '<module>') or curr_func_name is None:
  *                                     curr_func_name = ''
- *                                 if curr_func_name == info.pydev_func_name and stop_frame.f_lineno == info.pydev_next_line:             # <<<<<<<<<<<<<<
  *                                     stop = True
  * 
  */
@@ -22263,7 +21310,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1289
  *                                     stop = True
  * 
- *                         if not stop:             # <<<<<<<<<<<<<<
  *                             # In smart step into, if we didn't hit it in this frame once, that'll
  *                             # not be the case next time either, so, disable tracing for this frame.
  */
@@ -22273,7 +21319,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1292
  *                             # In smart step into, if we didn't hit it in this frame once, that'll
  *                             # not be the case next time either, so, disable tracing for this frame.
- *                             return None if is_call else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *                     elif back is not None and self._is_same_frame(stop_frame, back.f_back) and is_line:
  */
@@ -22294,7 +21339,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1289
  *                                     stop = True
  * 
- *                         if not stop:             # <<<<<<<<<<<<<<
  *                             # In smart step into, if we didn't hit it in this frame once, that'll
  *                             # not be the case next time either, so, disable tracing for this frame.
  */
@@ -22303,7 +21347,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1263
  *                         stop = True
  * 
- *                     elif self._is_same_frame(stop_frame, back) and is_line:             # <<<<<<<<<<<<<<
  *                         if info.pydev_smart_child_offset != -1:
  *                             # i.e.: in this case, we're not interested in the pause in the parent, rather
  */
@@ -22313,7 +21356,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1294
  *                             return None if is_call else NO_FTRACE
  * 
- *                     elif back is not None and self._is_same_frame(stop_frame, back.f_back) and is_line:             # <<<<<<<<<<<<<<
  *                         # Ok, we have to track 2 stops at this point, the parent and the child offset.
  *                         # This happens when handling a step into which targets a function inside a list comprehension
  */
@@ -22344,7 +21386,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1298
  *                         # This happens when handling a step into which targets a function inside a list comprehension
  *                         # or generator (in which case an intermediary frame is created due to an internal function call).
- *                         pydev_smart_parent_offset = info.pydev_smart_parent_offset             # <<<<<<<<<<<<<<
  *                         pydev_smart_child_offset = info.pydev_smart_child_offset
  *                         # print('matched back frame', pydev_smart_parent_offset, pydev_smart_child_offset)
  */
@@ -22354,7 +21395,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1299
  *                         # or generator (in which case an intermediary frame is created due to an internal function call).
  *                         pydev_smart_parent_offset = info.pydev_smart_parent_offset
- *                         pydev_smart_child_offset = info.pydev_smart_child_offset             # <<<<<<<<<<<<<<
  *                         # print('matched back frame', pydev_smart_parent_offset, pydev_smart_child_offset)
  *                         # print('parent f_lasti', back.f_back.f_lasti)
  */
@@ -22364,7 +21404,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1303
  *                         # print('parent f_lasti', back.f_back.f_lasti)
  *                         # print('child f_lasti', back.f_lasti)
- *                         stop = False             # <<<<<<<<<<<<<<
  *                         if pydev_smart_child_offset >= 0 and pydev_smart_child_offset >= 0:
  *                             pydev_smart_step_into_variants = info.pydev_smart_step_into_variants
  */
@@ -22373,7 +21412,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1304
  *                         # print('child f_lasti', back.f_lasti)
  *                         stop = False
- *                         if pydev_smart_child_offset >= 0 and pydev_smart_child_offset >= 0:             # <<<<<<<<<<<<<<
  *                             pydev_smart_step_into_variants = info.pydev_smart_step_into_variants
  * 
  */
@@ -22391,7 +21429,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1305
  *                         stop = False
  *                         if pydev_smart_child_offset >= 0 and pydev_smart_child_offset >= 0:
- *                             pydev_smart_step_into_variants = info.pydev_smart_step_into_variants             # <<<<<<<<<<<<<<
  * 
  *                             if pydev_smart_parent_offset >= 0 and pydev_smart_step_into_variants:
  */
@@ -22403,7 +21440,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1307
  *                             pydev_smart_step_into_variants = info.pydev_smart_step_into_variants
  * 
- *                             if pydev_smart_parent_offset >= 0 and pydev_smart_step_into_variants:             # <<<<<<<<<<<<<<
  *                                 # Note that we don't really check the parent offset, only the offset of
  *                                 # the child (because this is a generator, the parent may have moved forward
  */
@@ -22421,7 +21457,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1312
  *                                 # already -- and that's ok, so, we just check that the parent frame
  *                                 # matches in this case).
- *                                 smart_step_into_variant = get_smart_step_into_variant_from_frame_offset(pydev_smart_parent_offset, pydev_smart_step_into_variants)             # <<<<<<<<<<<<<<
  *                                 # print('matched parent offset', pydev_smart_parent_offset)
  *                                 # Ok, now, check the child variant
  */
@@ -22482,7 +21517,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1315
  *                                 # print('matched parent offset', pydev_smart_parent_offset)
  *                                 # Ok, now, check the child variant
- *                                 children_variants = smart_step_into_variant.children_variants             # <<<<<<<<<<<<<<
  *                                 stop = children_variants and (
  *                                     get_smart_step_into_variant_from_frame_offset(back.f_lasti, children_variants) is \
  */
@@ -22494,7 +21528,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1316
  *                                 # Ok, now, check the child variant
  *                                 children_variants = smart_step_into_variant.children_variants
- *                                 stop = children_variants and (             # <<<<<<<<<<<<<<
  *                                     get_smart_step_into_variant_from_frame_offset(back.f_lasti, children_variants) is \
  *                                     get_smart_step_into_variant_from_frame_offset(pydev_smart_child_offset, children_variants)
  */
@@ -22508,7 +21541,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1317
  *                                 children_variants = smart_step_into_variant.children_variants
  *                                 stop = children_variants and (
- *                                     get_smart_step_into_variant_from_frame_offset(back.f_lasti, children_variants) is \             # <<<<<<<<<<<<<<
  *                                     get_smart_step_into_variant_from_frame_offset(pydev_smart_child_offset, children_variants)
  *                                 )
  */
@@ -22567,7 +21599,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1318
  *                                 stop = children_variants and (
  *                                     get_smart_step_into_variant_from_frame_offset(back.f_lasti, children_variants) is \
- *                                     get_smart_step_into_variant_from_frame_offset(pydev_smart_child_offset, children_variants)             # <<<<<<<<<<<<<<
  *                                 )
  *                                 # print('stop at child', stop)
  */
@@ -22629,7 +21660,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1317
  *                                 children_variants = smart_step_into_variant.children_variants
  *                                 stop = children_variants and (
- *                                     get_smart_step_into_variant_from_frame_offset(back.f_lasti, children_variants) is \             # <<<<<<<<<<<<<<
  *                                     get_smart_step_into_variant_from_frame_offset(pydev_smart_child_offset, children_variants)
  *                                 )
  */
@@ -22641,7 +21671,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1307
  *                             pydev_smart_step_into_variants = info.pydev_smart_step_into_variants
  * 
- *                             if pydev_smart_parent_offset >= 0 and pydev_smart_step_into_variants:             # <<<<<<<<<<<<<<
  *                                 # Note that we don't really check the parent offset, only the offset of
  *                                 # the child (because this is a generator, the parent may have moved forward
  */
@@ -22650,7 +21679,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1304
  *                         # print('child f_lasti', back.f_lasti)
  *                         stop = False
- *                         if pydev_smart_child_offset >= 0 and pydev_smart_child_offset >= 0:             # <<<<<<<<<<<<<<
  *                             pydev_smart_step_into_variants = info.pydev_smart_step_into_variants
  * 
  */
@@ -22659,7 +21687,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1322
  *                                 # print('stop at child', stop)
  * 
- *                         if not stop:             # <<<<<<<<<<<<<<
  *                             # In smart step into, if we didn't hit it in this frame once, that'll
  *                             # not be the case next time either, so, disable tracing for this frame.
  */
@@ -22669,7 +21696,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1325
  *                             # In smart step into, if we didn't hit it in this frame once, that'll
  *                             # not be the case next time either, so, disable tracing for this frame.
- *                             return None if is_call else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *                 elif step_cmd in (109, 160):
  */
@@ -22690,7 +21716,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1322
  *                                 # print('stop at child', stop)
  * 
- *                         if not stop:             # <<<<<<<<<<<<<<
  *                             # In smart step into, if we didn't hit it in this frame once, that'll
  *                             # not be the case next time either, so, disable tracing for this frame.
  */
@@ -22699,7 +21724,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1294
  *                             return None if is_call else NO_FTRACE
  * 
- *                     elif back is not None and self._is_same_frame(stop_frame, back.f_back) and is_line:             # <<<<<<<<<<<<<<
  *                         # Ok, we have to track 2 stops at this point, the parent and the child offset.
  *                         # This happens when handling a step into which targets a function inside a list comprehension
  */
@@ -22709,7 +21733,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1256
  *                             stop, plugin_stop = result
  * 
- *                 elif step_cmd == 128:             # <<<<<<<<<<<<<<
  *                     stop = False
  *                     back = frame.f_back
  */
@@ -22719,7 +21742,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1327
  *                             return None if is_call else NO_FTRACE
  * 
- *                 elif step_cmd in (109, 160):             # <<<<<<<<<<<<<<
  *                     stop = is_return and self._is_same_frame(stop_frame, frame)
  * 
  */
@@ -22738,7 +21760,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1328
  * 
  *                 elif step_cmd in (109, 160):
- *                     stop = is_return and self._is_same_frame(stop_frame, frame)             # <<<<<<<<<<<<<<
  * 
  *                 else:
  */
@@ -22759,7 +21780,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1327
  *                             return None if is_call else NO_FTRACE
  * 
- *                 elif step_cmd in (109, 160):             # <<<<<<<<<<<<<<
  *                     stop = is_return and self._is_same_frame(stop_frame, frame)
  * 
  */
@@ -22769,7 +21789,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1331
  * 
  *                 else:
- *                     stop = False             # <<<<<<<<<<<<<<
  * 
  *                 if stop and step_cmd != -1 and is_return and hasattr(frame, "f_back"):
  */
@@ -22781,7 +21800,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1333
  *                     stop = False
  * 
- *                 if stop and step_cmd != -1 and is_return and hasattr(frame, "f_back"):             # <<<<<<<<<<<<<<
  *                     f_code = getattr(frame.f_back, 'f_code', None)
  *                     if f_code is not None:
  */
@@ -22812,7 +21830,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1334
  * 
  *                 if stop and step_cmd != -1 and is_return and hasattr(frame, "f_back"):
- *                     f_code = getattr(frame.f_back, 'f_code', None)             # <<<<<<<<<<<<<<
  *                     if f_code is not None:
  *                         if main_debugger.get_file_type(frame.f_back) == main_debugger.PYDEV_FILE:
  */
@@ -22827,7 +21844,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1335
  *                 if stop and step_cmd != -1 and is_return and hasattr(frame, "f_back"):
  *                     f_code = getattr(frame.f_back, 'f_code', None)
- *                     if f_code is not None:             # <<<<<<<<<<<<<<
  *                         if main_debugger.get_file_type(frame.f_back) == main_debugger.PYDEV_FILE:
  *                             stop = False
  */
@@ -22838,7 +21854,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1336
  *                     f_code = getattr(frame.f_back, 'f_code', None)
  *                     if f_code is not None:
- *                         if main_debugger.get_file_type(frame.f_back) == main_debugger.PYDEV_FILE:             # <<<<<<<<<<<<<<
  *                             stop = False
  * 
  */
@@ -22874,7 +21889,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1337
  *                     if f_code is not None:
  *                         if main_debugger.get_file_type(frame.f_back) == main_debugger.PYDEV_FILE:
- *                             stop = False             # <<<<<<<<<<<<<<
  * 
  *                 if plugin_stop:
  */
@@ -22883,7 +21897,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1336
  *                     f_code = getattr(frame.f_back, 'f_code', None)
  *                     if f_code is not None:
- *                         if main_debugger.get_file_type(frame.f_back) == main_debugger.PYDEV_FILE:             # <<<<<<<<<<<<<<
  *                             stop = False
  * 
  */
@@ -22892,7 +21905,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1335
  *                 if stop and step_cmd != -1 and is_return and hasattr(frame, "f_back"):
  *                     f_code = getattr(frame.f_back, 'f_code', None)
- *                     if f_code is not None:             # <<<<<<<<<<<<<<
  *                         if main_debugger.get_file_type(frame.f_back) == main_debugger.PYDEV_FILE:
  *                             stop = False
  */
@@ -22901,7 +21913,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1333
  *                     stop = False
  * 
- *                 if stop and step_cmd != -1 and is_return and hasattr(frame, "f_back"):             # <<<<<<<<<<<<<<
  *                     f_code = getattr(frame.f_back, 'f_code', None)
  *                     if f_code is not None:
  */
@@ -22910,7 +21921,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1339
  *                             stop = False
  * 
- *                 if plugin_stop:             # <<<<<<<<<<<<<<
  *                     stopped_on_plugin = plugin_manager.stop(main_debugger, frame, event, self._args, stop_info, arg, step_cmd)
  *                 elif stop:
  */
@@ -22920,7 +21930,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1340
  * 
  *                 if plugin_stop:
- *                     stopped_on_plugin = plugin_manager.stop(main_debugger, frame, event, self._args, stop_info, arg, step_cmd)             # <<<<<<<<<<<<<<
  *                 elif stop:
  *                     if is_line:
  */
@@ -22996,7 +22005,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1339
  *                             stop = False
  * 
- *                 if plugin_stop:             # <<<<<<<<<<<<<<
  *                     stopped_on_plugin = plugin_manager.stop(main_debugger, frame, event, self._args, stop_info, arg, step_cmd)
  *                 elif stop:
  */
@@ -23006,7 +22014,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1341
  *                 if plugin_stop:
  *                     stopped_on_plugin = plugin_manager.stop(main_debugger, frame, event, self._args, stop_info, arg, step_cmd)
- *                 elif stop:             # <<<<<<<<<<<<<<
  *                     if is_line:
  *                         self.set_suspend(thread, step_cmd, original_step_cmd=info.pydev_original_step_cmd)
  */
@@ -23016,7 +22023,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1342
  *                     stopped_on_plugin = plugin_manager.stop(main_debugger, frame, event, self._args, stop_info, arg, step_cmd)
  *                 elif stop:
- *                     if is_line:             # <<<<<<<<<<<<<<
  *                         self.set_suspend(thread, step_cmd, original_step_cmd=info.pydev_original_step_cmd)
  *                         self.do_wait_suspend(thread, frame, event, arg)
  */
@@ -23026,7 +22032,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1343
  *                 elif stop:
  *                     if is_line:
- *                         self.set_suspend(thread, step_cmd, original_step_cmd=info.pydev_original_step_cmd)             # <<<<<<<<<<<<<<
  *                         self.do_wait_suspend(thread, frame, event, arg)
  *                     elif is_return:  # return event
  */
@@ -23058,7 +22063,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1344
  *                     if is_line:
  *                         self.set_suspend(thread, step_cmd, original_step_cmd=info.pydev_original_step_cmd)
- *                         self.do_wait_suspend(thread, frame, event, arg)             # <<<<<<<<<<<<<<
  *                     elif is_return:  # return event
  *                         back = frame.f_back
  */
@@ -23120,7 +22124,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1342
  *                     stopped_on_plugin = plugin_manager.stop(main_debugger, frame, event, self._args, stop_info, arg, step_cmd)
  *                 elif stop:
- *                     if is_line:             # <<<<<<<<<<<<<<
  *                         self.set_suspend(thread, step_cmd, original_step_cmd=info.pydev_original_step_cmd)
  *                         self.do_wait_suspend(thread, frame, event, arg)
  */
@@ -23130,7 +22133,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1345
  *                         self.set_suspend(thread, step_cmd, original_step_cmd=info.pydev_original_step_cmd)
  *                         self.do_wait_suspend(thread, frame, event, arg)
- *                     elif is_return:  # return event             # <<<<<<<<<<<<<<
  *                         back = frame.f_back
  *                         if back is not None:
  */
@@ -23140,7 +22142,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1346
  *                         self.do_wait_suspend(thread, frame, event, arg)
  *                     elif is_return:  # return event
- *                         back = frame.f_back             # <<<<<<<<<<<<<<
  *                         if back is not None:
  *                             # When we get to the pydevd run function, the debugging has actually finished for the main thread
  */
@@ -23152,7 +22153,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1347
  *                     elif is_return:  # return event
  *                         back = frame.f_back
- *                         if back is not None:             # <<<<<<<<<<<<<<
  *                             # When we get to the pydevd run function, the debugging has actually finished for the main thread
  *                             # (note that it can still go on for other threads, but for this one, we just make it finish)
  */
@@ -23163,7 +22163,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1351
  *                             # (note that it can still go on for other threads, but for this one, we just make it finish)
  *                             # So, just setting it to None should be OK
- *                             back_absolute_filename, _, base = get_abs_path_real_path_and_base_from_frame(back)             # <<<<<<<<<<<<<<
  *                             if (base, back.f_code.co_name) in (DEBUG_START, DEBUG_START_PY3K):
  *                                 back = None
  */
@@ -23247,7 +22246,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1352
  *                             # So, just setting it to None should be OK
  *                             back_absolute_filename, _, base = get_abs_path_real_path_and_base_from_frame(back)
- *                             if (base, back.f_code.co_name) in (DEBUG_START, DEBUG_START_PY3K):             # <<<<<<<<<<<<<<
  *                                 back = None
  * 
  */
@@ -23290,7 +22288,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1353
  *                             back_absolute_filename, _, base = get_abs_path_real_path_and_base_from_frame(back)
  *                             if (base, back.f_code.co_name) in (DEBUG_START, DEBUG_START_PY3K):
- *                                 back = None             # <<<<<<<<<<<<<<
  * 
  *                             elif base == TRACE_PROPERTY:
  */
@@ -23300,7 +22297,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1352
  *                             # So, just setting it to None should be OK
  *                             back_absolute_filename, _, base = get_abs_path_real_path_and_base_from_frame(back)
- *                             if (base, back.f_code.co_name) in (DEBUG_START, DEBUG_START_PY3K):             # <<<<<<<<<<<<<<
  *                                 back = None
  * 
  */
@@ -23310,7 +22306,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1355
  *                                 back = None
  * 
- *                             elif base == TRACE_PROPERTY:             # <<<<<<<<<<<<<<
  *                                 # We dont want to trace the return event of pydevd_traceproperty (custom property for debugging)
  *                                 # if we're in a return, we want it to appear to the user in the previous frame!
  */
@@ -23325,7 +22320,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1358
  *                                 # We dont want to trace the return event of pydevd_traceproperty (custom property for debugging)
  *                                 # if we're in a return, we want it to appear to the user in the previous frame!
- *                                 return None if is_call else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *                             elif pydevd_dont_trace.should_trace_hook is not None:
  */
@@ -23346,7 +22340,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1355
  *                                 back = None
  * 
- *                             elif base == TRACE_PROPERTY:             # <<<<<<<<<<<<<<
  *                                 # We dont want to trace the return event of pydevd_traceproperty (custom property for debugging)
  *                                 # if we're in a return, we want it to appear to the user in the previous frame!
  */
@@ -23355,7 +22348,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1360
  *                                 return None if is_call else NO_FTRACE
  * 
- *                             elif pydevd_dont_trace.should_trace_hook is not None:             # <<<<<<<<<<<<<<
  *                                 if not pydevd_dont_trace.should_trace_hook(back, back_absolute_filename):
  *                                     # In this case, we'll have to skip the previous one because it shouldn't be traced.
  */
@@ -23372,7 +22364,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1361
  * 
  *                             elif pydevd_dont_trace.should_trace_hook is not None:
- *                                 if not pydevd_dont_trace.should_trace_hook(back, back_absolute_filename):             # <<<<<<<<<<<<<<
  *                                     # In this case, we'll have to skip the previous one because it shouldn't be traced.
  *                                     # Also, we have to reset the tracing, because if the parent's parent (or some
  */
@@ -23434,7 +22425,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1367
  *                                     # we should anymore (so, a step in/over/return may not stop anywhere if no parent is traced).
  *                                     # Related test: _debugger_case17a.py
- *                                     main_debugger.set_trace_for_frame_and_parents(back)             # <<<<<<<<<<<<<<
  *                                     return None if is_call else NO_FTRACE
  * 
  */
@@ -23460,7 +22450,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1368
  *                                     # Related test: _debugger_case17a.py
  *                                     main_debugger.set_trace_for_frame_and_parents(back)
- *                                     return None if is_call else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *                         if back is not None:
  */
@@ -23481,7 +22470,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                   /* "_pydevd_bundle/pydevd_cython.pyx":1361
  * 
  *                             elif pydevd_dont_trace.should_trace_hook is not None:
- *                                 if not pydevd_dont_trace.should_trace_hook(back, back_absolute_filename):             # <<<<<<<<<<<<<<
  *                                     # In this case, we'll have to skip the previous one because it shouldn't be traced.
  *                                     # Also, we have to reset the tracing, because if the parent's parent (or some
  */
@@ -23490,7 +22478,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
                 /* "_pydevd_bundle/pydevd_cython.pyx":1360
  *                                 return None if is_call else NO_FTRACE
  * 
- *                             elif pydevd_dont_trace.should_trace_hook is not None:             # <<<<<<<<<<<<<<
  *                                 if not pydevd_dont_trace.should_trace_hook(back, back_absolute_filename):
  *                                     # In this case, we'll have to skip the previous one because it shouldn't be traced.
  */
@@ -23500,7 +22487,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1347
  *                     elif is_return:  # return event
  *                         back = frame.f_back
- *                         if back is not None:             # <<<<<<<<<<<<<<
  *                             # When we get to the pydevd run function, the debugging has actually finished for the main thread
  *                             # (note that it can still go on for other threads, but for this one, we just make it finish)
  */
@@ -23509,7 +22495,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1370
  *                                     return None if is_call else NO_FTRACE
  * 
- *                         if back is not None:             # <<<<<<<<<<<<<<
  *                             # if we're in a return, we want it to appear to the user in the previous frame!
  *                             self.set_suspend(thread, step_cmd, original_step_cmd=info.pydev_original_step_cmd)
  */
@@ -23520,7 +22505,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1372
  *                         if back is not None:
  *                             # if we're in a return, we want it to appear to the user in the previous frame!
- *                             self.set_suspend(thread, step_cmd, original_step_cmd=info.pydev_original_step_cmd)             # <<<<<<<<<<<<<<
  *                             self.do_wait_suspend(thread, back, event, arg)
  *                         else:
  */
@@ -23552,7 +22536,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1373
  *                             # if we're in a return, we want it to appear to the user in the previous frame!
  *                             self.set_suspend(thread, step_cmd, original_step_cmd=info.pydev_original_step_cmd)
- *                             self.do_wait_suspend(thread, back, event, arg)             # <<<<<<<<<<<<<<
  *                         else:
  *                             # in jython we may not have a back frame
  */
@@ -23614,7 +22597,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1370
  *                                     return None if is_call else NO_FTRACE
  * 
- *                         if back is not None:             # <<<<<<<<<<<<<<
  *                             # if we're in a return, we want it to appear to the user in the previous frame!
  *                             self.set_suspend(thread, step_cmd, original_step_cmd=info.pydev_original_step_cmd)
  */
@@ -23624,7 +22606,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1376
  *                         else:
  *                             # in jython we may not have a back frame
- *                             info.pydev_step_stop = None             # <<<<<<<<<<<<<<
  *                             info.pydev_original_step_cmd = -1
  *                             info.pydev_step_cmd = -1
  */
@@ -23638,7 +22619,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1377
  *                             # in jython we may not have a back frame
  *                             info.pydev_step_stop = None
- *                             info.pydev_original_step_cmd = -1             # <<<<<<<<<<<<<<
  *                             info.pydev_step_cmd = -1
  *                             info.pydev_state = 1
  */
@@ -23647,7 +22627,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1378
  *                             info.pydev_step_stop = None
  *                             info.pydev_original_step_cmd = -1
- *                             info.pydev_step_cmd = -1             # <<<<<<<<<<<<<<
  *                             info.pydev_state = 1
  * 
  */
@@ -23656,7 +22635,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
               /* "_pydevd_bundle/pydevd_cython.pyx":1379
  *                             info.pydev_original_step_cmd = -1
  *                             info.pydev_step_cmd = -1
- *                             info.pydev_state = 1             # <<<<<<<<<<<<<<
  * 
  *                 # if we are quitting, let's stop the tracing
  */
@@ -23667,7 +22645,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
             /* "_pydevd_bundle/pydevd_cython.pyx":1345
  *                         self.set_suspend(thread, step_cmd, original_step_cmd=info.pydev_original_step_cmd)
  *                         self.do_wait_suspend(thread, frame, event, arg)
- *                     elif is_return:  # return event             # <<<<<<<<<<<<<<
  *                         back = frame.f_back
  *                         if back is not None:
  */
@@ -23677,7 +22654,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1341
  *                 if plugin_stop:
  *                     stopped_on_plugin = plugin_manager.stop(main_debugger, frame, event, self._args, stop_info, arg, step_cmd)
- *                 elif stop:             # <<<<<<<<<<<<<<
  *                     if is_line:
  *                         self.set_suspend(thread, step_cmd, original_step_cmd=info.pydev_original_step_cmd)
  */
@@ -23687,7 +22663,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1382
  * 
  *                 # if we are quitting, let's stop the tracing
- *                 if main_debugger.quitting:             # <<<<<<<<<<<<<<
  *                     return None if is_call else NO_FTRACE
  * 
  */
@@ -23700,7 +22675,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1383
  *                 # if we are quitting, let's stop the tracing
  *                 if main_debugger.quitting:
- *                     return None if is_call else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *                 return self.trace_dispatch
  */
@@ -23721,7 +22695,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1382
  * 
  *                 # if we are quitting, let's stop the tracing
- *                 if main_debugger.quitting:             # <<<<<<<<<<<<<<
  *                     return None if is_call else NO_FTRACE
  * 
  */
@@ -23730,7 +22703,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1385
  *                     return None if is_call else NO_FTRACE
  * 
- *                 return self.trace_dispatch             # <<<<<<<<<<<<<<
  *             except:
  *                 # Unfortunately Python itself stops the tracing when it originates from
  */
@@ -23744,7 +22716,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1155
  * 
  *             # step handling. We stop when we hit the right frame
- *             try:             # <<<<<<<<<<<<<<
  *                 should_skip = 0
  *                 if pydevd_dont_trace.should_trace_hook is not None:
  */
@@ -23762,7 +22733,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":1386
  * 
  *                 return self.trace_dispatch
- *             except:             # <<<<<<<<<<<<<<
  *                 # Unfortunately Python itself stops the tracing when it originates from
  *                 # the tracing function, so, we can't do much about it (just let the user know).
  */
@@ -23776,7 +22746,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1389
  *                 # Unfortunately Python itself stops the tracing when it originates from
  *                 # the tracing function, so, we can't do much about it (just let the user know).
- *                 exc = sys.exc_info()[0]             # <<<<<<<<<<<<<<
  *                 cmd = main_debugger.cmd_factory.make_console_message(
  *                     '%s raised from within the callback set in sys.settrace.\nDebugging will be disabled for this thread (%s).\n' % (exc, thread,))
  */
@@ -23809,7 +22778,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1390
  *                 # the tracing function, so, we can't do much about it (just let the user know).
  *                 exc = sys.exc_info()[0]
- *                 cmd = main_debugger.cmd_factory.make_console_message(             # <<<<<<<<<<<<<<
  *                     '%s raised from within the callback set in sys.settrace.\nDebugging will be disabled for this thread (%s).\n' % (exc, thread,))
  *                 main_debugger.writer.add_command(cmd)
  */
@@ -23822,7 +22790,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1391
  *                 exc = sys.exc_info()[0]
  *                 cmd = main_debugger.cmd_factory.make_console_message(
- *                     '%s raised from within the callback set in sys.settrace.\nDebugging will be disabled for this thread (%s).\n' % (exc, thread,))             # <<<<<<<<<<<<<<
  *                 main_debugger.writer.add_command(cmd)
  *                 if not issubclass(exc, (KeyboardInterrupt, SystemExit)):
  */
@@ -23859,7 +22826,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1392
  *                 cmd = main_debugger.cmd_factory.make_console_message(
  *                     '%s raised from within the callback set in sys.settrace.\nDebugging will be disabled for this thread (%s).\n' % (exc, thread,))
- *                 main_debugger.writer.add_command(cmd)             # <<<<<<<<<<<<<<
  *                 if not issubclass(exc, (KeyboardInterrupt, SystemExit)):
  *                     pydev_log.exception()
  */
@@ -23888,7 +22854,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1393
  *                     '%s raised from within the callback set in sys.settrace.\nDebugging will be disabled for this thread (%s).\n' % (exc, thread,))
  *                 main_debugger.writer.add_command(cmd)
- *                 if not issubclass(exc, (KeyboardInterrupt, SystemExit)):             # <<<<<<<<<<<<<<
  *                     pydev_log.exception()
  *                 raise
  */
@@ -23899,7 +22864,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1394
  *                 main_debugger.writer.add_command(cmd)
  *                 if not issubclass(exc, (KeyboardInterrupt, SystemExit)):
- *                     pydev_log.exception()             # <<<<<<<<<<<<<<
  *                 raise
  * 
  */
@@ -23928,7 +22892,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
           /* "_pydevd_bundle/pydevd_cython.pyx":1393
  *                     '%s raised from within the callback set in sys.settrace.\nDebugging will be disabled for this thread (%s).\n' % (exc, thread,))
  *                 main_debugger.writer.add_command(cmd)
- *                 if not issubclass(exc, (KeyboardInterrupt, SystemExit)):             # <<<<<<<<<<<<<<
  *                     pydev_log.exception()
  *                 raise
  */
@@ -23937,7 +22900,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
         /* "_pydevd_bundle/pydevd_cython.pyx":1395
  *                 if not issubclass(exc, (KeyboardInterrupt, SystemExit)):
  *                     pydev_log.exception()
- *                 raise             # <<<<<<<<<<<<<<
  * 
  *         finally:
  */
@@ -23953,7 +22915,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
       /* "_pydevd_bundle/pydevd_cython.pyx":1155
  * 
  *             # step handling. We stop when we hit the right frame
- *             try:             # <<<<<<<<<<<<<<
  *                 should_skip = 0
  *                 if pydevd_dont_trace.should_trace_hook is not None:
  */
@@ -23974,7 +22935,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
   /* "_pydevd_bundle/pydevd_cython.pyx":1398
  * 
  *         finally:
- *             info.is_tracing -= 1             # <<<<<<<<<<<<<<
  * 
  *         # end trace_dispatch
  */
@@ -24045,7 +23005,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_trace_dispa
   /* "_pydevd_bundle/pydevd_cython.pyx":701
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     cpdef trace_dispatch(self, frame, str event, arg):             # <<<<<<<<<<<<<<
  *         cdef tuple abs_path_canonical_path_and_base;
  *         cdef bint is_exception_event;
  */
@@ -24217,7 +23176,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_10trace_di
 }
 
 /* "(tree fragment)":1
- * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     cdef tuple state
  *     cdef object _dict
  */
@@ -24255,7 +23213,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_12__reduce
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self._args, self.exc_info, self.should_skip)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
@@ -24278,7 +23235,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_12__reduce
   /* "(tree fragment)":6
  *     cdef bint use_setstate
  *     state = (self._args, self.exc_info, self.should_skip)
- *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
  */
@@ -24290,7 +23246,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_12__reduce
   /* "(tree fragment)":7
  *     state = (self._args, self.exc_info, self.should_skip)
  *     _dict = getattr(self, '__dict__', None)
- *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
  *         use_setstate = True
  */
@@ -24301,7 +23256,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_12__reduce
     /* "(tree fragment)":8
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
- *         state += (_dict,)             # <<<<<<<<<<<<<<
  *         use_setstate = True
  *     else:
  */
@@ -24319,7 +23273,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_12__reduce
     /* "(tree fragment)":9
  *     if _dict is not None:
  *         state += (_dict,)
- *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
  *         use_setstate = self._args is not None or self.exc_info is not None
  */
@@ -24328,7 +23281,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_12__reduce
     /* "(tree fragment)":7
  *     state = (self._args, self.exc_info, self.should_skip)
  *     _dict = getattr(self, '__dict__', None)
- *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
  *         use_setstate = True
  */
@@ -24338,7 +23290,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_12__reduce
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self._args is not None or self.exc_info is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
  *         return __pyx_unpickle_PyDBFrame, (type(self), 0x506e682, None), state
  */
@@ -24361,7 +23312,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_12__reduce
   /* "(tree fragment)":12
  *     else:
  *         use_setstate = self._args is not None or self.exc_info is not None
- *     if use_setstate:             # <<<<<<<<<<<<<<
  *         return __pyx_unpickle_PyDBFrame, (type(self), 0x506e682, None), state
  *     else:
  */
@@ -24371,7 +23321,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_12__reduce
     /* "(tree fragment)":13
  *         use_setstate = self._args is not None or self.exc_info is not None
  *     if use_setstate:
- *         return __pyx_unpickle_PyDBFrame, (type(self), 0x506e682, None), state             # <<<<<<<<<<<<<<
  *     else:
  *         return __pyx_unpickle_PyDBFrame, (type(self), 0x506e682, state)
  */
@@ -24407,7 +23356,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_12__reduce
     /* "(tree fragment)":12
  *     else:
  *         use_setstate = self._args is not None or self.exc_info is not None
- *     if use_setstate:             # <<<<<<<<<<<<<<
  *         return __pyx_unpickle_PyDBFrame, (type(self), 0x506e682, None), state
  *     else:
  */
@@ -24416,7 +23364,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_12__reduce
   /* "(tree fragment)":15
  *         return __pyx_unpickle_PyDBFrame, (type(self), 0x506e682, None), state
  *     else:
- *         return __pyx_unpickle_PyDBFrame, (type(self), 0x506e682, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_PyDBFrame__set_state(self, __pyx_state)
  */
@@ -24449,7 +23396,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_12__reduce
   }
 
   /* "(tree fragment)":1
- * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     cdef tuple state
  *     cdef object _dict
  */
@@ -24472,7 +23418,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_12__reduce
 /* "(tree fragment)":16
  *     else:
  *         return __pyx_unpickle_PyDBFrame, (type(self), 0x506e682, state)
- * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_PyDBFrame__set_state(self, __pyx_state)
  */
 
@@ -24501,7 +23446,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_14__setsta
   /* "(tree fragment)":17
  *         return __pyx_unpickle_PyDBFrame, (type(self), 0x506e682, state)
  * def __setstate_cython__(self, __pyx_state):
- *     __pyx_unpickle_PyDBFrame__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
   if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_v___pyx_state)->tp_name), 0))) __PYX_ERR(2, 17, __pyx_L1_error)
   __pyx_t_1 = __pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_PyDBFrame__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 17, __pyx_L1_error)
@@ -24511,7 +23455,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_14__setsta
   /* "(tree fragment)":16
  *     else:
  *         return __pyx_unpickle_PyDBFrame, (type(self), 0x506e682, state)
- * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_PyDBFrame__set_state(self, __pyx_state)
  */
 
@@ -24531,7 +23474,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_9PyDBFrame_14__setsta
 /* "_pydevd_bundle/pydevd_cython.pyx":1436
  * 
  * 
- * def notify_skipped_step_in_because_of_filters(py_db, frame):             # <<<<<<<<<<<<<<
  *     global _global_notify_skipped_step_in
  * 
  */
@@ -24623,7 +23565,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_4notify_skipped_step_
   /* "_pydevd_bundle/pydevd_cython.pyx":1439
  *     global _global_notify_skipped_step_in
  * 
- *     with _global_notify_skipped_step_in_lock:             # <<<<<<<<<<<<<<
  *         if _global_notify_skipped_step_in:
  *             # Check with lock in place (callers should actually have checked
  */
@@ -24664,7 +23605,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_4notify_skipped_step_
           /* "_pydevd_bundle/pydevd_cython.pyx":1440
  * 
  *     with _global_notify_skipped_step_in_lock:
- *         if _global_notify_skipped_step_in:             # <<<<<<<<<<<<<<
  *             # Check with lock in place (callers should actually have checked
  *             # before without the lock in place due to performance).
  */
@@ -24674,7 +23614,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_4notify_skipped_step_
             /* "_pydevd_bundle/pydevd_cython.pyx":1443
  *             # Check with lock in place (callers should actually have checked
  *             # before without the lock in place due to performance).
- *             return             # <<<<<<<<<<<<<<
  *         _global_notify_skipped_step_in = True
  *         py_db.notify_skipped_step_in_because_of_filters(frame)
  */
@@ -24685,7 +23624,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_4notify_skipped_step_
             /* "_pydevd_bundle/pydevd_cython.pyx":1440
  * 
  *     with _global_notify_skipped_step_in_lock:
- *         if _global_notify_skipped_step_in:             # <<<<<<<<<<<<<<
  *             # Check with lock in place (callers should actually have checked
  *             # before without the lock in place due to performance).
  */
@@ -24694,7 +23632,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_4notify_skipped_step_
           /* "_pydevd_bundle/pydevd_cython.pyx":1444
  *             # before without the lock in place due to performance).
  *             return
- *         _global_notify_skipped_step_in = True             # <<<<<<<<<<<<<<
  *         py_db.notify_skipped_step_in_because_of_filters(frame)
  * 
  */
@@ -24706,7 +23643,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_4notify_skipped_step_
           /* "_pydevd_bundle/pydevd_cython.pyx":1445
  *             return
  *         _global_notify_skipped_step_in = True
- *         py_db.notify_skipped_step_in_because_of_filters(frame)             # <<<<<<<<<<<<<<
  * 
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  */
@@ -24732,7 +23668,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_4notify_skipped_step_
           /* "_pydevd_bundle/pydevd_cython.pyx":1439
  *     global _global_notify_skipped_step_in
  * 
- *     with _global_notify_skipped_step_in_lock:             # <<<<<<<<<<<<<<
  *         if _global_notify_skipped_step_in:
  *             # Check with lock in place (callers should actually have checked
  */
@@ -24833,7 +23768,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_4notify_skipped_step_
   /* "_pydevd_bundle/pydevd_cython.pyx":1436
  * 
  * 
- * def notify_skipped_step_in_because_of_filters(py_db, frame):             # <<<<<<<<<<<<<<
  *     global _global_notify_skipped_step_in
  * 
  */
@@ -24857,7 +23791,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_4notify_skipped_step_
 /* "_pydevd_bundle/pydevd_cython.pyx":1450
  * cdef class SafeCallWrapper:
  *     cdef method_object
- *     def __init__(self, method_object):             # <<<<<<<<<<<<<<
  *         self.method_object = method_object
  *     def  __call__(self, *args):
  */
@@ -24923,7 +23856,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper___init__(
   /* "_pydevd_bundle/pydevd_cython.pyx":1451
  *     cdef method_object
  *     def __init__(self, method_object):
- *         self.method_object = method_object             # <<<<<<<<<<<<<<
  *     def  __call__(self, *args):
  *         #Cannot use 'self' once inside the delegate call since we are borrowing the self reference f_trace field
  */
@@ -24936,7 +23868,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper___init__(
   /* "_pydevd_bundle/pydevd_cython.pyx":1450
  * cdef class SafeCallWrapper:
  *     cdef method_object
- *     def __init__(self, method_object):             # <<<<<<<<<<<<<<
  *         self.method_object = method_object
  *     def  __call__(self, *args):
  */
@@ -24950,7 +23881,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper___init__(
 /* "_pydevd_bundle/pydevd_cython.pyx":1452
  *     def __init__(self, method_object):
  *         self.method_object = method_object
- *     def  __call__(self, *args):             # <<<<<<<<<<<<<<
  *         #Cannot use 'self' once inside the delegate call since we are borrowing the self reference f_trace field
  *         #in the frame, and that reference might get destroyed by set trace on frame and parents
  */
@@ -24989,7 +23919,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_2__
   /* "_pydevd_bundle/pydevd_cython.pyx":1455
  *         #Cannot use 'self' once inside the delegate call since we are borrowing the self reference f_trace field
  *         #in the frame, and that reference might get destroyed by set trace on frame and parents
- *         cdef PyObject* method_obj = <PyObject*> self.method_object             # <<<<<<<<<<<<<<
  *         Py_INCREF(<object>method_obj)
  *         ret = (<object>method_obj)(*args)
  */
@@ -24998,7 +23927,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_2__
   /* "_pydevd_bundle/pydevd_cython.pyx":1456
  *         #in the frame, and that reference might get destroyed by set trace on frame and parents
  *         cdef PyObject* method_obj = <PyObject*> self.method_object
- *         Py_INCREF(<object>method_obj)             # <<<<<<<<<<<<<<
  *         ret = (<object>method_obj)(*args)
  *         Py_XDECREF (method_obj)
  */
@@ -25007,7 +23935,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_2__
   /* "_pydevd_bundle/pydevd_cython.pyx":1457
  *         cdef PyObject* method_obj = <PyObject*> self.method_object
  *         Py_INCREF(<object>method_obj)
- *         ret = (<object>method_obj)(*args)             # <<<<<<<<<<<<<<
  *         Py_XDECREF (method_obj)
  *         return SafeCallWrapper(ret) if ret is not None else None
  */
@@ -25019,7 +23946,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_2__
   /* "_pydevd_bundle/pydevd_cython.pyx":1458
  *         Py_INCREF(<object>method_obj)
  *         ret = (<object>method_obj)(*args)
- *         Py_XDECREF (method_obj)             # <<<<<<<<<<<<<<
  *         return SafeCallWrapper(ret) if ret is not None else None
  *     def  get_method_object(self):
  */
@@ -25028,7 +23954,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_2__
   /* "_pydevd_bundle/pydevd_cython.pyx":1459
  *         ret = (<object>method_obj)(*args)
  *         Py_XDECREF (method_obj)
- *         return SafeCallWrapper(ret) if ret is not None else None             # <<<<<<<<<<<<<<
  *     def  get_method_object(self):
  *         return self.method_object
  */
@@ -25050,7 +23975,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_2__
   /* "_pydevd_bundle/pydevd_cython.pyx":1452
  *     def __init__(self, method_object):
  *         self.method_object = method_object
- *     def  __call__(self, *args):             # <<<<<<<<<<<<<<
  *         #Cannot use 'self' once inside the delegate call since we are borrowing the self reference f_trace field
  *         #in the frame, and that reference might get destroyed by set trace on frame and parents
  */
@@ -25071,7 +23995,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_2__
 /* "_pydevd_bundle/pydevd_cython.pyx":1460
  *         Py_XDECREF (method_obj)
  *         return SafeCallWrapper(ret) if ret is not None else None
- *     def  get_method_object(self):             # <<<<<<<<<<<<<<
  *         return self.method_object
  * # ELSE
  */
@@ -25097,7 +24020,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_4ge
   /* "_pydevd_bundle/pydevd_cython.pyx":1461
  *         return SafeCallWrapper(ret) if ret is not None else None
  *     def  get_method_object(self):
- *         return self.method_object             # <<<<<<<<<<<<<<
  * # ELSE
  * # ENDIF
  */
@@ -25109,7 +24031,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_4ge
   /* "_pydevd_bundle/pydevd_cython.pyx":1460
  *         Py_XDECREF (method_obj)
  *         return SafeCallWrapper(ret) if ret is not None else None
- *     def  get_method_object(self):             # <<<<<<<<<<<<<<
  *         return self.method_object
  * # ELSE
  */
@@ -25122,7 +24043,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_4ge
 }
 
 /* "(tree fragment)":1
- * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     cdef tuple state
  *     cdef object _dict
  */
@@ -25159,7 +24079,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_6__
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self.method_object,)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
@@ -25174,7 +24093,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_6__
   /* "(tree fragment)":6
  *     cdef bint use_setstate
  *     state = (self.method_object,)
- *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
  */
@@ -25186,7 +24104,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_6__
   /* "(tree fragment)":7
  *     state = (self.method_object,)
  *     _dict = getattr(self, '__dict__', None)
- *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
  *         use_setstate = True
  */
@@ -25197,7 +24114,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_6__
     /* "(tree fragment)":8
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
- *         state += (_dict,)             # <<<<<<<<<<<<<<
  *         use_setstate = True
  *     else:
  */
@@ -25215,7 +24131,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_6__
     /* "(tree fragment)":9
  *     if _dict is not None:
  *         state += (_dict,)
- *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
  *         use_setstate = self.method_object is not None
  */
@@ -25224,7 +24139,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_6__
     /* "(tree fragment)":7
  *     state = (self.method_object,)
  *     _dict = getattr(self, '__dict__', None)
- *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
  *         use_setstate = True
  */
@@ -25234,7 +24148,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_6__
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self.method_object is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
  *         return __pyx_unpickle_SafeCallWrapper, (type(self), 0x77c077b, None), state
  */
@@ -25247,7 +24160,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_6__
   /* "(tree fragment)":12
  *     else:
  *         use_setstate = self.method_object is not None
- *     if use_setstate:             # <<<<<<<<<<<<<<
  *         return __pyx_unpickle_SafeCallWrapper, (type(self), 0x77c077b, None), state
  *     else:
  */
@@ -25257,7 +24169,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_6__
     /* "(tree fragment)":13
  *         use_setstate = self.method_object is not None
  *     if use_setstate:
- *         return __pyx_unpickle_SafeCallWrapper, (type(self), 0x77c077b, None), state             # <<<<<<<<<<<<<<
  *     else:
  *         return __pyx_unpickle_SafeCallWrapper, (type(self), 0x77c077b, state)
  */
@@ -25293,7 +24204,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_6__
     /* "(tree fragment)":12
  *     else:
  *         use_setstate = self.method_object is not None
- *     if use_setstate:             # <<<<<<<<<<<<<<
  *         return __pyx_unpickle_SafeCallWrapper, (type(self), 0x77c077b, None), state
  *     else:
  */
@@ -25302,7 +24212,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_6__
   /* "(tree fragment)":15
  *         return __pyx_unpickle_SafeCallWrapper, (type(self), 0x77c077b, None), state
  *     else:
- *         return __pyx_unpickle_SafeCallWrapper, (type(self), 0x77c077b, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_SafeCallWrapper__set_state(self, __pyx_state)
  */
@@ -25335,7 +24244,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_6__
   }
 
   /* "(tree fragment)":1
- * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     cdef tuple state
  *     cdef object _dict
  */
@@ -25358,7 +24266,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_6__
 /* "(tree fragment)":16
  *     else:
  *         return __pyx_unpickle_SafeCallWrapper, (type(self), 0x77c077b, state)
- * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_SafeCallWrapper__set_state(self, __pyx_state)
  */
 
@@ -25387,7 +24294,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_8__
   /* "(tree fragment)":17
  *         return __pyx_unpickle_SafeCallWrapper, (type(self), 0x77c077b, state)
  * def __setstate_cython__(self, __pyx_state):
- *     __pyx_unpickle_SafeCallWrapper__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
   if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_v___pyx_state)->tp_name), 0))) __PYX_ERR(2, 17, __pyx_L1_error)
   __pyx_t_1 = __pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_SafeCallWrapper__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 17, __pyx_L1_error)
@@ -25397,7 +24303,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_8__
   /* "(tree fragment)":16
  *     else:
  *         return __pyx_unpickle_SafeCallWrapper, (type(self), 0x77c077b, state)
- * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_SafeCallWrapper__set_state(self, __pyx_state)
  */
 
@@ -25417,7 +24322,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_15SafeCallWrapper_8__
 /* "_pydevd_bundle/pydevd_cython.pyx":1466
  * 
  * 
- * def fix_top_level_trace_and_get_trace_func(py_db, frame):             # <<<<<<<<<<<<<<
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  *     cdef str filename;
  */
@@ -25525,7 +24429,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
   /* "_pydevd_bundle/pydevd_cython.pyx":1477
  *     # where more information is cached (and will also setup the tracing for
  *     # frames where we should deal with unhandled exceptions).
- *     thread = None             # <<<<<<<<<<<<<<
  *     # Cache the frame which should be traced to deal with unhandled exceptions.
  *     # (i.e.: thread entry-points).
  */
@@ -25535,7 +24438,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
   /* "_pydevd_bundle/pydevd_cython.pyx":1481
  *     # (i.e.: thread entry-points).
  * 
- *     f_unhandled = frame             # <<<<<<<<<<<<<<
  *     # print('called at', f_unhandled.f_code.co_name, f_unhandled.f_code.co_filename, f_unhandled.f_code.co_firstlineno)
  *     force_only_unhandled_tracer = False
  */
@@ -25545,7 +24447,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
   /* "_pydevd_bundle/pydevd_cython.pyx":1483
  *     f_unhandled = frame
  *     # print('called at', f_unhandled.f_code.co_name, f_unhandled.f_code.co_filename, f_unhandled.f_code.co_firstlineno)
- *     force_only_unhandled_tracer = False             # <<<<<<<<<<<<<<
  *     while f_unhandled is not None:
  *         # name = splitext(basename(f_unhandled.f_code.co_filename))[0]
  */
@@ -25554,7 +24455,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
   /* "_pydevd_bundle/pydevd_cython.pyx":1484
  *     # print('called at', f_unhandled.f_code.co_name, f_unhandled.f_code.co_filename, f_unhandled.f_code.co_firstlineno)
  *     force_only_unhandled_tracer = False
- *     while f_unhandled is not None:             # <<<<<<<<<<<<<<
  *         # name = splitext(basename(f_unhandled.f_code.co_filename))[0]
  * 
  */
@@ -25566,7 +24466,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1487
  *         # name = splitext(basename(f_unhandled.f_code.co_filename))[0]
  * 
- *         name = f_unhandled.f_code.co_filename             # <<<<<<<<<<<<<<
  *         # basename
  *         i = name.rfind('/')
  */
@@ -25582,7 +24481,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1489
  *         name = f_unhandled.f_code.co_filename
  *         # basename
- *         i = name.rfind('/')             # <<<<<<<<<<<<<<
  *         j = name.rfind('\\')
  *         if j > i:
  */
@@ -25594,7 +24492,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1490
  *         # basename
  *         i = name.rfind('/')
- *         j = name.rfind('\\')             # <<<<<<<<<<<<<<
  *         if j > i:
  *             i = j
  */
@@ -25606,7 +24503,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1491
  *         i = name.rfind('/')
  *         j = name.rfind('\\')
- *         if j > i:             # <<<<<<<<<<<<<<
  *             i = j
  *         if i >= 0:
  */
@@ -25618,7 +24514,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1492
  *         j = name.rfind('\\')
  *         if j > i:
- *             i = j             # <<<<<<<<<<<<<<
  *         if i >= 0:
  *             name = name[i + 1:]
  */
@@ -25628,7 +24523,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1491
  *         i = name.rfind('/')
  *         j = name.rfind('\\')
- *         if j > i:             # <<<<<<<<<<<<<<
  *             i = j
  *         if i >= 0:
  */
@@ -25637,7 +24531,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1493
  *         if j > i:
  *             i = j
- *         if i >= 0:             # <<<<<<<<<<<<<<
  *             name = name[i + 1:]
  *         # remove ext
  */
@@ -25649,7 +24542,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1494
  *             i = j
  *         if i >= 0:
- *             name = name[i + 1:]             # <<<<<<<<<<<<<<
  *         # remove ext
  *         i = name.rfind('.')
  */
@@ -25675,7 +24567,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1493
  *         if j > i:
  *             i = j
- *         if i >= 0:             # <<<<<<<<<<<<<<
  *             name = name[i + 1:]
  *         # remove ext
  */
@@ -25684,7 +24575,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1496
  *             name = name[i + 1:]
  *         # remove ext
- *         i = name.rfind('.')             # <<<<<<<<<<<<<<
  *         if i >= 0:
  *             name = name[:i]
  */
@@ -25696,7 +24586,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1497
  *         # remove ext
  *         i = name.rfind('.')
- *         if i >= 0:             # <<<<<<<<<<<<<<
  *             name = name[:i]
  * 
  */
@@ -25708,7 +24597,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1498
  *         i = name.rfind('.')
  *         if i >= 0:
- *             name = name[:i]             # <<<<<<<<<<<<<<
  * 
  *         if name == 'threading':
  */
@@ -25734,7 +24622,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1497
  *         # remove ext
  *         i = name.rfind('.')
- *         if i >= 0:             # <<<<<<<<<<<<<<
  *             name = name[:i]
  * 
  */
@@ -25743,7 +24630,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1500
  *             name = name[:i]
  * 
- *         if name == 'threading':             # <<<<<<<<<<<<<<
  *             if f_unhandled.f_code.co_name in ('__bootstrap', '_bootstrap'):
  *                 # We need __bootstrap_inner, not __bootstrap.
  */
@@ -25754,7 +24640,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1501
  * 
  *         if name == 'threading':
- *             if f_unhandled.f_code.co_name in ('__bootstrap', '_bootstrap'):             # <<<<<<<<<<<<<<
  *                 # We need __bootstrap_inner, not __bootstrap.
  *                 return None, False
  */
@@ -25779,7 +24664,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1503
  *             if f_unhandled.f_code.co_name in ('__bootstrap', '_bootstrap'):
  *                 # We need __bootstrap_inner, not __bootstrap.
- *                 return None, False             # <<<<<<<<<<<<<<
  * 
  *             elif f_unhandled.f_code.co_name in ('__bootstrap_inner', '_bootstrap_inner'):
  */
@@ -25791,7 +24675,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1501
  * 
  *         if name == 'threading':
- *             if f_unhandled.f_code.co_name in ('__bootstrap', '_bootstrap'):             # <<<<<<<<<<<<<<
  *                 # We need __bootstrap_inner, not __bootstrap.
  *                 return None, False
  */
@@ -25800,7 +24683,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1505
  *                 return None, False
  * 
- *             elif f_unhandled.f_code.co_name in ('__bootstrap_inner', '_bootstrap_inner'):             # <<<<<<<<<<<<<<
  *                 # Note: be careful not to use threading.currentThread to avoid creating a dummy thread.
  *                 t = f_unhandled.f_locals.get('self')
  */
@@ -25825,7 +24707,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1507
  *             elif f_unhandled.f_code.co_name in ('__bootstrap_inner', '_bootstrap_inner'):
  *                 # Note: be careful not to use threading.currentThread to avoid creating a dummy thread.
- *                 t = f_unhandled.f_locals.get('self')             # <<<<<<<<<<<<<<
  *                 force_only_unhandled_tracer = True
  *                 if t is not None and isinstance(t, threading.Thread):
  */
@@ -25855,7 +24736,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1508
  *                 # Note: be careful not to use threading.currentThread to avoid creating a dummy thread.
  *                 t = f_unhandled.f_locals.get('self')
- *                 force_only_unhandled_tracer = True             # <<<<<<<<<<<<<<
  *                 if t is not None and isinstance(t, threading.Thread):
  *                     thread = t
  */
@@ -25864,7 +24744,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1509
  *                 t = f_unhandled.f_locals.get('self')
  *                 force_only_unhandled_tracer = True
- *                 if t is not None and isinstance(t, threading.Thread):             # <<<<<<<<<<<<<<
  *                     thread = t
  *                     break
  */
@@ -25890,7 +24769,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
           /* "_pydevd_bundle/pydevd_cython.pyx":1510
  *                 force_only_unhandled_tracer = True
  *                 if t is not None and isinstance(t, threading.Thread):
- *                     thread = t             # <<<<<<<<<<<<<<
  *                     break
  * 
  */
@@ -25900,7 +24778,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
           /* "_pydevd_bundle/pydevd_cython.pyx":1511
  *                 if t is not None and isinstance(t, threading.Thread):
  *                     thread = t
- *                     break             # <<<<<<<<<<<<<<
  * 
  *         elif name == 'pydev_monkey':
  */
@@ -25909,7 +24786,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
           /* "_pydevd_bundle/pydevd_cython.pyx":1509
  *                 t = f_unhandled.f_locals.get('self')
  *                 force_only_unhandled_tracer = True
- *                 if t is not None and isinstance(t, threading.Thread):             # <<<<<<<<<<<<<<
  *                     thread = t
  *                     break
  */
@@ -25918,7 +24794,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1505
  *                 return None, False
  * 
- *             elif f_unhandled.f_code.co_name in ('__bootstrap_inner', '_bootstrap_inner'):             # <<<<<<<<<<<<<<
  *                 # Note: be careful not to use threading.currentThread to avoid creating a dummy thread.
  *                 t = f_unhandled.f_locals.get('self')
  */
@@ -25927,7 +24802,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1500
  *             name = name[:i]
  * 
- *         if name == 'threading':             # <<<<<<<<<<<<<<
  *             if f_unhandled.f_code.co_name in ('__bootstrap', '_bootstrap'):
  *                 # We need __bootstrap_inner, not __bootstrap.
  */
@@ -25937,7 +24811,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1513
  *                     break
  * 
- *         elif name == 'pydev_monkey':             # <<<<<<<<<<<<<<
  *             if f_unhandled.f_code.co_name == '__call__':
  *                 force_only_unhandled_tracer = True
  */
@@ -25948,7 +24821,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1514
  * 
  *         elif name == 'pydev_monkey':
- *             if f_unhandled.f_code.co_name == '__call__':             # <<<<<<<<<<<<<<
  *                 force_only_unhandled_tracer = True
  *                 break
  */
@@ -25964,7 +24836,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1515
  *         elif name == 'pydev_monkey':
  *             if f_unhandled.f_code.co_name == '__call__':
- *                 force_only_unhandled_tracer = True             # <<<<<<<<<<<<<<
  *                 break
  * 
  */
@@ -25973,7 +24844,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1516
  *             if f_unhandled.f_code.co_name == '__call__':
  *                 force_only_unhandled_tracer = True
- *                 break             # <<<<<<<<<<<<<<
  * 
  *         elif name == 'pydevd':
  */
@@ -25982,7 +24852,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1514
  * 
  *         elif name == 'pydev_monkey':
- *             if f_unhandled.f_code.co_name == '__call__':             # <<<<<<<<<<<<<<
  *                 force_only_unhandled_tracer = True
  *                 break
  */
@@ -25991,7 +24860,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1513
  *                     break
  * 
- *         elif name == 'pydev_monkey':             # <<<<<<<<<<<<<<
  *             if f_unhandled.f_code.co_name == '__call__':
  *                 force_only_unhandled_tracer = True
  */
@@ -26001,7 +24869,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1518
  *                 break
  * 
- *         elif name == 'pydevd':             # <<<<<<<<<<<<<<
  *             if f_unhandled.f_code.co_name in ('run', 'main'):
  *                 # We need to get to _exec
  */
@@ -26012,7 +24879,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1519
  * 
  *         elif name == 'pydevd':
- *             if f_unhandled.f_code.co_name in ('run', 'main'):             # <<<<<<<<<<<<<<
  *                 # We need to get to _exec
  *                 return None, False
  */
@@ -26037,7 +24903,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1521
  *             if f_unhandled.f_code.co_name in ('run', 'main'):
  *                 # We need to get to _exec
- *                 return None, False             # <<<<<<<<<<<<<<
  * 
  *             if f_unhandled.f_code.co_name == '_exec':
  */
@@ -26049,7 +24914,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1519
  * 
  *         elif name == 'pydevd':
- *             if f_unhandled.f_code.co_name in ('run', 'main'):             # <<<<<<<<<<<<<<
  *                 # We need to get to _exec
  *                 return None, False
  */
@@ -26058,7 +24922,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1523
  *                 return None, False
  * 
- *             if f_unhandled.f_code.co_name == '_exec':             # <<<<<<<<<<<<<<
  *                 force_only_unhandled_tracer = True
  *                 break
  */
@@ -26074,7 +24937,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1524
  * 
  *             if f_unhandled.f_code.co_name == '_exec':
- *                 force_only_unhandled_tracer = True             # <<<<<<<<<<<<<<
  *                 break
  * 
  */
@@ -26083,7 +24945,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1525
  *             if f_unhandled.f_code.co_name == '_exec':
  *                 force_only_unhandled_tracer = True
- *                 break             # <<<<<<<<<<<<<<
  * 
  *         elif name == 'pydevd_tracing':
  */
@@ -26092,7 +24953,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1523
  *                 return None, False
  * 
- *             if f_unhandled.f_code.co_name == '_exec':             # <<<<<<<<<<<<<<
  *                 force_only_unhandled_tracer = True
  *                 break
  */
@@ -26101,7 +24961,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1518
  *                 break
  * 
- *         elif name == 'pydevd':             # <<<<<<<<<<<<<<
  *             if f_unhandled.f_code.co_name in ('run', 'main'):
  *                 # We need to get to _exec
  */
@@ -26111,7 +24970,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1527
  *                 break
  * 
- *         elif name == 'pydevd_tracing':             # <<<<<<<<<<<<<<
  *             return None, False
  * 
  */
@@ -26122,7 +24980,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1528
  * 
  *         elif name == 'pydevd_tracing':
- *             return None, False             # <<<<<<<<<<<<<<
  * 
  *         elif f_unhandled.f_back is None:
  */
@@ -26134,7 +24991,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1527
  *                 break
  * 
- *         elif name == 'pydevd_tracing':             # <<<<<<<<<<<<<<
  *             return None, False
  * 
  */
@@ -26143,7 +24999,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1530
  *             return None, False
  * 
- *         elif f_unhandled.f_back is None:             # <<<<<<<<<<<<<<
  *             break
  * 
  */
@@ -26157,7 +25012,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1531
  * 
  *         elif f_unhandled.f_back is None:
- *             break             # <<<<<<<<<<<<<<
  * 
  *         f_unhandled = f_unhandled.f_back
  */
@@ -26166,7 +25020,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1530
  *             return None, False
  * 
- *         elif f_unhandled.f_back is None:             # <<<<<<<<<<<<<<
  *             break
  * 
  */
@@ -26176,7 +25029,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1533
  *             break
  * 
- *         f_unhandled = f_unhandled.f_back             # <<<<<<<<<<<<<<
  * 
  *     if thread is None:
  */
@@ -26190,7 +25042,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
   /* "_pydevd_bundle/pydevd_cython.pyx":1535
  *         f_unhandled = f_unhandled.f_back
  * 
- *     if thread is None:             # <<<<<<<<<<<<<<
  *         # Important: don't call threadingCurrentThread if we're in the threading module
  *         # to avoid creating dummy threads.
  */
@@ -26201,7 +25052,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1538
  *         # Important: don't call threadingCurrentThread if we're in the threading module
  *         # to avoid creating dummy threads.
- *         if py_db.threading_get_ident is not None:             # <<<<<<<<<<<<<<
  *             thread = py_db.threading_active.get(py_db.threading_get_ident())
  *             if thread is None:
  */
@@ -26215,7 +25065,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1539
  *         # to avoid creating dummy threads.
  *         if py_db.threading_get_ident is not None:
- *             thread = py_db.threading_active.get(py_db.threading_get_ident())             # <<<<<<<<<<<<<<
  *             if thread is None:
  *                 return None, False
  */
@@ -26263,7 +25112,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1540
  *         if py_db.threading_get_ident is not None:
  *             thread = py_db.threading_active.get(py_db.threading_get_ident())
- *             if thread is None:             # <<<<<<<<<<<<<<
  *                 return None, False
  *         else:
  */
@@ -26274,7 +25122,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1541
  *             thread = py_db.threading_active.get(py_db.threading_get_ident())
  *             if thread is None:
- *                 return None, False             # <<<<<<<<<<<<<<
  *         else:
  *             # Jython does not have threading.get_ident().
  */
@@ -26286,7 +25133,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1540
  *         if py_db.threading_get_ident is not None:
  *             thread = py_db.threading_active.get(py_db.threading_get_ident())
- *             if thread is None:             # <<<<<<<<<<<<<<
  *                 return None, False
  *         else:
  */
@@ -26295,7 +25141,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1538
  *         # Important: don't call threadingCurrentThread if we're in the threading module
  *         # to avoid creating dummy threads.
- *         if py_db.threading_get_ident is not None:             # <<<<<<<<<<<<<<
  *             thread = py_db.threading_active.get(py_db.threading_get_ident())
  *             if thread is None:
  */
@@ -26305,7 +25150,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1544
  *         else:
  *             # Jython does not have threading.get_ident().
- *             thread = py_db.threading_current_thread()             # <<<<<<<<<<<<<<
  * 
  *     if getattr(thread, 'pydev_do_not_trace', None):
  */
@@ -26335,7 +25179,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1535
  *         f_unhandled = f_unhandled.f_back
  * 
- *     if thread is None:             # <<<<<<<<<<<<<<
  *         # Important: don't call threadingCurrentThread if we're in the threading module
  *         # to avoid creating dummy threads.
  */
@@ -26344,7 +25187,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
   /* "_pydevd_bundle/pydevd_cython.pyx":1546
  *             thread = py_db.threading_current_thread()
  * 
- *     if getattr(thread, 'pydev_do_not_trace', None):             # <<<<<<<<<<<<<<
  *         py_db.disable_tracing()
  *         return None, False
  */
@@ -26357,7 +25199,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1547
  * 
  *     if getattr(thread, 'pydev_do_not_trace', None):
- *         py_db.disable_tracing()             # <<<<<<<<<<<<<<
  *         return None, False
  * 
  */
@@ -26383,7 +25224,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1548
  *     if getattr(thread, 'pydev_do_not_trace', None):
  *         py_db.disable_tracing()
- *         return None, False             # <<<<<<<<<<<<<<
  * 
  *     try:
  */
@@ -26395,7 +25235,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1546
  *             thread = py_db.threading_current_thread()
  * 
- *     if getattr(thread, 'pydev_do_not_trace', None):             # <<<<<<<<<<<<<<
  *         py_db.disable_tracing()
  *         return None, False
  */
@@ -26404,7 +25243,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
   /* "_pydevd_bundle/pydevd_cython.pyx":1550
  *         return None, False
  * 
- *     try:             # <<<<<<<<<<<<<<
  *         additional_info = thread.additional_info
  *         if additional_info is None:
  */
@@ -26420,7 +25258,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1551
  * 
  *     try:
- *         additional_info = thread.additional_info             # <<<<<<<<<<<<<<
  *         if additional_info is None:
  *             raise AttributeError()
  */
@@ -26432,7 +25269,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1552
  *     try:
  *         additional_info = thread.additional_info
- *         if additional_info is None:             # <<<<<<<<<<<<<<
  *             raise AttributeError()
  *     except:
  */
@@ -26443,7 +25279,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1553
  *         additional_info = thread.additional_info
  *         if additional_info is None:
- *             raise AttributeError()             # <<<<<<<<<<<<<<
  *     except:
  *         additional_info = py_db.set_additional_thread_info(thread)
  */
@@ -26456,7 +25291,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1552
  *     try:
  *         additional_info = thread.additional_info
- *         if additional_info is None:             # <<<<<<<<<<<<<<
  *             raise AttributeError()
  *     except:
  */
@@ -26465,7 +25299,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1550
  *         return None, False
  * 
- *     try:             # <<<<<<<<<<<<<<
  *         additional_info = thread.additional_info
  *         if additional_info is None:
  */
@@ -26484,7 +25317,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1554
  *         if additional_info is None:
  *             raise AttributeError()
- *     except:             # <<<<<<<<<<<<<<
  *         additional_info = py_db.set_additional_thread_info(thread)
  * 
  */
@@ -26498,7 +25330,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1555
  *             raise AttributeError()
  *     except:
- *         additional_info = py_db.set_additional_thread_info(thread)             # <<<<<<<<<<<<<<
  * 
  *     # print('enter thread tracer', thread, get_current_thread_id(thread))
  */
@@ -26531,7 +25362,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1550
  *         return None, False
  * 
- *     try:             # <<<<<<<<<<<<<<
  *         additional_info = thread.additional_info
  *         if additional_info is None:
  */
@@ -26551,7 +25381,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
   /* "_pydevd_bundle/pydevd_cython.pyx":1558
  * 
  *     # print('enter thread tracer', thread, get_current_thread_id(thread))
- *     args = (py_db, thread, additional_info, global_cache_skips, global_cache_frame_skips)             # <<<<<<<<<<<<<<
  * 
  *     if f_unhandled is not None:
  */
@@ -26582,7 +25411,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
   /* "_pydevd_bundle/pydevd_cython.pyx":1560
  *     args = (py_db, thread, additional_info, global_cache_skips, global_cache_frame_skips)
  * 
- *     if f_unhandled is not None:             # <<<<<<<<<<<<<<
  *         if f_unhandled.f_back is None and not force_only_unhandled_tracer:
  *             # Happens when we attach to a running program (cannot reuse instance because it's mutable).
  */
@@ -26593,7 +25421,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1561
  * 
  *     if f_unhandled is not None:
- *         if f_unhandled.f_back is None and not force_only_unhandled_tracer:             # <<<<<<<<<<<<<<
  *             # Happens when we attach to a running program (cannot reuse instance because it's mutable).
  *             top_level_thread_tracer = TopLevelThreadTracerNoBackFrame(ThreadTracer(args), args)
  */
@@ -26615,7 +25442,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1563
  *         if f_unhandled.f_back is None and not force_only_unhandled_tracer:
  *             # Happens when we attach to a running program (cannot reuse instance because it's mutable).
- *             top_level_thread_tracer = TopLevelThreadTracerNoBackFrame(ThreadTracer(args), args)             # <<<<<<<<<<<<<<
  *             additional_info.top_level_thread_tracer_no_back_frames.append(top_level_thread_tracer)  # Hack for cython to keep it alive while the thread is alive (just the method in the SetTrace is not enough).
  *         else:
  */
@@ -26638,7 +25464,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1564
  *             # Happens when we attach to a running program (cannot reuse instance because it's mutable).
  *             top_level_thread_tracer = TopLevelThreadTracerNoBackFrame(ThreadTracer(args), args)
- *             additional_info.top_level_thread_tracer_no_back_frames.append(top_level_thread_tracer)  # Hack for cython to keep it alive while the thread is alive (just the method in the SetTrace is not enough).             # <<<<<<<<<<<<<<
  *         else:
  *             top_level_thread_tracer = additional_info.top_level_thread_tracer_unhandled
  */
@@ -26650,7 +25475,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1561
  * 
  *     if f_unhandled is not None:
- *         if f_unhandled.f_back is None and not force_only_unhandled_tracer:             # <<<<<<<<<<<<<<
  *             # Happens when we attach to a running program (cannot reuse instance because it's mutable).
  *             top_level_thread_tracer = TopLevelThreadTracerNoBackFrame(ThreadTracer(args), args)
  */
@@ -26660,7 +25484,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1566
  *             additional_info.top_level_thread_tracer_no_back_frames.append(top_level_thread_tracer)  # Hack for cython to keep it alive while the thread is alive (just the method in the SetTrace is not enough).
  *         else:
- *             top_level_thread_tracer = additional_info.top_level_thread_tracer_unhandled             # <<<<<<<<<<<<<<
  *             if top_level_thread_tracer is None:
  *                 # Stop in some internal place to report about unhandled exceptions
  */
@@ -26673,7 +25496,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1567
  *         else:
  *             top_level_thread_tracer = additional_info.top_level_thread_tracer_unhandled
- *             if top_level_thread_tracer is None:             # <<<<<<<<<<<<<<
  *                 # Stop in some internal place to report about unhandled exceptions
  *                 top_level_thread_tracer = TopLevelThreadTracerOnlyUnhandledExceptions(args)
  */
@@ -26684,7 +25506,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1569
  *             if top_level_thread_tracer is None:
  *                 # Stop in some internal place to report about unhandled exceptions
- *                 top_level_thread_tracer = TopLevelThreadTracerOnlyUnhandledExceptions(args)             # <<<<<<<<<<<<<<
  *                 additional_info.top_level_thread_tracer_unhandled = top_level_thread_tracer  # Hack for cython to keep it alive while the thread is alive (just the method in the SetTrace is not enough).
  * 
  */
@@ -26696,7 +25517,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1570
  *                 # Stop in some internal place to report about unhandled exceptions
  *                 top_level_thread_tracer = TopLevelThreadTracerOnlyUnhandledExceptions(args)
- *                 additional_info.top_level_thread_tracer_unhandled = top_level_thread_tracer  # Hack for cython to keep it alive while the thread is alive (just the method in the SetTrace is not enough).             # <<<<<<<<<<<<<<
  * 
  *         # print(' --> found to trace unhandled', f_unhandled.f_code.co_name, f_unhandled.f_code.co_filename, f_unhandled.f_code.co_firstlineno)
  */
@@ -26705,7 +25525,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
         /* "_pydevd_bundle/pydevd_cython.pyx":1567
  *         else:
  *             top_level_thread_tracer = additional_info.top_level_thread_tracer_unhandled
- *             if top_level_thread_tracer is None:             # <<<<<<<<<<<<<<
  *                 # Stop in some internal place to report about unhandled exceptions
  *                 top_level_thread_tracer = TopLevelThreadTracerOnlyUnhandledExceptions(args)
  */
@@ -26716,7 +25535,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1573
  * 
  *         # print(' --> found to trace unhandled', f_unhandled.f_code.co_name, f_unhandled.f_code.co_filename, f_unhandled.f_code.co_firstlineno)
- *         f_trace = top_level_thread_tracer.get_trace_dispatch_func()             # <<<<<<<<<<<<<<
  *         # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  *         f_trace = SafeCallWrapper(f_trace)
  */
@@ -26743,7 +25561,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1575
  *         f_trace = top_level_thread_tracer.get_trace_dispatch_func()
  *         # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *         f_trace = SafeCallWrapper(f_trace)             # <<<<<<<<<<<<<<
  *         # ENDIF
  *         f_unhandled.f_trace = f_trace
  */
@@ -26755,7 +25572,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1577
  *         f_trace = SafeCallWrapper(f_trace)
  *         # ENDIF
- *         f_unhandled.f_trace = f_trace             # <<<<<<<<<<<<<<
  * 
  *         if frame is f_unhandled:
  */
@@ -26764,7 +25580,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1579
  *         f_unhandled.f_trace = f_trace
  * 
- *         if frame is f_unhandled:             # <<<<<<<<<<<<<<
  *             return f_trace, False
  * 
  */
@@ -26775,7 +25590,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1580
  * 
  *         if frame is f_unhandled:
- *             return f_trace, False             # <<<<<<<<<<<<<<
  * 
  *     thread_tracer = additional_info.thread_tracer
  */
@@ -26795,7 +25609,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
       /* "_pydevd_bundle/pydevd_cython.pyx":1579
  *         f_unhandled.f_trace = f_trace
  * 
- *         if frame is f_unhandled:             # <<<<<<<<<<<<<<
  *             return f_trace, False
  * 
  */
@@ -26804,7 +25617,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1560
  *     args = (py_db, thread, additional_info, global_cache_skips, global_cache_frame_skips)
  * 
- *     if f_unhandled is not None:             # <<<<<<<<<<<<<<
  *         if f_unhandled.f_back is None and not force_only_unhandled_tracer:
  *             # Happens when we attach to a running program (cannot reuse instance because it's mutable).
  */
@@ -26813,7 +25625,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
   /* "_pydevd_bundle/pydevd_cython.pyx":1582
  *             return f_trace, False
  * 
- *     thread_tracer = additional_info.thread_tracer             # <<<<<<<<<<<<<<
  *     if thread_tracer is None or thread_tracer._args[0] is not py_db:
  *         thread_tracer = ThreadTracer(args)
  */
@@ -26825,7 +25636,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
   /* "_pydevd_bundle/pydevd_cython.pyx":1583
  * 
  *     thread_tracer = additional_info.thread_tracer
- *     if thread_tracer is None or thread_tracer._args[0] is not py_db:             # <<<<<<<<<<<<<<
  *         thread_tracer = ThreadTracer(args)
  *         additional_info.thread_tracer = thread_tracer
  */
@@ -26851,7 +25661,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1584
  *     thread_tracer = additional_info.thread_tracer
  *     if thread_tracer is None or thread_tracer._args[0] is not py_db:
- *         thread_tracer = ThreadTracer(args)             # <<<<<<<<<<<<<<
  *         additional_info.thread_tracer = thread_tracer
  * 
  */
@@ -26863,7 +25672,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1585
  *     if thread_tracer is None or thread_tracer._args[0] is not py_db:
  *         thread_tracer = ThreadTracer(args)
- *         additional_info.thread_tracer = thread_tracer             # <<<<<<<<<<<<<<
  * 
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  */
@@ -26872,7 +25680,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
     /* "_pydevd_bundle/pydevd_cython.pyx":1583
  * 
  *     thread_tracer = additional_info.thread_tracer
- *     if thread_tracer is None or thread_tracer._args[0] is not py_db:             # <<<<<<<<<<<<<<
  *         thread_tracer = ThreadTracer(args)
  *         additional_info.thread_tracer = thread_tracer
  */
@@ -26881,7 +25688,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
   /* "_pydevd_bundle/pydevd_cython.pyx":1588
  * 
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *     return SafeCallWrapper(thread_tracer), True             # <<<<<<<<<<<<<<
  * # ELSE
  * #     return thread_tracer, True
  */
@@ -26903,7 +25709,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
   /* "_pydevd_bundle/pydevd_cython.pyx":1466
  * 
  * 
- * def fix_top_level_trace_and_get_trace_func(py_db, frame):             # <<<<<<<<<<<<<<
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  *     cdef str filename;
  */
@@ -26938,7 +25743,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_6fix_top_level_trace_
 /* "_pydevd_bundle/pydevd_cython.pyx":1594
  * 
  * 
- * def trace_dispatch(py_db, frame, event, arg):             # <<<<<<<<<<<<<<
  *     thread_trace_func, apply_to_settrace = py_db.fix_top_level_trace_and_get_trace_func(py_db, frame)
  *     if thread_trace_func is None:
  */
@@ -27051,7 +25855,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_8trace_dispatch(CYTHO
   /* "_pydevd_bundle/pydevd_cython.pyx":1595
  * 
  * def trace_dispatch(py_db, frame, event, arg):
- *     thread_trace_func, apply_to_settrace = py_db.fix_top_level_trace_and_get_trace_func(py_db, frame)             # <<<<<<<<<<<<<<
  *     if thread_trace_func is None:
  *         return None if event == 'call' else NO_FTRACE
  */
@@ -27156,7 +25959,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_8trace_dispatch(CYTHO
   /* "_pydevd_bundle/pydevd_cython.pyx":1596
  * def trace_dispatch(py_db, frame, event, arg):
  *     thread_trace_func, apply_to_settrace = py_db.fix_top_level_trace_and_get_trace_func(py_db, frame)
- *     if thread_trace_func is None:             # <<<<<<<<<<<<<<
  *         return None if event == 'call' else NO_FTRACE
  *     if apply_to_settrace:
  */
@@ -27167,7 +25969,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_8trace_dispatch(CYTHO
     /* "_pydevd_bundle/pydevd_cython.pyx":1597
  *     thread_trace_func, apply_to_settrace = py_db.fix_top_level_trace_and_get_trace_func(py_db, frame)
  *     if thread_trace_func is None:
- *         return None if event == 'call' else NO_FTRACE             # <<<<<<<<<<<<<<
  *     if apply_to_settrace:
  *         py_db.enable_tracing(thread_trace_func)
  */
@@ -27189,7 +25990,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_8trace_dispatch(CYTHO
     /* "_pydevd_bundle/pydevd_cython.pyx":1596
  * def trace_dispatch(py_db, frame, event, arg):
  *     thread_trace_func, apply_to_settrace = py_db.fix_top_level_trace_and_get_trace_func(py_db, frame)
- *     if thread_trace_func is None:             # <<<<<<<<<<<<<<
  *         return None if event == 'call' else NO_FTRACE
  *     if apply_to_settrace:
  */
@@ -27198,7 +25998,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_8trace_dispatch(CYTHO
   /* "_pydevd_bundle/pydevd_cython.pyx":1598
  *     if thread_trace_func is None:
  *         return None if event == 'call' else NO_FTRACE
- *     if apply_to_settrace:             # <<<<<<<<<<<<<<
  *         py_db.enable_tracing(thread_trace_func)
  *     return thread_trace_func(frame, event, arg)
  */
@@ -27208,7 +26007,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_8trace_dispatch(CYTHO
     /* "_pydevd_bundle/pydevd_cython.pyx":1599
  *         return None if event == 'call' else NO_FTRACE
  *     if apply_to_settrace:
- *         py_db.enable_tracing(thread_trace_func)             # <<<<<<<<<<<<<<
  *     return thread_trace_func(frame, event, arg)
  * 
  */
@@ -27234,7 +26032,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_8trace_dispatch(CYTHO
     /* "_pydevd_bundle/pydevd_cython.pyx":1598
  *     if thread_trace_func is None:
  *         return None if event == 'call' else NO_FTRACE
- *     if apply_to_settrace:             # <<<<<<<<<<<<<<
  *         py_db.enable_tracing(thread_trace_func)
  *     return thread_trace_func(frame, event, arg)
  */
@@ -27243,7 +26040,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_8trace_dispatch(CYTHO
   /* "_pydevd_bundle/pydevd_cython.pyx":1600
  *     if apply_to_settrace:
  *         py_db.enable_tracing(thread_trace_func)
- *     return thread_trace_func(frame, event, arg)             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -27304,7 +26100,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_8trace_dispatch(CYTHO
   /* "_pydevd_bundle/pydevd_cython.pyx":1594
  * 
  * 
- * def trace_dispatch(py_db, frame, event, arg):             # <<<<<<<<<<<<<<
  *     thread_trace_func, apply_to_settrace = py_db.fix_top_level_trace_and_get_trace_func(py_db, frame)
  *     if thread_trace_func is None:
  */
@@ -27328,7 +26123,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_8trace_dispatch(CYTHO
 /* "_pydevd_bundle/pydevd_cython.pyx":1606
  * cdef class TopLevelThreadTracerOnlyUnhandledExceptions:
  *     cdef public tuple _args;
- *     def __init__(self, tuple args):             # <<<<<<<<<<<<<<
  *         self._args = args
  * # ELSE
  */
@@ -27399,7 +26193,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTracerOnlyU
   /* "_pydevd_bundle/pydevd_cython.pyx":1607
  *     cdef public tuple _args;
  *     def __init__(self, tuple args):
- *         self._args = args             # <<<<<<<<<<<<<<
  * # ELSE
  * # class TopLevelThreadTracerOnlyUnhandledExceptions(object):
  */
@@ -27412,7 +26205,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTracerOnlyU
   /* "_pydevd_bundle/pydevd_cython.pyx":1606
  * cdef class TopLevelThreadTracerOnlyUnhandledExceptions:
  *     cdef public tuple _args;
- *     def __init__(self, tuple args):             # <<<<<<<<<<<<<<
  *         self._args = args
  * # ELSE
  */
@@ -27426,7 +26218,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTracerOnlyU
 /* "_pydevd_bundle/pydevd_cython.pyx":1615
  * # ENDIF
  * 
- *     def trace_unhandled_exceptions(self, frame, event, arg):             # <<<<<<<<<<<<<<
  *         # Note that we ignore the frame as this tracing method should only be put in topmost frames already.
  *         # print('trace_unhandled_exceptions', event, frame.f_code.co_name, frame.f_code.co_filename, frame.f_code.co_firstlineno)
  */
@@ -27528,7 +26319,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
   /* "_pydevd_bundle/pydevd_cython.pyx":1618
  *         # Note that we ignore the frame as this tracing method should only be put in topmost frames already.
  *         # print('trace_unhandled_exceptions', event, frame.f_code.co_name, frame.f_code.co_filename, frame.f_code.co_firstlineno)
- *         if event == 'exception' and arg is not None:             # <<<<<<<<<<<<<<
  *             py_db, t, additional_info = self._args[0:3]
  *             if arg is not None:
  */
@@ -27547,7 +26337,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
     /* "_pydevd_bundle/pydevd_cython.pyx":1619
  *         # print('trace_unhandled_exceptions', event, frame.f_code.co_name, frame.f_code.co_filename, frame.f_code.co_firstlineno)
  *         if event == 'exception' and arg is not None:
- *             py_db, t, additional_info = self._args[0:3]             # <<<<<<<<<<<<<<
  *             if arg is not None:
  *                 if not additional_info.suspended_at_unhandled:
  */
@@ -27592,7 +26381,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
     /* "_pydevd_bundle/pydevd_cython.pyx":1620
  *         if event == 'exception' and arg is not None:
  *             py_db, t, additional_info = self._args[0:3]
- *             if arg is not None:             # <<<<<<<<<<<<<<
  *                 if not additional_info.suspended_at_unhandled:
  *                     additional_info.suspended_at_unhandled = True
  */
@@ -27603,7 +26391,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
       /* "_pydevd_bundle/pydevd_cython.pyx":1621
  *             py_db, t, additional_info = self._args[0:3]
  *             if arg is not None:
- *                 if not additional_info.suspended_at_unhandled:             # <<<<<<<<<<<<<<
  *                     additional_info.suspended_at_unhandled = True
  * 
  */
@@ -27617,7 +26404,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
         /* "_pydevd_bundle/pydevd_cython.pyx":1622
  *             if arg is not None:
  *                 if not additional_info.suspended_at_unhandled:
- *                     additional_info.suspended_at_unhandled = True             # <<<<<<<<<<<<<<
  * 
  *                     py_db.stop_on_unhandled_exception(py_db, t, additional_info, arg)
  */
@@ -27626,7 +26412,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
         /* "_pydevd_bundle/pydevd_cython.pyx":1624
  *                     additional_info.suspended_at_unhandled = True
  * 
- *                     py_db.stop_on_unhandled_exception(py_db, t, additional_info, arg)             # <<<<<<<<<<<<<<
  * 
  *         # No need to reset frame.f_trace to keep the same trace function.
  */
@@ -27688,7 +26473,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
         /* "_pydevd_bundle/pydevd_cython.pyx":1621
  *             py_db, t, additional_info = self._args[0:3]
  *             if arg is not None:
- *                 if not additional_info.suspended_at_unhandled:             # <<<<<<<<<<<<<<
  *                     additional_info.suspended_at_unhandled = True
  * 
  */
@@ -27697,7 +26481,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
       /* "_pydevd_bundle/pydevd_cython.pyx":1620
  *         if event == 'exception' and arg is not None:
  *             py_db, t, additional_info = self._args[0:3]
- *             if arg is not None:             # <<<<<<<<<<<<<<
  *                 if not additional_info.suspended_at_unhandled:
  *                     additional_info.suspended_at_unhandled = True
  */
@@ -27706,7 +26489,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
     /* "_pydevd_bundle/pydevd_cython.pyx":1618
  *         # Note that we ignore the frame as this tracing method should only be put in topmost frames already.
  *         # print('trace_unhandled_exceptions', event, frame.f_code.co_name, frame.f_code.co_filename, frame.f_code.co_firstlineno)
- *         if event == 'exception' and arg is not None:             # <<<<<<<<<<<<<<
  *             py_db, t, additional_info = self._args[0:3]
  *             if arg is not None:
  */
@@ -27715,7 +26497,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
   /* "_pydevd_bundle/pydevd_cython.pyx":1627
  * 
  *         # No need to reset frame.f_trace to keep the same trace function.
- *         return self.trace_unhandled_exceptions             # <<<<<<<<<<<<<<
  * 
  *     def get_trace_dispatch_func(self):
  */
@@ -27729,7 +26510,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
   /* "_pydevd_bundle/pydevd_cython.pyx":1615
  * # ENDIF
  * 
- *     def trace_unhandled_exceptions(self, frame, event, arg):             # <<<<<<<<<<<<<<
  *         # Note that we ignore the frame as this tracing method should only be put in topmost frames already.
  *         # print('trace_unhandled_exceptions', event, frame.f_code.co_name, frame.f_code.co_filename, frame.f_code.co_firstlineno)
  */
@@ -27754,7 +26534,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
 /* "_pydevd_bundle/pydevd_cython.pyx":1629
  *         return self.trace_unhandled_exceptions
  * 
- *     def get_trace_dispatch_func(self):             # <<<<<<<<<<<<<<
  *         return self.trace_unhandled_exceptions
  * 
  */
@@ -27784,7 +26563,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
   /* "_pydevd_bundle/pydevd_cython.pyx":1630
  * 
  *     def get_trace_dispatch_func(self):
- *         return self.trace_unhandled_exceptions             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -27798,7 +26576,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
   /* "_pydevd_bundle/pydevd_cython.pyx":1629
  *         return self.trace_unhandled_exceptions
  * 
- *     def get_trace_dispatch_func(self):             # <<<<<<<<<<<<<<
  *         return self.trace_unhandled_exceptions
  * 
  */
@@ -27817,7 +26594,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
 /* "_pydevd_bundle/pydevd_cython.pyx":1605
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  * cdef class TopLevelThreadTracerOnlyUnhandledExceptions:
- *     cdef public tuple _args;             # <<<<<<<<<<<<<<
  *     def __init__(self, tuple args):
  *         self._args = args
  */
@@ -27923,7 +26699,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTracerOnlyU
 }
 
 /* "(tree fragment)":1
- * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     cdef tuple state
  *     cdef object _dict
  */
@@ -27960,7 +26735,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self._args,)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
@@ -27975,7 +26749,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
   /* "(tree fragment)":6
  *     cdef bint use_setstate
  *     state = (self._args,)
- *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
  */
@@ -27987,7 +26760,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
   /* "(tree fragment)":7
  *     state = (self._args,)
  *     _dict = getattr(self, '__dict__', None)
- *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
  *         use_setstate = True
  */
@@ -27998,7 +26770,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
     /* "(tree fragment)":8
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
- *         state += (_dict,)             # <<<<<<<<<<<<<<
  *         use_setstate = True
  *     else:
  */
@@ -28016,7 +26787,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
     /* "(tree fragment)":9
  *     if _dict is not None:
  *         state += (_dict,)
- *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
  *         use_setstate = self._args is not None
  */
@@ -28025,7 +26795,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
     /* "(tree fragment)":7
  *     state = (self._args,)
  *     _dict = getattr(self, '__dict__', None)
- *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
  *         use_setstate = True
  */
@@ -28035,7 +26804,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self._args is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
  *         return __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions, (type(self), 0x3d7902a, None), state
  */
@@ -28048,7 +26816,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
   /* "(tree fragment)":12
  *     else:
  *         use_setstate = self._args is not None
- *     if use_setstate:             # <<<<<<<<<<<<<<
  *         return __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions, (type(self), 0x3d7902a, None), state
  *     else:
  */
@@ -28058,7 +26825,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
     /* "(tree fragment)":13
  *         use_setstate = self._args is not None
  *     if use_setstate:
- *         return __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions, (type(self), 0x3d7902a, None), state             # <<<<<<<<<<<<<<
  *     else:
  *         return __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions, (type(self), 0x3d7902a, state)
  */
@@ -28094,7 +26860,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
     /* "(tree fragment)":12
  *     else:
  *         use_setstate = self._args is not None
- *     if use_setstate:             # <<<<<<<<<<<<<<
  *         return __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions, (type(self), 0x3d7902a, None), state
  *     else:
  */
@@ -28103,7 +26868,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
   /* "(tree fragment)":15
  *         return __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions, (type(self), 0x3d7902a, None), state
  *     else:
- *         return __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions, (type(self), 0x3d7902a, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(self, __pyx_state)
  */
@@ -28136,7 +26900,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
   }
 
   /* "(tree fragment)":1
- * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     cdef tuple state
  *     cdef object _dict
  */
@@ -28159,7 +26922,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
 /* "(tree fragment)":16
  *     else:
  *         return __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions, (type(self), 0x3d7902a, state)
- * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(self, __pyx_state)
  */
 
@@ -28188,7 +26950,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
   /* "(tree fragment)":17
  *         return __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions, (type(self), 0x3d7902a, state)
  * def __setstate_cython__(self, __pyx_state):
- *     __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
   if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_v___pyx_state)->tp_name), 0))) __PYX_ERR(2, 17, __pyx_L1_error)
   __pyx_t_1 = __pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 17, __pyx_L1_error)
@@ -28198,7 +26959,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
   /* "(tree fragment)":16
  *     else:
  *         return __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions, (type(self), 0x3d7902a, state)
- * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(self, __pyx_state)
  */
 
@@ -28218,7 +26978,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_43TopLevelThreadTrace
 /* "_pydevd_bundle/pydevd_cython.pyx":1641
  *     cdef public set _raise_lines;
  *     cdef public int _last_raise_line;
- *     def __init__(self, frame_trace_dispatch, tuple args):             # <<<<<<<<<<<<<<
  *         self._frame_trace_dispatch = frame_trace_dispatch
  *         self._args = args
  */
@@ -28304,7 +27063,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTracerNoBac
   /* "_pydevd_bundle/pydevd_cython.pyx":1642
  *     cdef public int _last_raise_line;
  *     def __init__(self, frame_trace_dispatch, tuple args):
- *         self._frame_trace_dispatch = frame_trace_dispatch             # <<<<<<<<<<<<<<
  *         self._args = args
  *         self.try_except_infos = None
  */
@@ -28317,7 +27075,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTracerNoBac
   /* "_pydevd_bundle/pydevd_cython.pyx":1643
  *     def __init__(self, frame_trace_dispatch, tuple args):
  *         self._frame_trace_dispatch = frame_trace_dispatch
- *         self._args = args             # <<<<<<<<<<<<<<
  *         self.try_except_infos = None
  *         self._last_exc_arg = None
  */
@@ -28330,7 +27087,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTracerNoBac
   /* "_pydevd_bundle/pydevd_cython.pyx":1644
  *         self._frame_trace_dispatch = frame_trace_dispatch
  *         self._args = args
- *         self.try_except_infos = None             # <<<<<<<<<<<<<<
  *         self._last_exc_arg = None
  *         self._raise_lines = set()
  */
@@ -28343,7 +27099,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTracerNoBac
   /* "_pydevd_bundle/pydevd_cython.pyx":1645
  *         self._args = args
  *         self.try_except_infos = None
- *         self._last_exc_arg = None             # <<<<<<<<<<<<<<
  *         self._raise_lines = set()
  *         self._last_raise_line = -1
  */
@@ -28356,7 +27111,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTracerNoBac
   /* "_pydevd_bundle/pydevd_cython.pyx":1646
  *         self.try_except_infos = None
  *         self._last_exc_arg = None
- *         self._raise_lines = set()             # <<<<<<<<<<<<<<
  *         self._last_raise_line = -1
  * # ELSE
  */
@@ -28371,7 +27125,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTracerNoBac
   /* "_pydevd_bundle/pydevd_cython.pyx":1647
  *         self._last_exc_arg = None
  *         self._raise_lines = set()
- *         self._last_raise_line = -1             # <<<<<<<<<<<<<<
  * # ELSE
  * # class TopLevelThreadTracerNoBackFrame(object):
  */
@@ -28380,7 +27133,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTracerNoBac
   /* "_pydevd_bundle/pydevd_cython.pyx":1641
  *     cdef public set _raise_lines;
  *     cdef public int _last_raise_line;
- *     def __init__(self, frame_trace_dispatch, tuple args):             # <<<<<<<<<<<<<<
  *         self._frame_trace_dispatch = frame_trace_dispatch
  *         self._args = args
  */
@@ -28400,7 +27152,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTracerNoBac
 /* "_pydevd_bundle/pydevd_cython.pyx":1671
  * # ENDIF
  * 
- *     def trace_dispatch_and_unhandled_exceptions(self, frame, event, arg):             # <<<<<<<<<<<<<<
  *         # DEBUG = 'code_to_debug' in frame.f_code.co_filename
  *         # if DEBUG: print('trace_dispatch_and_unhandled_exceptions: %s %s %s %s %s %s' % (event, frame.f_code.co_name, frame.f_code.co_filename, frame.f_code.co_firstlineno, self._frame_trace_dispatch, frame.f_lineno))
  */
@@ -28513,7 +27264,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "_pydevd_bundle/pydevd_cython.pyx":1674
  *         # DEBUG = 'code_to_debug' in frame.f_code.co_filename
  *         # if DEBUG: print('trace_dispatch_and_unhandled_exceptions: %s %s %s %s %s %s' % (event, frame.f_code.co_name, frame.f_code.co_filename, frame.f_code.co_firstlineno, self._frame_trace_dispatch, frame.f_lineno))
- *         frame_trace_dispatch = self._frame_trace_dispatch             # <<<<<<<<<<<<<<
  *         if frame_trace_dispatch is not None:
  *             self._frame_trace_dispatch = frame_trace_dispatch(frame, event, arg)
  */
@@ -28525,7 +27275,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "_pydevd_bundle/pydevd_cython.pyx":1675
  *         # if DEBUG: print('trace_dispatch_and_unhandled_exceptions: %s %s %s %s %s %s' % (event, frame.f_code.co_name, frame.f_code.co_filename, frame.f_code.co_firstlineno, self._frame_trace_dispatch, frame.f_lineno))
  *         frame_trace_dispatch = self._frame_trace_dispatch
- *         if frame_trace_dispatch is not None:             # <<<<<<<<<<<<<<
  *             self._frame_trace_dispatch = frame_trace_dispatch(frame, event, arg)
  * 
  */
@@ -28536,7 +27285,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
     /* "_pydevd_bundle/pydevd_cython.pyx":1676
  *         frame_trace_dispatch = self._frame_trace_dispatch
  *         if frame_trace_dispatch is not None:
- *             self._frame_trace_dispatch = frame_trace_dispatch(frame, event, arg)             # <<<<<<<<<<<<<<
  * 
  *         if event == 'exception':
  */
@@ -28598,7 +27346,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
     /* "_pydevd_bundle/pydevd_cython.pyx":1675
  *         # if DEBUG: print('trace_dispatch_and_unhandled_exceptions: %s %s %s %s %s %s' % (event, frame.f_code.co_name, frame.f_code.co_filename, frame.f_code.co_firstlineno, self._frame_trace_dispatch, frame.f_lineno))
  *         frame_trace_dispatch = self._frame_trace_dispatch
- *         if frame_trace_dispatch is not None:             # <<<<<<<<<<<<<<
  *             self._frame_trace_dispatch = frame_trace_dispatch(frame, event, arg)
  * 
  */
@@ -28607,7 +27354,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "_pydevd_bundle/pydevd_cython.pyx":1678
  *             self._frame_trace_dispatch = frame_trace_dispatch(frame, event, arg)
  * 
- *         if event == 'exception':             # <<<<<<<<<<<<<<
  *             self._last_exc_arg = arg
  *             self._raise_lines.add(frame.f_lineno)
  */
@@ -28617,7 +27363,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
     /* "_pydevd_bundle/pydevd_cython.pyx":1679
  * 
  *         if event == 'exception':
- *             self._last_exc_arg = arg             # <<<<<<<<<<<<<<
  *             self._raise_lines.add(frame.f_lineno)
  *             self._last_raise_line = frame.f_lineno
  */
@@ -28630,7 +27375,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
     /* "_pydevd_bundle/pydevd_cython.pyx":1680
  *         if event == 'exception':
  *             self._last_exc_arg = arg
- *             self._raise_lines.add(frame.f_lineno)             # <<<<<<<<<<<<<<
  *             self._last_raise_line = frame.f_lineno
  * 
  */
@@ -28646,7 +27390,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
     /* "_pydevd_bundle/pydevd_cython.pyx":1681
  *             self._last_exc_arg = arg
  *             self._raise_lines.add(frame.f_lineno)
- *             self._last_raise_line = frame.f_lineno             # <<<<<<<<<<<<<<
  * 
  *         elif event == 'return' and self._last_exc_arg is not None:
  */
@@ -28659,7 +27402,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
     /* "_pydevd_bundle/pydevd_cython.pyx":1678
  *             self._frame_trace_dispatch = frame_trace_dispatch(frame, event, arg)
  * 
- *         if event == 'exception':             # <<<<<<<<<<<<<<
  *             self._last_exc_arg = arg
  *             self._raise_lines.add(frame.f_lineno)
  */
@@ -28669,7 +27411,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "_pydevd_bundle/pydevd_cython.pyx":1683
  *             self._last_raise_line = frame.f_lineno
  * 
- *         elif event == 'return' and self._last_exc_arg is not None:             # <<<<<<<<<<<<<<
  *             # For unhandled exceptions we actually track the return when at the topmost level.
  *             try:
  */
@@ -28688,7 +27429,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
     /* "_pydevd_bundle/pydevd_cython.pyx":1685
  *         elif event == 'return' and self._last_exc_arg is not None:
  *             # For unhandled exceptions we actually track the return when at the topmost level.
- *             try:             # <<<<<<<<<<<<<<
  *                 py_db, t, additional_info = self._args[0:3]
  *                 if not additional_info.suspended_at_unhandled:  # Note: only check it here, don't set.
  */
@@ -28697,7 +27437,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
       /* "_pydevd_bundle/pydevd_cython.pyx":1686
  *             # For unhandled exceptions we actually track the return when at the topmost level.
  *             try:
- *                 py_db, t, additional_info = self._args[0:3]             # <<<<<<<<<<<<<<
  *                 if not additional_info.suspended_at_unhandled:  # Note: only check it here, don't set.
  *                     if is_unhandled_exception(self, py_db, frame, self._last_raise_line, self._raise_lines):
  */
@@ -28742,7 +27481,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
       /* "_pydevd_bundle/pydevd_cython.pyx":1687
  *             try:
  *                 py_db, t, additional_info = self._args[0:3]
- *                 if not additional_info.suspended_at_unhandled:  # Note: only check it here, don't set.             # <<<<<<<<<<<<<<
  *                     if is_unhandled_exception(self, py_db, frame, self._last_raise_line, self._raise_lines):
  *                         py_db.stop_on_unhandled_exception(py_db, t, additional_info, self._last_exc_arg)
  */
@@ -28756,7 +27494,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
         /* "_pydevd_bundle/pydevd_cython.pyx":1688
  *                 py_db, t, additional_info = self._args[0:3]
  *                 if not additional_info.suspended_at_unhandled:  # Note: only check it here, don't set.
- *                     if is_unhandled_exception(self, py_db, frame, self._last_raise_line, self._raise_lines):             # <<<<<<<<<<<<<<
  *                         py_db.stop_on_unhandled_exception(py_db, t, additional_info, self._last_exc_arg)
  *             finally:
  */
@@ -28772,7 +27509,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
           /* "_pydevd_bundle/pydevd_cython.pyx":1689
  *                 if not additional_info.suspended_at_unhandled:  # Note: only check it here, don't set.
  *                     if is_unhandled_exception(self, py_db, frame, self._last_raise_line, self._raise_lines):
- *                         py_db.stop_on_unhandled_exception(py_db, t, additional_info, self._last_exc_arg)             # <<<<<<<<<<<<<<
  *             finally:
  *                 # Remove reference to exception after handling it.
  */
@@ -28834,7 +27570,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
           /* "_pydevd_bundle/pydevd_cython.pyx":1688
  *                 py_db, t, additional_info = self._args[0:3]
  *                 if not additional_info.suspended_at_unhandled:  # Note: only check it here, don't set.
- *                     if is_unhandled_exception(self, py_db, frame, self._last_raise_line, self._raise_lines):             # <<<<<<<<<<<<<<
  *                         py_db.stop_on_unhandled_exception(py_db, t, additional_info, self._last_exc_arg)
  *             finally:
  */
@@ -28843,7 +27578,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
         /* "_pydevd_bundle/pydevd_cython.pyx":1687
  *             try:
  *                 py_db, t, additional_info = self._args[0:3]
- *                 if not additional_info.suspended_at_unhandled:  # Note: only check it here, don't set.             # <<<<<<<<<<<<<<
  *                     if is_unhandled_exception(self, py_db, frame, self._last_raise_line, self._raise_lines):
  *                         py_db.stop_on_unhandled_exception(py_db, t, additional_info, self._last_exc_arg)
  */
@@ -28853,7 +27587,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
     /* "_pydevd_bundle/pydevd_cython.pyx":1692
  *             finally:
  *                 # Remove reference to exception after handling it.
- *                 self._last_exc_arg = None             # <<<<<<<<<<<<<<
  * 
  *         ret = self.trace_dispatch_and_unhandled_exceptions
  */
@@ -28911,7 +27644,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
     /* "_pydevd_bundle/pydevd_cython.pyx":1683
  *             self._last_raise_line = frame.f_lineno
  * 
- *         elif event == 'return' and self._last_exc_arg is not None:             # <<<<<<<<<<<<<<
  *             # For unhandled exceptions we actually track the return when at the topmost level.
  *             try:
  */
@@ -28921,7 +27653,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "_pydevd_bundle/pydevd_cython.pyx":1694
  *                 self._last_exc_arg = None
  * 
- *         ret = self.trace_dispatch_and_unhandled_exceptions             # <<<<<<<<<<<<<<
  * 
  *         # Need to reset (the call to _frame_trace_dispatch may have changed it).
  */
@@ -28933,7 +27664,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "_pydevd_bundle/pydevd_cython.pyx":1698
  *         # Need to reset (the call to _frame_trace_dispatch may have changed it).
  *         # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *         frame.f_trace = SafeCallWrapper(ret)             # <<<<<<<<<<<<<<
  *         # ELSE
  * #         frame.f_trace = ret
  */
@@ -28945,7 +27675,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "_pydevd_bundle/pydevd_cython.pyx":1702
  * #         frame.f_trace = ret
  *         # ENDIF
- *         return ret             # <<<<<<<<<<<<<<
  * 
  *     def get_trace_dispatch_func(self):
  */
@@ -28957,7 +27686,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "_pydevd_bundle/pydevd_cython.pyx":1671
  * # ENDIF
  * 
- *     def trace_dispatch_and_unhandled_exceptions(self, frame, event, arg):             # <<<<<<<<<<<<<<
  *         # DEBUG = 'code_to_debug' in frame.f_code.co_filename
  *         # if DEBUG: print('trace_dispatch_and_unhandled_exceptions: %s %s %s %s %s %s' % (event, frame.f_code.co_name, frame.f_code.co_filename, frame.f_code.co_firstlineno, self._frame_trace_dispatch, frame.f_lineno))
  */
@@ -28984,7 +27712,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
 /* "_pydevd_bundle/pydevd_cython.pyx":1704
  *         return ret
  * 
- *     def get_trace_dispatch_func(self):             # <<<<<<<<<<<<<<
  *         return self.trace_dispatch_and_unhandled_exceptions
  * 
  */
@@ -29014,7 +27741,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "_pydevd_bundle/pydevd_cython.pyx":1705
  * 
  *     def get_trace_dispatch_func(self):
- *         return self.trace_dispatch_and_unhandled_exceptions             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -29028,7 +27754,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "_pydevd_bundle/pydevd_cython.pyx":1704
  *         return ret
  * 
- *     def get_trace_dispatch_func(self):             # <<<<<<<<<<<<<<
  *         return self.trace_dispatch_and_unhandled_exceptions
  * 
  */
@@ -29047,7 +27772,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
 /* "_pydevd_bundle/pydevd_cython.pyx":1635
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  * cdef class TopLevelThreadTracerNoBackFrame:
- *     cdef public object _frame_trace_dispatch;             # <<<<<<<<<<<<<<
  *     cdef public tuple _args;
  *     cdef public object try_except_infos;
  */
@@ -29142,7 +27866,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTracerNoBac
 /* "_pydevd_bundle/pydevd_cython.pyx":1636
  * cdef class TopLevelThreadTracerNoBackFrame:
  *     cdef public object _frame_trace_dispatch;
- *     cdef public tuple _args;             # <<<<<<<<<<<<<<
  *     cdef public object try_except_infos;
  *     cdef public object _last_exc_arg;
  */
@@ -29250,7 +27973,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTracerNoBac
 /* "_pydevd_bundle/pydevd_cython.pyx":1637
  *     cdef public object _frame_trace_dispatch;
  *     cdef public tuple _args;
- *     cdef public object try_except_infos;             # <<<<<<<<<<<<<<
  *     cdef public object _last_exc_arg;
  *     cdef public set _raise_lines;
  */
@@ -29345,7 +28067,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTracerNoBac
 /* "_pydevd_bundle/pydevd_cython.pyx":1638
  *     cdef public tuple _args;
  *     cdef public object try_except_infos;
- *     cdef public object _last_exc_arg;             # <<<<<<<<<<<<<<
  *     cdef public set _raise_lines;
  *     cdef public int _last_raise_line;
  */
@@ -29440,7 +28161,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTracerNoBac
 /* "_pydevd_bundle/pydevd_cython.pyx":1639
  *     cdef public object try_except_infos;
  *     cdef public object _last_exc_arg;
- *     cdef public set _raise_lines;             # <<<<<<<<<<<<<<
  *     cdef public int _last_raise_line;
  *     def __init__(self, frame_trace_dispatch, tuple args):
  */
@@ -29548,7 +28268,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTracerNoBac
 /* "_pydevd_bundle/pydevd_cython.pyx":1640
  *     cdef public object _last_exc_arg;
  *     cdef public set _raise_lines;
- *     cdef public int _last_raise_line;             # <<<<<<<<<<<<<<
  *     def __init__(self, frame_trace_dispatch, tuple args):
  *         self._frame_trace_dispatch = frame_trace_dispatch
  */
@@ -29628,7 +28347,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTracerNoBac
 }
 
 /* "(tree fragment)":1
- * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     cdef tuple state
  *     cdef object _dict
  */
@@ -29666,7 +28384,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self._args, self._frame_trace_dispatch, self._last_exc_arg, self._last_raise_line, self._raise_lines, self.try_except_infos)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
@@ -29698,7 +28415,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "(tree fragment)":6
  *     cdef bint use_setstate
  *     state = (self._args, self._frame_trace_dispatch, self._last_exc_arg, self._last_raise_line, self._raise_lines, self.try_except_infos)
- *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
  */
@@ -29710,7 +28426,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "(tree fragment)":7
  *     state = (self._args, self._frame_trace_dispatch, self._last_exc_arg, self._last_raise_line, self._raise_lines, self.try_except_infos)
  *     _dict = getattr(self, '__dict__', None)
- *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
  *         use_setstate = True
  */
@@ -29721,7 +28436,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
     /* "(tree fragment)":8
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
- *         state += (_dict,)             # <<<<<<<<<<<<<<
  *         use_setstate = True
  *     else:
  */
@@ -29739,7 +28453,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
     /* "(tree fragment)":9
  *     if _dict is not None:
  *         state += (_dict,)
- *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
  *         use_setstate = self._args is not None or self._frame_trace_dispatch is not None or self._last_exc_arg is not None or self._raise_lines is not None or self.try_except_infos is not None
  */
@@ -29748,7 +28461,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
     /* "(tree fragment)":7
  *     state = (self._args, self._frame_trace_dispatch, self._last_exc_arg, self._last_raise_line, self._raise_lines, self.try_except_infos)
  *     _dict = getattr(self, '__dict__', None)
- *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
  *         use_setstate = True
  */
@@ -29758,7 +28470,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self._args is not None or self._frame_trace_dispatch is not None or self._last_exc_arg is not None or self._raise_lines is not None or self.try_except_infos is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
  *         return __pyx_unpickle_TopLevelThreadTracerNoBackFrame, (type(self), 0xa3a9ec1, None), state
  */
@@ -29802,7 +28513,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "(tree fragment)":12
  *     else:
  *         use_setstate = self._args is not None or self._frame_trace_dispatch is not None or self._last_exc_arg is not None or self._raise_lines is not None or self.try_except_infos is not None
- *     if use_setstate:             # <<<<<<<<<<<<<<
  *         return __pyx_unpickle_TopLevelThreadTracerNoBackFrame, (type(self), 0xa3a9ec1, None), state
  *     else:
  */
@@ -29812,7 +28522,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
     /* "(tree fragment)":13
  *         use_setstate = self._args is not None or self._frame_trace_dispatch is not None or self._last_exc_arg is not None or self._raise_lines is not None or self.try_except_infos is not None
  *     if use_setstate:
- *         return __pyx_unpickle_TopLevelThreadTracerNoBackFrame, (type(self), 0xa3a9ec1, None), state             # <<<<<<<<<<<<<<
  *     else:
  *         return __pyx_unpickle_TopLevelThreadTracerNoBackFrame, (type(self), 0xa3a9ec1, state)
  */
@@ -29848,7 +28557,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
     /* "(tree fragment)":12
  *     else:
  *         use_setstate = self._args is not None or self._frame_trace_dispatch is not None or self._last_exc_arg is not None or self._raise_lines is not None or self.try_except_infos is not None
- *     if use_setstate:             # <<<<<<<<<<<<<<
  *         return __pyx_unpickle_TopLevelThreadTracerNoBackFrame, (type(self), 0xa3a9ec1, None), state
  *     else:
  */
@@ -29857,7 +28565,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "(tree fragment)":15
  *         return __pyx_unpickle_TopLevelThreadTracerNoBackFrame, (type(self), 0xa3a9ec1, None), state
  *     else:
- *         return __pyx_unpickle_TopLevelThreadTracerNoBackFrame, (type(self), 0xa3a9ec1, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(self, __pyx_state)
  */
@@ -29890,7 +28597,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   }
 
   /* "(tree fragment)":1
- * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     cdef tuple state
  *     cdef object _dict
  */
@@ -29913,7 +28619,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
 /* "(tree fragment)":16
  *     else:
  *         return __pyx_unpickle_TopLevelThreadTracerNoBackFrame, (type(self), 0xa3a9ec1, state)
- * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(self, __pyx_state)
  */
 
@@ -29942,7 +28647,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "(tree fragment)":17
  *         return __pyx_unpickle_TopLevelThreadTracerNoBackFrame, (type(self), 0xa3a9ec1, state)
  * def __setstate_cython__(self, __pyx_state):
- *     __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
   if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_v___pyx_state)->tp_name), 0))) __PYX_ERR(2, 17, __pyx_L1_error)
   __pyx_t_1 = __pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 17, __pyx_L1_error)
@@ -29952,7 +28656,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
   /* "(tree fragment)":16
  *     else:
  *         return __pyx_unpickle_TopLevelThreadTracerNoBackFrame, (type(self), 0xa3a9ec1, state)
- * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(self, __pyx_state)
  */
 
@@ -29972,7 +28675,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_31TopLevelThreadTrace
 /* "_pydevd_bundle/pydevd_cython.pyx":1711
  * cdef class ThreadTracer:
  *     cdef public tuple _args;
- *     def __init__(self, tuple args):             # <<<<<<<<<<<<<<
  *         self._args = args
  * # ELSE
  */
@@ -30043,7 +28745,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer___init__(str
   /* "_pydevd_bundle/pydevd_cython.pyx":1712
  *     cdef public tuple _args;
  *     def __init__(self, tuple args):
- *         self._args = args             # <<<<<<<<<<<<<<
  * # ELSE
  * # class ThreadTracer(object):
  */
@@ -30056,7 +28757,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer___init__(str
   /* "_pydevd_bundle/pydevd_cython.pyx":1711
  * cdef class ThreadTracer:
  *     cdef public tuple _args;
- *     def __init__(self, tuple args):             # <<<<<<<<<<<<<<
  *         self._args = args
  * # ELSE
  */
@@ -30070,7 +28770,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer___init__(str
 /* "_pydevd_bundle/pydevd_cython.pyx":1720
  * # ENDIF
  * 
- *     def __call__(self, frame, event, arg):             # <<<<<<<<<<<<<<
  *         ''' This is the callback used when we enter some context in the debugger.
  * 
  */
@@ -30196,7 +28895,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
   /* "_pydevd_bundle/pydevd_cython.pyx":1746
  *         # DEBUG = 'code_to_debug' in frame.f_code.co_filename
  *         # if DEBUG: print('ENTER: trace_dispatch: %s %s %s %s' % (frame.f_code.co_filename, frame.f_lineno, event, frame.f_code.co_name))
- *         py_db, t, additional_info, cache_skips, frame_skips_cache = self._args             # <<<<<<<<<<<<<<
  *         if additional_info.is_tracing:
  *             return None if event == 'call' else NO_FTRACE  # we don't wan't to trace code invoked from pydevd_frame.trace_dispatch
  */
@@ -30252,7 +28950,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
   /* "_pydevd_bundle/pydevd_cython.pyx":1747
  *         # if DEBUG: print('ENTER: trace_dispatch: %s %s %s %s' % (frame.f_code.co_filename, frame.f_lineno, event, frame.f_code.co_name))
  *         py_db, t, additional_info, cache_skips, frame_skips_cache = self._args
- *         if additional_info.is_tracing:             # <<<<<<<<<<<<<<
  *             return None if event == 'call' else NO_FTRACE  # we don't wan't to trace code invoked from pydevd_frame.trace_dispatch
  * 
  */
@@ -30262,7 +28959,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
     /* "_pydevd_bundle/pydevd_cython.pyx":1748
  *         py_db, t, additional_info, cache_skips, frame_skips_cache = self._args
  *         if additional_info.is_tracing:
- *             return None if event == 'call' else NO_FTRACE  # we don't wan't to trace code invoked from pydevd_frame.trace_dispatch             # <<<<<<<<<<<<<<
  * 
  *         additional_info.is_tracing += 1
  */
@@ -30284,7 +28980,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
     /* "_pydevd_bundle/pydevd_cython.pyx":1747
  *         # if DEBUG: print('ENTER: trace_dispatch: %s %s %s %s' % (frame.f_code.co_filename, frame.f_lineno, event, frame.f_code.co_name))
  *         py_db, t, additional_info, cache_skips, frame_skips_cache = self._args
- *         if additional_info.is_tracing:             # <<<<<<<<<<<<<<
  *             return None if event == 'call' else NO_FTRACE  # we don't wan't to trace code invoked from pydevd_frame.trace_dispatch
  * 
  */
@@ -30293,7 +28988,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
   /* "_pydevd_bundle/pydevd_cython.pyx":1750
  *             return None if event == 'call' else NO_FTRACE  # we don't wan't to trace code invoked from pydevd_frame.trace_dispatch
  * 
- *         additional_info.is_tracing += 1             # <<<<<<<<<<<<<<
  *         try:
  *             pydev_step_cmd = additional_info.pydev_step_cmd
  */
@@ -30302,7 +28996,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
   /* "_pydevd_bundle/pydevd_cython.pyx":1751
  * 
  *         additional_info.is_tracing += 1
- *         try:             # <<<<<<<<<<<<<<
  *             pydev_step_cmd = additional_info.pydev_step_cmd
  *             is_stepping = pydev_step_cmd != -1
  */
@@ -30319,7 +29012,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1752
  *         additional_info.is_tracing += 1
  *         try:
- *             pydev_step_cmd = additional_info.pydev_step_cmd             # <<<<<<<<<<<<<<
  *             is_stepping = pydev_step_cmd != -1
  *             if py_db.pydb_disposed:
  */
@@ -30329,7 +29021,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1753
  *         try:
  *             pydev_step_cmd = additional_info.pydev_step_cmd
- *             is_stepping = pydev_step_cmd != -1             # <<<<<<<<<<<<<<
  *             if py_db.pydb_disposed:
  *                 return None if event == 'call' else NO_FTRACE
  */
@@ -30338,7 +29029,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1754
  *             pydev_step_cmd = additional_info.pydev_step_cmd
  *             is_stepping = pydev_step_cmd != -1
- *             if py_db.pydb_disposed:             # <<<<<<<<<<<<<<
  *                 return None if event == 'call' else NO_FTRACE
  * 
  */
@@ -30351,7 +29041,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1755
  *             is_stepping = pydev_step_cmd != -1
  *             if py_db.pydb_disposed:
- *                 return None if event == 'call' else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *             # if thread is not alive, cancel trace_dispatch processing
  */
@@ -30373,7 +29062,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1754
  *             pydev_step_cmd = additional_info.pydev_step_cmd
  *             is_stepping = pydev_step_cmd != -1
- *             if py_db.pydb_disposed:             # <<<<<<<<<<<<<<
  *                 return None if event == 'call' else NO_FTRACE
  * 
  */
@@ -30382,7 +29070,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1758
  * 
  *             # if thread is not alive, cancel trace_dispatch processing
- *             if not is_thread_alive(t):             # <<<<<<<<<<<<<<
  *                 py_db.notify_thread_not_alive(get_current_thread_id(t))
  *                 return None if event == 'call' else NO_FTRACE
  */
@@ -30411,7 +29098,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1759
  *             # if thread is not alive, cancel trace_dispatch processing
  *             if not is_thread_alive(t):
- *                 py_db.notify_thread_not_alive(get_current_thread_id(t))             # <<<<<<<<<<<<<<
  *                 return None if event == 'call' else NO_FTRACE
  * 
  */
@@ -30455,7 +29141,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1760
  *             if not is_thread_alive(t):
  *                 py_db.notify_thread_not_alive(get_current_thread_id(t))
- *                 return None if event == 'call' else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *             # Note: it's important that the context name is also given because we may hit something once
  */
@@ -30477,7 +29162,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1758
  * 
  *             # if thread is not alive, cancel trace_dispatch processing
- *             if not is_thread_alive(t):             # <<<<<<<<<<<<<<
  *                 py_db.notify_thread_not_alive(get_current_thread_id(t))
  *                 return None if event == 'call' else NO_FTRACE
  */
@@ -30486,7 +29170,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1764
  *             # Note: it's important that the context name is also given because we may hit something once
  *             # in the global context and another in the local context.
- *             frame_cache_key = frame.f_code             # <<<<<<<<<<<<<<
  *             if frame_cache_key in cache_skips:
  *                 if not is_stepping:
  */
@@ -30498,7 +29181,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1765
  *             # in the global context and another in the local context.
  *             frame_cache_key = frame.f_code
- *             if frame_cache_key in cache_skips:             # <<<<<<<<<<<<<<
  *                 if not is_stepping:
  *                     # if DEBUG: print('skipped: trace_dispatch (cache hit)', frame_cache_key, frame.f_lineno, event, frame.f_code.co_name)
  */
@@ -30513,7 +29195,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1766
  *             frame_cache_key = frame.f_code
  *             if frame_cache_key in cache_skips:
- *                 if not is_stepping:             # <<<<<<<<<<<<<<
  *                     # if DEBUG: print('skipped: trace_dispatch (cache hit)', frame_cache_key, frame.f_lineno, event, frame.f_code.co_name)
  *                     return None if event == 'call' else NO_FTRACE
  */
@@ -30523,7 +29204,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
             /* "_pydevd_bundle/pydevd_cython.pyx":1768
  *                 if not is_stepping:
  *                     # if DEBUG: print('skipped: trace_dispatch (cache hit)', frame_cache_key, frame.f_lineno, event, frame.f_code.co_name)
- *                     return None if event == 'call' else NO_FTRACE             # <<<<<<<<<<<<<<
  *                 else:
  *                     # When stepping we can't take into account caching based on the breakpoints (only global filtering).
  */
@@ -30545,7 +29225,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
             /* "_pydevd_bundle/pydevd_cython.pyx":1766
  *             frame_cache_key = frame.f_code
  *             if frame_cache_key in cache_skips:
- *                 if not is_stepping:             # <<<<<<<<<<<<<<
  *                     # if DEBUG: print('skipped: trace_dispatch (cache hit)', frame_cache_key, frame.f_lineno, event, frame.f_code.co_name)
  *                     return None if event == 'call' else NO_FTRACE
  */
@@ -30554,7 +29233,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1771
  *                 else:
  *                     # When stepping we can't take into account caching based on the breakpoints (only global filtering).
- *                     if cache_skips.get(frame_cache_key) == 1:             # <<<<<<<<<<<<<<
  * 
  *                         if additional_info.pydev_original_step_cmd in (107, 144) and not _global_notify_skipped_step_in:
  */
@@ -30575,7 +29253,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
               /* "_pydevd_bundle/pydevd_cython.pyx":1773
  *                     if cache_skips.get(frame_cache_key) == 1:
  * 
- *                         if additional_info.pydev_original_step_cmd in (107, 144) and not _global_notify_skipped_step_in:             # <<<<<<<<<<<<<<
  *                             notify_skipped_step_in_because_of_filters(py_db, frame)
  * 
  */
@@ -30603,7 +29280,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
                 /* "_pydevd_bundle/pydevd_cython.pyx":1774
  * 
  *                         if additional_info.pydev_original_step_cmd in (107, 144) and not _global_notify_skipped_step_in:
- *                             notify_skipped_step_in_because_of_filters(py_db, frame)             # <<<<<<<<<<<<<<
  * 
  *                         back_frame = frame.f_back
  */
@@ -30659,7 +29335,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
                 /* "_pydevd_bundle/pydevd_cython.pyx":1773
  *                     if cache_skips.get(frame_cache_key) == 1:
  * 
- *                         if additional_info.pydev_original_step_cmd in (107, 144) and not _global_notify_skipped_step_in:             # <<<<<<<<<<<<<<
  *                             notify_skipped_step_in_because_of_filters(py_db, frame)
  * 
  */
@@ -30668,7 +29343,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
               /* "_pydevd_bundle/pydevd_cython.pyx":1776
  *                             notify_skipped_step_in_because_of_filters(py_db, frame)
  * 
- *                         back_frame = frame.f_back             # <<<<<<<<<<<<<<
  *                         if back_frame is not None and pydev_step_cmd in (107, 144, 109, 160):
  *                             back_frame_cache_key = back_frame.f_code
  */
@@ -30680,7 +29354,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
               /* "_pydevd_bundle/pydevd_cython.pyx":1777
  * 
  *                         back_frame = frame.f_back
- *                         if back_frame is not None and pydev_step_cmd in (107, 144, 109, 160):             # <<<<<<<<<<<<<<
  *                             back_frame_cache_key = back_frame.f_code
  *                             if cache_skips.get(back_frame_cache_key) == 1:
  */
@@ -30710,7 +29383,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
                 /* "_pydevd_bundle/pydevd_cython.pyx":1778
  *                         back_frame = frame.f_back
  *                         if back_frame is not None and pydev_step_cmd in (107, 144, 109, 160):
- *                             back_frame_cache_key = back_frame.f_code             # <<<<<<<<<<<<<<
  *                             if cache_skips.get(back_frame_cache_key) == 1:
  *                                 # if DEBUG: print('skipped: trace_dispatch (cache hit: 1)', frame_cache_key, frame.f_lineno, event, frame.f_code.co_name)
  */
@@ -30722,7 +29394,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
                 /* "_pydevd_bundle/pydevd_cython.pyx":1779
  *                         if back_frame is not None and pydev_step_cmd in (107, 144, 109, 160):
  *                             back_frame_cache_key = back_frame.f_code
- *                             if cache_skips.get(back_frame_cache_key) == 1:             # <<<<<<<<<<<<<<
  *                                 # if DEBUG: print('skipped: trace_dispatch (cache hit: 1)', frame_cache_key, frame.f_lineno, event, frame.f_code.co_name)
  *                                 return None if event == 'call' else NO_FTRACE
  */
@@ -30742,7 +29413,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
                   /* "_pydevd_bundle/pydevd_cython.pyx":1781
  *                             if cache_skips.get(back_frame_cache_key) == 1:
  *                                 # if DEBUG: print('skipped: trace_dispatch (cache hit: 1)', frame_cache_key, frame.f_lineno, event, frame.f_code.co_name)
- *                                 return None if event == 'call' else NO_FTRACE             # <<<<<<<<<<<<<<
  *                         else:
  *                             # if DEBUG: print('skipped: trace_dispatch (cache hit: 2)', frame_cache_key, frame.f_lineno, event, frame.f_code.co_name)
  */
@@ -30764,7 +29434,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
                   /* "_pydevd_bundle/pydevd_cython.pyx":1779
  *                         if back_frame is not None and pydev_step_cmd in (107, 144, 109, 160):
  *                             back_frame_cache_key = back_frame.f_code
- *                             if cache_skips.get(back_frame_cache_key) == 1:             # <<<<<<<<<<<<<<
  *                                 # if DEBUG: print('skipped: trace_dispatch (cache hit: 1)', frame_cache_key, frame.f_lineno, event, frame.f_code.co_name)
  *                                 return None if event == 'call' else NO_FTRACE
  */
@@ -30773,7 +29442,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
                 /* "_pydevd_bundle/pydevd_cython.pyx":1777
  * 
  *                         back_frame = frame.f_back
- *                         if back_frame is not None and pydev_step_cmd in (107, 144, 109, 160):             # <<<<<<<<<<<<<<
  *                             back_frame_cache_key = back_frame.f_code
  *                             if cache_skips.get(back_frame_cache_key) == 1:
  */
@@ -30783,7 +29451,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
               /* "_pydevd_bundle/pydevd_cython.pyx":1784
  *                         else:
  *                             # if DEBUG: print('skipped: trace_dispatch (cache hit: 2)', frame_cache_key, frame.f_lineno, event, frame.f_code.co_name)
- *                             return None if event == 'call' else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *             try:
  */
@@ -30808,7 +29475,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
               /* "_pydevd_bundle/pydevd_cython.pyx":1771
  *                 else:
  *                     # When stepping we can't take into account caching based on the breakpoints (only global filtering).
- *                     if cache_skips.get(frame_cache_key) == 1:             # <<<<<<<<<<<<<<
  * 
  *                         if additional_info.pydev_original_step_cmd in (107, 144) and not _global_notify_skipped_step_in:
  */
@@ -30818,7 +29484,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1765
  *             # in the global context and another in the local context.
  *             frame_cache_key = frame.f_code
- *             if frame_cache_key in cache_skips:             # <<<<<<<<<<<<<<
  *                 if not is_stepping:
  *                     # if DEBUG: print('skipped: trace_dispatch (cache hit)', frame_cache_key, frame.f_lineno, event, frame.f_code.co_name)
  */
@@ -30827,7 +29492,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1786
  *                             return None if event == 'call' else NO_FTRACE
  * 
- *             try:             # <<<<<<<<<<<<<<
  *                 # Make fast path faster!
  *                 abs_path_canonical_path_and_base = NORM_PATHS_AND_BASE_CONTAINER[frame.f_code.co_filename]
  */
@@ -30843,7 +29507,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
             /* "_pydevd_bundle/pydevd_cython.pyx":1788
  *             try:
  *                 # Make fast path faster!
- *                 abs_path_canonical_path_and_base = NORM_PATHS_AND_BASE_CONTAINER[frame.f_code.co_filename]             # <<<<<<<<<<<<<<
  *             except:
  *                 abs_path_canonical_path_and_base = get_abs_path_real_path_and_base_from_frame(frame)
  */
@@ -30865,7 +29528,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
             /* "_pydevd_bundle/pydevd_cython.pyx":1786
  *                             return None if event == 'call' else NO_FTRACE
  * 
- *             try:             # <<<<<<<<<<<<<<
  *                 # Make fast path faster!
  *                 abs_path_canonical_path_and_base = NORM_PATHS_AND_BASE_CONTAINER[frame.f_code.co_filename]
  */
@@ -30885,7 +29547,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1789
  *                 # Make fast path faster!
  *                 abs_path_canonical_path_and_base = NORM_PATHS_AND_BASE_CONTAINER[frame.f_code.co_filename]
- *             except:             # <<<<<<<<<<<<<<
  *                 abs_path_canonical_path_and_base = get_abs_path_real_path_and_base_from_frame(frame)
  * 
  */
@@ -30899,7 +29560,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
             /* "_pydevd_bundle/pydevd_cython.pyx":1790
  *                 abs_path_canonical_path_and_base = NORM_PATHS_AND_BASE_CONTAINER[frame.f_code.co_filename]
  *             except:
- *                 abs_path_canonical_path_and_base = get_abs_path_real_path_and_base_from_frame(frame)             # <<<<<<<<<<<<<<
  * 
  *             file_type = py_db.get_file_type(frame, abs_path_canonical_path_and_base)  # we don't want to debug threading or anything related to pydevd
  */
@@ -30933,7 +29593,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1786
  *                             return None if event == 'call' else NO_FTRACE
  * 
- *             try:             # <<<<<<<<<<<<<<
  *                 # Make fast path faster!
  *                 abs_path_canonical_path_and_base = NORM_PATHS_AND_BASE_CONTAINER[frame.f_code.co_filename]
  */
@@ -30953,7 +29612,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1792
  *                 abs_path_canonical_path_and_base = get_abs_path_real_path_and_base_from_frame(frame)
  * 
- *             file_type = py_db.get_file_type(frame, abs_path_canonical_path_and_base)  # we don't want to debug threading or anything related to pydevd             # <<<<<<<<<<<<<<
  * 
  *             if file_type is not None:
  */
@@ -31010,7 +29668,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1794
  *             file_type = py_db.get_file_type(frame, abs_path_canonical_path_and_base)  # we don't want to debug threading or anything related to pydevd
  * 
- *             if file_type is not None:             # <<<<<<<<<<<<<<
  *                 if file_type == 1:  # inlining LIB_FILE = 1
  *                     if not py_db.in_project_scope(frame, abs_path_canonical_path_and_base[0]):
  */
@@ -31021,7 +29678,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1795
  * 
  *             if file_type is not None:
- *                 if file_type == 1:  # inlining LIB_FILE = 1             # <<<<<<<<<<<<<<
  *                     if not py_db.in_project_scope(frame, abs_path_canonical_path_and_base[0]):
  *                         # if DEBUG: print('skipped: trace_dispatch (not in scope)', abs_path_canonical_path_and_base[2], frame.f_lineno, event, frame.f_code.co_name, file_type)
  */
@@ -31034,7 +29690,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
             /* "_pydevd_bundle/pydevd_cython.pyx":1796
  *             if file_type is not None:
  *                 if file_type == 1:  # inlining LIB_FILE = 1
- *                     if not py_db.in_project_scope(frame, abs_path_canonical_path_and_base[0]):             # <<<<<<<<<<<<<<
  *                         # if DEBUG: print('skipped: trace_dispatch (not in scope)', abs_path_canonical_path_and_base[2], frame.f_lineno, event, frame.f_code.co_name, file_type)
  *                         cache_skips[frame_cache_key] = 1
  */
@@ -31101,7 +29756,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
               /* "_pydevd_bundle/pydevd_cython.pyx":1798
  *                     if not py_db.in_project_scope(frame, abs_path_canonical_path_and_base[0]):
  *                         # if DEBUG: print('skipped: trace_dispatch (not in scope)', abs_path_canonical_path_and_base[2], frame.f_lineno, event, frame.f_code.co_name, file_type)
- *                         cache_skips[frame_cache_key] = 1             # <<<<<<<<<<<<<<
  *                         return None if event == 'call' else NO_FTRACE
  *                 else:
  */
@@ -31114,7 +29768,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
               /* "_pydevd_bundle/pydevd_cython.pyx":1799
  *                         # if DEBUG: print('skipped: trace_dispatch (not in scope)', abs_path_canonical_path_and_base[2], frame.f_lineno, event, frame.f_code.co_name, file_type)
  *                         cache_skips[frame_cache_key] = 1
- *                         return None if event == 'call' else NO_FTRACE             # <<<<<<<<<<<<<<
  *                 else:
  *                     # if DEBUG: print('skipped: trace_dispatch', abs_path_canonical_path_and_base[2], frame.f_lineno, event, frame.f_code.co_name, file_type)
  */
@@ -31136,7 +29789,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
               /* "_pydevd_bundle/pydevd_cython.pyx":1796
  *             if file_type is not None:
  *                 if file_type == 1:  # inlining LIB_FILE = 1
- *                     if not py_db.in_project_scope(frame, abs_path_canonical_path_and_base[0]):             # <<<<<<<<<<<<<<
  *                         # if DEBUG: print('skipped: trace_dispatch (not in scope)', abs_path_canonical_path_and_base[2], frame.f_lineno, event, frame.f_code.co_name, file_type)
  *                         cache_skips[frame_cache_key] = 1
  */
@@ -31145,7 +29797,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
             /* "_pydevd_bundle/pydevd_cython.pyx":1795
  * 
  *             if file_type is not None:
- *                 if file_type == 1:  # inlining LIB_FILE = 1             # <<<<<<<<<<<<<<
  *                     if not py_db.in_project_scope(frame, abs_path_canonical_path_and_base[0]):
  *                         # if DEBUG: print('skipped: trace_dispatch (not in scope)', abs_path_canonical_path_and_base[2], frame.f_lineno, event, frame.f_code.co_name, file_type)
  */
@@ -31155,7 +29806,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1802
  *                 else:
  *                     # if DEBUG: print('skipped: trace_dispatch', abs_path_canonical_path_and_base[2], frame.f_lineno, event, frame.f_code.co_name, file_type)
- *                     cache_skips[frame_cache_key] = 1             # <<<<<<<<<<<<<<
  *                     return None if event == 'call' else NO_FTRACE
  * 
  */
@@ -31169,7 +29819,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
             /* "_pydevd_bundle/pydevd_cython.pyx":1803
  *                     # if DEBUG: print('skipped: trace_dispatch', abs_path_canonical_path_and_base[2], frame.f_lineno, event, frame.f_code.co_name, file_type)
  *                     cache_skips[frame_cache_key] = 1
- *                     return None if event == 'call' else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *             if py_db.is_files_filter_enabled:
  */
@@ -31193,7 +29842,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1794
  *             file_type = py_db.get_file_type(frame, abs_path_canonical_path_and_base)  # we don't want to debug threading or anything related to pydevd
  * 
- *             if file_type is not None:             # <<<<<<<<<<<<<<
  *                 if file_type == 1:  # inlining LIB_FILE = 1
  *                     if not py_db.in_project_scope(frame, abs_path_canonical_path_and_base[0]):
  */
@@ -31202,7 +29850,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1805
  *                     return None if event == 'call' else NO_FTRACE
  * 
- *             if py_db.is_files_filter_enabled:             # <<<<<<<<<<<<<<
  *                 if py_db.apply_files_filter(frame, abs_path_canonical_path_and_base[0], False):
  *                     cache_skips[frame_cache_key] = 1
  */
@@ -31215,7 +29862,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1806
  * 
  *             if py_db.is_files_filter_enabled:
- *                 if py_db.apply_files_filter(frame, abs_path_canonical_path_and_base[0], False):             # <<<<<<<<<<<<<<
  *                     cache_skips[frame_cache_key] = 1
  * 
  */
@@ -31284,7 +29930,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
             /* "_pydevd_bundle/pydevd_cython.pyx":1807
  *             if py_db.is_files_filter_enabled:
  *                 if py_db.apply_files_filter(frame, abs_path_canonical_path_and_base[0], False):
- *                     cache_skips[frame_cache_key] = 1             # <<<<<<<<<<<<<<
  * 
  *                     if is_stepping and additional_info.pydev_original_step_cmd in (107, 144) and not _global_notify_skipped_step_in:
  */
@@ -31297,7 +29942,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
             /* "_pydevd_bundle/pydevd_cython.pyx":1809
  *                     cache_skips[frame_cache_key] = 1
  * 
- *                     if is_stepping and additional_info.pydev_original_step_cmd in (107, 144) and not _global_notify_skipped_step_in:             # <<<<<<<<<<<<<<
  *                         notify_skipped_step_in_because_of_filters(py_db, frame)
  * 
  */
@@ -31331,7 +29975,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
               /* "_pydevd_bundle/pydevd_cython.pyx":1810
  * 
  *                     if is_stepping and additional_info.pydev_original_step_cmd in (107, 144) and not _global_notify_skipped_step_in:
- *                         notify_skipped_step_in_because_of_filters(py_db, frame)             # <<<<<<<<<<<<<<
  * 
  *                     # A little gotcha, sometimes when we're stepping in we have to stop in a
  */
@@ -31387,7 +30030,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
               /* "_pydevd_bundle/pydevd_cython.pyx":1809
  *                     cache_skips[frame_cache_key] = 1
  * 
- *                     if is_stepping and additional_info.pydev_original_step_cmd in (107, 144) and not _global_notify_skipped_step_in:             # <<<<<<<<<<<<<<
  *                         notify_skipped_step_in_because_of_filters(py_db, frame)
  * 
  */
@@ -31396,7 +30038,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
             /* "_pydevd_bundle/pydevd_cython.pyx":1815
  *                     # return event showing the back frame as the current frame, so, we need
  *                     # to check not only the current frame but the back frame too.
- *                     back_frame = frame.f_back             # <<<<<<<<<<<<<<
  *                     if back_frame is not None and pydev_step_cmd in (107, 144, 109, 160):
  *                         if py_db.apply_files_filter(back_frame, back_frame.f_code.co_filename, False):
  */
@@ -31408,7 +30049,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
             /* "_pydevd_bundle/pydevd_cython.pyx":1816
  *                     # to check not only the current frame but the back frame too.
  *                     back_frame = frame.f_back
- *                     if back_frame is not None and pydev_step_cmd in (107, 144, 109, 160):             # <<<<<<<<<<<<<<
  *                         if py_db.apply_files_filter(back_frame, back_frame.f_code.co_filename, False):
  *                             back_frame_cache_key = back_frame.f_code
  */
@@ -31438,7 +30078,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
               /* "_pydevd_bundle/pydevd_cython.pyx":1817
  *                     back_frame = frame.f_back
  *                     if back_frame is not None and pydev_step_cmd in (107, 144, 109, 160):
- *                         if py_db.apply_files_filter(back_frame, back_frame.f_code.co_filename, False):             # <<<<<<<<<<<<<<
  *                             back_frame_cache_key = back_frame.f_code
  *                             cache_skips[back_frame_cache_key] = 1
  */
@@ -31506,7 +30145,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
                 /* "_pydevd_bundle/pydevd_cython.pyx":1818
  *                     if back_frame is not None and pydev_step_cmd in (107, 144, 109, 160):
  *                         if py_db.apply_files_filter(back_frame, back_frame.f_code.co_filename, False):
- *                             back_frame_cache_key = back_frame.f_code             # <<<<<<<<<<<<<<
  *                             cache_skips[back_frame_cache_key] = 1
  *                             # if DEBUG: print('skipped: trace_dispatch (filtered out: 1)', frame_cache_key, frame.f_lineno, event, frame.f_code.co_name)
  */
@@ -31518,7 +30156,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
                 /* "_pydevd_bundle/pydevd_cython.pyx":1819
  *                         if py_db.apply_files_filter(back_frame, back_frame.f_code.co_filename, False):
  *                             back_frame_cache_key = back_frame.f_code
- *                             cache_skips[back_frame_cache_key] = 1             # <<<<<<<<<<<<<<
  *                             # if DEBUG: print('skipped: trace_dispatch (filtered out: 1)', frame_cache_key, frame.f_lineno, event, frame.f_code.co_name)
  *                             return None if event == 'call' else NO_FTRACE
  */
@@ -31531,7 +30168,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
                 /* "_pydevd_bundle/pydevd_cython.pyx":1821
  *                             cache_skips[back_frame_cache_key] = 1
  *                             # if DEBUG: print('skipped: trace_dispatch (filtered out: 1)', frame_cache_key, frame.f_lineno, event, frame.f_code.co_name)
- *                             return None if event == 'call' else NO_FTRACE             # <<<<<<<<<<<<<<
  *                     else:
  *                         # if DEBUG: print('skipped: trace_dispatch (filtered out: 2)', frame_cache_key, frame.f_lineno, event, frame.f_code.co_name)
  */
@@ -31553,7 +30189,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
                 /* "_pydevd_bundle/pydevd_cython.pyx":1817
  *                     back_frame = frame.f_back
  *                     if back_frame is not None and pydev_step_cmd in (107, 144, 109, 160):
- *                         if py_db.apply_files_filter(back_frame, back_frame.f_code.co_filename, False):             # <<<<<<<<<<<<<<
  *                             back_frame_cache_key = back_frame.f_code
  *                             cache_skips[back_frame_cache_key] = 1
  */
@@ -31562,7 +30197,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
               /* "_pydevd_bundle/pydevd_cython.pyx":1816
  *                     # to check not only the current frame but the back frame too.
  *                     back_frame = frame.f_back
- *                     if back_frame is not None and pydev_step_cmd in (107, 144, 109, 160):             # <<<<<<<<<<<<<<
  *                         if py_db.apply_files_filter(back_frame, back_frame.f_code.co_filename, False):
  *                             back_frame_cache_key = back_frame.f_code
  */
@@ -31572,7 +30206,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
             /* "_pydevd_bundle/pydevd_cython.pyx":1824
  *                     else:
  *                         # if DEBUG: print('skipped: trace_dispatch (filtered out: 2)', frame_cache_key, frame.f_lineno, event, frame.f_code.co_name)
- *                         return None if event == 'call' else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *             # if DEBUG: print('trace_dispatch', filename, frame.f_lineno, event, frame.f_code.co_name, file_type)
  */
@@ -31597,7 +30230,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
             /* "_pydevd_bundle/pydevd_cython.pyx":1806
  * 
  *             if py_db.is_files_filter_enabled:
- *                 if py_db.apply_files_filter(frame, abs_path_canonical_path_and_base[0], False):             # <<<<<<<<<<<<<<
  *                     cache_skips[frame_cache_key] = 1
  * 
  */
@@ -31606,7 +30238,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1805
  *                     return None if event == 'call' else NO_FTRACE
  * 
- *             if py_db.is_files_filter_enabled:             # <<<<<<<<<<<<<<
  *                 if py_db.apply_files_filter(frame, abs_path_canonical_path_and_base[0], False):
  *                     cache_skips[frame_cache_key] = 1
  */
@@ -31615,7 +30246,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1832
  *             ret = PyDBFrame(
  *                 (
- *                     py_db, abs_path_canonical_path_and_base, additional_info, t, frame_skips_cache, frame_cache_key,             # <<<<<<<<<<<<<<
  *                 )
  *             ).trace_dispatch(frame, event, arg)
  */
@@ -31643,7 +30273,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1830
  *             # Just create PyDBFrame directly (removed support for Python versions < 2.5, which required keeping a weak
  *             # reference to the frame).
- *             ret = PyDBFrame(             # <<<<<<<<<<<<<<
  *                 (
  *                     py_db, abs_path_canonical_path_and_base, additional_info, t, frame_skips_cache, frame_cache_key,
  */
@@ -31654,7 +30283,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1834
  *                     py_db, abs_path_canonical_path_and_base, additional_info, t, frame_skips_cache, frame_cache_key,
  *                 )
- *             ).trace_dispatch(frame, event, arg)             # <<<<<<<<<<<<<<
  *             if ret is None:
  *                 # 1 means skipped because of filters.
  */
@@ -31668,7 +30296,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1835
  *                 )
  *             ).trace_dispatch(frame, event, arg)
- *             if ret is None:             # <<<<<<<<<<<<<<
  *                 # 1 means skipped because of filters.
  *                 # 2 means skipped because no breakpoints were hit.
  */
@@ -31679,7 +30306,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1838
  *                 # 1 means skipped because of filters.
  *                 # 2 means skipped because no breakpoints were hit.
- *                 cache_skips[frame_cache_key] = 2             # <<<<<<<<<<<<<<
  *                 return None if event == 'call' else NO_FTRACE
  * 
  */
@@ -31692,7 +30318,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1839
  *                 # 2 means skipped because no breakpoints were hit.
  *                 cache_skips[frame_cache_key] = 2
- *                 return None if event == 'call' else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *             # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  */
@@ -31714,7 +30339,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1835
  *                 )
  *             ).trace_dispatch(frame, event, arg)
- *             if ret is None:             # <<<<<<<<<<<<<<
  *                 # 1 means skipped because of filters.
  *                 # 2 means skipped because no breakpoints were hit.
  */
@@ -31723,7 +30347,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1842
  * 
  *             # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- *             frame.f_trace = SafeCallWrapper(ret)  # Make sure we keep the returned tracer.             # <<<<<<<<<<<<<<
  *             # ELSE
  * #             frame.f_trace = ret  # Make sure we keep the returned tracer.
  */
@@ -31735,7 +30358,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1846
  * #             frame.f_trace = ret  # Make sure we keep the returned tracer.
  *             # ENDIF
- *             return ret             # <<<<<<<<<<<<<<
  * 
  *         except SystemExit:
  */
@@ -31747,7 +30369,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1751
  * 
  *         additional_info.is_tracing += 1
- *         try:             # <<<<<<<<<<<<<<
  *             pydev_step_cmd = additional_info.pydev_step_cmd
  *             is_stepping = pydev_step_cmd != -1
  */
@@ -31763,7 +30384,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
       /* "_pydevd_bundle/pydevd_cython.pyx":1848
  *             return ret
  * 
- *         except SystemExit:             # <<<<<<<<<<<<<<
  *             return None if event == 'call' else NO_FTRACE
  * 
  */
@@ -31778,7 +30398,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1849
  * 
  *         except SystemExit:
- *             return None if event == 'call' else NO_FTRACE             # <<<<<<<<<<<<<<
  * 
  *         except Exception:
  */
@@ -31804,7 +30423,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
       /* "_pydevd_bundle/pydevd_cython.pyx":1851
  *             return None if event == 'call' else NO_FTRACE
  * 
- *         except Exception:             # <<<<<<<<<<<<<<
  *             if py_db.pydb_disposed:
  *                 return None if event == 'call' else NO_FTRACE  # Don't log errors when we're shutting down.
  */
@@ -31819,7 +30437,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1852
  * 
  *         except Exception:
- *             if py_db.pydb_disposed:             # <<<<<<<<<<<<<<
  *                 return None if event == 'call' else NO_FTRACE  # Don't log errors when we're shutting down.
  *             # Log it
  */
@@ -31832,7 +30449,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1853
  *         except Exception:
  *             if py_db.pydb_disposed:
- *                 return None if event == 'call' else NO_FTRACE  # Don't log errors when we're shutting down.             # <<<<<<<<<<<<<<
  *             # Log it
  *             try:
  */
@@ -31857,7 +30473,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1852
  * 
  *         except Exception:
- *             if py_db.pydb_disposed:             # <<<<<<<<<<<<<<
  *                 return None if event == 'call' else NO_FTRACE  # Don't log errors when we're shutting down.
  *             # Log it
  */
@@ -31866,7 +30481,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1855
  *                 return None if event == 'call' else NO_FTRACE  # Don't log errors when we're shutting down.
  *             # Log it
- *             try:             # <<<<<<<<<<<<<<
  *                 if pydev_log_exception is not None:
  *                     # This can actually happen during the interpreter shutdown in Python 2.7
  */
@@ -31882,7 +30496,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
             /* "_pydevd_bundle/pydevd_cython.pyx":1856
  *             # Log it
  *             try:
- *                 if pydev_log_exception is not None:             # <<<<<<<<<<<<<<
  *                     # This can actually happen during the interpreter shutdown in Python 2.7
  *                     pydev_log_exception()
  */
@@ -31896,7 +30509,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
               /* "_pydevd_bundle/pydevd_cython.pyx":1858
  *                 if pydev_log_exception is not None:
  *                     # This can actually happen during the interpreter shutdown in Python 2.7
- *                     pydev_log_exception()             # <<<<<<<<<<<<<<
  *             except:
  *                 # Error logging? We're really in the interpreter shutdown...
  */
@@ -31922,7 +30534,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
               /* "_pydevd_bundle/pydevd_cython.pyx":1856
  *             # Log it
  *             try:
- *                 if pydev_log_exception is not None:             # <<<<<<<<<<<<<<
  *                     # This can actually happen during the interpreter shutdown in Python 2.7
  *                     pydev_log_exception()
  */
@@ -31931,7 +30542,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
             /* "_pydevd_bundle/pydevd_cython.pyx":1855
  *                 return None if event == 'call' else NO_FTRACE  # Don't log errors when we're shutting down.
  *             # Log it
- *             try:             # <<<<<<<<<<<<<<
  *                 if pydev_log_exception is not None:
  *                     # This can actually happen during the interpreter shutdown in Python 2.7
  */
@@ -31948,7 +30558,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
           /* "_pydevd_bundle/pydevd_cython.pyx":1859
  *                     # This can actually happen during the interpreter shutdown in Python 2.7
  *                     pydev_log_exception()
- *             except:             # <<<<<<<<<<<<<<
  *                 # Error logging? We're really in the interpreter shutdown...
  *                 # (https://github.com/fabioz/PyDev.Debugger/issues/8)
  */
@@ -31967,7 +30576,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
         /* "_pydevd_bundle/pydevd_cython.pyx":1863
  *                 # (https://github.com/fabioz/PyDev.Debugger/issues/8)
  *                 pass
- *             return None if event == 'call' else NO_FTRACE             # <<<<<<<<<<<<<<
  *         finally:
  *             additional_info.is_tracing -= 1
  */
@@ -31995,7 +30603,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
       /* "_pydevd_bundle/pydevd_cython.pyx":1751
  * 
  *         additional_info.is_tracing += 1
- *         try:             # <<<<<<<<<<<<<<
  *             pydev_step_cmd = additional_info.pydev_step_cmd
  *             is_stepping = pydev_step_cmd != -1
  */
@@ -32022,7 +30629,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
   /* "_pydevd_bundle/pydevd_cython.pyx":1865
  *             return None if event == 'call' else NO_FTRACE
  *         finally:
- *             additional_info.is_tracing -= 1             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -32077,7 +30683,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
   /* "_pydevd_bundle/pydevd_cython.pyx":1720
  * # ENDIF
  * 
- *     def __call__(self, frame, event, arg):             # <<<<<<<<<<<<<<
  *         ''' This is the callback used when we enter some context in the debugger.
  * 
  */
@@ -32112,7 +30717,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_2__cal
 /* "_pydevd_bundle/pydevd_cython.pyx":1710
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  * cdef class ThreadTracer:
- *     cdef public tuple _args;             # <<<<<<<<<<<<<<
  *     def __init__(self, tuple args):
  *         self._args = args
  */
@@ -32218,7 +30822,6 @@ static int __pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_5_args_4__de
 }
 
 /* "(tree fragment)":1
- * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     cdef tuple state
  *     cdef object _dict
  */
@@ -32255,7 +30858,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_4__red
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self._args,)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
@@ -32270,7 +30872,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_4__red
   /* "(tree fragment)":6
  *     cdef bint use_setstate
  *     state = (self._args,)
- *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
  */
@@ -32282,7 +30883,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_4__red
   /* "(tree fragment)":7
  *     state = (self._args,)
  *     _dict = getattr(self, '__dict__', None)
- *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
  *         use_setstate = True
  */
@@ -32293,7 +30893,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_4__red
     /* "(tree fragment)":8
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
- *         state += (_dict,)             # <<<<<<<<<<<<<<
  *         use_setstate = True
  *     else:
  */
@@ -32311,7 +30910,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_4__red
     /* "(tree fragment)":9
  *     if _dict is not None:
  *         state += (_dict,)
- *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
  *         use_setstate = self._args is not None
  */
@@ -32320,7 +30918,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_4__red
     /* "(tree fragment)":7
  *     state = (self._args,)
  *     _dict = getattr(self, '__dict__', None)
- *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
  *         use_setstate = True
  */
@@ -32330,7 +30927,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_4__red
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self._args is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
  *         return __pyx_unpickle_ThreadTracer, (type(self), 0x3d7902a, None), state
  */
@@ -32343,7 +30939,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_4__red
   /* "(tree fragment)":12
  *     else:
  *         use_setstate = self._args is not None
- *     if use_setstate:             # <<<<<<<<<<<<<<
  *         return __pyx_unpickle_ThreadTracer, (type(self), 0x3d7902a, None), state
  *     else:
  */
@@ -32353,7 +30948,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_4__red
     /* "(tree fragment)":13
  *         use_setstate = self._args is not None
  *     if use_setstate:
- *         return __pyx_unpickle_ThreadTracer, (type(self), 0x3d7902a, None), state             # <<<<<<<<<<<<<<
  *     else:
  *         return __pyx_unpickle_ThreadTracer, (type(self), 0x3d7902a, state)
  */
@@ -32389,7 +30983,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_4__red
     /* "(tree fragment)":12
  *     else:
  *         use_setstate = self._args is not None
- *     if use_setstate:             # <<<<<<<<<<<<<<
  *         return __pyx_unpickle_ThreadTracer, (type(self), 0x3d7902a, None), state
  *     else:
  */
@@ -32398,7 +30991,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_4__red
   /* "(tree fragment)":15
  *         return __pyx_unpickle_ThreadTracer, (type(self), 0x3d7902a, None), state
  *     else:
- *         return __pyx_unpickle_ThreadTracer, (type(self), 0x3d7902a, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_ThreadTracer__set_state(self, __pyx_state)
  */
@@ -32431,7 +31023,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_4__red
   }
 
   /* "(tree fragment)":1
- * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     cdef tuple state
  *     cdef object _dict
  */
@@ -32454,7 +31045,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_4__red
 /* "(tree fragment)":16
  *     else:
  *         return __pyx_unpickle_ThreadTracer, (type(self), 0x3d7902a, state)
- * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_ThreadTracer__set_state(self, __pyx_state)
  */
 
@@ -32483,7 +31073,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_6__set
   /* "(tree fragment)":17
  *         return __pyx_unpickle_ThreadTracer, (type(self), 0x3d7902a, state)
  * def __setstate_cython__(self, __pyx_state):
- *     __pyx_unpickle_ThreadTracer__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
   if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_v___pyx_state)->tp_name), 0))) __PYX_ERR(2, 17, __pyx_L1_error)
   __pyx_t_1 = __pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_ThreadTracer__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 17, __pyx_L1_error)
@@ -32493,7 +31082,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_6__set
   /* "(tree fragment)":16
  *     else:
  *         return __pyx_unpickle_ThreadTracer, (type(self), 0x3d7902a, state)
- * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_ThreadTracer__set_state(self, __pyx_state)
  */
 
@@ -32513,7 +31101,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12ThreadTracer_6__set
 /* "_pydevd_bundle/pydevd_cython.pyx":1880
  *     _original_call = ThreadTracer.__call__
  * 
- *     def __call__(self, frame, event, arg):             # <<<<<<<<<<<<<<
  *         constructed_tid_to_last_frame[self._args[1].ident] = frame
  *         return _original_call(self, frame, event, arg)
  */
@@ -32621,7 +31208,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_10__call__(CYTHON_UNU
   /* "_pydevd_bundle/pydevd_cython.pyx":1881
  * 
  *     def __call__(self, frame, event, arg):
- *         constructed_tid_to_last_frame[self._args[1].ident] = frame             # <<<<<<<<<<<<<<
  *         return _original_call(self, frame, event, arg)
  * 
  */
@@ -32642,7 +31228,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_10__call__(CYTHON_UNU
   /* "_pydevd_bundle/pydevd_cython.pyx":1882
  *     def __call__(self, frame, event, arg):
  *         constructed_tid_to_last_frame[self._args[1].ident] = frame
- *         return _original_call(self, frame, event, arg)             # <<<<<<<<<<<<<<
  * 
  *     ThreadTracer.__call__ = __call__
  */
@@ -32707,7 +31292,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_10__call__(CYTHON_UNU
   /* "_pydevd_bundle/pydevd_cython.pyx":1880
  *     _original_call = ThreadTracer.__call__
  * 
- *     def __call__(self, frame, event, arg):             # <<<<<<<<<<<<<<
  *         constructed_tid_to_last_frame[self._args[1].ident] = frame
  *         return _original_call(self, frame, event, arg)
  */
@@ -32727,7 +31311,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_10__call__(CYTHON_UNU
 }
 
 /* "(tree fragment)":1
- * def __pyx_unpickle_PyDBAdditionalThreadInfo(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -32827,7 +31410,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12__pyx_unpickle_PyDB
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x75b3b02, 0x5f02be1, 0xa5a0d63):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x75b3b02, 0x5f02be1, 0xa5a0d63) = (conditional_breakpoint_exception, is_tracing, pydev_call_from_jinja2, pydev_call_inside_jinja2, pydev_django_resolve_frame, pydev_func_name, pydev_message, pydev_next_line, pydev_notify_kill, pydev_original_step_cmd, pydev_smart_child_offset, pydev_smart_parent_offset, pydev_smart_step_into_variants, pydev_smart_step_stop, pydev_state, pydev_step_cmd, pydev_step_stop, pydev_use_scoped_step_frame, step_in_initial_location, suspend_type, suspended_at_unhandled, target_id_to_smart_step_into_variant, thread_tracer, top_level_thread_tracer_no_back_frames, top_level_thread_tracer_unhandled, trace_suspend_type))" % __pyx_checksum)
  */
@@ -32841,7 +31423,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12__pyx_unpickle_PyDB
     /* "(tree fragment)":5
  *     cdef object __pyx_result
  *     if __pyx_checksum not in (0x75b3b02, 0x5f02be1, 0xa5a0d63):
- *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x75b3b02, 0x5f02be1, 0xa5a0d63) = (conditional_breakpoint_exception, is_tracing, pydev_call_from_jinja2, pydev_call_inside_jinja2, pydev_django_resolve_frame, pydev_func_name, pydev_message, pydev_next_line, pydev_notify_kill, pydev_original_step_cmd, pydev_smart_child_offset, pydev_smart_parent_offset, pydev_smart_step_into_variants, pydev_smart_step_stop, pydev_state, pydev_step_cmd, pydev_step_stop, pydev_use_scoped_step_frame, step_in_initial_location, suspend_type, suspended_at_unhandled, target_id_to_smart_step_into_variant, thread_tracer, top_level_thread_tracer_no_back_frames, top_level_thread_tracer_unhandled, trace_suspend_type))" % __pyx_checksum)
  *     __pyx_result = PyDBAdditionalThreadInfo.__new__(__pyx_type)
  */
@@ -32863,7 +31444,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12__pyx_unpickle_PyDB
     /* "(tree fragment)":6
  *     if __pyx_checksum not in (0x75b3b02, 0x5f02be1, 0xa5a0d63):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x75b3b02, 0x5f02be1, 0xa5a0d63) = (conditional_breakpoint_exception, is_tracing, pydev_call_from_jinja2, pydev_call_inside_jinja2, pydev_django_resolve_frame, pydev_func_name, pydev_message, pydev_next_line, pydev_notify_kill, pydev_original_step_cmd, pydev_smart_child_offset, pydev_smart_parent_offset, pydev_smart_step_into_variants, pydev_smart_step_stop, pydev_state, pydev_step_cmd, pydev_step_stop, pydev_use_scoped_step_frame, step_in_initial_location, suspend_type, suspended_at_unhandled, target_id_to_smart_step_into_variant, thread_tracer, top_level_thread_tracer_no_back_frames, top_level_thread_tracer_unhandled, trace_suspend_type))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = PyDBAdditionalThreadInfo.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -32896,7 +31476,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12__pyx_unpickle_PyDB
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x75b3b02, 0x5f02be1, 0xa5a0d63):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x75b3b02, 0x5f02be1, 0xa5a0d63) = (conditional_breakpoint_exception, is_tracing, pydev_call_from_jinja2, pydev_call_inside_jinja2, pydev_django_resolve_frame, pydev_func_name, pydev_message, pydev_next_line, pydev_notify_kill, pydev_original_step_cmd, pydev_smart_child_offset, pydev_smart_parent_offset, pydev_smart_step_into_variants, pydev_smart_step_stop, pydev_state, pydev_step_cmd, pydev_step_stop, pydev_use_scoped_step_frame, step_in_initial_location, suspend_type, suspended_at_unhandled, target_id_to_smart_step_into_variant, thread_tracer, top_level_thread_tracer_no_back_frames, top_level_thread_tracer_unhandled, trace_suspend_type))" % __pyx_checksum)
  */
@@ -32905,7 +31484,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12__pyx_unpickle_PyDB
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x75b3b02, 0x5f02be1, 0xa5a0d63) = (conditional_breakpoint_exception, is_tracing, pydev_call_from_jinja2, pydev_call_inside_jinja2, pydev_django_resolve_frame, pydev_func_name, pydev_message, pydev_next_line, pydev_notify_kill, pydev_original_step_cmd, pydev_smart_child_offset, pydev_smart_parent_offset, pydev_smart_step_into_variants, pydev_smart_step_stop, pydev_state, pydev_step_cmd, pydev_step_stop, pydev_use_scoped_step_frame, step_in_initial_location, suspend_type, suspended_at_unhandled, target_id_to_smart_step_into_variant, thread_tracer, top_level_thread_tracer_no_back_frames, top_level_thread_tracer_unhandled, trace_suspend_type))" % __pyx_checksum)
- *     __pyx_result = PyDBAdditionalThreadInfo.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(<PyDBAdditionalThreadInfo> __pyx_result, __pyx_state)
  */
@@ -32932,7 +31510,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12__pyx_unpickle_PyDB
   /* "(tree fragment)":8
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x75b3b02, 0x5f02be1, 0xa5a0d63) = (conditional_breakpoint_exception, is_tracing, pydev_call_from_jinja2, pydev_call_inside_jinja2, pydev_django_resolve_frame, pydev_func_name, pydev_message, pydev_next_line, pydev_notify_kill, pydev_original_step_cmd, pydev_smart_child_offset, pydev_smart_parent_offset, pydev_smart_step_into_variants, pydev_smart_step_stop, pydev_state, pydev_step_cmd, pydev_step_stop, pydev_use_scoped_step_frame, step_in_initial_location, suspend_type, suspended_at_unhandled, target_id_to_smart_step_into_variant, thread_tracer, top_level_thread_tracer_no_back_frames, top_level_thread_tracer_unhandled, trace_suspend_type))" % __pyx_checksum)
  *     __pyx_result = PyDBAdditionalThreadInfo.__new__(__pyx_type)
- *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(<PyDBAdditionalThreadInfo> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
@@ -32943,7 +31520,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12__pyx_unpickle_PyDB
     /* "(tree fragment)":9
  *     __pyx_result = PyDBAdditionalThreadInfo.__new__(__pyx_type)
  *     if __pyx_state is not None:
- *         __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(<PyDBAdditionalThreadInfo> __pyx_result, __pyx_state)             # <<<<<<<<<<<<<<
  *     return __pyx_result
  * cdef __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(PyDBAdditionalThreadInfo __pyx_result, tuple __pyx_state):
  */
@@ -32955,7 +31531,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12__pyx_unpickle_PyDB
     /* "(tree fragment)":8
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x75b3b02, 0x5f02be1, 0xa5a0d63) = (conditional_breakpoint_exception, is_tracing, pydev_call_from_jinja2, pydev_call_inside_jinja2, pydev_django_resolve_frame, pydev_func_name, pydev_message, pydev_next_line, pydev_notify_kill, pydev_original_step_cmd, pydev_smart_child_offset, pydev_smart_parent_offset, pydev_smart_step_into_variants, pydev_smart_step_stop, pydev_state, pydev_step_cmd, pydev_step_stop, pydev_use_scoped_step_frame, step_in_initial_location, suspend_type, suspended_at_unhandled, target_id_to_smart_step_into_variant, thread_tracer, top_level_thread_tracer_no_back_frames, top_level_thread_tracer_unhandled, trace_suspend_type))" % __pyx_checksum)
  *     __pyx_result = PyDBAdditionalThreadInfo.__new__(__pyx_type)
- *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(<PyDBAdditionalThreadInfo> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
@@ -32964,7 +31539,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12__pyx_unpickle_PyDB
   /* "(tree fragment)":10
  *     if __pyx_state is not None:
  *         __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(<PyDBAdditionalThreadInfo> __pyx_result, __pyx_state)
- *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(PyDBAdditionalThreadInfo __pyx_result, tuple __pyx_state):
  *     __pyx_result.conditional_breakpoint_exception = __pyx_state[0]; __pyx_result.is_tracing = __pyx_state[1]; __pyx_result.pydev_call_from_jinja2 = __pyx_state[2]; __pyx_result.pydev_call_inside_jinja2 = __pyx_state[3]; __pyx_result.pydev_django_resolve_frame = __pyx_state[4]; __pyx_result.pydev_func_name = __pyx_state[5]; __pyx_result.pydev_message = __pyx_state[6]; __pyx_result.pydev_next_line = __pyx_state[7]; __pyx_result.pydev_notify_kill = __pyx_state[8]; __pyx_result.pydev_original_step_cmd = __pyx_state[9]; __pyx_result.pydev_smart_child_offset = __pyx_state[10]; __pyx_result.pydev_smart_parent_offset = __pyx_state[11]; __pyx_result.pydev_smart_step_into_variants = __pyx_state[12]; __pyx_result.pydev_smart_step_stop = __pyx_state[13]; __pyx_result.pydev_state = __pyx_state[14]; __pyx_result.pydev_step_cmd = __pyx_state[15]; __pyx_result.pydev_step_stop = __pyx_state[16]; __pyx_result.pydev_use_scoped_step_frame = __pyx_state[17]; __pyx_result.step_in_initial_location = __pyx_state[18]; __pyx_result.suspend_type = __pyx_state[19]; __pyx_result.suspended_at_unhandled = __pyx_state[20]; __pyx_result.target_id_to_smart_step_into_variant = __pyx_state[21]; __pyx_result.thread_tracer = __pyx_state[22]; __pyx_result.top_level_thread_tracer_no_back_frames = __pyx_state[23]; __pyx_result.top_level_thread_tracer_unhandled = __pyx_state[24]; __pyx_result.trace_suspend_type = __pyx_state[25]
  */
@@ -32974,7 +31548,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12__pyx_unpickle_PyDB
   goto __pyx_L0;
 
   /* "(tree fragment)":1
- * def __pyx_unpickle_PyDBAdditionalThreadInfo(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -32998,7 +31571,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_12__pyx_unpickle_PyDB
 /* "(tree fragment)":11
  *         __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(<PyDBAdditionalThreadInfo> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(PyDBAdditionalThreadInfo __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result.conditional_breakpoint_exception = __pyx_state[0]; __pyx_result.is_tracing = __pyx_state[1]; __pyx_result.pydev_call_from_jinja2 = __pyx_state[2]; __pyx_result.pydev_call_inside_jinja2 = __pyx_state[3]; __pyx_result.pydev_django_resolve_frame = __pyx_state[4]; __pyx_result.pydev_func_name = __pyx_state[5]; __pyx_result.pydev_message = __pyx_state[6]; __pyx_result.pydev_next_line = __pyx_state[7]; __pyx_result.pydev_notify_kill = __pyx_state[8]; __pyx_result.pydev_original_step_cmd = __pyx_state[9]; __pyx_result.pydev_smart_child_offset = __pyx_state[10]; __pyx_result.pydev_smart_parent_offset = __pyx_state[11]; __pyx_result.pydev_smart_step_into_variants = __pyx_state[12]; __pyx_result.pydev_smart_step_stop = __pyx_state[13]; __pyx_result.pydev_state = __pyx_state[14]; __pyx_result.pydev_step_cmd = __pyx_state[15]; __pyx_result.pydev_step_stop = __pyx_state[16]; __pyx_result.pydev_use_scoped_step_frame = __pyx_state[17]; __pyx_result.step_in_initial_location = __pyx_state[18]; __pyx_result.suspend_type = __pyx_state[19]; __pyx_result.suspended_at_unhandled = __pyx_state[20]; __pyx_result.target_id_to_smart_step_into_variant = __pyx_state[21]; __pyx_result.thread_tracer = __pyx_state[22]; __pyx_result.top_level_thread_tracer_no_back_frames = __pyx_state[23]; __pyx_result.top_level_thread_tracer_unhandled = __pyx_state[24]; __pyx_result.trace_suspend_type = __pyx_state[25]
  *     if len(__pyx_state) > 26 and hasattr(__pyx_result, '__dict__'):
  */
@@ -33023,7 +31595,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_PyDBAdd
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(PyDBAdditionalThreadInfo __pyx_result, tuple __pyx_state):
- *     __pyx_result.conditional_breakpoint_exception = __pyx_state[0]; __pyx_result.is_tracing = __pyx_state[1]; __pyx_result.pydev_call_from_jinja2 = __pyx_state[2]; __pyx_result.pydev_call_inside_jinja2 = __pyx_state[3]; __pyx_result.pydev_django_resolve_frame = __pyx_state[4]; __pyx_result.pydev_func_name = __pyx_state[5]; __pyx_result.pydev_message = __pyx_state[6]; __pyx_result.pydev_next_line = __pyx_state[7]; __pyx_result.pydev_notify_kill = __pyx_state[8]; __pyx_result.pydev_original_step_cmd = __pyx_state[9]; __pyx_result.pydev_smart_child_offset = __pyx_state[10]; __pyx_result.pydev_smart_parent_offset = __pyx_state[11]; __pyx_result.pydev_smart_step_into_variants = __pyx_state[12]; __pyx_result.pydev_smart_step_stop = __pyx_state[13]; __pyx_result.pydev_state = __pyx_state[14]; __pyx_result.pydev_step_cmd = __pyx_state[15]; __pyx_result.pydev_step_stop = __pyx_state[16]; __pyx_result.pydev_use_scoped_step_frame = __pyx_state[17]; __pyx_result.step_in_initial_location = __pyx_state[18]; __pyx_result.suspend_type = __pyx_state[19]; __pyx_result.suspended_at_unhandled = __pyx_state[20]; __pyx_result.target_id_to_smart_step_into_variant = __pyx_state[21]; __pyx_result.thread_tracer = __pyx_state[22]; __pyx_result.top_level_thread_tracer_no_back_frames = __pyx_state[23]; __pyx_result.top_level_thread_tracer_unhandled = __pyx_state[24]; __pyx_result.trace_suspend_type = __pyx_state[25]             # <<<<<<<<<<<<<<
  *     if len(__pyx_state) > 26 and hasattr(__pyx_result, '__dict__'):
  *         __pyx_result.__dict__.update(__pyx_state[26])
  */
@@ -33299,7 +31870,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_PyDBAdd
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(PyDBAdditionalThreadInfo __pyx_result, tuple __pyx_state):
  *     __pyx_result.conditional_breakpoint_exception = __pyx_state[0]; __pyx_result.is_tracing = __pyx_state[1]; __pyx_result.pydev_call_from_jinja2 = __pyx_state[2]; __pyx_result.pydev_call_inside_jinja2 = __pyx_state[3]; __pyx_result.pydev_django_resolve_frame = __pyx_state[4]; __pyx_result.pydev_func_name = __pyx_state[5]; __pyx_result.pydev_message = __pyx_state[6]; __pyx_result.pydev_next_line = __pyx_state[7]; __pyx_result.pydev_notify_kill = __pyx_state[8]; __pyx_result.pydev_original_step_cmd = __pyx_state[9]; __pyx_result.pydev_smart_child_offset = __pyx_state[10]; __pyx_result.pydev_smart_parent_offset = __pyx_state[11]; __pyx_result.pydev_smart_step_into_variants = __pyx_state[12]; __pyx_result.pydev_smart_step_stop = __pyx_state[13]; __pyx_result.pydev_state = __pyx_state[14]; __pyx_result.pydev_step_cmd = __pyx_state[15]; __pyx_result.pydev_step_stop = __pyx_state[16]; __pyx_result.pydev_use_scoped_step_frame = __pyx_state[17]; __pyx_result.step_in_initial_location = __pyx_state[18]; __pyx_result.suspend_type = __pyx_state[19]; __pyx_result.suspended_at_unhandled = __pyx_state[20]; __pyx_result.target_id_to_smart_step_into_variant = __pyx_state[21]; __pyx_result.thread_tracer = __pyx_state[22]; __pyx_result.top_level_thread_tracer_no_back_frames = __pyx_state[23]; __pyx_result.top_level_thread_tracer_unhandled = __pyx_state[24]; __pyx_result.trace_suspend_type = __pyx_state[25]
- *     if len(__pyx_state) > 26 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[26])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
@@ -33322,7 +31892,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_PyDBAdd
     /* "(tree fragment)":14
  *     __pyx_result.conditional_breakpoint_exception = __pyx_state[0]; __pyx_result.is_tracing = __pyx_state[1]; __pyx_result.pydev_call_from_jinja2 = __pyx_state[2]; __pyx_result.pydev_call_inside_jinja2 = __pyx_state[3]; __pyx_result.pydev_django_resolve_frame = __pyx_state[4]; __pyx_result.pydev_func_name = __pyx_state[5]; __pyx_result.pydev_message = __pyx_state[6]; __pyx_result.pydev_next_line = __pyx_state[7]; __pyx_result.pydev_notify_kill = __pyx_state[8]; __pyx_result.pydev_original_step_cmd = __pyx_state[9]; __pyx_result.pydev_smart_child_offset = __pyx_state[10]; __pyx_result.pydev_smart_parent_offset = __pyx_state[11]; __pyx_result.pydev_smart_step_into_variants = __pyx_state[12]; __pyx_result.pydev_smart_step_stop = __pyx_state[13]; __pyx_result.pydev_state = __pyx_state[14]; __pyx_result.pydev_step_cmd = __pyx_state[15]; __pyx_result.pydev_step_stop = __pyx_state[16]; __pyx_result.pydev_use_scoped_step_frame = __pyx_state[17]; __pyx_result.step_in_initial_location = __pyx_state[18]; __pyx_result.suspend_type = __pyx_state[19]; __pyx_result.suspended_at_unhandled = __pyx_state[20]; __pyx_result.target_id_to_smart_step_into_variant = __pyx_state[21]; __pyx_result.thread_tracer = __pyx_state[22]; __pyx_result.top_level_thread_tracer_no_back_frames = __pyx_state[23]; __pyx_result.top_level_thread_tracer_unhandled = __pyx_state[24]; __pyx_result.trace_suspend_type = __pyx_state[25]
  *     if len(__pyx_state) > 26 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[26])             # <<<<<<<<<<<<<<
  */
     __pyx_t_7 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_7)) __PYX_ERR(2, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
@@ -33356,7 +31925,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_PyDBAdd
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(PyDBAdditionalThreadInfo __pyx_result, tuple __pyx_state):
  *     __pyx_result.conditional_breakpoint_exception = __pyx_state[0]; __pyx_result.is_tracing = __pyx_state[1]; __pyx_result.pydev_call_from_jinja2 = __pyx_state[2]; __pyx_result.pydev_call_inside_jinja2 = __pyx_state[3]; __pyx_result.pydev_django_resolve_frame = __pyx_state[4]; __pyx_result.pydev_func_name = __pyx_state[5]; __pyx_result.pydev_message = __pyx_state[6]; __pyx_result.pydev_next_line = __pyx_state[7]; __pyx_result.pydev_notify_kill = __pyx_state[8]; __pyx_result.pydev_original_step_cmd = __pyx_state[9]; __pyx_result.pydev_smart_child_offset = __pyx_state[10]; __pyx_result.pydev_smart_parent_offset = __pyx_state[11]; __pyx_result.pydev_smart_step_into_variants = __pyx_state[12]; __pyx_result.pydev_smart_step_stop = __pyx_state[13]; __pyx_result.pydev_state = __pyx_state[14]; __pyx_result.pydev_step_cmd = __pyx_state[15]; __pyx_result.pydev_step_stop = __pyx_state[16]; __pyx_result.pydev_use_scoped_step_frame = __pyx_state[17]; __pyx_result.step_in_initial_location = __pyx_state[18]; __pyx_result.suspend_type = __pyx_state[19]; __pyx_result.suspended_at_unhandled = __pyx_state[20]; __pyx_result.target_id_to_smart_step_into_variant = __pyx_state[21]; __pyx_result.thread_tracer = __pyx_state[22]; __pyx_result.top_level_thread_tracer_no_back_frames = __pyx_state[23]; __pyx_result.top_level_thread_tracer_unhandled = __pyx_state[24]; __pyx_result.trace_suspend_type = __pyx_state[25]
- *     if len(__pyx_state) > 26 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[26])
  */
   }
@@ -33364,7 +31932,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_PyDBAdd
   /* "(tree fragment)":11
  *         __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(<PyDBAdditionalThreadInfo> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(PyDBAdditionalThreadInfo __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result.conditional_breakpoint_exception = __pyx_state[0]; __pyx_result.is_tracing = __pyx_state[1]; __pyx_result.pydev_call_from_jinja2 = __pyx_state[2]; __pyx_result.pydev_call_inside_jinja2 = __pyx_state[3]; __pyx_result.pydev_django_resolve_frame = __pyx_state[4]; __pyx_result.pydev_func_name = __pyx_state[5]; __pyx_result.pydev_message = __pyx_state[6]; __pyx_result.pydev_next_line = __pyx_state[7]; __pyx_result.pydev_notify_kill = __pyx_state[8]; __pyx_result.pydev_original_step_cmd = __pyx_state[9]; __pyx_result.pydev_smart_child_offset = __pyx_state[10]; __pyx_result.pydev_smart_parent_offset = __pyx_state[11]; __pyx_result.pydev_smart_step_into_variants = __pyx_state[12]; __pyx_result.pydev_smart_step_stop = __pyx_state[13]; __pyx_result.pydev_state = __pyx_state[14]; __pyx_result.pydev_step_cmd = __pyx_state[15]; __pyx_result.pydev_step_stop = __pyx_state[16]; __pyx_result.pydev_use_scoped_step_frame = __pyx_state[17]; __pyx_result.step_in_initial_location = __pyx_state[18]; __pyx_result.suspend_type = __pyx_state[19]; __pyx_result.suspended_at_unhandled = __pyx_state[20]; __pyx_result.target_id_to_smart_step_into_variant = __pyx_state[21]; __pyx_result.thread_tracer = __pyx_state[22]; __pyx_result.top_level_thread_tracer_no_back_frames = __pyx_state[23]; __pyx_result.top_level_thread_tracer_unhandled = __pyx_state[24]; __pyx_result.trace_suspend_type = __pyx_state[25]
  *     if len(__pyx_state) > 26 and hasattr(__pyx_result, '__dict__'):
  */
@@ -33386,7 +31953,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_PyDBAdd
 }
 
 /* "(tree fragment)":1
- * def __pyx_unpickle__TryExceptContainerObj(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -33486,7 +32052,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_14__pyx_unpickle__Try
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xc8b6eb1, 0xdbf5e44, 0xde17cd3):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xc8b6eb1, 0xdbf5e44, 0xde17cd3) = (try_except_infos))" % __pyx_checksum)
  */
@@ -33500,7 +32065,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_14__pyx_unpickle__Try
     /* "(tree fragment)":5
  *     cdef object __pyx_result
  *     if __pyx_checksum not in (0xc8b6eb1, 0xdbf5e44, 0xde17cd3):
- *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xc8b6eb1, 0xdbf5e44, 0xde17cd3) = (try_except_infos))" % __pyx_checksum)
  *     __pyx_result = _TryExceptContainerObj.__new__(__pyx_type)
  */
@@ -33522,7 +32086,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_14__pyx_unpickle__Try
     /* "(tree fragment)":6
  *     if __pyx_checksum not in (0xc8b6eb1, 0xdbf5e44, 0xde17cd3):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xc8b6eb1, 0xdbf5e44, 0xde17cd3) = (try_except_infos))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = _TryExceptContainerObj.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -33555,7 +32118,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_14__pyx_unpickle__Try
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xc8b6eb1, 0xdbf5e44, 0xde17cd3):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xc8b6eb1, 0xdbf5e44, 0xde17cd3) = (try_except_infos))" % __pyx_checksum)
  */
@@ -33564,7 +32126,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_14__pyx_unpickle__Try
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xc8b6eb1, 0xdbf5e44, 0xde17cd3) = (try_except_infos))" % __pyx_checksum)
- *     __pyx_result = _TryExceptContainerObj.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle__TryExceptContainerObj__set_state(<_TryExceptContainerObj> __pyx_result, __pyx_state)
  */
@@ -33591,7 +32152,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_14__pyx_unpickle__Try
   /* "(tree fragment)":8
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xc8b6eb1, 0xdbf5e44, 0xde17cd3) = (try_except_infos))" % __pyx_checksum)
  *     __pyx_result = _TryExceptContainerObj.__new__(__pyx_type)
- *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle__TryExceptContainerObj__set_state(<_TryExceptContainerObj> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
@@ -33602,7 +32162,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_14__pyx_unpickle__Try
     /* "(tree fragment)":9
  *     __pyx_result = _TryExceptContainerObj.__new__(__pyx_type)
  *     if __pyx_state is not None:
- *         __pyx_unpickle__TryExceptContainerObj__set_state(<_TryExceptContainerObj> __pyx_result, __pyx_state)             # <<<<<<<<<<<<<<
  *     return __pyx_result
  * cdef __pyx_unpickle__TryExceptContainerObj__set_state(_TryExceptContainerObj __pyx_result, tuple __pyx_state):
  */
@@ -33614,7 +32173,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_14__pyx_unpickle__Try
     /* "(tree fragment)":8
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xc8b6eb1, 0xdbf5e44, 0xde17cd3) = (try_except_infos))" % __pyx_checksum)
  *     __pyx_result = _TryExceptContainerObj.__new__(__pyx_type)
- *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle__TryExceptContainerObj__set_state(<_TryExceptContainerObj> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
@@ -33623,7 +32181,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_14__pyx_unpickle__Try
   /* "(tree fragment)":10
  *     if __pyx_state is not None:
  *         __pyx_unpickle__TryExceptContainerObj__set_state(<_TryExceptContainerObj> __pyx_result, __pyx_state)
- *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle__TryExceptContainerObj__set_state(_TryExceptContainerObj __pyx_result, tuple __pyx_state):
  *     __pyx_result.try_except_infos = __pyx_state[0]
  */
@@ -33633,7 +32190,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_14__pyx_unpickle__Try
   goto __pyx_L0;
 
   /* "(tree fragment)":1
- * def __pyx_unpickle__TryExceptContainerObj(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -33657,7 +32213,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_14__pyx_unpickle__Try
 /* "(tree fragment)":11
  *         __pyx_unpickle__TryExceptContainerObj__set_state(<_TryExceptContainerObj> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle__TryExceptContainerObj__set_state(_TryExceptContainerObj __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result.try_except_infos = __pyx_state[0]
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
  */
@@ -33681,7 +32236,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle__TryExc
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle__TryExceptContainerObj__set_state(_TryExceptContainerObj __pyx_result, tuple __pyx_state):
- *     __pyx_result.try_except_infos = __pyx_state[0]             # <<<<<<<<<<<<<<
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
  *         __pyx_result.__dict__.update(__pyx_state[1])
  */
@@ -33701,7 +32255,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle__TryExc
   /* "(tree fragment)":13
  * cdef __pyx_unpickle__TryExceptContainerObj__set_state(_TryExceptContainerObj __pyx_result, tuple __pyx_state):
  *     __pyx_result.try_except_infos = __pyx_state[0]
- *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[1])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
@@ -33724,7 +32277,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle__TryExc
     /* "(tree fragment)":14
  *     __pyx_result.try_except_infos = __pyx_state[0]
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[1])             # <<<<<<<<<<<<<<
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(2, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -33758,7 +32310,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle__TryExc
     /* "(tree fragment)":13
  * cdef __pyx_unpickle__TryExceptContainerObj__set_state(_TryExceptContainerObj __pyx_result, tuple __pyx_state):
  *     __pyx_result.try_except_infos = __pyx_state[0]
- *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[1])
  */
   }
@@ -33766,7 +32317,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle__TryExc
   /* "(tree fragment)":11
  *         __pyx_unpickle__TryExceptContainerObj__set_state(<_TryExceptContainerObj> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle__TryExceptContainerObj__set_state(_TryExceptContainerObj __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result.try_except_infos = __pyx_state[0]
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
  */
@@ -33788,7 +32338,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle__TryExc
 }
 
 /* "(tree fragment)":1
- * def __pyx_unpickle_PyDBFrame(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -33888,7 +32437,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_16__pyx_unpickle_PyDB
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x506e682, 0x3a8c26e, 0xb793695):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x506e682, 0x3a8c26e, 0xb793695) = (_args, exc_info, should_skip))" % __pyx_checksum)
  */
@@ -33902,7 +32450,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_16__pyx_unpickle_PyDB
     /* "(tree fragment)":5
  *     cdef object __pyx_result
  *     if __pyx_checksum not in (0x506e682, 0x3a8c26e, 0xb793695):
- *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x506e682, 0x3a8c26e, 0xb793695) = (_args, exc_info, should_skip))" % __pyx_checksum)
  *     __pyx_result = PyDBFrame.__new__(__pyx_type)
  */
@@ -33924,7 +32471,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_16__pyx_unpickle_PyDB
     /* "(tree fragment)":6
  *     if __pyx_checksum not in (0x506e682, 0x3a8c26e, 0xb793695):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x506e682, 0x3a8c26e, 0xb793695) = (_args, exc_info, should_skip))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = PyDBFrame.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -33957,7 +32503,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_16__pyx_unpickle_PyDB
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x506e682, 0x3a8c26e, 0xb793695):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x506e682, 0x3a8c26e, 0xb793695) = (_args, exc_info, should_skip))" % __pyx_checksum)
  */
@@ -33966,7 +32511,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_16__pyx_unpickle_PyDB
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x506e682, 0x3a8c26e, 0xb793695) = (_args, exc_info, should_skip))" % __pyx_checksum)
- *     __pyx_result = PyDBFrame.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_PyDBFrame__set_state(<PyDBFrame> __pyx_result, __pyx_state)
  */
@@ -33993,7 +32537,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_16__pyx_unpickle_PyDB
   /* "(tree fragment)":8
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x506e682, 0x3a8c26e, 0xb793695) = (_args, exc_info, should_skip))" % __pyx_checksum)
  *     __pyx_result = PyDBFrame.__new__(__pyx_type)
- *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_PyDBFrame__set_state(<PyDBFrame> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
@@ -34004,7 +32547,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_16__pyx_unpickle_PyDB
     /* "(tree fragment)":9
  *     __pyx_result = PyDBFrame.__new__(__pyx_type)
  *     if __pyx_state is not None:
- *         __pyx_unpickle_PyDBFrame__set_state(<PyDBFrame> __pyx_result, __pyx_state)             # <<<<<<<<<<<<<<
  *     return __pyx_result
  * cdef __pyx_unpickle_PyDBFrame__set_state(PyDBFrame __pyx_result, tuple __pyx_state):
  */
@@ -34016,7 +32558,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_16__pyx_unpickle_PyDB
     /* "(tree fragment)":8
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x506e682, 0x3a8c26e, 0xb793695) = (_args, exc_info, should_skip))" % __pyx_checksum)
  *     __pyx_result = PyDBFrame.__new__(__pyx_type)
- *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_PyDBFrame__set_state(<PyDBFrame> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
@@ -34025,7 +32566,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_16__pyx_unpickle_PyDB
   /* "(tree fragment)":10
  *     if __pyx_state is not None:
  *         __pyx_unpickle_PyDBFrame__set_state(<PyDBFrame> __pyx_result, __pyx_state)
- *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_PyDBFrame__set_state(PyDBFrame __pyx_result, tuple __pyx_state):
  *     __pyx_result._args = __pyx_state[0]; __pyx_result.exc_info = __pyx_state[1]; __pyx_result.should_skip = __pyx_state[2]
  */
@@ -34035,7 +32575,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_16__pyx_unpickle_PyDB
   goto __pyx_L0;
 
   /* "(tree fragment)":1
- * def __pyx_unpickle_PyDBFrame(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -34059,7 +32598,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_16__pyx_unpickle_PyDB
 /* "(tree fragment)":11
  *         __pyx_unpickle_PyDBFrame__set_state(<PyDBFrame> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_PyDBFrame__set_state(PyDBFrame __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result._args = __pyx_state[0]; __pyx_result.exc_info = __pyx_state[1]; __pyx_result.should_skip = __pyx_state[2]
  *     if len(__pyx_state) > 3 and hasattr(__pyx_result, '__dict__'):
  */
@@ -34084,7 +32622,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_PyDBFra
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_PyDBFrame__set_state(PyDBFrame __pyx_result, tuple __pyx_state):
- *     __pyx_result._args = __pyx_state[0]; __pyx_result.exc_info = __pyx_state[1]; __pyx_result.should_skip = __pyx_state[2]             # <<<<<<<<<<<<<<
  *     if len(__pyx_state) > 3 and hasattr(__pyx_result, '__dict__'):
  *         __pyx_result.__dict__.update(__pyx_state[3])
  */
@@ -34124,7 +32661,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_PyDBFra
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_PyDBFrame__set_state(PyDBFrame __pyx_result, tuple __pyx_state):
  *     __pyx_result._args = __pyx_state[0]; __pyx_result.exc_info = __pyx_state[1]; __pyx_result.should_skip = __pyx_state[2]
- *     if len(__pyx_state) > 3 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[3])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
@@ -34147,7 +32683,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_PyDBFra
     /* "(tree fragment)":14
  *     __pyx_result._args = __pyx_state[0]; __pyx_result.exc_info = __pyx_state[1]; __pyx_result.should_skip = __pyx_state[2]
  *     if len(__pyx_state) > 3 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[3])             # <<<<<<<<<<<<<<
  */
     __pyx_t_7 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_7)) __PYX_ERR(2, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
@@ -34181,7 +32716,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_PyDBFra
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_PyDBFrame__set_state(PyDBFrame __pyx_result, tuple __pyx_state):
  *     __pyx_result._args = __pyx_state[0]; __pyx_result.exc_info = __pyx_state[1]; __pyx_result.should_skip = __pyx_state[2]
- *     if len(__pyx_state) > 3 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[3])
  */
   }
@@ -34189,7 +32723,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_PyDBFra
   /* "(tree fragment)":11
  *         __pyx_unpickle_PyDBFrame__set_state(<PyDBFrame> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_PyDBFrame__set_state(PyDBFrame __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result._args = __pyx_state[0]; __pyx_result.exc_info = __pyx_state[1]; __pyx_result.should_skip = __pyx_state[2]
  *     if len(__pyx_state) > 3 and hasattr(__pyx_result, '__dict__'):
  */
@@ -34211,7 +32744,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_PyDBFra
 }
 
 /* "(tree fragment)":1
- * def __pyx_unpickle_SafeCallWrapper(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -34311,7 +32843,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_18__pyx_unpickle_Safe
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x77c077b, 0xa14289b, 0x3cc10aa):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x77c077b, 0xa14289b, 0x3cc10aa) = (method_object))" % __pyx_checksum)
  */
@@ -34325,7 +32856,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_18__pyx_unpickle_Safe
     /* "(tree fragment)":5
  *     cdef object __pyx_result
  *     if __pyx_checksum not in (0x77c077b, 0xa14289b, 0x3cc10aa):
- *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x77c077b, 0xa14289b, 0x3cc10aa) = (method_object))" % __pyx_checksum)
  *     __pyx_result = SafeCallWrapper.__new__(__pyx_type)
  */
@@ -34347,7 +32877,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_18__pyx_unpickle_Safe
     /* "(tree fragment)":6
  *     if __pyx_checksum not in (0x77c077b, 0xa14289b, 0x3cc10aa):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x77c077b, 0xa14289b, 0x3cc10aa) = (method_object))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = SafeCallWrapper.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -34380,7 +32909,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_18__pyx_unpickle_Safe
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x77c077b, 0xa14289b, 0x3cc10aa):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x77c077b, 0xa14289b, 0x3cc10aa) = (method_object))" % __pyx_checksum)
  */
@@ -34389,7 +32917,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_18__pyx_unpickle_Safe
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x77c077b, 0xa14289b, 0x3cc10aa) = (method_object))" % __pyx_checksum)
- *     __pyx_result = SafeCallWrapper.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_SafeCallWrapper__set_state(<SafeCallWrapper> __pyx_result, __pyx_state)
  */
@@ -34416,7 +32943,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_18__pyx_unpickle_Safe
   /* "(tree fragment)":8
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x77c077b, 0xa14289b, 0x3cc10aa) = (method_object))" % __pyx_checksum)
  *     __pyx_result = SafeCallWrapper.__new__(__pyx_type)
- *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_SafeCallWrapper__set_state(<SafeCallWrapper> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
@@ -34427,7 +32953,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_18__pyx_unpickle_Safe
     /* "(tree fragment)":9
  *     __pyx_result = SafeCallWrapper.__new__(__pyx_type)
  *     if __pyx_state is not None:
- *         __pyx_unpickle_SafeCallWrapper__set_state(<SafeCallWrapper> __pyx_result, __pyx_state)             # <<<<<<<<<<<<<<
  *     return __pyx_result
  * cdef __pyx_unpickle_SafeCallWrapper__set_state(SafeCallWrapper __pyx_result, tuple __pyx_state):
  */
@@ -34439,7 +32964,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_18__pyx_unpickle_Safe
     /* "(tree fragment)":8
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x77c077b, 0xa14289b, 0x3cc10aa) = (method_object))" % __pyx_checksum)
  *     __pyx_result = SafeCallWrapper.__new__(__pyx_type)
- *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_SafeCallWrapper__set_state(<SafeCallWrapper> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
@@ -34448,7 +32972,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_18__pyx_unpickle_Safe
   /* "(tree fragment)":10
  *     if __pyx_state is not None:
  *         __pyx_unpickle_SafeCallWrapper__set_state(<SafeCallWrapper> __pyx_result, __pyx_state)
- *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_SafeCallWrapper__set_state(SafeCallWrapper __pyx_result, tuple __pyx_state):
  *     __pyx_result.method_object = __pyx_state[0]
  */
@@ -34458,7 +32981,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_18__pyx_unpickle_Safe
   goto __pyx_L0;
 
   /* "(tree fragment)":1
- * def __pyx_unpickle_SafeCallWrapper(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -34482,7 +33004,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_18__pyx_unpickle_Safe
 /* "(tree fragment)":11
  *         __pyx_unpickle_SafeCallWrapper__set_state(<SafeCallWrapper> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_SafeCallWrapper__set_state(SafeCallWrapper __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result.method_object = __pyx_state[0]
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
  */
@@ -34506,7 +33027,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_SafeCal
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_SafeCallWrapper__set_state(SafeCallWrapper __pyx_result, tuple __pyx_state):
- *     __pyx_result.method_object = __pyx_state[0]             # <<<<<<<<<<<<<<
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
  *         __pyx_result.__dict__.update(__pyx_state[1])
  */
@@ -34525,7 +33045,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_SafeCal
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_SafeCallWrapper__set_state(SafeCallWrapper __pyx_result, tuple __pyx_state):
  *     __pyx_result.method_object = __pyx_state[0]
- *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[1])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
@@ -34548,7 +33067,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_SafeCal
     /* "(tree fragment)":14
  *     __pyx_result.method_object = __pyx_state[0]
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[1])             # <<<<<<<<<<<<<<
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(2, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -34582,7 +33100,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_SafeCal
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_SafeCallWrapper__set_state(SafeCallWrapper __pyx_result, tuple __pyx_state):
  *     __pyx_result.method_object = __pyx_state[0]
- *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[1])
  */
   }
@@ -34590,7 +33107,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_SafeCal
   /* "(tree fragment)":11
  *         __pyx_unpickle_SafeCallWrapper__set_state(<SafeCallWrapper> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_SafeCallWrapper__set_state(SafeCallWrapper __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result.method_object = __pyx_state[0]
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
  */
@@ -34612,7 +33128,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_SafeCal
 }
 
 /* "(tree fragment)":1
- * def __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -34712,7 +33227,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_20__pyx_unpickle_TopL
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x3d7902a, 0x121e1fb, 0xf3a61b1):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3d7902a, 0x121e1fb, 0xf3a61b1) = (_args))" % __pyx_checksum)
  */
@@ -34726,7 +33240,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_20__pyx_unpickle_TopL
     /* "(tree fragment)":5
  *     cdef object __pyx_result
  *     if __pyx_checksum not in (0x3d7902a, 0x121e1fb, 0xf3a61b1):
- *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3d7902a, 0x121e1fb, 0xf3a61b1) = (_args))" % __pyx_checksum)
  *     __pyx_result = TopLevelThreadTracerOnlyUnhandledExceptions.__new__(__pyx_type)
  */
@@ -34748,7 +33261,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_20__pyx_unpickle_TopL
     /* "(tree fragment)":6
  *     if __pyx_checksum not in (0x3d7902a, 0x121e1fb, 0xf3a61b1):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3d7902a, 0x121e1fb, 0xf3a61b1) = (_args))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = TopLevelThreadTracerOnlyUnhandledExceptions.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -34781,7 +33293,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_20__pyx_unpickle_TopL
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x3d7902a, 0x121e1fb, 0xf3a61b1):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3d7902a, 0x121e1fb, 0xf3a61b1) = (_args))" % __pyx_checksum)
  */
@@ -34790,7 +33301,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_20__pyx_unpickle_TopL
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3d7902a, 0x121e1fb, 0xf3a61b1) = (_args))" % __pyx_checksum)
- *     __pyx_result = TopLevelThreadTracerOnlyUnhandledExceptions.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(<TopLevelThreadTracerOnlyUnhandledExceptions> __pyx_result, __pyx_state)
  */
@@ -34817,7 +33327,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_20__pyx_unpickle_TopL
   /* "(tree fragment)":8
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3d7902a, 0x121e1fb, 0xf3a61b1) = (_args))" % __pyx_checksum)
  *     __pyx_result = TopLevelThreadTracerOnlyUnhandledExceptions.__new__(__pyx_type)
- *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(<TopLevelThreadTracerOnlyUnhandledExceptions> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
@@ -34828,7 +33337,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_20__pyx_unpickle_TopL
     /* "(tree fragment)":9
  *     __pyx_result = TopLevelThreadTracerOnlyUnhandledExceptions.__new__(__pyx_type)
  *     if __pyx_state is not None:
- *         __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(<TopLevelThreadTracerOnlyUnhandledExceptions> __pyx_result, __pyx_state)             # <<<<<<<<<<<<<<
  *     return __pyx_result
  * cdef __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(TopLevelThreadTracerOnlyUnhandledExceptions __pyx_result, tuple __pyx_state):
  */
@@ -34840,7 +33348,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_20__pyx_unpickle_TopL
     /* "(tree fragment)":8
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3d7902a, 0x121e1fb, 0xf3a61b1) = (_args))" % __pyx_checksum)
  *     __pyx_result = TopLevelThreadTracerOnlyUnhandledExceptions.__new__(__pyx_type)
- *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(<TopLevelThreadTracerOnlyUnhandledExceptions> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
@@ -34849,7 +33356,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_20__pyx_unpickle_TopL
   /* "(tree fragment)":10
  *     if __pyx_state is not None:
  *         __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(<TopLevelThreadTracerOnlyUnhandledExceptions> __pyx_result, __pyx_state)
- *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(TopLevelThreadTracerOnlyUnhandledExceptions __pyx_result, tuple __pyx_state):
  *     __pyx_result._args = __pyx_state[0]
  */
@@ -34859,7 +33365,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_20__pyx_unpickle_TopL
   goto __pyx_L0;
 
   /* "(tree fragment)":1
- * def __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -34883,7 +33388,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_20__pyx_unpickle_TopL
 /* "(tree fragment)":11
  *         __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(<TopLevelThreadTracerOnlyUnhandledExceptions> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(TopLevelThreadTracerOnlyUnhandledExceptions __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result._args = __pyx_state[0]
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
  */
@@ -34907,7 +33411,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_TopLeve
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(TopLevelThreadTracerOnlyUnhandledExceptions __pyx_result, tuple __pyx_state):
- *     __pyx_result._args = __pyx_state[0]             # <<<<<<<<<<<<<<
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
  *         __pyx_result.__dict__.update(__pyx_state[1])
  */
@@ -34927,7 +33430,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_TopLeve
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(TopLevelThreadTracerOnlyUnhandledExceptions __pyx_result, tuple __pyx_state):
  *     __pyx_result._args = __pyx_state[0]
- *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[1])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
@@ -34950,7 +33452,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_TopLeve
     /* "(tree fragment)":14
  *     __pyx_result._args = __pyx_state[0]
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[1])             # <<<<<<<<<<<<<<
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(2, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -34984,7 +33485,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_TopLeve
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(TopLevelThreadTracerOnlyUnhandledExceptions __pyx_result, tuple __pyx_state):
  *     __pyx_result._args = __pyx_state[0]
- *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[1])
  */
   }
@@ -34992,7 +33492,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_TopLeve
   /* "(tree fragment)":11
  *         __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(<TopLevelThreadTracerOnlyUnhandledExceptions> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(TopLevelThreadTracerOnlyUnhandledExceptions __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result._args = __pyx_state[0]
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
  */
@@ -35014,7 +33513,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_TopLeve
 }
 
 /* "(tree fragment)":1
- * def __pyx_unpickle_TopLevelThreadTracerNoBackFrame(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -35114,7 +33612,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22__pyx_unpickle_TopL
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xa3a9ec1, 0x3f5f7e9, 0x0ff9c96):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xa3a9ec1, 0x3f5f7e9, 0x0ff9c96) = (_args, _frame_trace_dispatch, _last_exc_arg, _last_raise_line, _raise_lines, try_except_infos))" % __pyx_checksum)
  */
@@ -35128,7 +33625,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22__pyx_unpickle_TopL
     /* "(tree fragment)":5
  *     cdef object __pyx_result
  *     if __pyx_checksum not in (0xa3a9ec1, 0x3f5f7e9, 0x0ff9c96):
- *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xa3a9ec1, 0x3f5f7e9, 0x0ff9c96) = (_args, _frame_trace_dispatch, _last_exc_arg, _last_raise_line, _raise_lines, try_except_infos))" % __pyx_checksum)
  *     __pyx_result = TopLevelThreadTracerNoBackFrame.__new__(__pyx_type)
  */
@@ -35150,7 +33646,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22__pyx_unpickle_TopL
     /* "(tree fragment)":6
  *     if __pyx_checksum not in (0xa3a9ec1, 0x3f5f7e9, 0x0ff9c96):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xa3a9ec1, 0x3f5f7e9, 0x0ff9c96) = (_args, _frame_trace_dispatch, _last_exc_arg, _last_raise_line, _raise_lines, try_except_infos))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = TopLevelThreadTracerNoBackFrame.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -35183,7 +33678,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22__pyx_unpickle_TopL
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xa3a9ec1, 0x3f5f7e9, 0x0ff9c96):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xa3a9ec1, 0x3f5f7e9, 0x0ff9c96) = (_args, _frame_trace_dispatch, _last_exc_arg, _last_raise_line, _raise_lines, try_except_infos))" % __pyx_checksum)
  */
@@ -35192,7 +33686,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22__pyx_unpickle_TopL
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xa3a9ec1, 0x3f5f7e9, 0x0ff9c96) = (_args, _frame_trace_dispatch, _last_exc_arg, _last_raise_line, _raise_lines, try_except_infos))" % __pyx_checksum)
- *     __pyx_result = TopLevelThreadTracerNoBackFrame.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(<TopLevelThreadTracerNoBackFrame> __pyx_result, __pyx_state)
  */
@@ -35219,7 +33712,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22__pyx_unpickle_TopL
   /* "(tree fragment)":8
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xa3a9ec1, 0x3f5f7e9, 0x0ff9c96) = (_args, _frame_trace_dispatch, _last_exc_arg, _last_raise_line, _raise_lines, try_except_infos))" % __pyx_checksum)
  *     __pyx_result = TopLevelThreadTracerNoBackFrame.__new__(__pyx_type)
- *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(<TopLevelThreadTracerNoBackFrame> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
@@ -35230,7 +33722,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22__pyx_unpickle_TopL
     /* "(tree fragment)":9
  *     __pyx_result = TopLevelThreadTracerNoBackFrame.__new__(__pyx_type)
  *     if __pyx_state is not None:
- *         __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(<TopLevelThreadTracerNoBackFrame> __pyx_result, __pyx_state)             # <<<<<<<<<<<<<<
  *     return __pyx_result
  * cdef __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(TopLevelThreadTracerNoBackFrame __pyx_result, tuple __pyx_state):
  */
@@ -35242,7 +33733,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22__pyx_unpickle_TopL
     /* "(tree fragment)":8
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xa3a9ec1, 0x3f5f7e9, 0x0ff9c96) = (_args, _frame_trace_dispatch, _last_exc_arg, _last_raise_line, _raise_lines, try_except_infos))" % __pyx_checksum)
  *     __pyx_result = TopLevelThreadTracerNoBackFrame.__new__(__pyx_type)
- *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(<TopLevelThreadTracerNoBackFrame> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
@@ -35251,7 +33741,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22__pyx_unpickle_TopL
   /* "(tree fragment)":10
  *     if __pyx_state is not None:
  *         __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(<TopLevelThreadTracerNoBackFrame> __pyx_result, __pyx_state)
- *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(TopLevelThreadTracerNoBackFrame __pyx_result, tuple __pyx_state):
  *     __pyx_result._args = __pyx_state[0]; __pyx_result._frame_trace_dispatch = __pyx_state[1]; __pyx_result._last_exc_arg = __pyx_state[2]; __pyx_result._last_raise_line = __pyx_state[3]; __pyx_result._raise_lines = __pyx_state[4]; __pyx_result.try_except_infos = __pyx_state[5]
  */
@@ -35261,7 +33750,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22__pyx_unpickle_TopL
   goto __pyx_L0;
 
   /* "(tree fragment)":1
- * def __pyx_unpickle_TopLevelThreadTracerNoBackFrame(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -35285,7 +33773,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_22__pyx_unpickle_TopL
 /* "(tree fragment)":11
  *         __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(<TopLevelThreadTracerNoBackFrame> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(TopLevelThreadTracerNoBackFrame __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result._args = __pyx_state[0]; __pyx_result._frame_trace_dispatch = __pyx_state[1]; __pyx_result._last_exc_arg = __pyx_state[2]; __pyx_result._last_raise_line = __pyx_state[3]; __pyx_result._raise_lines = __pyx_state[4]; __pyx_result.try_except_infos = __pyx_state[5]
  *     if len(__pyx_state) > 6 and hasattr(__pyx_result, '__dict__'):
  */
@@ -35310,7 +33797,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_TopLeve
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(TopLevelThreadTracerNoBackFrame __pyx_result, tuple __pyx_state):
- *     __pyx_result._args = __pyx_state[0]; __pyx_result._frame_trace_dispatch = __pyx_state[1]; __pyx_result._last_exc_arg = __pyx_state[2]; __pyx_result._last_raise_line = __pyx_state[3]; __pyx_result._raise_lines = __pyx_state[4]; __pyx_result.try_except_infos = __pyx_state[5]             # <<<<<<<<<<<<<<
  *     if len(__pyx_state) > 6 and hasattr(__pyx_result, '__dict__'):
  *         __pyx_result.__dict__.update(__pyx_state[6])
  */
@@ -35384,7 +33870,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_TopLeve
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(TopLevelThreadTracerNoBackFrame __pyx_result, tuple __pyx_state):
  *     __pyx_result._args = __pyx_state[0]; __pyx_result._frame_trace_dispatch = __pyx_state[1]; __pyx_result._last_exc_arg = __pyx_state[2]; __pyx_result._last_raise_line = __pyx_state[3]; __pyx_result._raise_lines = __pyx_state[4]; __pyx_result.try_except_infos = __pyx_state[5]
- *     if len(__pyx_state) > 6 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[6])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
@@ -35407,7 +33892,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_TopLeve
     /* "(tree fragment)":14
  *     __pyx_result._args = __pyx_state[0]; __pyx_result._frame_trace_dispatch = __pyx_state[1]; __pyx_result._last_exc_arg = __pyx_state[2]; __pyx_result._last_raise_line = __pyx_state[3]; __pyx_result._raise_lines = __pyx_state[4]; __pyx_result.try_except_infos = __pyx_state[5]
  *     if len(__pyx_state) > 6 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[6])             # <<<<<<<<<<<<<<
  */
     __pyx_t_7 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_7)) __PYX_ERR(2, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
@@ -35441,7 +33925,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_TopLeve
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(TopLevelThreadTracerNoBackFrame __pyx_result, tuple __pyx_state):
  *     __pyx_result._args = __pyx_state[0]; __pyx_result._frame_trace_dispatch = __pyx_state[1]; __pyx_result._last_exc_arg = __pyx_state[2]; __pyx_result._last_raise_line = __pyx_state[3]; __pyx_result._raise_lines = __pyx_state[4]; __pyx_result.try_except_infos = __pyx_state[5]
- *     if len(__pyx_state) > 6 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[6])
  */
   }
@@ -35449,7 +33932,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_TopLeve
   /* "(tree fragment)":11
  *         __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(<TopLevelThreadTracerNoBackFrame> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_TopLevelThreadTracerNoBackFrame__set_state(TopLevelThreadTracerNoBackFrame __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result._args = __pyx_state[0]; __pyx_result._frame_trace_dispatch = __pyx_state[1]; __pyx_result._last_exc_arg = __pyx_state[2]; __pyx_result._last_raise_line = __pyx_state[3]; __pyx_result._raise_lines = __pyx_state[4]; __pyx_result.try_except_infos = __pyx_state[5]
  *     if len(__pyx_state) > 6 and hasattr(__pyx_result, '__dict__'):
  */
@@ -35471,7 +33953,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_TopLeve
 }
 
 /* "(tree fragment)":1
- * def __pyx_unpickle_ThreadTracer(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -35571,7 +34052,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24__pyx_unpickle_Thre
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x3d7902a, 0x121e1fb, 0xf3a61b1):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3d7902a, 0x121e1fb, 0xf3a61b1) = (_args))" % __pyx_checksum)
  */
@@ -35585,7 +34065,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24__pyx_unpickle_Thre
     /* "(tree fragment)":5
  *     cdef object __pyx_result
  *     if __pyx_checksum not in (0x3d7902a, 0x121e1fb, 0xf3a61b1):
- *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3d7902a, 0x121e1fb, 0xf3a61b1) = (_args))" % __pyx_checksum)
  *     __pyx_result = ThreadTracer.__new__(__pyx_type)
  */
@@ -35607,7 +34086,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24__pyx_unpickle_Thre
     /* "(tree fragment)":6
  *     if __pyx_checksum not in (0x3d7902a, 0x121e1fb, 0xf3a61b1):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3d7902a, 0x121e1fb, 0xf3a61b1) = (_args))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = ThreadTracer.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -35640,7 +34118,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24__pyx_unpickle_Thre
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x3d7902a, 0x121e1fb, 0xf3a61b1):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3d7902a, 0x121e1fb, 0xf3a61b1) = (_args))" % __pyx_checksum)
  */
@@ -35649,7 +34126,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24__pyx_unpickle_Thre
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3d7902a, 0x121e1fb, 0xf3a61b1) = (_args))" % __pyx_checksum)
- *     __pyx_result = ThreadTracer.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_ThreadTracer__set_state(<ThreadTracer> __pyx_result, __pyx_state)
  */
@@ -35676,7 +34152,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24__pyx_unpickle_Thre
   /* "(tree fragment)":8
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3d7902a, 0x121e1fb, 0xf3a61b1) = (_args))" % __pyx_checksum)
  *     __pyx_result = ThreadTracer.__new__(__pyx_type)
- *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_ThreadTracer__set_state(<ThreadTracer> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
@@ -35687,7 +34162,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24__pyx_unpickle_Thre
     /* "(tree fragment)":9
  *     __pyx_result = ThreadTracer.__new__(__pyx_type)
  *     if __pyx_state is not None:
- *         __pyx_unpickle_ThreadTracer__set_state(<ThreadTracer> __pyx_result, __pyx_state)             # <<<<<<<<<<<<<<
  *     return __pyx_result
  * cdef __pyx_unpickle_ThreadTracer__set_state(ThreadTracer __pyx_result, tuple __pyx_state):
  */
@@ -35699,7 +34173,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24__pyx_unpickle_Thre
     /* "(tree fragment)":8
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3d7902a, 0x121e1fb, 0xf3a61b1) = (_args))" % __pyx_checksum)
  *     __pyx_result = ThreadTracer.__new__(__pyx_type)
- *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_ThreadTracer__set_state(<ThreadTracer> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
@@ -35708,7 +34181,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24__pyx_unpickle_Thre
   /* "(tree fragment)":10
  *     if __pyx_state is not None:
  *         __pyx_unpickle_ThreadTracer__set_state(<ThreadTracer> __pyx_result, __pyx_state)
- *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_ThreadTracer__set_state(ThreadTracer __pyx_result, tuple __pyx_state):
  *     __pyx_result._args = __pyx_state[0]
  */
@@ -35718,7 +34190,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24__pyx_unpickle_Thre
   goto __pyx_L0;
 
   /* "(tree fragment)":1
- * def __pyx_unpickle_ThreadTracer(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -35742,7 +34213,6 @@ static PyObject *__pyx_pf_14_pydevd_bundle_13pydevd_cython_24__pyx_unpickle_Thre
 /* "(tree fragment)":11
  *         __pyx_unpickle_ThreadTracer__set_state(<ThreadTracer> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_ThreadTracer__set_state(ThreadTracer __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result._args = __pyx_state[0]
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
  */
@@ -35766,7 +34236,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_ThreadT
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_ThreadTracer__set_state(ThreadTracer __pyx_result, tuple __pyx_state):
- *     __pyx_result._args = __pyx_state[0]             # <<<<<<<<<<<<<<
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
  *         __pyx_result.__dict__.update(__pyx_state[1])
  */
@@ -35786,7 +34255,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_ThreadT
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_ThreadTracer__set_state(ThreadTracer __pyx_result, tuple __pyx_state):
  *     __pyx_result._args = __pyx_state[0]
- *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[1])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
@@ -35809,7 +34277,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_ThreadT
     /* "(tree fragment)":14
  *     __pyx_result._args = __pyx_state[0]
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[1])             # <<<<<<<<<<<<<<
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(2, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -35843,7 +34310,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_ThreadT
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_ThreadTracer__set_state(ThreadTracer __pyx_result, tuple __pyx_state):
  *     __pyx_result._args = __pyx_state[0]
- *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[1])
  */
   }
@@ -35851,7 +34317,6 @@ static PyObject *__pyx_f_14_pydevd_bundle_13pydevd_cython___pyx_unpickle_ThreadT
   /* "(tree fragment)":11
  *         __pyx_unpickle_ThreadTracer__set_state(<ThreadTracer> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_ThreadTracer__set_state(ThreadTracer __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result._args = __pyx_state[0]
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
  */
@@ -37759,7 +36224,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "_pydevd_bundle/pydevd_cython.pyx":151
  *             raise AttributeError()
  *     except:
- *         with _set_additional_thread_info_lock:             # <<<<<<<<<<<<<<
  *             # If it's not there, set it within a lock to avoid any racing
  *             # conditions.
  */
@@ -37770,7 +36234,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1149
  *                     '%s raised from within the callback set in sys.settrace.\nDebugging will be disabled for this thread (%s).\n' % (exc, thread,))
  *                 main_debugger.writer.add_command(cmd)
- *                 if not issubclass(exc, (KeyboardInterrupt, SystemExit)):             # <<<<<<<<<<<<<<
  *                     pydev_log.exception()
  * 
  */
@@ -37781,7 +36244,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1191
  *                             filename = frame.f_code.co_filename
  *                             if filename.endswith('.pyc'):
- *                                 filename = filename[:-1]             # <<<<<<<<<<<<<<
  * 
  *                             if not filename.endswith(PYDEVD_IPYTHON_CONTEXT[0]):
  */
@@ -37792,7 +36254,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1393
  *                     '%s raised from within the callback set in sys.settrace.\nDebugging will be disabled for this thread (%s).\n' % (exc, thread,))
  *                 main_debugger.writer.add_command(cmd)
- *                 if not issubclass(exc, (KeyboardInterrupt, SystemExit)):             # <<<<<<<<<<<<<<
  *                     pydev_log.exception()
  *                 raise
  */
@@ -37803,7 +36264,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1503
  *             if f_unhandled.f_code.co_name in ('__bootstrap', '_bootstrap'):
  *                 # We need __bootstrap_inner, not __bootstrap.
- *                 return None, False             # <<<<<<<<<<<<<<
  * 
  *             elif f_unhandled.f_code.co_name in ('__bootstrap_inner', '_bootstrap_inner'):
  */
@@ -37814,7 +36274,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x75b3b02, 0x5f02be1, 0xa5a0d63):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x75b3b02, 0x5f02be1, 0xa5a0d63) = (conditional_breakpoint_exception, is_tracing, pydev_call_from_jinja2, pydev_call_inside_jinja2, pydev_django_resolve_frame, pydev_func_name, pydev_message, pydev_next_line, pydev_notify_kill, pydev_original_step_cmd, pydev_smart_child_offset, pydev_smart_parent_offset, pydev_smart_step_into_variants, pydev_smart_step_stop, pydev_state, pydev_step_cmd, pydev_step_stop, pydev_use_scoped_step_frame, step_in_initial_location, suspend_type, suspended_at_unhandled, target_id_to_smart_step_into_variant, thread_tracer, top_level_thread_tracer_no_back_frames, top_level_thread_tracer_unhandled, trace_suspend_type))" % __pyx_checksum)
  */
@@ -37840,7 +36299,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "_pydevd_bundle/pydevd_cython.pyx":11
  * from _pydev_bundle import pydev_log
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- * pydev_log.debug("Using Cython speedups")             # <<<<<<<<<<<<<<
  * # ELSE
  * # from _pydevd_bundle.pydevd_frame import PyDBFrame
  */
@@ -37851,7 +36309,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "_pydevd_bundle/pydevd_cython.pyx":145
  * 
  * 
- * def set_additional_thread_info(thread):             # <<<<<<<<<<<<<<
  *     try:
  *         additional_info = thread.additional_info
  */
@@ -37863,7 +36320,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "_pydevd_bundle/pydevd_cython.pyx":177
  * except ImportError:
  * 
- *     def get_smart_step_into_variant_from_frame_offset(*args, **kwargs):             # <<<<<<<<<<<<<<
  *         return None
  * 
  */
@@ -37875,7 +36331,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "_pydevd_bundle/pydevd_cython.pyx":199
  * basename = os.path.basename
  * 
- * IGNORE_EXCEPTION_TAG = re.compile('[^#]*#.*@IgnoreException')             # <<<<<<<<<<<<<<
  * DEBUG_START = ('pydevd.py', 'run')
  * DEBUG_START_PY3K = ('_pydev_execfile.py', 'execfile')
  */
@@ -37886,7 +36341,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "_pydevd_bundle/pydevd_cython.pyx":200
  * 
  * IGNORE_EXCEPTION_TAG = re.compile('[^#]*#.*@IgnoreException')
- * DEBUG_START = ('pydevd.py', 'run')             # <<<<<<<<<<<<<<
  * DEBUG_START_PY3K = ('_pydev_execfile.py', 'execfile')
  * TRACE_PROPERTY = 'pydevd_traceproperty.py'
  */
@@ -37897,7 +36351,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "_pydevd_bundle/pydevd_cython.pyx":201
  * IGNORE_EXCEPTION_TAG = re.compile('[^#]*#.*@IgnoreException')
  * DEBUG_START = ('pydevd.py', 'run')
- * DEBUG_START_PY3K = ('_pydev_execfile.py', 'execfile')             # <<<<<<<<<<<<<<
  * TRACE_PROPERTY = 'pydevd_traceproperty.py'
  * 
  */
@@ -37908,7 +36361,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1436
  * 
  * 
- * def notify_skipped_step_in_because_of_filters(py_db, frame):             # <<<<<<<<<<<<<<
  *     global _global_notify_skipped_step_in
  * 
  */
@@ -37920,7 +36372,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1466
  * 
  * 
- * def fix_top_level_trace_and_get_trace_func(py_db, frame):             # <<<<<<<<<<<<<<
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  *     cdef str filename;
  */
@@ -37932,7 +36383,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1594
  * 
  * 
- * def trace_dispatch(py_db, frame, event, arg):             # <<<<<<<<<<<<<<
  *     thread_trace_func, apply_to_settrace = py_db.fix_top_level_trace_and_get_trace_func(py_db, frame)
  *     if thread_trace_func is None:
  */
@@ -37944,7 +36394,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1880
  *     _original_call = ThreadTracer.__call__
  * 
- *     def __call__(self, frame, event, arg):             # <<<<<<<<<<<<<<
  *         constructed_tid_to_last_frame[self._args[1].ident] = frame
  *         return _original_call(self, frame, event, arg)
  */
@@ -37954,7 +36403,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(4, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pydevd_bundle_pydevd_cython_pyx, __pyx_n_s_call_2, 1880, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 1880, __pyx_L1_error)
 
   /* "(tree fragment)":1
- * def __pyx_unpickle_PyDBAdditionalThreadInfo(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -38421,7 +36869,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":7
  * # DO NOT edit manually!
  * # DO NOT edit manually!
- * from _pydevd_bundle.pydevd_constants import (STATE_RUN, PYTHON_SUSPEND, SUPPORT_GEVENT, ForkSafeLock,             # <<<<<<<<<<<<<<
  *     _current_frames)
  * from _pydev_bundle import pydev_log
  */
@@ -38470,7 +36917,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":9
  * from _pydevd_bundle.pydevd_constants import (STATE_RUN, PYTHON_SUSPEND, SUPPORT_GEVENT, ForkSafeLock,
  *     _current_frames)
- * from _pydev_bundle import pydev_log             # <<<<<<<<<<<<<<
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  * pydev_log.debug("Using Cython speedups")
  */
@@ -38491,7 +36937,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":11
  * from _pydev_bundle import pydev_log
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
- * pydev_log.debug("Using Cython speedups")             # <<<<<<<<<<<<<<
  * # ELSE
  * # from _pydevd_bundle.pydevd_frame import PyDBFrame
  */
@@ -38508,7 +36953,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":16
  * # ENDIF
  * 
- * version = 11             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -38517,7 +36961,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":142
  * 
  * 
- * _set_additional_thread_info_lock = ForkSafeLock()             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -38532,7 +36975,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":145
  * 
  * 
- * def set_additional_thread_info(thread):             # <<<<<<<<<<<<<<
  *     try:
  *         additional_info = thread.additional_info
  */
@@ -38544,7 +36986,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":160
  * 
  *     return additional_info
- * import linecache             # <<<<<<<<<<<<<<
  * import os.path
  * import re
  */
@@ -38556,7 +36997,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":161
  *     return additional_info
  * import linecache
- * import os.path             # <<<<<<<<<<<<<<
  * import re
  * 
  */
@@ -38568,7 +37008,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":162
  * import linecache
  * import os.path
- * import re             # <<<<<<<<<<<<<<
  * 
  * from _pydev_bundle import pydev_log
  */
@@ -38580,7 +37019,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":164
  * import re
  * 
- * from _pydev_bundle import pydev_log             # <<<<<<<<<<<<<<
  * from _pydevd_bundle import pydevd_dont_trace
  * from _pydevd_bundle.pydevd_constants import (RETURN_VALUES_DICT, NO_FTRACE,
  */
@@ -38601,7 +37039,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":165
  * 
  * from _pydev_bundle import pydev_log
- * from _pydevd_bundle import pydevd_dont_trace             # <<<<<<<<<<<<<<
  * from _pydevd_bundle.pydevd_constants import (RETURN_VALUES_DICT, NO_FTRACE,
  *     EXCEPTION_TYPE_HANDLED, EXCEPTION_TYPE_USER_UNHANDLED, PYDEVD_IPYTHON_CONTEXT)
  */
@@ -38622,7 +37059,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":166
  * from _pydev_bundle import pydev_log
  * from _pydevd_bundle import pydevd_dont_trace
- * from _pydevd_bundle.pydevd_constants import (RETURN_VALUES_DICT, NO_FTRACE,             # <<<<<<<<<<<<<<
  *     EXCEPTION_TYPE_HANDLED, EXCEPTION_TYPE_USER_UNHANDLED, PYDEVD_IPYTHON_CONTEXT)
  * from _pydevd_bundle.pydevd_frame_utils import add_exception_to_frame, just_raised, remove_exception_from_frame, ignore_exception_trace
  */
@@ -38671,7 +37107,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":168
  * from _pydevd_bundle.pydevd_constants import (RETURN_VALUES_DICT, NO_FTRACE,
  *     EXCEPTION_TYPE_HANDLED, EXCEPTION_TYPE_USER_UNHANDLED, PYDEVD_IPYTHON_CONTEXT)
- * from _pydevd_bundle.pydevd_frame_utils import add_exception_to_frame, just_raised, remove_exception_from_frame, ignore_exception_trace             # <<<<<<<<<<<<<<
  * from _pydevd_bundle.pydevd_utils import get_clsname_for_code
  * from pydevd_file_utils import get_abs_path_real_path_and_base_from_frame
  */
@@ -38713,7 +37148,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":169
  *     EXCEPTION_TYPE_HANDLED, EXCEPTION_TYPE_USER_UNHANDLED, PYDEVD_IPYTHON_CONTEXT)
  * from _pydevd_bundle.pydevd_frame_utils import add_exception_to_frame, just_raised, remove_exception_from_frame, ignore_exception_trace
- * from _pydevd_bundle.pydevd_utils import get_clsname_for_code             # <<<<<<<<<<<<<<
  * from pydevd_file_utils import get_abs_path_real_path_and_base_from_frame
  * from _pydevd_bundle.pydevd_comm_constants import constant_to_str, CMD_SET_FUNCTION_BREAK
  */
@@ -38734,7 +37168,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":170
  * from _pydevd_bundle.pydevd_frame_utils import add_exception_to_frame, just_raised, remove_exception_from_frame, ignore_exception_trace
  * from _pydevd_bundle.pydevd_utils import get_clsname_for_code
- * from pydevd_file_utils import get_abs_path_real_path_and_base_from_frame             # <<<<<<<<<<<<<<
  * from _pydevd_bundle.pydevd_comm_constants import constant_to_str, CMD_SET_FUNCTION_BREAK
  * import sys
  */
@@ -38755,7 +37188,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":171
  * from _pydevd_bundle.pydevd_utils import get_clsname_for_code
  * from pydevd_file_utils import get_abs_path_real_path_and_base_from_frame
- * from _pydevd_bundle.pydevd_comm_constants import constant_to_str, CMD_SET_FUNCTION_BREAK             # <<<<<<<<<<<<<<
  * import sys
  * try:
  */
@@ -38783,7 +37215,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":172
  * from pydevd_file_utils import get_abs_path_real_path_and_base_from_frame
  * from _pydevd_bundle.pydevd_comm_constants import constant_to_str, CMD_SET_FUNCTION_BREAK
- * import sys             # <<<<<<<<<<<<<<
  * try:
  *     from _pydevd_bundle.pydevd_bytecode_utils import get_smart_step_into_variant_from_frame_offset
  */
@@ -38795,7 +37226,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":173
  * from _pydevd_bundle.pydevd_comm_constants import constant_to_str, CMD_SET_FUNCTION_BREAK
  * import sys
- * try:             # <<<<<<<<<<<<<<
  *     from _pydevd_bundle.pydevd_bytecode_utils import get_smart_step_into_variant_from_frame_offset
  * except ImportError:
  */
@@ -38811,7 +37241,6 @@ if (!__Pyx_RefNanny) {
       /* "_pydevd_bundle/pydevd_cython.pyx":174
  * import sys
  * try:
- *     from _pydevd_bundle.pydevd_bytecode_utils import get_smart_step_into_variant_from_frame_offset             # <<<<<<<<<<<<<<
  * except ImportError:
  * 
  */
@@ -38832,7 +37261,6 @@ if (!__Pyx_RefNanny) {
       /* "_pydevd_bundle/pydevd_cython.pyx":173
  * from _pydevd_bundle.pydevd_comm_constants import constant_to_str, CMD_SET_FUNCTION_BREAK
  * import sys
- * try:             # <<<<<<<<<<<<<<
  *     from _pydevd_bundle.pydevd_bytecode_utils import get_smart_step_into_variant_from_frame_offset
  * except ImportError:
  */
@@ -38848,7 +37276,6 @@ if (!__Pyx_RefNanny) {
     /* "_pydevd_bundle/pydevd_cython.pyx":175
  * try:
  *     from _pydevd_bundle.pydevd_bytecode_utils import get_smart_step_into_variant_from_frame_offset
- * except ImportError:             # <<<<<<<<<<<<<<
  * 
  *     def get_smart_step_into_variant_from_frame_offset(*args, **kwargs):
  */
@@ -38863,7 +37290,6 @@ if (!__Pyx_RefNanny) {
       /* "_pydevd_bundle/pydevd_cython.pyx":177
  * except ImportError:
  * 
- *     def get_smart_step_into_variant_from_frame_offset(*args, **kwargs):             # <<<<<<<<<<<<<<
  *         return None
  * 
  */
@@ -38882,7 +37308,6 @@ if (!__Pyx_RefNanny) {
     /* "_pydevd_bundle/pydevd_cython.pyx":173
  * from _pydevd_bundle.pydevd_comm_constants import constant_to_str, CMD_SET_FUNCTION_BREAK
  * import sys
- * try:             # <<<<<<<<<<<<<<
  *     from _pydevd_bundle.pydevd_bytecode_utils import get_smart_step_into_variant_from_frame_offset
  * except ImportError:
  */
@@ -38902,7 +37327,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":197
  * # ENDIF
  * 
- * basename = os.path.basename             # <<<<<<<<<<<<<<
  * 
  * IGNORE_EXCEPTION_TAG = re.compile('[^#]*#.*@IgnoreException')
  */
@@ -38920,7 +37344,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":199
  * basename = os.path.basename
  * 
- * IGNORE_EXCEPTION_TAG = re.compile('[^#]*#.*@IgnoreException')             # <<<<<<<<<<<<<<
  * DEBUG_START = ('pydevd.py', 'run')
  * DEBUG_START_PY3K = ('_pydev_execfile.py', 'execfile')
  */
@@ -38938,7 +37361,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":200
  * 
  * IGNORE_EXCEPTION_TAG = re.compile('[^#]*#.*@IgnoreException')
- * DEBUG_START = ('pydevd.py', 'run')             # <<<<<<<<<<<<<<
  * DEBUG_START_PY3K = ('_pydev_execfile.py', 'execfile')
  * TRACE_PROPERTY = 'pydevd_traceproperty.py'
  */
@@ -38947,7 +37369,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":201
  * IGNORE_EXCEPTION_TAG = re.compile('[^#]*#.*@IgnoreException')
  * DEBUG_START = ('pydevd.py', 'run')
- * DEBUG_START_PY3K = ('_pydev_execfile.py', 'execfile')             # <<<<<<<<<<<<<<
  * TRACE_PROPERTY = 'pydevd_traceproperty.py'
  * 
  */
@@ -38956,7 +37377,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":202
  * DEBUG_START = ('pydevd.py', 'run')
  * DEBUG_START_PY3K = ('_pydev_execfile.py', 'execfile')
- * TRACE_PROPERTY = 'pydevd_traceproperty.py'             # <<<<<<<<<<<<<<
  * 
  * import dis
  */
@@ -38965,7 +37385,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":204
  * TRACE_PROPERTY = 'pydevd_traceproperty.py'
  * 
- * import dis             # <<<<<<<<<<<<<<
  * 
  * try:
  */
@@ -38977,7 +37396,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":206
  * import dis
  * 
- * try:             # <<<<<<<<<<<<<<
  *     StopAsyncIteration
  * except NameError:
  */
@@ -38993,7 +37411,6 @@ if (!__Pyx_RefNanny) {
       /* "_pydevd_bundle/pydevd_cython.pyx":207
  * 
  * try:
- *     StopAsyncIteration             # <<<<<<<<<<<<<<
  * except NameError:
  *     StopAsyncIteration = StopIteration
  */
@@ -39004,7 +37421,6 @@ if (!__Pyx_RefNanny) {
       /* "_pydevd_bundle/pydevd_cython.pyx":206
  * import dis
  * 
- * try:             # <<<<<<<<<<<<<<
  *     StopAsyncIteration
  * except NameError:
  */
@@ -39022,7 +37438,6 @@ if (!__Pyx_RefNanny) {
     /* "_pydevd_bundle/pydevd_cython.pyx":208
  * try:
  *     StopAsyncIteration
- * except NameError:             # <<<<<<<<<<<<<<
  *     StopAsyncIteration = StopIteration
  * 
  */
@@ -39037,7 +37452,6 @@ if (!__Pyx_RefNanny) {
       /* "_pydevd_bundle/pydevd_cython.pyx":209
  *     StopAsyncIteration
  * except NameError:
- *     StopAsyncIteration = StopIteration             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -39053,7 +37467,6 @@ if (!__Pyx_RefNanny) {
     /* "_pydevd_bundle/pydevd_cython.pyx":206
  * import dis
  * 
- * try:             # <<<<<<<<<<<<<<
  *     StopAsyncIteration
  * except NameError:
  */
@@ -39073,7 +37486,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":287
  *     # Same thing in the main debugger but only considering the file contents, while the one in the main debugger
  *     # considers the user input (so, the actual result must be a join of both).
- *     filename_to_lines_where_exceptions_are_ignored = {}             # <<<<<<<<<<<<<<
  *     filename_to_stat_info = {}
  * 
  */
@@ -39086,7 +37498,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":288
  *     # considers the user input (so, the actual result must be a join of both).
  *     filename_to_lines_where_exceptions_are_ignored = {}
- *     filename_to_stat_info = {}             # <<<<<<<<<<<<<<
  * 
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  */
@@ -39099,7 +37510,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1401
  * 
  *         # end trace_dispatch
- * from _pydev_bundle.pydev_is_thread_alive import is_thread_alive             # <<<<<<<<<<<<<<
  * from _pydev_bundle.pydev_log import exception as pydev_log_exception
  * from _pydev_bundle._pydev_saved_modules import threading
  */
@@ -39120,7 +37530,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1402
  *         # end trace_dispatch
  * from _pydev_bundle.pydev_is_thread_alive import is_thread_alive
- * from _pydev_bundle.pydev_log import exception as pydev_log_exception             # <<<<<<<<<<<<<<
  * from _pydev_bundle._pydev_saved_modules import threading
  * from _pydevd_bundle.pydevd_constants import (get_current_thread_id, NO_FTRACE,
  */
@@ -39141,7 +37550,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1403
  * from _pydev_bundle.pydev_is_thread_alive import is_thread_alive
  * from _pydev_bundle.pydev_log import exception as pydev_log_exception
- * from _pydev_bundle._pydev_saved_modules import threading             # <<<<<<<<<<<<<<
  * from _pydevd_bundle.pydevd_constants import (get_current_thread_id, NO_FTRACE,
  *     USE_CUSTOM_SYS_CURRENT_FRAMES_MAP, ForkSafeLock)
  */
@@ -39162,7 +37570,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1404
  * from _pydev_bundle.pydev_log import exception as pydev_log_exception
  * from _pydev_bundle._pydev_saved_modules import threading
- * from _pydevd_bundle.pydevd_constants import (get_current_thread_id, NO_FTRACE,             # <<<<<<<<<<<<<<
  *     USE_CUSTOM_SYS_CURRENT_FRAMES_MAP, ForkSafeLock)
  * from pydevd_file_utils import get_abs_path_real_path_and_base_from_frame, NORM_PATHS_AND_BASE_CONTAINER
  */
@@ -39204,7 +37611,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1406
  * from _pydevd_bundle.pydevd_constants import (get_current_thread_id, NO_FTRACE,
  *     USE_CUSTOM_SYS_CURRENT_FRAMES_MAP, ForkSafeLock)
- * from pydevd_file_utils import get_abs_path_real_path_and_base_from_frame, NORM_PATHS_AND_BASE_CONTAINER             # <<<<<<<<<<<<<<
  * 
  * # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  */
@@ -39232,7 +37638,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1429
  * # - Breakpoints are changed
  * # It can be used when running regularly (without step over/step in/step return)
- * global_cache_skips = {}             # <<<<<<<<<<<<<<
  * global_cache_frame_skips = {}
  * 
  */
@@ -39244,7 +37649,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1430
  * # It can be used when running regularly (without step over/step in/step return)
  * global_cache_skips = {}
- * global_cache_frame_skips = {}             # <<<<<<<<<<<<<<
  * 
  * _global_notify_skipped_step_in = False
  */
@@ -39256,7 +37660,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1432
  * global_cache_frame_skips = {}
  * 
- * _global_notify_skipped_step_in = False             # <<<<<<<<<<<<<<
  * _global_notify_skipped_step_in_lock = ForkSafeLock()
  * 
  */
@@ -39268,7 +37671,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1433
  * 
  * _global_notify_skipped_step_in = False
- * _global_notify_skipped_step_in_lock = ForkSafeLock()             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -39283,7 +37685,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1436
  * 
  * 
- * def notify_skipped_step_in_because_of_filters(py_db, frame):             # <<<<<<<<<<<<<<
  *     global _global_notify_skipped_step_in
  * 
  */
@@ -39295,7 +37696,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1466
  * 
  * 
- * def fix_top_level_trace_and_get_trace_func(py_db, frame):             # <<<<<<<<<<<<<<
  *     # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
  *     cdef str filename;
  */
@@ -39307,7 +37707,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1594
  * 
  * 
- * def trace_dispatch(py_db, frame, event, arg):             # <<<<<<<<<<<<<<
  *     thread_trace_func, apply_to_settrace = py_db.fix_top_level_trace_and_get_trace_func(py_db, frame)
  *     if thread_trace_func is None:
  */
@@ -39319,7 +37718,6 @@ if (!__Pyx_RefNanny) {
   /* "_pydevd_bundle/pydevd_cython.pyx":1868
  * 
  * 
- * if USE_CUSTOM_SYS_CURRENT_FRAMES_MAP:             # <<<<<<<<<<<<<<
  *     # This is far from ideal, as we'll leak frames (we'll always have the last created frame, not really
  *     # the last topmost frame saved -- this should be Ok for our usage, but it may leak frames and things
  */
@@ -39332,7 +37730,6 @@ if (!__Pyx_RefNanny) {
     /* "_pydevd_bundle/pydevd_cython.pyx":1876
  *     #
  *     # See: https://github.com/IronLanguages/main/issues/1630
- *     from _pydevd_bundle.pydevd_constants import constructed_tid_to_last_frame             # <<<<<<<<<<<<<<
  * 
  *     _original_call = ThreadTracer.__call__
  */
@@ -39353,7 +37750,6 @@ if (!__Pyx_RefNanny) {
     /* "_pydevd_bundle/pydevd_cython.pyx":1878
  *     from _pydevd_bundle.pydevd_constants import constructed_tid_to_last_frame
  * 
- *     _original_call = ThreadTracer.__call__             # <<<<<<<<<<<<<<
  * 
  *     def __call__(self, frame, event, arg):
  */
@@ -39365,7 +37761,6 @@ if (!__Pyx_RefNanny) {
     /* "_pydevd_bundle/pydevd_cython.pyx":1880
  *     _original_call = ThreadTracer.__call__
  * 
- *     def __call__(self, frame, event, arg):             # <<<<<<<<<<<<<<
  *         constructed_tid_to_last_frame[self._args[1].ident] = frame
  *         return _original_call(self, frame, event, arg)
  */
@@ -39377,7 +37772,6 @@ if (!__Pyx_RefNanny) {
     /* "_pydevd_bundle/pydevd_cython.pyx":1884
  *         return _original_call(self, frame, event, arg)
  * 
- *     ThreadTracer.__call__ = __call__             # <<<<<<<<<<<<<<
  */
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_call_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1884, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -39387,14 +37781,12 @@ if (!__Pyx_RefNanny) {
     /* "_pydevd_bundle/pydevd_cython.pyx":1868
  * 
  * 
- * if USE_CUSTOM_SYS_CURRENT_FRAMES_MAP:             # <<<<<<<<<<<<<<
  *     # This is far from ideal, as we'll leak frames (we'll always have the last created frame, not really
  *     # the last topmost frame saved -- this should be Ok for our usage, but it may leak frames and things
  */
   }
 
   /* "(tree fragment)":1
- * def __pyx_unpickle_PyDBAdditionalThreadInfo(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -39406,7 +37798,6 @@ if (!__Pyx_RefNanny) {
   /* "(tree fragment)":11
  *         __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(<PyDBAdditionalThreadInfo> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_PyDBAdditionalThreadInfo__set_state(PyDBAdditionalThreadInfo __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result.conditional_breakpoint_exception = __pyx_state[0]; __pyx_result.is_tracing = __pyx_state[1]; __pyx_result.pydev_call_from_jinja2 = __pyx_state[2]; __pyx_result.pydev_call_inside_jinja2 = __pyx_state[3]; __pyx_result.pydev_django_resolve_frame = __pyx_state[4]; __pyx_result.pydev_func_name = __pyx_state[5]; __pyx_result.pydev_message = __pyx_state[6]; __pyx_result.pydev_next_line = __pyx_state[7]; __pyx_result.pydev_notify_kill = __pyx_state[8]; __pyx_result.pydev_original_step_cmd = __pyx_state[9]; __pyx_result.pydev_smart_child_offset = __pyx_state[10]; __pyx_result.pydev_smart_parent_offset = __pyx_state[11]; __pyx_result.pydev_smart_step_into_variants = __pyx_state[12]; __pyx_result.pydev_smart_step_stop = __pyx_state[13]; __pyx_result.pydev_state = __pyx_state[14]; __pyx_result.pydev_step_cmd = __pyx_state[15]; __pyx_result.pydev_step_stop = __pyx_state[16]; __pyx_result.pydev_use_scoped_step_frame = __pyx_state[17]; __pyx_result.step_in_initial_location = __pyx_state[18]; __pyx_result.suspend_type = __pyx_state[19]; __pyx_result.suspended_at_unhandled = __pyx_state[20]; __pyx_result.target_id_to_smart_step_into_variant = __pyx_state[21]; __pyx_result.thread_tracer = __pyx_state[22]; __pyx_result.top_level_thread_tracer_no_back_frames = __pyx_state[23]; __pyx_result.top_level_thread_tracer_unhandled = __pyx_state[24]; __pyx_result.trace_suspend_type = __pyx_state[25]
  *     if len(__pyx_state) > 26 and hasattr(__pyx_result, '__dict__'):
  */
@@ -39416,7 +37807,6 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "(tree fragment)":1
- * def __pyx_unpickle_PyDBFrame(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -39428,7 +37818,6 @@ if (!__Pyx_RefNanny) {
   /* "(tree fragment)":11
  *         __pyx_unpickle_PyDBFrame__set_state(<PyDBFrame> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_PyDBFrame__set_state(PyDBFrame __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result._args = __pyx_state[0]; __pyx_result.exc_info = __pyx_state[1]; __pyx_result.should_skip = __pyx_state[2]
  *     if len(__pyx_state) > 3 and hasattr(__pyx_result, '__dict__'):
  */
@@ -39438,7 +37827,6 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "(tree fragment)":1
- * def __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -39450,7 +37838,6 @@ if (!__Pyx_RefNanny) {
   /* "(tree fragment)":11
  *         __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(<TopLevelThreadTracerOnlyUnhandledExceptions> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_TopLevelThreadTracerOnlyUnhandledExceptions__set_state(TopLevelThreadTracerOnlyUnhandledExceptions __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result._args = __pyx_state[0]
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
  */
@@ -39460,7 +37847,6 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "(tree fragment)":1
- * def __pyx_unpickle_ThreadTracer(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -39470,7 +37856,6 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "_pydevd_bundle/pydevd_cython.pyx":1
- * from __future__ import print_function             # <<<<<<<<<<<<<<
  * 
  * # Important: Autogenerated file.
  */

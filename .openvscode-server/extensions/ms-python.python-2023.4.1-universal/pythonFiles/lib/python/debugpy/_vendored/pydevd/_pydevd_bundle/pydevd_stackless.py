@@ -39,9 +39,7 @@ class TaskletToLastId:
 _tasklet_to_last_id = TaskletToLastId()
 
 
-#=======================================================================================================================
 # _TaskletInfo
-#=======================================================================================================================
 class _TaskletInfo:
 
     _last_id = 0
@@ -146,16 +144,12 @@ class _TaskletInfo:
 _weak_tasklet_registered_to_info = {}
 
 
-#=======================================================================================================================
 # get_tasklet_info
-#=======================================================================================================================
 def get_tasklet_info(tasklet):
     return register_tasklet_info(tasklet)
 
 
-#=======================================================================================================================
 # register_tasklet_info
-#=======================================================================================================================
 def register_tasklet_info(tasklet):
     r = weakref.ref(tasklet)
     info = _weak_tasklet_registered_to_info.get(r)
@@ -168,9 +162,7 @@ def register_tasklet_info(tasklet):
 _application_set_schedule_callback = None
 
 
-#=======================================================================================================================
 # _schedule_callback
-#=======================================================================================================================
 def _schedule_callback(prev, next):
     '''
     Called when a context is stopped or a new context is made runnable.
@@ -316,9 +308,7 @@ if not hasattr(stackless.tasklet, "trace_function"):
 
     _original_setup = stackless.tasklet.setup
 
-    #=======================================================================================================================
     # setup
-    #=======================================================================================================================
     def setup(self, *args, **kwargs):
         '''
         Called to run a new tasklet: rebind the creation so that we can trace it.
@@ -350,9 +340,7 @@ if not hasattr(stackless.tasklet, "trace_function"):
 
         return _original_setup(self, f, args, kwargs)
 
-    #=======================================================================================================================
     # __call__
-    #=======================================================================================================================
     def __call__(self, *args, **kwargs):
         '''
         Called to run a new tasklet: rebind the creation so that we can trace it.
@@ -362,9 +350,7 @@ if not hasattr(stackless.tasklet, "trace_function"):
 
     _original_run = stackless.run
 
-    #=======================================================================================================================
     # run
-    #=======================================================================================================================
     def run(*args, **kwargs):
         debugger = get_global_debugger()
         if debugger is not None:
@@ -374,9 +360,7 @@ if not hasattr(stackless.tasklet, "trace_function"):
         return _original_run(*args, **kwargs)
 
 
-#=======================================================================================================================
 # patch_stackless
-#=======================================================================================================================
 def patch_stackless():
     '''
     This function should be called to patch the stackless module so that new tasklets are properly tracked in the

@@ -79,7 +79,6 @@ import warnings
 sql = None
 anydbm = None
 
-#==============================================================================
 
 # Secure alternative to pickle, use it if present.
 try:
@@ -136,7 +135,6 @@ class Marshaller (StaticClass):
     def loads(data):
         return pickle.loads(zlib.decompress(data))
 
-#==============================================================================
 
 class CrashWarning (Warning):
     """
@@ -144,7 +142,6 @@ class CrashWarning (Warning):
     Some data may be incomplete or missing.
     """
 
-#==============================================================================
 
 # Crash object. Must be serializable.
 class Crash (object):
@@ -1121,7 +1118,6 @@ class Crash (object):
         """
         return bool( self.notes )
 
-#==============================================================================
 
 class CrashContainer (object):
     """
@@ -1517,7 +1513,6 @@ class CrashContainer (object):
         """
         return self.get(key)
 
-#==============================================================================
 
 class CrashDictionary(object):
     """
@@ -1843,7 +1838,6 @@ class DummyCrashContainer(object):
         """
         return iter(self.__keys)
 
-#==============================================================================
 # Register the Crash class with the secure serializer.
 
 try:

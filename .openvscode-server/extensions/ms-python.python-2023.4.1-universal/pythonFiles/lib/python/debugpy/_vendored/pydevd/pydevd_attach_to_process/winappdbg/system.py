@@ -56,7 +56,6 @@ import warnings
 
 from os import path, getenv
 
-#==============================================================================
 
 class System (_ProcessContainer):
     """

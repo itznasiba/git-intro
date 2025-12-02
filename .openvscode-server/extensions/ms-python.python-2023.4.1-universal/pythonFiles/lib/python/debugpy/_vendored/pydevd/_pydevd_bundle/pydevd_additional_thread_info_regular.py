@@ -10,9 +10,7 @@ from _pydevd_bundle.pydevd_frame import PyDBFrame
 version = 11
 
 
-#=======================================================================================================================
 # PyDBAdditionalThreadInfo
-#=======================================================================================================================
 # IFDEF CYTHON
 # cdef class PyDBAdditionalThreadInfo:
 # ELSE

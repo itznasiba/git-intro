@@ -9,9 +9,7 @@ import traceback
 from _pydev_bundle.pydev_ipython_console_011 import get_pydev_frontend
 
 
-#=======================================================================================================================
 # InterpreterInterface
-#=======================================================================================================================
 class InterpreterInterface(BaseInterpreterInterface):
     '''
         The methods in this class should be registered in the xml-rpc server.

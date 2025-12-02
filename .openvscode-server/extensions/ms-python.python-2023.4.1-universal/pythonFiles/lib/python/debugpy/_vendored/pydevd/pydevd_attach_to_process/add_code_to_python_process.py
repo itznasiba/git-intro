@@ -2,7 +2,6 @@ r'''
 Copyright: Brainwy Software Ltda.
 
 License: EPL.
-=============
 
 Works for Windows by using an executable that'll inject a dll to a process and call a function.
 
@@ -11,7 +10,6 @@ Note: https://github.com/fabioz/winappdbg is used just to determine if the targe
 Works for Linux relying on gdb.
 
 Limitations:
-============
 
     Linux:
     ------

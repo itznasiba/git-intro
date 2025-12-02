@@ -8,9 +8,7 @@ import threading
 import sys
 
 
-#=======================================================================================================================
 # flatten_test_suite
-#=======================================================================================================================
 def flatten_test_suite(test_suite, ret):
     if isinstance(test_suite, unittest.TestSuite):
         for t in test_suite._tests:
@@ -20,9 +18,7 @@ def flatten_test_suite(test_suite, ret):
         ret.append(test_suite)
 
 
-#=======================================================================================================================
 # execute_tests_in_parallel
-#=======================================================================================================================
 def execute_tests_in_parallel(tests, jobs, split, verbosity, coverage_files, coverage_include):
     '''
     @param tests: list(PydevTestSuite)
@@ -143,9 +139,7 @@ def execute_tests_in_parallel(tests, jobs, split, verbosity, coverage_files, cov
     return True
 
 
-#=======================================================================================================================
 # CommunicationThread
-#=======================================================================================================================
 class CommunicationThread(threading.Thread):
 
     def __init__(self, tests_queue):
@@ -209,9 +203,7 @@ class CommunicationThread(threading.Thread):
                 self.server.handle_request()
 
 
-#=======================================================================================================================
 # Client
-#=======================================================================================================================
 class ClientThread(threading.Thread):
 
     def __init__(self, job_id, port, verbosity, coverage_output_file=None, coverage_include=None):

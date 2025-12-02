@@ -21,7 +21,6 @@ Microsoft Python extension for Visual Studio Code incorporates third party mater
 
 %%
 Go for Visual Studio Code NOTICES, INFORMATION, AND LICENSE BEGIN HERE
-=========================================
 The MIT License (MIT)
 
 Copyright (c) Microsoft Corporation
@@ -43,12 +42,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-=========================================
 END OF
 Go for Visual Studio Code NOTICES, INFORMATION, AND LICENSE
 
 %% Files from the Python Project NOTICES, INFORMATION, AND LICENSE BEGIN HERE
-=========================================
 PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
 --------------------------------------------
 
@@ -241,11 +238,9 @@ FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
 WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT
 OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
-=========================================
 END OF Files from the Python Project NOTICES, INFORMATION, AND LICENSE
 
 %% Google Diff Match and Patch  NOTICES, INFORMATION, AND LICENSE BEGIN HERE
-=========================================
  * Copyright 2006 Google Inc.
  * http://code.google.com/p/google-diff-match-patch/
  *
@@ -260,11 +255,9 @@ END OF Files from the Python Project NOTICES, INFORMATION, AND LICENSE
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
-=========================================
 END OF Google Diff Match and Patch  NOTICES, INFORMATION, AND LICENSE
 
 %% omnisharp-vscode NOTICES, INFORMATION, AND LICENSE BEGIN HERE
-=========================================
 Copyright (c) Microsoft Corporation
 
 All rights reserved.
@@ -282,11 +275,9 @@ THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
 BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
 OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-=========================================
 END OF omnisharp-vscode NOTICES, INFORMATION, AND LICENSE
 
 %% PTVS NOTICES, INFORMATION, AND LICENSE BEGIN HERE
-=========================================
 Copyright (c) Microsoft Corporation. All rights reserved.
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -300,11 +291,9 @@ Copyright (c) Microsoft Corporation. All rights reserved.
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
-=========================================
 END OF PTVS NOTICES, INFORMATION, AND LICENSE
 
 %% Python documentation NOTICES, INFORMATION, AND LICENSE BEGIN HERE
-=========================================
 Terms and conditions for accessing or otherwise using Python
 PSF LICENSE AGREEMENT FOR PYTHON 2.7.13
 1. This LICENSE AGREEMENT is between the Python Software Foundation ("PSF"), and
@@ -467,11 +456,9 @@ OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
 DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
 ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
 SOFTWARE.
-=========================================
 END OF Python documentation NOTICES, INFORMATION, AND LICENSE
 
 %% python-functools32 NOTICES, INFORMATION, AND LICENSE BEGIN HERE
-=========================================
 PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
 --------------------------------------------
 
@@ -664,11 +651,9 @@ FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
 WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT
 OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
-=========================================
 END OF python-functools32 NOTICES, INFORMATION, AND LICENSE
 
 %% pythonVSCode NOTICES, INFORMATION, AND LICENSE BEGIN HERE
-=========================================
 The MIT License (MIT)
 
 Copyright (c) 2015 DonJayamanne
@@ -690,11 +675,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-=========================================
 END OF pythonVSCode NOTICES, INFORMATION, AND LICENSE
 
 %% Sphinx NOTICES, INFORMATION, AND LICENSE BEGIN HERE
-=========================================
 Copyright (c) 2007-2017 by the Sphinx team (see AUTHORS file).
 All rights reserved.
 
@@ -720,12 +703,10 @@ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
 THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-=========================================
 END OF Sphinx NOTICES, INFORMATION, AND LICENSE
 
 
 %% nteract NOTICES, INFORMATION, AND LICENSE BEGIN HERE
-=========================================
 Copyright (c) 2016, nteract contributors
 All rights reserved.
 
@@ -754,11 +735,9 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-=========================================
 END OF nteract NOTICES, INFORMATION, AND LICENSE
 
 %% less-plugin-inline-urls NOTICES, INFORMATION, AND LICENSE BEGIN HERE
-=========================================
 Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -961,11 +940,9 @@ Apache License
    See the License for the specific language governing permissions and
    limitations under the License.
 
-=========================================
 END OF less-plugin-inline-urls NOTICES, INFORMATION, AND LICENSE
 
 %% vscode-cpptools NOTICES, INFORMATION, AND LICENSE BEGIN HERE
-=========================================
 vscode-cpptools
 
 Copyright (c) Microsoft Corporation
@@ -993,11 +970,9 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
 ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-=========================================
 END OF vscode-cpptools NOTICES, INFORMATION, AND LICENSE
 
 %% mocha NOTICES, INFORMATION, AND LICENSE BEGIN HERE
-=========================================
 
 (The MIT License)
 
@@ -1022,12 +997,10 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-=========================================
 END OF mocha NOTICES, INFORMATION, AND LICENSE
 
 
 %% get-pip NOTICES, INFORMATION, AND LICENSE BEGIN HERE
-=========================================
 
 Copyright (c) 2008-2019 The pip developers
 
@@ -1050,5 +1023,4 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-=========================================
 END OF get-pip NOTICES, INFORMATION, AND LICENSE

@@ -163,7 +163,6 @@ def set_target(kind, parser=(lambda x: x), positional=False):
 # fmt: off
 switches = [
     # Switch                    Placeholder         Action
-    # ======                    ===========         ======
 
     # Switches that are documented for use by end users.
     ("-(\\?|h|-help)",          None,               print_help_and_exit),

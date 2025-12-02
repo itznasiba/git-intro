@@ -38,11 +38,9 @@ __revision__ = "$Id$"
 
 from winappdbg.win32.defines import *
 
-#==============================================================================
 # This is used later on to calculate the list of exported symbols.
 _all = None
 _all = set(vars().keys())
-#==============================================================================
 
 #--- NTDDI version ------------------------------------------------------------
 
@@ -1030,9 +1028,7 @@ def VerQueryValueW(pBlock, lpSubBlock):
 
 VerQueryValue = GuessStringType(VerQueryValueA, VerQueryValueW)
 
-#==============================================================================
 # This calculates the list of exported symbols.
 _all = set(vars().keys()).difference(_all)
 __all__ = [_x for _x in _all if not _x.startswith('_')]
 __all__.sort()
-#==============================================================================

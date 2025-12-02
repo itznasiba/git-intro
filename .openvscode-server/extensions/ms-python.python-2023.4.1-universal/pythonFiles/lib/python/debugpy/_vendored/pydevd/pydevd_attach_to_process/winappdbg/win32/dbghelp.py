@@ -89,11 +89,9 @@ _load_latest_dbghelp_dll()
 
 #------------------------------------------------------------------------------
 
-#==============================================================================
 # This is used later on to calculate the list of exported symbols.
 _all = None
 _all = set(vars().keys())
-#==============================================================================
 
 # SymGetHomeDirectory "type" values
 hdBase = 0
@@ -886,13 +884,11 @@ class SYM_INFOW(Structure):
     ]
 PSYM_INFOW = POINTER(SYM_INFOW)
 
-#===============================================================================
 # BOOL WINAPI SymFromName(
 #  __in     HANDLE hProcess,
 #  __in     PCTSTR Name,
 #  __inout  PSYMBOL_INFO Symbol
 # );
-#===============================================================================
 def SymFromName(hProcess, Name):
     _SymFromNameA = windll.dbghelp.SymFromName
     _SymFromNameA.argtypes = [HANDLE, LPSTR, PSYM_INFO]
@@ -921,14 +917,12 @@ def SymFromNameW(hProcess, Name):
 
     return SymInfo
 
-#===============================================================================
 # BOOL WINAPI SymFromAddr(
 #  __in       HANDLE hProcess,
 #  __in       DWORD64 Address,
 #  __out_opt  PDWORD64 Displacement,
 #  __inout    PSYMBOL_INFO Symbol
 # );
-#===============================================================================
 def SymFromAddr(hProcess, Address):
     _SymFromAddr = windll.dbghelp.SymFromAddr
     _SymFromAddr.argtypes = [HANDLE, DWORD64, PDWORD64, PSYM_INFO]
@@ -959,7 +953,6 @@ def SymFromAddrW(hProcess, Address):
 
     return (Displacement.value, SymInfo)
 
-#===============================================================================
 # typedef struct _IMAGEHLP_SYMBOL64 {
 #  DWORD   SizeOfStruct;
 #  DWORD64 Address;
@@ -968,7 +961,6 @@ def SymFromAddrW(hProcess, Address):
 #  DWORD   MaxNameLength;
 #  CHAR   Name[1];
 # } IMAGEHLP_SYMBOL64, *PIMAGEHLP_SYMBOL64;
-#===============================================================================
 class IMAGEHLP_SYMBOL64 (Structure):
     _fields_ = [
         ("SizeOfStruct",    DWORD),
@@ -980,7 +972,6 @@ class IMAGEHLP_SYMBOL64 (Structure):
     ]
 PIMAGEHLP_SYMBOL64 = POINTER(IMAGEHLP_SYMBOL64)
 
-#===============================================================================
 # typedef struct _IMAGEHLP_SYMBOLW64 {
 #  DWORD   SizeOfStruct;
 #  DWORD64 Address;
@@ -989,7 +980,6 @@ PIMAGEHLP_SYMBOL64 = POINTER(IMAGEHLP_SYMBOL64)
 #  DWORD   MaxNameLength;
 #  WCHAR   Name[1];
 # } IMAGEHLP_SYMBOLW64, *PIMAGEHLP_SYMBOLW64;
-#===============================================================================
 class IMAGEHLP_SYMBOLW64 (Structure):
     _fields_ = [
         ("SizeOfStruct",    DWORD),
@@ -1001,14 +991,12 @@ class IMAGEHLP_SYMBOLW64 (Structure):
     ]
 PIMAGEHLP_SYMBOLW64 = POINTER(IMAGEHLP_SYMBOLW64)
 
-#===============================================================================
 # BOOL WINAPI SymGetSymFromAddr64(
 #  __in       HANDLE hProcess,
 #  __in       DWORD64 Address,
 #  __out_opt  PDWORD64 Displacement,
 #  __inout    PIMAGEHLP_SYMBOL64 Symbol
 # );
-#===============================================================================
 def SymGetSymFromAddr64(hProcess, Address):
     _SymGetSymFromAddr64 = windll.dbghelp.SymGetSymFromAddr64
     _SymGetSymFromAddr64.argtypes = [HANDLE, DWORD64, PDWORD64, PIMAGEHLP_SYMBOL64]
@@ -1027,14 +1015,12 @@ def SymGetSymFromAddr64(hProcess, Address):
 #TODO: check for the 'W' version of SymGetSymFromAddr64()
 
 
-#===============================================================================
 # typedef struct API_VERSION {
 #  USHORT MajorVersion;
 #  USHORT MinorVersion;
 #  USHORT Revision;
 #  USHORT Reserved;
 # } API_VERSION, *LPAPI_VERSION;
-#===============================================================================
 class API_VERSION (Structure):
     _fields_ = [
         ("MajorVersion",    USHORT),
@@ -1045,9 +1031,7 @@ class API_VERSION (Structure):
 PAPI_VERSION = POINTER(API_VERSION)
 LPAPI_VERSION = PAPI_VERSION
 
-#===============================================================================
 # LPAPI_VERSION WINAPI ImagehlpApiVersion(void);
-#===============================================================================
 def ImagehlpApiVersion():
     _ImagehlpApiVersion = windll.dbghelp.ImagehlpApiVersion
     _ImagehlpApiVersion.restype = LPAPI_VERSION
@@ -1056,11 +1040,9 @@ def ImagehlpApiVersion():
     return api_version.contents
 
 
-#===============================================================================
 # LPAPI_VERSION WINAPI ImagehlpApiVersionEx(
 #  __in  LPAPI_VERSION AppVersion
 # );
-#===============================================================================
 def ImagehlpApiVersionEx(MajorVersion, MinorVersion, Revision):
     _ImagehlpApiVersionEx = windll.dbghelp.ImagehlpApiVersionEx
     _ImagehlpApiVersionEx.argtypes = [LPAPI_VERSION]
@@ -1072,14 +1054,12 @@ def ImagehlpApiVersionEx(MajorVersion, MinorVersion, Revision):
 
     return ret_api_version.contents
 
-#===============================================================================
 # typedef enum {
 #     AddrMode1616,
 #     AddrMode1632,
 #     AddrModeReal,
 #     AddrModeFlat
 # } ADDRESS_MODE;
-#===============================================================================
 AddrMode1616 = 0
 AddrMode1632 = 1
 AddrModeReal = 2
@@ -1087,13 +1067,11 @@ AddrModeFlat = 3
 
 ADDRESS_MODE = DWORD #needed for the size of an ADDRESS_MODE (see ADDRESS64)
 
-#===============================================================================
 # typedef struct _tagADDRESS64 {
 #  DWORD64      Offset;
 #  WORD         Segment;
 #  ADDRESS_MODE Mode;
 # } ADDRESS64, *LPADDRESS64;
-#===============================================================================
 class ADDRESS64 (Structure):
     _fields_ = [
         ("Offset",      DWORD64),
@@ -1102,7 +1080,6 @@ class ADDRESS64 (Structure):
     ]
 LPADDRESS64 = POINTER(ADDRESS64)
 
-#===============================================================================
 # typedef struct _KDHELP64 {
 #    DWORD64   Thread;
 #    DWORD   ThCallbackStack;
@@ -1117,7 +1094,6 @@ LPADDRESS64 = POINTER(ADDRESS64)
 #    DWORD64   StackLimit;
 #    DWORD64   Reserved[5];
 # } KDHELP64, *PKDHELP64;
-#===============================================================================
 class KDHELP64 (Structure):
     _fields_ = [
         ("Thread",              DWORD64),
@@ -1135,7 +1111,6 @@ class KDHELP64 (Structure):
     ]
 PKDHELP64 = POINTER(KDHELP64)
 
-#===============================================================================
 # typedef struct _tagSTACKFRAME64 {
 #  ADDRESS64 AddrPC;
 #  ADDRESS64 AddrReturn;
@@ -1149,7 +1124,6 @@ PKDHELP64 = POINTER(KDHELP64)
 #  DWORD64   Reserved[3];
 #  KDHELP64  KdHelp;
 # } STACKFRAME64, *LPSTACKFRAME64;
-#===============================================================================
 class STACKFRAME64(Structure):
     _fields_ = [
         ("AddrPC",          ADDRESS64),
@@ -1166,7 +1140,6 @@ class STACKFRAME64(Structure):
     ]
 LPSTACKFRAME64 = POINTER(STACKFRAME64)
 
-#===============================================================================
 # BOOL CALLBACK ReadProcessMemoryProc64(
 #  __in   HANDLE hProcess,
 #  __in   DWORD64 lpBaseAddress,
@@ -1174,31 +1147,24 @@ LPSTACKFRAME64 = POINTER(STACKFRAME64)
 #  __in   DWORD nSize,
 #  __out  LPDWORD lpNumberOfBytesRead
 # );
-#===============================================================================
 PREAD_PROCESS_MEMORY_ROUTINE64 = WINFUNCTYPE(BOOL, HANDLE, DWORD64, PVOID, DWORD, LPDWORD)
 
-#===============================================================================
 # PVOID CALLBACK FunctionTableAccessProc64(
 #  __in  HANDLE hProcess,
 #  __in  DWORD64 AddrBase
 # );
-#===============================================================================
 PFUNCTION_TABLE_ACCESS_ROUTINE64 = WINFUNCTYPE(PVOID, HANDLE, DWORD64)
 
-#===============================================================================
 # DWORD64 CALLBACK GetModuleBaseProc64(
 #  __in  HANDLE hProcess,
 #  __in  DWORD64 Address
 # );
-#===============================================================================
 PGET_MODULE_BASE_ROUTINE64 = WINFUNCTYPE(DWORD64, HANDLE, DWORD64)
 
-#===============================================================================
 # DWORD64 CALLBACK GetModuleBaseProc64(
 #  __in  HANDLE hProcess,
 #  __in  DWORD64 Address
 # );
-#===============================================================================
 PTRANSLATE_ADDRESS_ROUTINE64 = WINFUNCTYPE(DWORD64, HANDLE, DWORD64)
 
 # Valid machine types for StackWalk64 function
@@ -1206,7 +1172,6 @@ IMAGE_FILE_MACHINE_I386 = 0x014c    #Intel x86
 IMAGE_FILE_MACHINE_IA64 = 0x0200    #Intel Itanium Processor Family (IPF)
 IMAGE_FILE_MACHINE_AMD64 = 0x8664   #x64 (AMD64 or EM64T)
 
-#===============================================================================
 # BOOL WINAPI StackWalk64(
 #  __in      DWORD MachineType,
 #  __in      HANDLE hProcess,
@@ -1218,7 +1183,6 @@ IMAGE_FILE_MACHINE_AMD64 = 0x8664   #x64 (AMD64 or EM64T)
 #  __in_opt  PGET_MODULE_BASE_ROUTINE64 GetModuleBaseRoutine,
 #  __in_opt  PTRANSLATE_ADDRESS_ROUTINE64 TranslateAddress
 # );
-#===============================================================================
 def StackWalk64(MachineType, hProcess, hThread, StackFrame,
                 ContextRecord = None, ReadMemoryRoutine = None,
                 FunctionTableAccessRoutine = None, GetModuleBaseRoutine = None,
@@ -1269,9 +1233,7 @@ def StackWalk64(MachineType, hProcess, hThread, StackFrame,
 
     return ret
 
-#==============================================================================
 # This calculates the list of exported symbols.
 _all = set(vars().keys()).difference(_all)
 __all__ = [_x for _x in _all if not _x.startswith('_')]
 __all__.sort()
-#==============================================================================

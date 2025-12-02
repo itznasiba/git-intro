@@ -66,7 +66,6 @@ pydasm = None
 libdisassemble = None
 capstone = None
 
-#==============================================================================
 
 class Engine (object):
     """
@@ -171,7 +170,6 @@ class Engine (object):
         """
         raise NotImplementedError()
 
-#==============================================================================
 
 class BeaEngine (Engine):
     """
@@ -290,7 +288,6 @@ class BeaEngine (Engine):
         # Return the list of decoded instructions.
         return result
 
-#==============================================================================
 
 class DistormEngine (Engine):
     """
@@ -330,7 +327,6 @@ class DistormEngine (Engine):
     def decode(self, address, code):
         return self.__decode(address, code, self.__flag)
 
-#==============================================================================
 
 class PyDasmEngine (Engine):
     """
@@ -396,7 +392,6 @@ class PyDasmEngine (Engine):
         # Return the list of decoded instructions.
         return result
 
-#==============================================================================
 
 class LibdisassembleEngine (Engine):
     """
@@ -459,7 +454,6 @@ class LibdisassembleEngine (Engine):
         # Return the list of decoded instructions.
         return result
 
-#==============================================================================
 
 class CapstoneEngine (Engine):
     """
@@ -623,7 +617,6 @@ class CapstoneEngine (Engine):
         # Return the list of decoded instructions.
         return result
 
-#==============================================================================
 
 # TODO: use a lock to access __decoder
 # TODO: look in sys.modules for whichever disassembler is already loaded

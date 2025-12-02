@@ -6,9 +6,7 @@ from urllib.parse import unquote_plus
 from _pydevd_bundle.pydevd_constants import IS_PY311_OR_GREATER
 
 
-#===================================================================================================
 # print_var_node
-#===================================================================================================
 def print_var_node(xml_node, stream):
     name = xml_node.getAttribute('name')
     value = xml_node.getAttribute('value')
@@ -26,9 +24,7 @@ def print_var_node(xml_node, stream):
     stream.write('\n')
 
 
-#===================================================================================================
 # print_referrers
-#===================================================================================================
 def print_referrers(obj, stream=None):
     if stream is None:
         stream = sys.stdout
@@ -58,9 +54,7 @@ def print_referrers(obj, stream=None):
     return result
 
 
-#===================================================================================================
 # get_referrer_info
-#===================================================================================================
 def get_referrer_info(searched_obj):
     DEBUG = 0
     if DEBUG:

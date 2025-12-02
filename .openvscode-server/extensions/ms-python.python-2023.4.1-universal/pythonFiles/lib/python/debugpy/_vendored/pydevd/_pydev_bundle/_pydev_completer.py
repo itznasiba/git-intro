@@ -17,9 +17,7 @@ except ImportError:
 dir2 = _pydev_imports_tipper.generate_imports_tip_for_module
 
 
-#=======================================================================================================================
 # _StartsWithFilter
-#=======================================================================================================================
 class _StartsWithFilter:
     '''
         Used because we can't create a lambda that'll use an outer scope in jython 2.1
@@ -32,11 +30,9 @@ class _StartsWithFilter:
         return name.lower().startswith(self.start_with)
 
 
-#=======================================================================================================================
 # Completer
 #
 # This class was gotten from IPython.completer (dir2 was replaced with the completer already in pydev)
-#=======================================================================================================================
 class Completer:
 
     def __init__(self, namespace=None, global_namespace=None):

@@ -337,9 +337,7 @@ class PyDevTerminalInteractiveShell(TerminalInteractiveShell):
 InteractiveShellABC.register(PyDevTerminalInteractiveShell)  # @UndefinedVariable
 
 
-#=======================================================================================================================
 # _PyDevFrontEnd
-#=======================================================================================================================
 class _PyDevFrontEnd:
 
     version = release.__version__

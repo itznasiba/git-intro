@@ -72,7 +72,6 @@ from cmd import Cmd
 # lazy imports
 readline = None
 
-#==============================================================================
 
 
 class DummyEvent (NoEvent):
@@ -90,7 +89,6 @@ class DummyEvent (NoEvent):
     def get_thread(self):
         return self._thread
 
-#==============================================================================
 
 
 class CmdError (Exception):
@@ -99,7 +97,6 @@ class CmdError (Exception):
     Used internally by L{ConsoleDebugger}.
     """
 
-#==============================================================================
 
 
 class ConsoleDebugger (Cmd, EventHandler):

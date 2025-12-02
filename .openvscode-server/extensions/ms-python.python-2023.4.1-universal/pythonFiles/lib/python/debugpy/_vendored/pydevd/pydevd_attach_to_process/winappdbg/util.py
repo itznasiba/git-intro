@@ -82,7 +82,6 @@ import optparse
 from winappdbg import win32
 from winappdbg import compat
 
-#==============================================================================
 
 class classproperty(property):
     """
@@ -153,7 +152,6 @@ class StaticClass (object):
         raise NotImplementedError(
                 "Cannot instance static class %s" % cls.__name__)
 
-#==============================================================================
 
 class PathOperations (StaticClass):
     """
@@ -336,7 +334,6 @@ class PathOperations (StaticClass):
         """
         return win32.PathFindFileName(pathname)
 
-#==============================================================================
 
 class MemoryAddresses (StaticClass):
     """
@@ -463,7 +460,6 @@ class MemoryAddresses (StaticClass):
                 (begin <= old_begin < end)     or \
                 (begin < old_end <= end)
 
-#==============================================================================
 
 def CustomAddressIterator(memory_map, condition):
     """
@@ -601,7 +597,6 @@ def ExecutableAndWriteableAddressIterator(memory_map):
     return CustomAddressIterator(memory_map,
                       win32.MemoryBasicInformation.is_executable_and_writeable)
 
-#==============================================================================
 try:
     _registerMask = win32.SIZE_T(-1).value
 except TypeError:

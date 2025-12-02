@@ -187,9 +187,7 @@ if pydevd_constants.PYDEVD_IPYTHON_COMPATIBLE_DEBUGGING:
     pydev_log.debug('PYDEVD_IPYTHON_CONTEXT: %s', pydevd_constants.PYDEVD_IPYTHON_CONTEXT)
 
 
-#=======================================================================================================================
 # PyDBCommandThread
-#=======================================================================================================================
 class PyDBCommandThread(PyDBDaemonThread):
 
     def __init__(self, py_db):
@@ -231,10 +229,8 @@ class PyDBCommandThread(PyDBDaemonThread):
         self._py_db_command_thread_event.set()
 
 
-#=======================================================================================================================
 # CheckAliveThread
 # Non-daemon thread: guarantees that all data is written even if program is finished
-#=======================================================================================================================
 class CheckAliveThread(PyDBDaemonThread):
 
     def __init__(self, py_db):
@@ -2735,9 +2731,7 @@ def _is_attached():
     return (py_db is not None) and py_db.is_attached()
 
 
-#=======================================================================================================================
 # settrace
-#=======================================================================================================================
 def settrace(
     host=None,
     stdout_to_server=False,
@@ -3275,9 +3269,7 @@ def config(protocol='', debug_mode='', preimport=''):
     PydevdCustomization.PREIMPORT = preimport
 
 
-#=======================================================================================================================
 # main
-#=======================================================================================================================
 def main():
 
     # parse the command line. --file is our last argument that is required

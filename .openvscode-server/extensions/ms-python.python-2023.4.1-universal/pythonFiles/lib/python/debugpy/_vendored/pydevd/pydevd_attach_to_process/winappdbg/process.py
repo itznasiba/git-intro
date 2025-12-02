@@ -70,7 +70,6 @@ import traceback
 # delayed import
 System = None
 
-#==============================================================================
 
 # TODO
 # * Remote GetLastError()
@@ -3862,7 +3861,6 @@ class Process (_ThreadContainer, _ModuleContainer):
                            _ModuleContainer._notify_create_process(self, event)
         return bCallHandler
 
-#==============================================================================
 
 class _ProcessContainer (object):
     """

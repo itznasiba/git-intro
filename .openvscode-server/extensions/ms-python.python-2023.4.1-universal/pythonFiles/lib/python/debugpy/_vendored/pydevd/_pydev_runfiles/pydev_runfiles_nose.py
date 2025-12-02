@@ -9,9 +9,7 @@ from io import StringIO
 import traceback
 
 
-#=======================================================================================================================
 # PydevPlugin
-#=======================================================================================================================
 class PydevPlugin(Plugin):
 
     def __init__(self, configuration):
@@ -30,11 +28,9 @@ class PydevPlugin(Plugin):
 
         pydev_runfiles_xml_rpc.notifyTestRunFinished('Finished in: %.2f secs.' % (time.time() - self.start_time,))
 
-    #===================================================================================================================
     # Methods below are not called with multiprocess (so, we monkey-patch MultiProcessTestRunner.consolidate
     # so that they're called, but unfortunately we loose some info -- i.e.: the time for each test in this
     # process).
-    #===================================================================================================================
 
     class Sentinel(object):
         pass
@@ -173,9 +169,7 @@ def start_pydev_nose_plugin_singleton(configuration):
 original = MultiProcessTestRunner.consolidate
 
 
-#=======================================================================================================================
 # new_consolidate
-#=======================================================================================================================
 def new_consolidate(self, result, batch_result):
     '''
     Used so that it can work with the multiprocess plugin.

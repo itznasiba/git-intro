@@ -73,7 +73,6 @@ import ctypes
 import warnings
 import traceback
 
-#==============================================================================
 
 class BreakpointWarning (UserWarning):
     """
@@ -87,7 +86,6 @@ class BreakpointCallbackWarning (RuntimeWarning):
     breakpoint's user-defined callback.
     """
 
-#==============================================================================
 
 class Breakpoint (object):
     """
@@ -530,7 +528,6 @@ class Breakpoint (object):
             msg = msg % HexDump.address( self.get_address() )
             warnings.warn(msg, BreakpointWarning)
 
-#==============================================================================
 
 # XXX TODO
 # Check if the user is trying to set a code breakpoint on a memory mapped file,
@@ -632,7 +629,6 @@ class CodeBreakpoint (Breakpoint):
             aThread.set_tf()
         super(CodeBreakpoint, self).running(aProcess, aThread)
 
-#==============================================================================
 
 # TODO:
 # * If the original page was already a guard page, the exception should be
@@ -745,7 +741,6 @@ class PageBreakpoint (Breakpoint):
         aThread.set_tf()
         super(PageBreakpoint, self).running(aProcess, aThread)
 
-#==============================================================================
 
 class HardwareBreakpoint (Breakpoint):
     """
@@ -975,7 +970,6 @@ class HardwareBreakpoint (Breakpoint):
         super(HardwareBreakpoint, self).running(aProcess, aThread)
         aThread.set_tf()
 
-#==============================================================================
 
 # XXX FIXME
 #
@@ -1751,7 +1745,6 @@ class ApiHook (object):
         hook.unhook(debug, pid, label)
         del self.__hook[pid]
 
-#==============================================================================
 
 class BufferWatch (object):
     """
@@ -1813,7 +1806,6 @@ class BufferWatch (object):
         """
         return self.__start <= address < self.__end
 
-#==============================================================================
 
 class _BufferWatchCondition (object):
     """
@@ -1926,7 +1918,6 @@ class _BufferWatchCondition (object):
                     event.debug.dont_watch_buffer(bw)
         return bCondition
 
-#==============================================================================
 
 class _BreakpointContainer (object):
     """

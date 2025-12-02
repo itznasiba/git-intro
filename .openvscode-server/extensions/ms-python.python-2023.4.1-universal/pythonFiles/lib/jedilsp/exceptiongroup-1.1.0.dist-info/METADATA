@@ -55,7 +55,6 @@ See the `standard library documentation`_ for more information on exception grou
 .. _standard library documentation: https://docs.python.org/3/library/exceptions.html
 
 Catching exceptions
-===================
 
 Due to the lack of the ``except*`` syntax introduced by `PEP 654`_ in earlier Python
 versions, you need to use ``exceptiongroup.catch()`` to catch exceptions that are
@@ -104,7 +103,6 @@ would be written with this backport like this:
 ``ExceptionGroup`` with ``catch()``.
 
 Notes on monkey patching
-========================
 
 To make exception groups render properly when an unhandled exception group is being
 printed out, this package does two things when it is imported on any Python version

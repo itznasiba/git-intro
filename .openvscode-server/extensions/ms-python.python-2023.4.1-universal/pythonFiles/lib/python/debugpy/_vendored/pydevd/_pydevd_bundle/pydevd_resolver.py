@@ -14,9 +14,7 @@ TOO_LARGE_MSG = 'Maximum number of items (%s) reached. To show more items custom
 TOO_LARGE_ATTR = 'Unable to handle:'
 
 
-#=======================================================================================================================
 # UnableToResolveVariableException
-#=======================================================================================================================
 class UnableToResolveVariableException(Exception):
     pass
 
@@ -31,9 +29,7 @@ try:
 except:
     pass
 
-#=======================================================================================================================
 # See: pydevd_extension_api module for resolver interface
-#=======================================================================================================================
 
 
 def sorted_attributes_key(attr_name):
@@ -52,9 +48,7 @@ def sorted_attributes_key(attr_name):
         return (0, attr_name)
 
 
-#=======================================================================================================================
 # DefaultResolver
-#=======================================================================================================================
 class DefaultResolver:
     '''
         DefaultResolver is the class that'll actually resolve how to show some variable.
@@ -234,9 +228,7 @@ def _does_obj_repr_evaluate_to_obj(obj):
         return False
 
 
-#=======================================================================================================================
 # DictResolver
-#=======================================================================================================================
 class DictResolver:
 
     sort_keys = not IS_PY36_OR_GREATER
@@ -535,9 +527,7 @@ class TupleResolver:  # to enumerate tuples and lists
         return d
 
 
-#=======================================================================================================================
 # SetResolver
-#=======================================================================================================================
 class SetResolver:
     '''
         Resolves a set as dict id(object)->object
@@ -609,9 +599,7 @@ class SetResolver:
         return None
 
 
-#=======================================================================================================================
 # InstanceResolver
-#=======================================================================================================================
 class InstanceResolver:
 
     def resolve(self, var, attribute):
@@ -634,9 +622,7 @@ class InstanceResolver:
         return ret
 
 
-#=======================================================================================================================
 # JyArrayResolver
-#=======================================================================================================================
 class JyArrayResolver:
     '''
         This resolves a regular Object[] array from java
@@ -657,9 +643,7 @@ class JyArrayResolver:
         return ret
 
 
-#=======================================================================================================================
 # MultiValueDictResolver
-#=======================================================================================================================
 class MultiValueDictResolver(DictResolver):
 
     def resolve(self, dct, key):
@@ -677,9 +661,7 @@ class MultiValueDictResolver(DictResolver):
         raise UnableToResolveVariableException()
 
 
-#=======================================================================================================================
 # DjangoFormResolver
-#=======================================================================================================================
 class DjangoFormResolver(DefaultResolver):
 
     def get_dictionary(self, var, names=None):
@@ -701,9 +683,7 @@ class DjangoFormResolver(DefaultResolver):
         return d
 
 
-#=======================================================================================================================
 # DequeResolver
-#=======================================================================================================================
 class DequeResolver(TupleResolver):
 
     def get_dictionary(self, var):
@@ -712,9 +692,7 @@ class DequeResolver(TupleResolver):
         return d
 
 
-#=======================================================================================================================
 # OrderedDictResolver
-#=======================================================================================================================
 class OrderedDictResolver(DictResolver):
 
     sort_keys = False
@@ -723,9 +701,7 @@ class OrderedDictResolver(DictResolver):
         return OrderedDict()
 
 
-#=======================================================================================================================
 # FrameResolver
-#=======================================================================================================================
 class FrameResolver:
     '''
     This resolves a frame.

@@ -16,9 +16,7 @@ try:
 except ImportError:
     Path = None
 
-#===============================================================================
 # Things that are dependent on having the pydevd debugger
-#===============================================================================
 
 pydev_src_dir = os.path.dirname(os.path.dirname(__file__))
 
@@ -262,9 +260,7 @@ def _get_str_type_compatible(s, args):
                 return args.decode('utf-8')
 
 
-#===============================================================================
 # Things related to monkey-patching
-#===============================================================================
 def is_python(path):
     single_quote, double_quote = _get_str_type_compatible(path, ["'", '"'])
 

@@ -92,7 +92,6 @@ To list multiple issues:
     "SyntaxError: 'continue' not properly in loop"
 
 Resources
-=========
 
 - `Testing <https://parso.readthedocs.io/en/latest/docs/development.html#testing>`_
 - `PyPI <https://pypi.python.org/pypi/parso>`_
@@ -100,25 +99,21 @@ Resources
 - Uses `semantic versioning <https://semver.org/>`_
 
 Installation
-============
 
     pip install parso
 
 Future
-======
 
 - There will be better support for refactoring and comments. Stay tuned.
 - There's a WIP PEP8 validator. It's however not in a good shape, yet.
 
 Known Issues
-============
 
 - `async`/`await` are already used as keywords in Python3.6.
 - `from __future__ import print_function` is not ignored.
 
 
 Acknowledgements
-================
 
 - Guido van Rossum (@gvanrossum) for creating the parser generator pgen2
   (originally used in lib2to3).

@@ -14,9 +14,7 @@ from _pydevd_bundle.pydevd_utils import interrupt_main_thread
 from io import StringIO
 
 
-# =======================================================================================================================
 # BaseStdIn
-# =======================================================================================================================
 class BaseStdIn:
 
     def __init__(self, original_stdin=sys.stdin, *args, **kwargs):
@@ -63,9 +61,7 @@ class BaseStdIn:
         raise AttributeError("%s has no attribute %s" % (self.original_stdin, item))
 
 
-# =======================================================================================================================
 # StdIn
-# =======================================================================================================================
 class StdIn(BaseStdIn):
     '''
         Object to be added to stdin (to emulate it as non-blocking while the next line arrives)
@@ -97,9 +93,7 @@ class StdIn(BaseStdIn):
         pass  # expected in StdIn
 
 
-#=======================================================================================================================
 # DebugConsoleStdIn
-#=======================================================================================================================
 class DebugConsoleStdIn(BaseStdIn):
     '''
         Object to be added to stdin (to emulate it as non-blocking while the next line arrives)
@@ -161,9 +155,7 @@ class CodeFragment:
             self.is_single_line = False
 
 
-# =======================================================================================================================
 # BaseInterpreterInterface
-# =======================================================================================================================
 class BaseInterpreterInterface:
 
     def __init__(self, mainThread, connect_status_queue=None):
@@ -629,9 +621,7 @@ class BaseInterpreterInterface:
         return None
 
 
-# =======================================================================================================================
 # FakeFrame
-# =======================================================================================================================
 class FakeFrame:
     '''
     Used to show console with variables connection.

@@ -38,11 +38,9 @@ from winappdbg.win32.defines import *
 from winappdbg.win32.version import ARCH_AMD64
 from winappdbg.win32 import context_i386
 
-#==============================================================================
 # This is used later on to calculate the list of exported symbols.
 _all = None
 _all = set(vars().keys())
-#==============================================================================
 
 #--- CONTEXT structures and constants -----------------------------------------
 
@@ -754,9 +752,7 @@ def Wow64SetThreadContext(hThread, lpContext):
         lpContext = WOW64_CONTEXT.from_dict(lpContext)
     _Wow64SetThreadContext(hThread, byref(lpContext))
 
-#==============================================================================
 # This calculates the list of exported symbols.
 _all = set(vars().keys()).difference(_all)
 __all__ = [_x for _x in _all if not _x.startswith('_')]
 __all__.sort()
-#==============================================================================

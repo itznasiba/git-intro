@@ -519,7 +519,6 @@ extern "C"
 
 
 
-    // ======================================== Code related to setting tracing to existing threads.
 
 
     /**

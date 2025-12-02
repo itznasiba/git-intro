@@ -30,9 +30,7 @@ from _pydevd_bundle.pydevd_frame_utils import FramesList
 from io import StringIO
 
 
-#=======================================================================================================================
 # NetCommandFactory
-#=======================================================================================================================
 class NetCommandFactory(object):
 
     def __init__(self):

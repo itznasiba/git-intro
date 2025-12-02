@@ -2,7 +2,6 @@
 Based on the python xreload.
 
 Changes
-======================
 
 1. we don't recreate the old namespace from new classes. Rather, we keep the existing namespace,
 load a new version of it and update only some of the things we can inplace. That way, we don't break
@@ -21,7 +20,6 @@ on it.
 
 
 Hooks
-======================
 
 Classes/modules can be specially crafted to work with the reload (so that it can, for instance,
 update some constant which was changed).
@@ -64,7 +62,6 @@ actual application state (while the cls and namespace passed are).
 
 
 Current limitations
-======================
 
 
 - Attributes/constants are added, but not changed (so singletons and the application state is not
@@ -83,7 +80,6 @@ Current limitations
 
 
 Info
-======================
 
 Original: http://svn.python.org/projects/sandbox/trunk/xreload/xreload.py
 Note: it seems https://github.com/plone/plone.reload/blob/master/plone/reload/xreload.py enhances it (to check later)
@@ -143,9 +139,7 @@ def notify_error(*args):
     write_err(*args)
 
 
-#=======================================================================================================================
 # code_objects_equal
-#=======================================================================================================================
 def code_objects_equal(code0, code1):
     for d in dir(code0):
         if d.startswith('_') or 'line' in d or d in ('replace', 'co_positions', 'co_qualname'):
@@ -155,9 +149,7 @@ def code_objects_equal(code0, code1):
     return True
 
 
-#=======================================================================================================================
 # xreload
-#=======================================================================================================================
 def xreload(mod):
     """Reload a module in place, updating classes, methods and functions.
 
@@ -186,9 +178,7 @@ def xreload(mod):
 # immutable_types = tuple(immutable_types)
 
 
-#=======================================================================================================================
 # Reload
-#=======================================================================================================================
 class Reload:
 
     def __init__(self, mod, mod_name=None, mod_filename=None):

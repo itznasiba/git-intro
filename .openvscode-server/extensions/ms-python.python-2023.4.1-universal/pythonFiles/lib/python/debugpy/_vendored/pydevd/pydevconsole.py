@@ -74,9 +74,7 @@ else:
     __builtin__.runfile = runfile
 
 
-#=======================================================================================================================
 # InterpreterInterface
-#=======================================================================================================================
 class InterpreterInterface(BaseInterpreterInterface):
     '''
         The methods in this class should be registered in the xml-rpc server.
@@ -327,9 +325,7 @@ except:
     pass
 
 
-#=======================================================================================================================
 # _DoExit
-#=======================================================================================================================
 def do_exit(*args):
     '''
         We have to override the exit because calling sys.exit will only actually exit the main thread,
@@ -347,9 +343,7 @@ def do_exit(*args):
             os._exit(0)
 
 
-#=======================================================================================================================
 # start_console_server
-#=======================================================================================================================
 def start_console_server(host, port, interpreter):
     try:
         if port == 0:
@@ -457,9 +451,7 @@ def get_completions(text, token, globals, locals):
 
     return interpreterInterface.getCompletions(text, token)
 
-#===============================================================================
 # Debugger integration
-#===============================================================================
 
 
 def exec_code(code, globals, locals, debugger):
@@ -581,9 +573,7 @@ def console_exec(thread_id, frame_id, expression, dbg):
     return False
 
 
-#=======================================================================================================================
 # main
-#=======================================================================================================================
 if __name__ == '__main__':
     # Important: don't use this module directly as the __main__ module, rather, import itself as pydevconsole
     # so that we don't get multiple pydevconsole modules if it's executed directly (otherwise we'd have multiple

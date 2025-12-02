@@ -16,9 +16,7 @@ pydev_log.debug("Using Cython speedups")
 version = 11
 
 
-#=======================================================================================================================
 # PyDBAdditionalThreadInfo
-#=======================================================================================================================
 # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
 cdef class PyDBAdditionalThreadInfo:
 # ELSE
@@ -267,9 +265,7 @@ cdef class _TryExceptContainerObj:
 # ENDIF
 
 
-#=======================================================================================================================
 # PyDBFrame
-#=======================================================================================================================
 # IFDEF CYTHON -- DONT EDIT THIS FILE (it is automatically generated)
 cdef class PyDBFrame:
 # ELSE

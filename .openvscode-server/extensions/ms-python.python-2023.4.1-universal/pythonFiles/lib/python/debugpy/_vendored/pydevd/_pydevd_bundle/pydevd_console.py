@@ -18,9 +18,7 @@ CONSOLE_OUTPUT = "output"
 CONSOLE_ERROR = "error"
 
 
-#=======================================================================================================================
 # ConsoleMessage
-#=======================================================================================================================
 class ConsoleMessage:
     """Console Messages
     """
@@ -63,9 +61,7 @@ class ConsoleMessage:
         return xml
 
 
-#=======================================================================================================================
 # _DebugConsoleStdIn
-#=======================================================================================================================
 class _DebugConsoleStdIn(BaseStdIn):
 
     @overrides(BaseStdIn.readline)
@@ -74,9 +70,7 @@ class _DebugConsoleStdIn(BaseStdIn):
         return '\n'
 
 
-#=======================================================================================================================
 # DebugConsole
-#=======================================================================================================================
 class DebugConsole(InteractiveConsole, BaseInterpreterInterface):
     """Wrapper around code.InteractiveConsole, in order to send
     errors and outputs to the debug console
@@ -194,9 +188,7 @@ class DebugConsole(InteractiveConsole, BaseInterpreterInterface):
         return dbg_namespace
 
 
-#=======================================================================================================================
 # InteractiveConsoleCache
-#=======================================================================================================================
 class InteractiveConsoleCache:
 
     thread_id = None

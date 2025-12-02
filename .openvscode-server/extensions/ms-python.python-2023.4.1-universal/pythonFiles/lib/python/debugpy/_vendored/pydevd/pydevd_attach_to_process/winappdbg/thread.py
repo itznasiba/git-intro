@@ -54,7 +54,6 @@ import warnings
 # delayed imports
 Process = None
 
-#==============================================================================
 
 # TODO
 # + fetch special registers (MMX, XMM, 3DNow!, etc)
@@ -1710,7 +1709,6 @@ class Thread (object):
         """
         return self.disassemble_instruction( self.get_pc() )
 
-#==============================================================================
 
 class _ThreadContainer (object):
     """

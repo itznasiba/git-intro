@@ -14,7 +14,6 @@ Representation modules also define "magic methods". Those methods look like
 ``py__foo__`` and are typically mappable to the Python equivalents ``__call__``
 and others. Here's a list:
 
-====================================== ========================================
 **Method**                             **Description**
 -------------------------------------- ----------------------------------------
 py__call__(arguments: Array)           On callable objects, returns types.
@@ -33,7 +32,6 @@ py__path__()                           Only on modules. For the import system.
 py__get__(call_object)                 Only on instances. Simulates
                                        descriptors.
 py__doc__()                            Returns the docstring for a value.
-====================================== ========================================
 
 """
 from jedi import debug

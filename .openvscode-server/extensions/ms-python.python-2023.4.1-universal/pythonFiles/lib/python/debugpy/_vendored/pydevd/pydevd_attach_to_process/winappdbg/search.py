@@ -64,7 +64,6 @@ try:
 except ImportError:
     import re
 
-#==============================================================================
 
 class Pattern (object):
     """
@@ -411,7 +410,6 @@ class HexPattern (RegExpPattern):
         super(HexPattern, self).__init__(HexInput.pattern(hexa),
                                          maxLength = maxLength)
 
-#==============================================================================
 
 class Search (StaticClass):
     """

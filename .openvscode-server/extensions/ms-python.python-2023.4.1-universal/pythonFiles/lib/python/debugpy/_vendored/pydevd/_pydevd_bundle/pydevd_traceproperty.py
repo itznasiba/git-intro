@@ -4,9 +4,7 @@ from _pydevd_bundle.pydevd_comm import get_global_debugger
 from _pydev_bundle import pydev_log
 
 
-#=======================================================================================================================
 # replace_builtin_property
-#=======================================================================================================================
 def replace_builtin_property(new_property=None):
     if new_property is None:
         new_property = DebugProperty
@@ -19,9 +17,7 @@ def replace_builtin_property(new_property=None):
     return original
 
 
-#=======================================================================================================================
 # DebugProperty
-#=======================================================================================================================
 class DebugProperty(object):
     """A custom property which allows python property to get
     controlled by the debugger and selectively disable/re-enable

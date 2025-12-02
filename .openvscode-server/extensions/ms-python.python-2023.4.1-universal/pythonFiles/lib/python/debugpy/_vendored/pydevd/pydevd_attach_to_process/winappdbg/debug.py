@@ -56,7 +56,6 @@ from winappdbg.interactive import ConsoleDebugger
 import warnings
 ##import traceback
 
-#==============================================================================
 
 # If you set this warning to be considered as an error, you can stop the
 # debugger from attaching to 64-bit processes from a 32-bit Python VM and
@@ -66,7 +65,6 @@ class MixedBitsWarning (RuntimeWarning):
     This warning is issued when mixing 32 and 64 bit processes.
     """
 
-#==============================================================================
 
 # TODO
 # * Add memory read and write operations, similar to those in the Process

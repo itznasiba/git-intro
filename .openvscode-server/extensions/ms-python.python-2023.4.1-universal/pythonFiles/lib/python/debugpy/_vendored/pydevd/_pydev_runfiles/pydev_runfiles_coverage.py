@@ -3,9 +3,7 @@ import sys
 from _pydevd_bundle.pydevd_constants import Null
 
 
-#=======================================================================================================================
 # get_coverage_files
-#=======================================================================================================================
 def get_coverage_files(coverage_output_dir, number_of_files):
     base_dir = coverage_output_dir
     ret = []
@@ -20,9 +18,7 @@ def get_coverage_files(coverage_output_dir, number_of_files):
     return ret
 
 
-#=======================================================================================================================
 # start_coverage_support
-#=======================================================================================================================
 def start_coverage_support(configuration):
     return start_coverage_support_from_params(
         configuration.coverage_output_dir, 
@@ -32,9 +28,7 @@ def start_coverage_support(configuration):
     )
     
 
-#=======================================================================================================================
 # start_coverage_support_from_params
-#=======================================================================================================================
 def start_coverage_support_from_params(coverage_output_dir, coverage_output_file, jobs, coverage_include):
     coverage_files = []
     coverage_instance = Null()

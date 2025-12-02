@@ -47,7 +47,6 @@ from winappdbg import compat
 import collections
 import warnings
 
-#==============================================================================
 
 class _RegistryContainer (object):
     """
@@ -79,7 +78,6 @@ class _RegistryContainer (object):
     def __iter__(self):
         return compat.iterkeys(self)
 
-#==============================================================================
 
 class RegistryKey (_RegistryContainer):
     """
@@ -352,7 +350,6 @@ class RegistryKey (_RegistryContainer):
         """
         win32.RegFlushKey(self.handle)
 
-#==============================================================================
 
 # TODO: possibly cache the RegistryKey objects
 # to avoid opening and closing handles many times on code sequences like this:

@@ -106,7 +106,6 @@ import ctypes
 import warnings
 import traceback
 
-#==============================================================================
 
 class EventCallbackWarning (RuntimeWarning):
     """
@@ -114,7 +113,6 @@ class EventCallbackWarning (RuntimeWarning):
     user-defined event handler.
     """
 
-#==============================================================================
 
 class Event (object):
     """
@@ -261,7 +259,6 @@ class Event (object):
             process._add_thread(thread)
         return thread
 
-#==============================================================================
 
 class NoEvent (Event):
     """
@@ -301,7 +298,6 @@ class NoEvent (Event):
     def get_thread(self):
         return Thread(self.get_tid())
 
-#==============================================================================
 
 class ExceptionEvent (Event):
     """
@@ -686,7 +682,6 @@ class ExceptionEvent (Event):
             nested.append(event)
         return nested
 
-#==============================================================================
 
 class CreateThreadEvent (Event):
     """
@@ -731,7 +726,6 @@ class CreateThreadEvent (Event):
         """
         return self.raw.u.CreateThread.lpStartAddress
 
-#==============================================================================
 
 class CreateProcessEvent (Event):
     """
@@ -883,7 +877,6 @@ class CreateProcessEvent (Event):
         """
         return self.get_process().get_module( self.get_module_base() )
 
-#==============================================================================
 
 class ExitThreadEvent (Event):
     """
@@ -901,7 +894,6 @@ class ExitThreadEvent (Event):
         """
         return self.raw.u.ExitThread.dwExitCode
 
-#==============================================================================
 
 class ExitProcessEvent (Event):
     """
@@ -948,7 +940,6 @@ class ExitProcessEvent (Event):
         """
         return self.get_process().get_main_module()
 
-#==============================================================================
 
 class LoadDLLEvent (Event):
     """
@@ -1035,7 +1026,6 @@ class LoadDLLEvent (Event):
         # Return the filename, or None on error.
         return szFilename
 
-#==============================================================================
 
 class UnloadDLLEvent (Event):
     """
@@ -1086,7 +1076,6 @@ class UnloadDLLEvent (Event):
         """
         return self.get_module().get_filename()
 
-#==============================================================================
 
 class OutputDebugStringEvent (Event):
     """
@@ -1108,7 +1097,6 @@ class OutputDebugStringEvent (Event):
                                 bool( self.raw.u.DebugString.fUnicode ),
                                 self.raw.u.DebugString.nDebugStringLength)
 
-#==============================================================================
 
 class RIPEvent (Event):
     """
@@ -1138,7 +1126,6 @@ class RIPEvent (Event):
         """
         return self.raw.u.RipInfo.dwType
 
-#==============================================================================
 
 class EventFactory (StaticClass):
     """
@@ -1183,7 +1170,6 @@ class EventFactory (StaticClass):
         eventClass = cls.eventClasses.get(raw.dwDebugEventCode, cls.baseEvent)
         return eventClass(debug, raw)
 
-#==============================================================================
 
 class EventHandler (object):
     """
@@ -1468,7 +1454,6 @@ class EventHandler (object):
             if method is not None:
                 return method(event)
 
-#==============================================================================
 
 # TODO
 #  * Make it more generic by adding a few more callbacks.
@@ -1646,7 +1631,6 @@ class EventSift(EventHandler):
             del self.forward[pid]
         return handler(event)
 
-#==============================================================================
 
 class EventDispatcher (object):
     """

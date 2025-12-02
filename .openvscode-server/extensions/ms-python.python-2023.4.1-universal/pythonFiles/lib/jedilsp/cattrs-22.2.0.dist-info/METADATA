@@ -23,9 +23,7 @@ Project-URL: Documentation, https://cattrs.readthedocs.io/en/latest/
 Project-URL: Repository, https://github.com/python-attrs/cattrs
 Description-Content-Type: text/x-rst
 
-======
 cattrs
-======
 
 
 .. image:: https://img.shields.io/pypi/v/cattrs.svg

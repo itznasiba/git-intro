@@ -7,9 +7,7 @@ from _pydevd_bundle.pydevd_constants import *  # @UnusedWildImport
 from io import StringIO
 
 
-#=======================================================================================================================
 # PydevTextTestRunner
-#=======================================================================================================================
 class PydevTextTestRunner(python_unittest.TextTestRunner):
 
     def _makeResult(self):
@@ -19,9 +17,7 @@ class PydevTextTestRunner(python_unittest.TextTestRunner):
 _PythonTextTestResult = python_unittest.TextTestRunner()._makeResult().__class__
 
 
-#=======================================================================================================================
 # PydevTestResult
-#=======================================================================================================================
 class PydevTestResult(_PythonTextTestResult):
 
     def addSubTest(self, test, subtest, err):

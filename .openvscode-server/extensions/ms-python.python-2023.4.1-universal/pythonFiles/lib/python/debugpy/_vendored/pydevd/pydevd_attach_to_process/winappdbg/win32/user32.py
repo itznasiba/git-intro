@@ -39,11 +39,9 @@ from winappdbg.win32.version import bits
 from winappdbg.win32.kernel32 import GetLastError, SetLastError
 from winappdbg.win32.gdi32 import POINT, PPOINT, LPPOINT, RECT, PRECT, LPRECT
 
-#==============================================================================
 # This is used later on to calculate the list of exported symbols.
 _all = None
 _all = set(vars().keys())
-#==============================================================================
 
 #--- Helpers ------------------------------------------------------------------
 
@@ -1719,9 +1717,7 @@ def RemovePropW(hWnd, lpString):
 
 RemoveProp = GuessStringType(RemovePropA, RemovePropW)
 
-#==============================================================================
 # This calculates the list of exported symbols.
 _all = set(vars().keys()).difference(_all)
 __all__ = [_x for _x in _all if not _x.startswith('_')]
 __all__.sort()
-#==============================================================================

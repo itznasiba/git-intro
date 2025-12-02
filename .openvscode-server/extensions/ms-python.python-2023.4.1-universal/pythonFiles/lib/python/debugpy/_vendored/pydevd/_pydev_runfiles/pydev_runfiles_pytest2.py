@@ -9,9 +9,7 @@ import sys
 import time
 from pathlib import Path
 
-#=========================================================================
 # Load filters with tests we should skip
-#=========================================================================
 py_test_accept_filter = None
 
 

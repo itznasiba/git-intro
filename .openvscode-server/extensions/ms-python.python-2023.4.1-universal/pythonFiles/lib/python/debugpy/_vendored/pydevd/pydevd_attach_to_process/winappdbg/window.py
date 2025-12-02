@@ -45,7 +45,6 @@ from winappdbg import win32
 Process = None
 Thread  = None
 
-#==============================================================================
 
 # Unlike Process, Thread and Module, there's no container for Window objects.
 # That's because Window objects don't really store any data besides the handle.
